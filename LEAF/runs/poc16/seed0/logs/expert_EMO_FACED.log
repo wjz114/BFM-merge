@@ -1,0 +1,36 @@
+EMO_FACED: train=6720 val=1680 classes=['Anger', 'Fear', 'Disgust', 'Sad', 'Amusement', 'Inspiration', 'Joy', 'Tenderness', 'Neutral'] instruction='This is an emotion recognition task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 3000 rounds x 1 datasets = 3000 optimizer steps, warmup=150, validation every 100 rounds
+round 0/3000 step 0/3000 val macro BAcc=0.5452 loss=1.8780 | EMO_FACED=0.5452
+round 100/3000 step 100/3000 val macro BAcc=0.5346 loss=1.8613 | EMO_FACED=0.5346
+round 200/3000 step 200/3000 val macro BAcc=0.5278 loss=1.8566 | EMO_FACED=0.5278
+round 300/3000 step 300/3000 val macro BAcc=0.5454 loss=1.8477 | EMO_FACED=0.5454
+round 400/3000 step 400/3000 val macro BAcc=0.5469 loss=1.8444 | EMO_FACED=0.5469
+round 500/3000 step 500/3000 val macro BAcc=0.5531 loss=1.8471 | EMO_FACED=0.5531
+round 600/3000 step 600/3000 val macro BAcc=0.5460 loss=1.8505 | EMO_FACED=0.5460
+round 700/3000 step 700/3000 val macro BAcc=0.5549 loss=1.8415 | EMO_FACED=0.5549
+round 800/3000 step 800/3000 val macro BAcc=0.5552 loss=1.8458 | EMO_FACED=0.5552
+round 900/3000 step 900/3000 val macro BAcc=0.5471 loss=1.8515 | EMO_FACED=0.5471
+round 1000/3000 step 1000/3000 val macro BAcc=0.5551 loss=1.8414 | EMO_FACED=0.5551
+round 1100/3000 step 1100/3000 val macro BAcc=0.5625 loss=1.8397 | EMO_FACED=0.5625
+round 1200/3000 step 1200/3000 val macro BAcc=0.5619 loss=1.8331 | EMO_FACED=0.5619
+round 1300/3000 step 1300/3000 val macro BAcc=0.5588 loss=1.8420 | EMO_FACED=0.5588
+round 1400/3000 step 1400/3000 val macro BAcc=0.5537 loss=1.8415 | EMO_FACED=0.5537
+round 1500/3000 step 1500/3000 val macro BAcc=0.5603 loss=1.8377 | EMO_FACED=0.5603
+round 1600/3000 step 1600/3000 val macro BAcc=0.5603 loss=1.8337 | EMO_FACED=0.5603
+round 1700/3000 step 1700/3000 val macro BAcc=0.5665 loss=1.8318 | EMO_FACED=0.5665
+round 1800/3000 step 1800/3000 val macro BAcc=0.5656 loss=1.8284 | EMO_FACED=0.5656
+round 1900/3000 step 1900/3000 val macro BAcc=0.5688 loss=1.8318 | EMO_FACED=0.5688
+round 2000/3000 step 2000/3000 val macro BAcc=0.5765 loss=1.8271 | EMO_FACED=0.5765
+round 2100/3000 step 2100/3000 val macro BAcc=0.5676 loss=1.8328 | EMO_FACED=0.5676
+round 2200/3000 step 2200/3000 val macro BAcc=0.5691 loss=1.8285 | EMO_FACED=0.5691
+round 2300/3000 step 2300/3000 val macro BAcc=0.5750 loss=1.8286 | EMO_FACED=0.5750
+round 2400/3000 step 2400/3000 val macro BAcc=0.5756 loss=1.8281 | EMO_FACED=0.5756
+round 2500/3000 step 2500/3000 val macro BAcc=0.5656 loss=1.8369 | EMO_FACED=0.5656
+round 2600/3000 step 2600/3000 val macro BAcc=0.5755 loss=1.8271 | EMO_FACED=0.5755
+round 2700/3000 step 2700/3000 val macro BAcc=0.5807 loss=1.8250 | EMO_FACED=0.5807
+round 2800/3000 step 2800/3000 val macro BAcc=0.5782 loss=1.8264 | EMO_FACED=0.5782
+round 2900/3000 step 2900/3000 val macro BAcc=0.5775 loss=1.8281 | EMO_FACED=0.5775
+round 3000/3000 step 3000/3000 val macro BAcc=0.5710 loss=1.8301 | EMO_FACED=0.5710
+Best round=2700 (step 2700); val macro BAcc=0.5807 (source 0.5452)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/EMO_FACED

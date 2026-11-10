@@ -1,0 +1,40 @@
+MI_OpenBMI: train=13440 val=3360 classes=['Right', 'Left'] instruction='This is a motor imagery decoding task'
+MI_Cho2017: train=6464 val=1616 classes=['Left', 'Right'] instruction='This is a motor imagery decoding task'
+MI_PhysioNet: train=11447 val=2862 classes=['Left', 'Right'] instruction='This is a motor imagery decoding task'
+EMO_SEED_3_seg4: train=22545 val=7905 classes=['Negative', 'Neutral', 'Positive'] instruction='This is an emotion recognition task'
+SSVEP_OpenBMI: train=13440 val=3360 classes=['12.0', '8.6', '6.6', '5.4'] instruction='This is an SSVEP frequency decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 3000 rounds x 5 datasets = 15000 optimizer steps, warmup=750, validation every 100 rounds
+round 0/3000 step 0/15000 val macro BAcc=0.6712 loss=0.8059 | MI_OpenBMI=0.7830 MI_Cho2017=0.6652 MI_PhysioNet=0.6974 EMO_SEED_3_seg4=0.5761 SSVEP_OpenBMI=0.6340
+round 100/3000 step 500/15000 val macro BAcc=0.6343 loss=0.7837 | MI_OpenBMI=0.7675 MI_Cho2017=0.6696 MI_PhysioNet=0.7224 EMO_SEED_3_seg4=0.6587 SSVEP_OpenBMI=0.3534
+round 200/3000 step 1000/15000 val macro BAcc=0.7285 loss=0.7154 | MI_OpenBMI=0.8143 MI_Cho2017=0.6962 MI_PhysioNet=0.7487 EMO_SEED_3_seg4=0.6777 SSVEP_OpenBMI=0.7055
+round 300/3000 step 1500/15000 val macro BAcc=0.7405 loss=0.7094 | MI_OpenBMI=0.8152 MI_Cho2017=0.7042 MI_PhysioNet=0.7507 EMO_SEED_3_seg4=0.6994 SSVEP_OpenBMI=0.7332
+round 400/3000 step 2000/15000 val macro BAcc=0.7363 loss=0.7140 | MI_OpenBMI=0.7825 MI_Cho2017=0.6708 MI_PhysioNet=0.7610 EMO_SEED_3_seg4=0.6947 SSVEP_OpenBMI=0.7722
+round 500/3000 step 2500/15000 val macro BAcc=0.7580 loss=0.6959 | MI_OpenBMI=0.8145 MI_Cho2017=0.7098 MI_PhysioNet=0.7700 EMO_SEED_3_seg4=0.7040 SSVEP_OpenBMI=0.7916
+round 600/3000 step 3000/15000 val macro BAcc=0.7556 loss=0.6976 | MI_OpenBMI=0.8172 MI_Cho2017=0.7092 MI_PhysioNet=0.7665 EMO_SEED_3_seg4=0.6934 SSVEP_OpenBMI=0.7918
+round 700/3000 step 3500/15000 val macro BAcc=0.7705 loss=0.6896 | MI_OpenBMI=0.8240 MI_Cho2017=0.7172 MI_PhysioNet=0.7755 EMO_SEED_3_seg4=0.6989 SSVEP_OpenBMI=0.8372
+round 800/3000 step 4000/15000 val macro BAcc=0.7552 loss=0.7001 | MI_OpenBMI=0.8049 MI_Cho2017=0.7160 MI_PhysioNet=0.7637 EMO_SEED_3_seg4=0.6857 SSVEP_OpenBMI=0.8055
+round 900/3000 step 4500/15000 val macro BAcc=0.7735 loss=0.6905 | MI_OpenBMI=0.8376 MI_Cho2017=0.7116 MI_PhysioNet=0.7709 EMO_SEED_3_seg4=0.7038 SSVEP_OpenBMI=0.8436
+round 1000/3000 step 5000/15000 val macro BAcc=0.7730 loss=0.6905 | MI_OpenBMI=0.8299 MI_Cho2017=0.7240 MI_PhysioNet=0.7706 EMO_SEED_3_seg4=0.6936 SSVEP_OpenBMI=0.8467
+round 1100/3000 step 5500/15000 val macro BAcc=0.7860 loss=0.6812 | MI_OpenBMI=0.8310 MI_Cho2017=0.7345 MI_PhysioNet=0.7795 EMO_SEED_3_seg4=0.7093 SSVEP_OpenBMI=0.8757
+round 1200/3000 step 6000/15000 val macro BAcc=0.7794 loss=0.6852 | MI_OpenBMI=0.8309 MI_Cho2017=0.7382 MI_PhysioNet=0.7738 EMO_SEED_3_seg4=0.6944 SSVEP_OpenBMI=0.8595
+round 1300/3000 step 6500/15000 val macro BAcc=0.7846 loss=0.6843 | MI_OpenBMI=0.8372 MI_Cho2017=0.7605 MI_PhysioNet=0.7691 EMO_SEED_3_seg4=0.6827 SSVEP_OpenBMI=0.8736
+round 1400/3000 step 7000/15000 val macro BAcc=0.7815 loss=0.6837 | MI_OpenBMI=0.8330 MI_Cho2017=0.7265 MI_PhysioNet=0.7805 EMO_SEED_3_seg4=0.6942 SSVEP_OpenBMI=0.8731
+round 1500/3000 step 7500/15000 val macro BAcc=0.7924 loss=0.6763 | MI_OpenBMI=0.8433 MI_Cho2017=0.7321 MI_PhysioNet=0.7917 EMO_SEED_3_seg4=0.7083 SSVEP_OpenBMI=0.8867
+round 1600/3000 step 8000/15000 val macro BAcc=0.7936 loss=0.6733 | MI_OpenBMI=0.8398 MI_Cho2017=0.7450 MI_PhysioNet=0.7885 EMO_SEED_3_seg4=0.7066 SSVEP_OpenBMI=0.8881
+round 1700/3000 step 8500/15000 val macro BAcc=0.7935 loss=0.6744 | MI_OpenBMI=0.8445 MI_Cho2017=0.7321 MI_PhysioNet=0.7876 EMO_SEED_3_seg4=0.7153 SSVEP_OpenBMI=0.8882
+round 1800/3000 step 9000/15000 val macro BAcc=0.7936 loss=0.6763 | MI_OpenBMI=0.8452 MI_Cho2017=0.7444 MI_PhysioNet=0.7932 EMO_SEED_3_seg4=0.7010 SSVEP_OpenBMI=0.8840
+round 1900/3000 step 9500/15000 val macro BAcc=0.7943 loss=0.6784 | MI_OpenBMI=0.8455 MI_Cho2017=0.7370 MI_PhysioNet=0.7910 EMO_SEED_3_seg4=0.6959 SSVEP_OpenBMI=0.9022
+round 2000/3000 step 10000/15000 val macro BAcc=0.7948 loss=0.6739 | MI_OpenBMI=0.8463 MI_Cho2017=0.7345 MI_PhysioNet=0.7892 EMO_SEED_3_seg4=0.7080 SSVEP_OpenBMI=0.8961
+round 2100/3000 step 10500/15000 val macro BAcc=0.7950 loss=0.6769 | MI_OpenBMI=0.8510 MI_Cho2017=0.7351 MI_PhysioNet=0.7958 EMO_SEED_3_seg4=0.7020 SSVEP_OpenBMI=0.8912
+round 2200/3000 step 11000/15000 val macro BAcc=0.7979 loss=0.6741 | MI_OpenBMI=0.8432 MI_Cho2017=0.7481 MI_PhysioNet=0.7950 EMO_SEED_3_seg4=0.7034 SSVEP_OpenBMI=0.8997
+round 2300/3000 step 11500/15000 val macro BAcc=0.7971 loss=0.6725 | MI_OpenBMI=0.8488 MI_Cho2017=0.7450 MI_PhysioNet=0.7991 EMO_SEED_3_seg4=0.6927 SSVEP_OpenBMI=0.9000
+round 2400/3000 step 12000/15000 val macro BAcc=0.8009 loss=0.6724 | MI_OpenBMI=0.8480 MI_Cho2017=0.7593 MI_PhysioNet=0.7973 EMO_SEED_3_seg4=0.6970 SSVEP_OpenBMI=0.9032
+round 2500/3000 step 12500/15000 val macro BAcc=0.7997 loss=0.6731 | MI_OpenBMI=0.8447 MI_Cho2017=0.7599 MI_PhysioNet=0.7955 EMO_SEED_3_seg4=0.6905 SSVEP_OpenBMI=0.9080
+round 2600/3000 step 13000/15000 val macro BAcc=0.8023 loss=0.6701 | MI_OpenBMI=0.8483 MI_Cho2017=0.7580 MI_PhysioNet=0.7979 EMO_SEED_3_seg4=0.6976 SSVEP_OpenBMI=0.9097
+round 2700/3000 step 13500/15000 val macro BAcc=0.8018 loss=0.6713 | MI_OpenBMI=0.8467 MI_Cho2017=0.7568 MI_PhysioNet=0.8003 EMO_SEED_3_seg4=0.6948 SSVEP_OpenBMI=0.9102
+round 2800/3000 step 14000/15000 val macro BAcc=0.7979 loss=0.6746 | MI_OpenBMI=0.8443 MI_Cho2017=0.7420 MI_PhysioNet=0.8014 EMO_SEED_3_seg4=0.6957 SSVEP_OpenBMI=0.9061
+round 2900/3000 step 14500/15000 val macro BAcc=0.8034 loss=0.6706 | MI_OpenBMI=0.8510 MI_Cho2017=0.7562 MI_PhysioNet=0.8056 EMO_SEED_3_seg4=0.6941 SSVEP_OpenBMI=0.9102
+round 3000/3000 step 15000/15000 val macro BAcc=0.7956 loss=0.6742 | MI_OpenBMI=0.8475 MI_Cho2017=0.7438 MI_PhysioNet=0.7910 EMO_SEED_3_seg4=0.6950 SSVEP_OpenBMI=0.9007
+Best round=2900 (step 14500); val macro BAcc=0.8034 (source 0.6712)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed2/joint

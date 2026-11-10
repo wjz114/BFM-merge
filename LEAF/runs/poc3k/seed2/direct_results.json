@@ -1,0 +1,17 @@
+{
+  "protocol": "c_direct_inference.py (frozen checkpoint, instruction levels, default seed 42)",
+  "directory": "/home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed2/direct_inference",
+  "sources": [
+    "MI_OpenBMI",
+    "MI_Cho2017",
+    "MI_PhysioNet",
+    "EMO_SEED_3_seg4",
+    "SSVEP_OpenBMI"
+  ],
+  "levels": [
+    0,
+    1,
+    2
+  ],
+  "non_source_datasets": []
+}

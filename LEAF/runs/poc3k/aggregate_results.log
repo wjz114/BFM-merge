@@ -1,0 +1,15 @@
+Test BAcc mean ± std over 3 seeds
+model                              level     source macro BAcc     d vs Joint (pp)
+Base                                             0.6546±0.0000         -12.09±0.42
+Expert[MI_OpenBMI]                               0.6060±0.0083         -16.94±0.58
+Expert[MI_Cho2017]                               0.5668±0.0073         -20.87±0.39
+Expert[MI_PhysioNet]                             0.5906±0.0049         -18.48±0.79
+Expert[EMO_SEED_3_seg4]                          0.5872±0.0070         -18.82±0.33
+Expert[SSVEP_OpenBMI]                            0.6319±0.0088         -14.35±0.60
+Joint                                            0.7755±0.0042          +0.00±0.00
+Uniform                                          0.6870±0.0012          -8.85±0.32
+Global                                           0.6957±0.0013          -7.98±0.29
+Block                                            0.7094±0.0047          -6.60±0.44
+Specialist                                       0.7836±0.0049          +0.82±0.88
+
+Saved /home/jingzhou/BFM-merge/LEAF/runs/poc3k/results_seeds.csv and /home/jingzhou/BFM-merge/LEAF/runs/poc3k/results_seeds.json

@@ -1,0 +1,201 @@
+{
+  "method": "uniform",
+  "base_checkpoint": "/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt",
+  "base_checkpoint_sha256": "f9ca9cabbd734d2691fa6748adf3e78056f895d4031f7edc481e7d7b6822f3fa",
+  "experts": {
+    "MI_OpenBMI": "/home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed0/experts/MI_OpenBMI/best.ckpt",
+    "MI_Cho2017": "/home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed0/experts/MI_Cho2017/best.ckpt",
+    "MI_PhysioNet": "/home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed0/experts/MI_PhysioNet/best.ckpt",
+    "EMO_SEED_3_seg4": "/home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed0/experts/EMO_SEED_3_seg4/best.ckpt",
+    "SSVEP_OpenBMI": "/home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed0/experts/SSVEP_OpenBMI/best.ckpt"
+  },
+  "datasets": [
+    "MI_OpenBMI",
+    "MI_Cho2017",
+    "MI_PhysioNet",
+    "EMO_SEED_3_seg4",
+    "SSVEP_OpenBMI"
+  ],
+  "labels": {
+    "MI_OpenBMI": [
+      "Right",
+      "Left"
+    ],
+    "MI_Cho2017": [
+      "Left",
+      "Right"
+    ],
+    "MI_PhysioNet": [
+      "Left",
+      "Right"
+    ],
+    "EMO_SEED_3_seg4": [
+      "Negative",
+      "Neutral",
+      "Positive"
+    ],
+    "SSVEP_OpenBMI": [
+      "12.0",
+      "8.6",
+      "6.6",
+      "5.4"
+    ]
+  },
+  "instruction": {
+    "MI_OpenBMI": "This is a motor imagery decoding task",
+    "MI_Cho2017": "This is a motor imagery decoding task",
+    "MI_PhysioNet": "This is a motor imagery decoding task",
+    "EMO_SEED_3_seg4": "This is an emotion recognition task",
+    "SSVEP_OpenBMI": "This is an SSVEP frequency decoding task"
+  },
+  "K": 5,
+  "groups": [
+    "all"
+  ],
+  "num_coefficients": 5,
+  "params_per_group": {
+    "all": 25751552
+  },
+  "merged_tensors": 383,
+  "unused_tensors_kept_at_base": [
+    "tower.mask_token",
+    "tower.mask_outProj.0.weight",
+    "tower.mask_outProj.0.bias",
+    "tower.mask_outProj.3.weight",
+    "tower.mask_outProj.3.bias",
+    "tower.next_outProj.0.weight",
+    "tower.next_outProj.0.bias",
+    "tower.next_outProj.3.weight",
+    "tower.next_outProj.3.bias"
+  ],
+  "task_vector_l2": {
+    "MI_OpenBMI": 19.684704535963213,
+    "MI_Cho2017": 24.58385631345616,
+    "MI_PhysioNet": 21.998565354267072,
+    "EMO_SEED_3_seg4": 11.721838499529063,
+    "SSVEP_OpenBMI": 21.369325200570195
+  },
+  "alpha_init": 0.2,
+  "alpha_parametrization": "unconstrained real coefficients",
+  "optimizer": null,
+  "lr": null,
+  "weight_decay": 0.0,
+  "steps_requested": 500,
+  "alpha_updates_actual": 0,
+  "eval_every": 50,
+  "batch_size": 128,
+  "seed": 0,
+  "precision": "bf16-mixed",
+  "calibration_per_dataset": 512,
+  "calibration_sizes": {
+    "MI_OpenBMI": 512,
+    "MI_Cho2017": 512,
+    "MI_PhysioNet": 512,
+    "EMO_SEED_3_seg4": 512,
+    "SSVEP_OpenBMI": 512
+  },
+  "calibration_source": "stratified subset of each load_dataset() train split; indices in calibration_indices.npz",
+  "selection": "maximum source validation macro BAcc; ties resolved by minimum macro validation loss",
+  "best_step": 0,
+  "best_alpha": [
+    [
+      0.20000000298023224
+    ],
+    [
+      0.20000000298023224
+    ],
+    [
+      0.20000000298023224
+    ],
+    [
+      0.20000000298023224
+    ],
+    [
+      0.20000000298023224
+    ]
+  ],
+  "best_val_macro_BAcc": 0.7036396089855435,
+  "best_val_macro_Loss": 0.7573336660861969,
+  "best_val": {
+    "MI_OpenBMI": {
+      "Loss": 0.48869964480400085,
+      "BAcc": 0.8050180976111726,
+      "Auroc": 0.8859016818112209,
+      "wF1": 0.8080196556963236,
+      "Kappa": 0.6117803590830737
+    },
+    "MI_Cho2017": {
+      "Loss": 0.5775692462921143,
+      "BAcc": 0.7066831683168316,
+      "Auroc": 0.7946563143319281,
+      "wF1": 0.706628795712861,
+      "Kappa": 0.4133663366336634
+    },
+    "MI_PhysioNet": {
+      "Loss": 0.579032838344574,
+      "BAcc": 0.7196643667293093,
+      "Auroc": 0.7938424744773374,
+      "wF1": 0.7197246347348581,
+      "Kappa": 0.4394068467215181
+    },
+    "EMO_SEED_3_seg4": {
+      "Loss": 0.9465030431747437,
+      "BAcc": 0.6318647216367848,
+      "Auroc": 0.7406634044299225,
+      "wF1": 0.6117549789774326,
+      "Kappa": 0.4496217480880118
+    },
+    "SSVEP_OpenBMI": {
+      "Loss": 1.1948635578155518,
+      "BAcc": 0.6549676906336188,
+      "Auroc": 0.8648351460561046,
+      "wF1": 0.6373400713844651,
+      "Kappa": 0.5464264564673484
+    }
+  },
+  "folded_val_macro_BAcc": 0.7036396089855435,
+  "folded_val_macro_Loss": 0.7573336660861969,
+  "folded_val": {
+    "MI_OpenBMI": {
+      "Loss": 0.48869964480400085,
+      "BAcc": 0.8050180976111726,
+      "Auroc": 0.8859016818112209,
+      "wF1": 0.8080196556963236,
+      "Kappa": 0.6117803590830737
+    },
+    "MI_Cho2017": {
+      "Loss": 0.5775692462921143,
+      "BAcc": 0.7066831683168316,
+      "Auroc": 0.7946563143319281,
+      "wF1": 0.706628795712861,
+      "Kappa": 0.4133663366336634
+    },
+    "MI_PhysioNet": {
+      "Loss": 0.579032838344574,
+      "BAcc": 0.7196643667293093,
+      "Auroc": 0.7938424744773374,
+      "wF1": 0.7197246347348581,
+      "Kappa": 0.4394068467215181
+    },
+    "EMO_SEED_3_seg4": {
+      "Loss": 0.9465030431747437,
+      "BAcc": 0.6318647216367848,
+      "Auroc": 0.7406634044299225,
+      "wF1": 0.6117549789774326,
+      "Kappa": 0.4496217480880118
+    },
+    "SSVEP_OpenBMI": {
+      "Loss": 1.1948635578155518,
+      "BAcc": 0.6549676906336188,
+      "Auroc": 0.8648351460561046,
+      "wF1": 0.6373400713844651,
+      "Kappa": 0.5464264564673484
+    }
+  },
+  "seconds": {
+    "data_and_setup": 15.166180849075317,
+    "optimization_incl_validation": 4.039178371429443,
+    "total": 23.197806358337402
+  },
+  "command": "merge_poc.py --base checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt --experts-dir runs/poc3k/seed0/experts --datasets MI_OpenBMI,MI_Cho2017,MI_PhysioNet,EMO_SEED_3_seg4,SSVEP_OpenBMI --method uniform --calibration-per-dataset 512 --steps 500 --lr 1e-2 --bs 128 --seed 0 --gpu 0 --outdir runs/poc3k/seed0/merge_uniform"
+}

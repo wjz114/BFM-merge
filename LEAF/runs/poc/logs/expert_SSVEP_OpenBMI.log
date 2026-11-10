@@ -1,0 +1,16 @@
+SSVEP_OpenBMI: train=13440 val=3360 classes=['12.0', '8.6', '6.6', '5.4'] instruction='This is an SSVEP frequency decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 1000 rounds x 1 datasets = 1000 optimizer steps, warmup=50, validation every 100 rounds
+round 0/1000 step 0/1000 val macro BAcc=0.6340 loss=1.2670 | SSVEP_OpenBMI=0.6340
+round 100/1000 step 100/1000 val macro BAcc=0.6540 loss=1.1455 | SSVEP_OpenBMI=0.6540
+round 200/1000 step 200/1000 val macro BAcc=0.7864 loss=1.0924 | SSVEP_OpenBMI=0.7864
+round 300/1000 step 300/1000 val macro BAcc=0.8207 loss=1.0661 | SSVEP_OpenBMI=0.8207
+round 400/1000 step 400/1000 val macro BAcc=0.8471 loss=1.0576 | SSVEP_OpenBMI=0.8471
+round 500/1000 step 500/1000 val macro BAcc=0.8640 loss=1.0456 | SSVEP_OpenBMI=0.8640
+round 600/1000 step 600/1000 val macro BAcc=0.8807 loss=1.0375 | SSVEP_OpenBMI=0.8807
+round 700/1000 step 700/1000 val macro BAcc=0.8878 loss=1.0302 | SSVEP_OpenBMI=0.8878
+round 800/1000 step 800/1000 val macro BAcc=0.8958 loss=1.0279 | SSVEP_OpenBMI=0.8958
+round 900/1000 step 900/1000 val macro BAcc=0.9036 loss=1.0244 | SSVEP_OpenBMI=0.9036
+round 1000/1000 step 1000/1000 val macro BAcc=0.9024 loss=1.0244 | SSVEP_OpenBMI=0.9024
+Best round=900 (step 900); val macro BAcc=0.9036 (source 0.6340)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc/experts/SSVEP_OpenBMI

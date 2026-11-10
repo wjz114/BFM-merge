@@ -1,0 +1,32 @@
+MI_OpenBMI: test=4800 classes=['Right', 'Left']
+MI_Cho2017: test=1800 classes=['Left', 'Right']
+MI_PhysioNet: test=5262 classes=['Left', 'Right']
+EMO_SEED_3_seg4: test=7620 classes=['Negative', 'Neutral', 'Positive']
+SSVEP_OpenBMI: test=4800 classes=['12.0', '8.6', '6.6', '5.4']
+MI_Weibo2014: all 10 subjects n=1580 classes=['Left', 'Right'] instruction='This is a motor imagery decoding task'; verified 0=Left;1=Right (raw event codes 1/2 minus 1)
+Base: MI_OpenBMI=0.7321 MI_Cho2017=0.7094 MI_PhysioNet=0.6900 EMO_SEED_3_seg4=0.5891 SSVEP_OpenBMI=0.5523 MI_Weibo2014=0.6228
+Expert[MI_OpenBMI]: MI_OpenBMI=0.8092 MI_Cho2017=0.7033 MI_PhysioNet=0.6568 EMO_SEED_3_seg4=0.4260 SSVEP_OpenBMI=0.4125 MI_Weibo2014=0.6152
+Expert[MI_Cho2017]: MI_OpenBMI=0.6715 MI_Cho2017=0.7972 MI_PhysioNet=0.5236 EMO_SEED_3_seg4=0.4574 SSVEP_OpenBMI=0.3425 MI_Weibo2014=0.6608
+Expert[MI_PhysioNet]: MI_OpenBMI=0.6971 MI_Cho2017=0.6600 MI_PhysioNet=0.7569 EMO_SEED_3_seg4=0.4691 SSVEP_OpenBMI=0.3919 MI_Weibo2014=0.5652
+Expert[EMO_SEED_3_seg4]: MI_OpenBMI=0.6002 MI_Cho2017=0.6344 MI_PhysioNet=0.5466 EMO_SEED_3_seg4=0.6866 SSVEP_OpenBMI=0.4281 MI_Weibo2014=0.5475
+Expert[SSVEP_OpenBMI]: MI_OpenBMI=0.5610 MI_Cho2017=0.6367 MI_PhysioNet=0.4875 EMO_SEED_3_seg4=0.5301 SSVEP_OpenBMI=0.8963 MI_Weibo2014=0.5316
+Joint: MI_OpenBMI=0.7944 MI_Cho2017=0.7767 MI_PhysioNet=0.7518 EMO_SEED_3_seg4=0.6825 SSVEP_OpenBMI=0.8492 MI_Weibo2014=0.6411
+Uniform: MI_OpenBMI=0.7621 MI_Cho2017=0.7711 MI_PhysioNet=0.6783 EMO_SEED_3_seg4=0.5990 SSVEP_OpenBMI=0.6198 MI_Weibo2014=0.6177
+Global: MI_OpenBMI=0.7454 MI_Cho2017=0.7461 MI_PhysioNet=0.6714 EMO_SEED_3_seg4=0.6285 SSVEP_OpenBMI=0.6798 MI_Weibo2014=0.6133
+Block: MI_OpenBMI=0.7592 MI_Cho2017=0.7422 MI_PhysioNet=0.7123 EMO_SEED_3_seg4=0.6506 SSVEP_OpenBMI=0.6783 MI_Weibo2014=0.6082
+
+Test BAcc (dBAcc vs Joint in pp for SOURCE_MACRO)
+model                           MI_OpenBMI      MI_Cho2017    MI_PhysioNet  EMO_SEED_3_seg   SSVEP_OpenBMI    MI_Weibo2014    SOURCE_MACRO  d_vs_Joint
+Base                                0.7321          0.7094          0.6900          0.5891          0.5523          0.6228          0.6546      -11.63
+Expert[MI_OpenBMI]                  0.8092          0.7033          0.6568          0.4260          0.4125          0.6152          0.6016      -16.93
+Expert[MI_Cho2017]                  0.6715          0.7972          0.5236          0.4574          0.3425          0.6608          0.5584      -21.25
+Expert[MI_PhysioNet]                0.6971          0.6600          0.7569          0.4691          0.3919          0.5652          0.5950      -17.59
+Expert[EMO_SEED_3_seg4]             0.6002          0.6344          0.5466          0.6866          0.4281          0.5475          0.5792      -19.17
+Expert[SSVEP_OpenBMI]               0.5610          0.6367          0.4875          0.5301          0.8963          0.5316          0.6223      -14.86
+Joint                               0.7944          0.7767          0.7518          0.6825          0.8492          0.6411          0.7709       +0.00
+Uniform                             0.7621          0.7711          0.6783          0.5990          0.6198          0.6177          0.6860       -8.49
+Global                              0.7454          0.7461          0.6714          0.6285          0.6798          0.6133          0.6943       -7.66
+Block                               0.7592          0.7422          0.7123          0.6506          0.6783          0.6082          0.7085       -6.24
+Specialist                          0.8092          0.7972          0.7569          0.6866          0.8963               -          0.7892       +1.83
+
+Saved /home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed2/results.csv and /home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed2/results.json

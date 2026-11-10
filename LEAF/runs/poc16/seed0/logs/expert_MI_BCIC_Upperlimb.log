@@ -1,0 +1,36 @@
+MI_BCIC_Upperlimb: train=2640 val=660 classes=['Cylin', 'Sphe', 'Lumbrical'] instruction='This is a motor imagery decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 3000 rounds x 1 datasets = 3000 optimizer steps, warmup=150, validation every 100 rounds
+round 0/3000 step 0/3000 val macro BAcc=0.4840 loss=1.0434 | MI_BCIC_Upperlimb=0.4840
+round 100/3000 step 100/3000 val macro BAcc=0.5455 loss=0.9778 | MI_BCIC_Upperlimb=0.5455
+round 200/3000 step 200/3000 val macro BAcc=0.5562 loss=0.9799 | MI_BCIC_Upperlimb=0.5562
+round 300/3000 step 300/3000 val macro BAcc=0.5607 loss=0.9946 | MI_BCIC_Upperlimb=0.5607
+round 400/3000 step 400/3000 val macro BAcc=0.5581 loss=0.9990 | MI_BCIC_Upperlimb=0.5581
+round 500/3000 step 500/3000 val macro BAcc=0.5620 loss=0.9872 | MI_BCIC_Upperlimb=0.5620
+round 600/3000 step 600/3000 val macro BAcc=0.5469 loss=1.0051 | MI_BCIC_Upperlimb=0.5469
+round 700/3000 step 700/3000 val macro BAcc=0.5384 loss=1.0063 | MI_BCIC_Upperlimb=0.5384
+round 800/3000 step 800/3000 val macro BAcc=0.5350 loss=1.0079 | MI_BCIC_Upperlimb=0.5350
+round 900/3000 step 900/3000 val macro BAcc=0.5309 loss=1.0277 | MI_BCIC_Upperlimb=0.5309
+round 1000/3000 step 1000/3000 val macro BAcc=0.5337 loss=1.0084 | MI_BCIC_Upperlimb=0.5337
+round 1100/3000 step 1100/3000 val macro BAcc=0.5441 loss=1.0050 | MI_BCIC_Upperlimb=0.5441
+round 1200/3000 step 1200/3000 val macro BAcc=0.5491 loss=1.0001 | MI_BCIC_Upperlimb=0.5491
+round 1300/3000 step 1300/3000 val macro BAcc=0.5379 loss=1.0114 | MI_BCIC_Upperlimb=0.5379
+round 1400/3000 step 1400/3000 val macro BAcc=0.5201 loss=1.0346 | MI_BCIC_Upperlimb=0.5201
+round 1500/3000 step 1500/3000 val macro BAcc=0.5070 loss=1.0431 | MI_BCIC_Upperlimb=0.5070
+round 1600/3000 step 1600/3000 val macro BAcc=0.5356 loss=1.0242 | MI_BCIC_Upperlimb=0.5356
+round 1700/3000 step 1700/3000 val macro BAcc=0.5308 loss=1.0223 | MI_BCIC_Upperlimb=0.5308
+round 1800/3000 step 1800/3000 val macro BAcc=0.5252 loss=1.0282 | MI_BCIC_Upperlimb=0.5252
+round 1900/3000 step 1900/3000 val macro BAcc=0.5178 loss=1.0303 | MI_BCIC_Upperlimb=0.5178
+round 2000/3000 step 2000/3000 val macro BAcc=0.5342 loss=1.0276 | MI_BCIC_Upperlimb=0.5342
+round 2100/3000 step 2100/3000 val macro BAcc=0.5225 loss=1.0273 | MI_BCIC_Upperlimb=0.5225
+round 2200/3000 step 2200/3000 val macro BAcc=0.5271 loss=1.0303 | MI_BCIC_Upperlimb=0.5271
+round 2300/3000 step 2300/3000 val macro BAcc=0.5286 loss=1.0231 | MI_BCIC_Upperlimb=0.5286
+round 2400/3000 step 2400/3000 val macro BAcc=0.5395 loss=1.0205 | MI_BCIC_Upperlimb=0.5395
+round 2500/3000 step 2500/3000 val macro BAcc=0.5277 loss=1.0291 | MI_BCIC_Upperlimb=0.5277
+round 2600/3000 step 2600/3000 val macro BAcc=0.5298 loss=1.0254 | MI_BCIC_Upperlimb=0.5298
+round 2700/3000 step 2700/3000 val macro BAcc=0.5203 loss=1.0324 | MI_BCIC_Upperlimb=0.5203
+round 2800/3000 step 2800/3000 val macro BAcc=0.5242 loss=1.0248 | MI_BCIC_Upperlimb=0.5242
+round 2900/3000 step 2900/3000 val macro BAcc=0.5273 loss=1.0246 | MI_BCIC_Upperlimb=0.5273
+round 3000/3000 step 3000/3000 val macro BAcc=0.5309 loss=1.0227 | MI_BCIC_Upperlimb=0.5309
+Best round=500 (step 500); val macro BAcc=0.5620 (source 0.4840)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_BCIC_Upperlimb

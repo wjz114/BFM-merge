@@ -1,0 +1,36 @@
+MI_BCIC_IV2a: train=3148 val=788 classes=['Left', 'Right', 'Foot', 'Tongue'] instruction='This is a motor imagery decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 3000 rounds x 1 datasets = 3000 optimizer steps, warmup=150, validation every 100 rounds
+round 0/3000 step 0/3000 val macro BAcc=0.3952 loss=1.3119 | MI_BCIC_IV2a=0.3952
+round 100/3000 step 100/3000 val macro BAcc=0.5723 loss=1.1377 | MI_BCIC_IV2a=0.5723
+round 200/3000 step 200/3000 val macro BAcc=0.6174 loss=1.0865 | MI_BCIC_IV2a=0.6174
+round 300/3000 step 300/3000 val macro BAcc=0.6293 loss=1.0859 | MI_BCIC_IV2a=0.6293
+round 400/3000 step 400/3000 val macro BAcc=0.6904 loss=1.0309 | MI_BCIC_IV2a=0.6904
+round 500/3000 step 500/3000 val macro BAcc=0.7038 loss=1.0139 | MI_BCIC_IV2a=0.7038
+round 600/3000 step 600/3000 val macro BAcc=0.7066 loss=1.0133 | MI_BCIC_IV2a=0.7066
+round 700/3000 step 700/3000 val macro BAcc=0.6913 loss=1.0316 | MI_BCIC_IV2a=0.6913
+round 800/3000 step 800/3000 val macro BAcc=0.7141 loss=1.0050 | MI_BCIC_IV2a=0.7141
+round 900/3000 step 900/3000 val macro BAcc=0.7219 loss=1.0049 | MI_BCIC_IV2a=0.7219
+round 1000/3000 step 1000/3000 val macro BAcc=0.7022 loss=1.0168 | MI_BCIC_IV2a=0.7022
+round 1100/3000 step 1100/3000 val macro BAcc=0.7109 loss=1.0168 | MI_BCIC_IV2a=0.7109
+round 1200/3000 step 1200/3000 val macro BAcc=0.7144 loss=1.0094 | MI_BCIC_IV2a=0.7144
+round 1300/3000 step 1300/3000 val macro BAcc=0.7337 loss=0.9946 | MI_BCIC_IV2a=0.7337
+round 1400/3000 step 1400/3000 val macro BAcc=0.7205 loss=1.0024 | MI_BCIC_IV2a=0.7205
+round 1500/3000 step 1500/3000 val macro BAcc=0.7273 loss=1.0020 | MI_BCIC_IV2a=0.7273
+round 1600/3000 step 1600/3000 val macro BAcc=0.7275 loss=1.0002 | MI_BCIC_IV2a=0.7275
+round 1700/3000 step 1700/3000 val macro BAcc=0.7197 loss=0.9999 | MI_BCIC_IV2a=0.7197
+round 1800/3000 step 1800/3000 val macro BAcc=0.7399 loss=0.9982 | MI_BCIC_IV2a=0.7399
+round 1900/3000 step 1900/3000 val macro BAcc=0.7367 loss=0.9917 | MI_BCIC_IV2a=0.7367
+round 2000/3000 step 2000/3000 val macro BAcc=0.7409 loss=0.9851 | MI_BCIC_IV2a=0.7409
+round 2100/3000 step 2100/3000 val macro BAcc=0.7506 loss=0.9865 | MI_BCIC_IV2a=0.7506
+round 2200/3000 step 2200/3000 val macro BAcc=0.7248 loss=0.9999 | MI_BCIC_IV2a=0.7248
+round 2300/3000 step 2300/3000 val macro BAcc=0.7283 loss=0.9982 | MI_BCIC_IV2a=0.7283
+round 2400/3000 step 2400/3000 val macro BAcc=0.7249 loss=0.9985 | MI_BCIC_IV2a=0.7249
+round 2500/3000 step 2500/3000 val macro BAcc=0.7418 loss=0.9876 | MI_BCIC_IV2a=0.7418
+round 2600/3000 step 2600/3000 val macro BAcc=0.7302 loss=0.9921 | MI_BCIC_IV2a=0.7302
+round 2700/3000 step 2700/3000 val macro BAcc=0.7325 loss=0.9969 | MI_BCIC_IV2a=0.7325
+round 2800/3000 step 2800/3000 val macro BAcc=0.7359 loss=0.9932 | MI_BCIC_IV2a=0.7359
+round 2900/3000 step 2900/3000 val macro BAcc=0.7380 loss=0.9932 | MI_BCIC_IV2a=0.7380
+round 3000/3000 step 3000/3000 val macro BAcc=0.7477 loss=0.9852 | MI_BCIC_IV2a=0.7477
+Best round=2100 (step 2100); val macro BAcc=0.7506 (source 0.3952)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_BCIC_IV2a

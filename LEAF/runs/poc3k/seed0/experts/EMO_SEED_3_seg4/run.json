@@ -1,0 +1,141 @@
+{
+  "source_checkpoint": "/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt",
+  "source_checkpoint_sha256": "f9ca9cabbd734d2691fa6748adf3e78056f895d4031f7edc481e7d7b6822f3fa",
+  "datasets": [
+    "EMO_SEED_3_seg4"
+  ],
+  "labels": {
+    "EMO_SEED_3_seg4": [
+      "Negative",
+      "Neutral",
+      "Positive"
+    ]
+  },
+  "instruction": {
+    "EMO_SEED_3_seg4": "This is an emotion recognition task"
+  },
+  "conditioning": "task+targets",
+  "seed": 0,
+  "mode": "steps",
+  "rounds": 3000,
+  "total_steps": 3000,
+  "warmup_steps": 150,
+  "eval_every_rounds": 100,
+  "lr_tokenizer": 0.001,
+  "lr_rest": 0.0001,
+  "weight_decay": 0.001,
+  "lr_schedule": "linear warmup then cosine to 0.1x peak (per optimizer step)",
+  "precision": "bf16-mixed",
+  "batch_size": 128,
+  "device": "cuda:0",
+  "cudnn_benchmark": false,
+  "batchnorm": "running statistics frozen at source checkpoint (SyncBatchNorm in eval mode); affine trained",
+  "schedule": "each round: one batch per dataset in shuffled order; one optimizer step per batch",
+  "split_sizes": {
+    "EMO_SEED_3_seg4": {
+      "train": 22545,
+      "validation": 7905
+    }
+  },
+  "model_config": {
+    "transformers_version": "5.17.0",
+    "architectures": null,
+    "output_hidden_states": false,
+    "return_dict": true,
+    "dtype": null,
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "problem_type": null,
+    "_name_or_path": "",
+    "sfreq": 200,
+    "n_channels": 65,
+    "max_seq_len": 2000,
+    "ff_scale": 4,
+    "num_heads": 8,
+    "dropout": 0.1,
+    "window_len": 100,
+    "dim_cnn": 64,
+    "dim_token": 256,
+    "num_layers": 12,
+    "num_q": 8,
+    "num_qformer_layers": 4,
+    "text_emb_model_name": "mpnet-base",
+    "mask_ratio": 0.5,
+    "freq_cutoff_min": 1,
+    "freq_cutoff_max": 50,
+    "freq_cutoff_bandwidth": 6,
+    "text_emb_model_dim": 768,
+    "model_type": "",
+    "output_attentions": false
+  },
+  "training_config": {
+    "transformers_version": "5.17.0",
+    "architectures": null,
+    "output_hidden_states": false,
+    "return_dict": true,
+    "dtype": null,
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "problem_type": null,
+    "_name_or_path": "",
+    "lr_base": 0.001,
+    "lr_scale_fast_params": 1.0,
+    "lr_scale_slow_params": 0.1,
+    "warmup_epochs": 1,
+    "max_epochs": 200,
+    "precision": "bf16-mixed",
+    "weight_decay": 0.001,
+    "check_val_every_n_epoch": 5,
+    "model_type": "",
+    "output_attentions": false
+  },
+  "selection": "maximum dataset-macro validation BAcc; ties resolved by minimum macro validation loss",
+  "command": "d_downstream_qformer_ce.py --ckpt checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt --ds EMO_SEED_3_seg4 --steps-per-dataset 3000 --bs 128 --seed 0 --gpu 0 --outdir runs/poc3k/seed0/experts/EMO_SEED_3_seg4",
+  "best_round": 500,
+  "best_step": 500,
+  "best_val_macro_BAcc": 0.7212512815668864,
+  "best_val_macro_Loss": 0.8449040055274963,
+  "best_val": {
+    "EMO_SEED_3_seg4": {
+      "Loss": 0.8449040055274963,
+      "BAcc": 0.7212512815668864,
+      "Auroc": 0.8246424591636893,
+      "wF1": 0.7170323758398951,
+      "Kappa": 0.583256176230905
+    }
+  },
+  "source_val": {
+    "EMO_SEED_3_seg4": {
+      "Loss": 0.9931712746620178,
+      "BAcc": 0.5761093793969305,
+      "Auroc": 0.7210879567826929,
+      "wF1": 0.538734140048114,
+      "Kappa": 0.36604093593408005
+    }
+  },
+  "actual_optimizer_steps": 3000,
+  "steps_per_dataset_actual": {
+    "EMO_SEED_3_seg4": 3000
+  },
+  "seconds": {
+    "data_loading": 2.254645824432373,
+    "training_incl_validation": 319.7233941555023,
+    "total": 322.9610080718994
+  }
+}

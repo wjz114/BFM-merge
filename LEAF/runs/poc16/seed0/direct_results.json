@@ -1,0 +1,30 @@
+{
+  "protocol": "c_direct_inference.py (frozen checkpoint, instruction levels, default seed 42)",
+  "directory": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/direct_inference",
+  "sources": [
+    "MI_OpenBMI",
+    "MI_BCIC_IV2a",
+    "MI_ShanghaiU",
+    "MI_BCIC_Upperlimb",
+    "MI_HighGamma",
+    "MI_Cho2017",
+    "MI_Shin2017A",
+    "MI_PhysioNet",
+    "EMO_FACED",
+    "EMO_SEED_3_seg4",
+    "EMO_SEED_4_seg4",
+    "EMO_SEED_5_seg4",
+    "EMO_SEED_7_seg4",
+    "SSVEP_OpenBMI",
+    "Workload",
+    "ADHD_AliMotie"
+  ],
+  "levels": [
+    0,
+    1,
+    2
+  ],
+  "non_source_datasets": [
+    "CS_BCIC_Speech"
+  ]
+}

@@ -1,0 +1,30 @@
+MI_OpenBMI: test=4800 classes=['Right', 'Left']
+MI_BCIC_IV2a: test=1152 classes=['Left', 'Right', 'Foot', 'Tongue']
+MI_ShanghaiU: test=2347 classes=['Right', 'Left']
+MI_BCIC_Upperlimb: test=1200 classes=['Cylin', 'Sphe', 'Lumbrical']
+MI_HighGamma: test=2040 classes=['Left', 'Right']
+MI_Cho2017: test=1800 classes=['Left', 'Right']
+MI_Shin2017A: test=360 classes=['Left', 'Right']
+MI_PhysioNet: test=5262 classes=['Left', 'Right']
+EMO_FACED: test=1932 classes=['Anger', 'Fear', 'Disgust', 'Sad', 'Amusement', 'Inspiration', 'Joy', 'Tenderness', 'Neutral']
+EMO_SEED_3_seg4: test=7620 classes=['Negative', 'Neutral', 'Positive']
+EMO_SEED_4_seg4: test=6210 classes=['Neutral', 'Sad', 'Fear', 'Happy']
+EMO_SEED_5_seg4: test=9984 classes=['Disgust', 'Fear', 'Sad', 'Neutral', 'Happy']
+EMO_SEED_7_seg4: test=17200 classes=['Happy', 'Surprise', 'Neutral', 'Sad', 'Disgust', 'Fear', 'Anger']
+SSVEP_OpenBMI: test=4800 classes=['12.0', '8.6', '6.6', '5.4']
+Workload: test=240 classes=['Resting', 'Workload']
+ADHD_AliMotie: test=599 classes=['Healthy', 'ADHD']
+MI_Weibo2014: all 10 subjects n=1580 classes=['Left', 'Right'] instruction='This is a motor imagery decoding task'; verified 0=Left;1=Right (raw event codes 1/2 minus 1)
+Base: MI_OpenBMI=0.7321 MI_BCIC_IV2a=0.4427 MI_ShanghaiU=0.5327 MI_BCIC_Upperlimb=0.4083 MI_HighGamma=0.5956 MI_Cho2017=0.7094 MI_Shin2017A=0.7000 MI_PhysioNet=0.6900 EMO_FACED=0.4026 EMO_SEED_3_seg4=0.5891 EMO_SEED_4_seg4=0.3755 EMO_SEED_5_seg4=0.3046 EMO_SEED_7_seg4=0.2520 SSVEP_OpenBMI=0.5523 Workload=0.6444 ADHD_AliMotie=0.6839 MI_Weibo2014=0.6228
+Joint: MI_OpenBMI=0.7669 MI_BCIC_IV2a=0.5859 MI_ShanghaiU=0.5681 MI_BCIC_Upperlimb=0.4558 MI_HighGamma=0.6931 MI_Cho2017=0.7883 MI_Shin2017A=0.7389 MI_PhysioNet=0.7351 EMO_FACED=0.4016 EMO_SEED_3_seg4=0.6830 EMO_SEED_4_seg4=0.4479 EMO_SEED_5_seg4=0.3808 EMO_SEED_7_seg4=0.3215 SSVEP_OpenBMI=0.7594 Workload=0.5750 ADHD_AliMotie=0.6873 MI_Weibo2014=0.6165
+Softmax-Global: MI_OpenBMI=0.7350 MI_BCIC_IV2a=0.5330 MI_ShanghaiU=0.5905 MI_BCIC_Upperlimb=0.4283 MI_HighGamma=0.5745 MI_Cho2017=0.7433 MI_Shin2017A=0.7000 MI_PhysioNet=0.6499 EMO_FACED=0.2646 EMO_SEED_3_seg4=0.6189 EMO_SEED_4_seg4=0.4356 EMO_SEED_5_seg4=0.3419 EMO_SEED_7_seg4=0.3024 SSVEP_OpenBMI=0.5892 Workload=0.5861 ADHD_AliMotie=0.5539 MI_Weibo2014=0.6108
+Softmax-Block: MI_OpenBMI=0.7512 MI_BCIC_IV2a=0.5356 MI_ShanghaiU=0.5660 MI_BCIC_Upperlimb=0.4350 MI_HighGamma=0.6260 MI_Cho2017=0.7372 MI_Shin2017A=0.6833 MI_PhysioNet=0.6803 EMO_FACED=0.2908 EMO_SEED_3_seg4=0.6224 EMO_SEED_4_seg4=0.4441 EMO_SEED_5_seg4=0.3466 EMO_SEED_7_seg4=0.3054 SSVEP_OpenBMI=0.5756 Workload=0.5444 ADHD_AliMotie=0.6796 MI_Weibo2014=0.6165
+
+Test BAcc (dBAcc vs Joint in pp for SOURCE_MACRO)
+model                           MI_OpenBMI    MI_BCIC_IV2a    MI_ShanghaiU  MI_BCIC_Upperl    MI_HighGamma      MI_Cho2017    MI_Shin2017A    MI_PhysioNet       EMO_FACED  EMO_SEED_3_seg  EMO_SEED_4_seg  EMO_SEED_5_seg  EMO_SEED_7_seg   SSVEP_OpenBMI        Workload   ADHD_AliMotie    MI_Weibo2014    SOURCE_MACRO  d_vs_Joint
+Base                                0.7321          0.4427          0.5327          0.4083          0.5956          0.7094          0.7000          0.6900          0.4026          0.5891          0.3755          0.3046          0.2520          0.5523          0.6444          0.6839          0.6228          0.5385       -6.08
+Joint                               0.7669          0.5859          0.5681          0.4558          0.6931          0.7883          0.7389          0.7351          0.4016          0.6830          0.4479          0.3808          0.3215          0.7594          0.5750          0.6873          0.6165          0.5993       +0.00
+Softmax-Global                      0.7350          0.5330          0.5905          0.4283          0.5745          0.7433          0.7000          0.6499          0.2646          0.6189          0.4356          0.3419          0.3024          0.5892          0.5861          0.5539          0.6108          0.5405       -5.88
+Softmax-Block                       0.7512          0.5356          0.5660          0.4350          0.6260          0.7372          0.6833          0.6803          0.2908          0.6224          0.4441          0.3466          0.3054          0.5756          0.5444          0.6796          0.6165          0.5515       -4.78
+
+Saved /home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/results_softmax.csv and /home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/results_softmax.json

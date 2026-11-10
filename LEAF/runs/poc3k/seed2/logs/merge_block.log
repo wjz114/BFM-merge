@@ -1,0 +1,20 @@
+block: K=5 experts, G=33 coefficient groups, 165 coefficients (learnable); 383 merged tensors, 9 unused tensors kept at theta_0
+task-vector L2 norms: MI_OpenBMI=19.420, MI_Cho2017=24.072, MI_PhysioNet=21.727, EMO_SEED_3_seg4=14.880, SSVEP_OpenBMI=21.485
+MI_OpenBMI: calibration=512 of train=13440 per-class=[262, 250]; val=3360
+MI_Cho2017: calibration=512 of train=6464 per-class=[256, 256]; val=1616
+MI_PhysioNet: calibration=512 of train=11447 per-class=[257, 255]; val=2862
+EMO_SEED_3_seg4: calibration=512 of train=22545 per-class=[173, 162, 177]; val=7905
+SSVEP_OpenBMI: calibration=512 of train=13440 per-class=[126, 129, 129, 128]; val=3360
+step 0 val macro BAcc=0.7068 loss=0.7529 | MI_OpenBMI=0.8098 MI_Cho2017=0.6986 MI_PhysioNet=0.7297 EMO_SEED_3_seg4=0.6260 SSVEP_OpenBMI=0.6700
+step 50 val macro BAcc=0.7214 loss=0.7343 | MI_OpenBMI=0.8198 MI_Cho2017=0.6974 MI_PhysioNet=0.7526 EMO_SEED_3_seg4=0.6493 SSVEP_OpenBMI=0.6880
+step 100 val macro BAcc=0.7276 loss=0.7289 | MI_OpenBMI=0.8175 MI_Cho2017=0.6832 MI_PhysioNet=0.7559 EMO_SEED_3_seg4=0.6664 SSVEP_OpenBMI=0.7151
+step 150 val macro BAcc=0.7285 loss=0.7266 | MI_OpenBMI=0.8135 MI_Cho2017=0.6819 MI_PhysioNet=0.7541 EMO_SEED_3_seg4=0.6729 SSVEP_OpenBMI=0.7199
+step 200 val macro BAcc=0.7293 loss=0.7259 | MI_OpenBMI=0.8125 MI_Cho2017=0.6776 MI_PhysioNet=0.7578 EMO_SEED_3_seg4=0.6746 SSVEP_OpenBMI=0.7242
+step 250 val macro BAcc=0.7311 loss=0.7253 | MI_OpenBMI=0.8178 MI_Cho2017=0.6788 MI_PhysioNet=0.7506 EMO_SEED_3_seg4=0.6785 SSVEP_OpenBMI=0.7296
+step 300 val macro BAcc=0.7294 loss=0.7258 | MI_OpenBMI=0.8119 MI_Cho2017=0.6776 MI_PhysioNet=0.7539 EMO_SEED_3_seg4=0.6795 SSVEP_OpenBMI=0.7239
+step 350 val macro BAcc=0.7309 loss=0.7259 | MI_OpenBMI=0.8154 MI_Cho2017=0.6795 MI_PhysioNet=0.7535 EMO_SEED_3_seg4=0.6808 SSVEP_OpenBMI=0.7256
+step 400 val macro BAcc=0.7306 loss=0.7254 | MI_OpenBMI=0.8166 MI_Cho2017=0.6788 MI_PhysioNet=0.7506 EMO_SEED_3_seg4=0.6797 SSVEP_OpenBMI=0.7275
+step 450 val macro BAcc=0.7312 loss=0.7259 | MI_OpenBMI=0.8168 MI_Cho2017=0.6788 MI_PhysioNet=0.7517 EMO_SEED_3_seg4=0.6826 SSVEP_OpenBMI=0.7260
+step 500 val macro BAcc=0.7313 loss=0.7254 | MI_OpenBMI=0.8162 MI_Cho2017=0.6801 MI_PhysioNet=0.7506 EMO_SEED_3_seg4=0.6818 SSVEP_OpenBMI=0.7278
+folded merged.ckpt val macro BAcc=0.7313 loss=0.7254 (selected step 500: 0.7313 / 0.7254)
+Saved merged.ckpt, best alpha, calibration indices and curves to /home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed2/merge_block

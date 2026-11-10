@@ -1,0 +1,195 @@
+{
+  "checkpoints": {
+    "Base": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt",
+      "sha256": "f9ca9cabbd734d2691fa6748adf3e78056f895d4031f7edc481e7d7b6822f3fa"
+    },
+    "Expert[MI_OpenBMI]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/MI_OpenBMI/best.ckpt",
+      "sha256": "0af5ed708425ce6c348f056ae2766a10bb92b636e5bb1e16f5d67afb1f9c4f02"
+    },
+    "Expert[MI_BCIC_IV2a]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/MI_BCIC_IV2a/best.ckpt",
+      "sha256": "8e571b07846856ff306e3ab0cbaa0be9ac5b97f54232c3c7aa844679e7c4a8d0"
+    },
+    "Expert[MI_ShanghaiU]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/MI_ShanghaiU/best.ckpt",
+      "sha256": "e82f4206f941dab9eae2931144a10c89b21872598362773e3f080e6d5dd74b1a"
+    },
+    "Expert[MI_BCIC_Upperlimb]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/MI_BCIC_Upperlimb/best.ckpt",
+      "sha256": "1914b343edec588b1428dc81a618f50742f00fcca34c36d8bace232f2b2a9976"
+    },
+    "Expert[MI_HighGamma]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/MI_HighGamma/best.ckpt",
+      "sha256": "7a89231bba89c093f7e27379ad614c67ce02ed8949bfc72a47cf82a424d631be"
+    },
+    "Expert[MI_Cho2017]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/MI_Cho2017/best.ckpt",
+      "sha256": "ed12e1cd3a04a20d46de240d94c6221edd03ef45995f57e1cdbf00a79c4289fe"
+    },
+    "Expert[MI_Shin2017A]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/MI_Shin2017A/best.ckpt",
+      "sha256": "3664175734a2d1d1549cb1ae07fc293b561892ab356c44ddfa9421179e819f6f"
+    },
+    "Expert[MI_PhysioNet]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/MI_PhysioNet/best.ckpt",
+      "sha256": "7fffab4ee3efb8b92f49c755d443dfd3c823a608757f15418c941f1b17906c91"
+    },
+    "Expert[EMO_FACED]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/EMO_FACED/best.ckpt",
+      "sha256": "ed11542b37e86394026ab285f3bfd39cc0c3f60ba57fc8c05caefdfc116918fb"
+    },
+    "Expert[EMO_SEED_3_seg4]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/EMO_SEED_3_seg4/best.ckpt",
+      "sha256": "e50e939304376a0ec3b3b5e94620208636ba64a3727843d6dd61f6b44d15ef9e"
+    },
+    "Expert[EMO_SEED_4_seg4]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/EMO_SEED_4_seg4/best.ckpt",
+      "sha256": "fa8eb6a8d498bc1ef44d1fe7b4eae4f90f0a413a31c812b3a96e13584e950379"
+    },
+    "Expert[EMO_SEED_5_seg4]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/EMO_SEED_5_seg4/best.ckpt",
+      "sha256": "47158ec3a24e0732e04667e89eb7f0be37d115e7615740b88ca91e08ec780a01"
+    },
+    "Expert[EMO_SEED_7_seg4]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/EMO_SEED_7_seg4/best.ckpt",
+      "sha256": "40b2e35caabc55d060f8db31ef1a8cda60ba90a595b0dd5dd17fc7c9da4bd4d0"
+    },
+    "Expert[SSVEP_OpenBMI]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/SSVEP_OpenBMI/best.ckpt",
+      "sha256": "ae0a19436650615211a9e82a664aa8edb69956a4f6117cee49787960401e511e"
+    },
+    "Expert[Workload]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/Workload/best.ckpt",
+      "sha256": "bc6cea3c6fbe7c3073b3d7cbcddfe2b3a109f2e106ec21e66c6f64170249d3d2"
+    },
+    "Expert[ADHD_AliMotie]": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/experts/ADHD_AliMotie/best.ckpt",
+      "sha256": "ea77694ccba15a77a302529cc830262203b67f8391df0080c43265b213265853"
+    },
+    "Joint": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/joint/best.ckpt",
+      "sha256": "5cbe0650bbc802eff8fd8bcda8aca6a3f12e3829980d4855affdf13c3c0609b1"
+    },
+    "Uniform": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/merge_uniform/merged.ckpt",
+      "sha256": "8da6f025215d558ea89439c33dc8e7ad3efd8f7beed7a48bd5d9bba4b96be9d7"
+    },
+    "Global": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/merge_global/merged.ckpt",
+      "sha256": "d2a6237f5a506a2cb2f16962476328d93bd918e4ff46955114bbcff2d006425f"
+    },
+    "Block": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed2/merge_block/merged.ckpt",
+      "sha256": "8afe7dac81fa0b272f90adfe4bfe0d0fb4b5f94e76cb13ca26149cfbb94919f3"
+    }
+  },
+  "datasets": {
+    "MI_OpenBMI": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 4800
+    },
+    "MI_BCIC_IV2a": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 1152
+    },
+    "MI_ShanghaiU": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 2347
+    },
+    "MI_BCIC_Upperlimb": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 1200
+    },
+    "MI_HighGamma": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 2040
+    },
+    "MI_Cho2017": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 1800
+    },
+    "MI_Shin2017A": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 360
+    },
+    "MI_PhysioNet": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 5262
+    },
+    "EMO_FACED": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 1932
+    },
+    "EMO_SEED_3_seg4": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 7620
+    },
+    "EMO_SEED_4_seg4": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 6210
+    },
+    "EMO_SEED_5_seg4": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 9984
+    },
+    "EMO_SEED_7_seg4": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 17200
+    },
+    "SSVEP_OpenBMI": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 4800
+    },
+    "Workload": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 240
+    },
+    "ADHD_AliMotie": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 599
+    },
+    "MI_Weibo2014": {
+      "role": "external",
+      "split": "all 10 subjects",
+      "label_mapping": "verified 0=Left;1=Right (raw event codes 1/2 minus 1)",
+      "n": 1580
+    }
+  },
+  "metric_note": "BAcc/Kappa/Auroc/wF1/Loss from d_downstream_qformer_ce.evaluate; fp32 evaluation",
+  "external_note": "External MI datasets never touched training, selection or alpha updates. They are absent from configs/tasks.yaml (instruction tuning); whether they are strictly unseen also depends on the released checkpoint pretraining corpus.",
+  "seconds": 274.1882255077362
+}

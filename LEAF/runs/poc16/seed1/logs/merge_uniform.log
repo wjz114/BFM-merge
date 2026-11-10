@@ -1,0 +1,21 @@
+uniform: K=16 experts, G=1 coefficient groups, 16 coefficients (fixed); 383 merged tensors, 9 unused tensors kept at theta_0
+task-vector L2 norms: MI_OpenBMI=19.165, MI_BCIC_IV2a=24.659, MI_ShanghaiU=28.209, MI_BCIC_Upperlimb=14.698, MI_HighGamma=20.556, MI_Cho2017=24.312, MI_Shin2017A=19.228, MI_PhysioNet=21.856, EMO_FACED=17.984, EMO_SEED_3_seg4=12.984, EMO_SEED_4_seg4=16.506, EMO_SEED_5_seg4=16.899, EMO_SEED_7_seg4=13.942, SSVEP_OpenBMI=21.468, Workload=17.166, ADHD_AliMotie=6.996
+MI_OpenBMI: calibration=512 of train=13440 per-class=[262, 250]; val=3360
+MI_BCIC_IV2a: calibration=512 of train=3148 per-class=[128, 129, 128, 127]; val=788
+MI_ShanghaiU: calibration=512 of train=7712 per-class=[257, 255]; val=1929
+MI_BCIC_Upperlimb: calibration=512 of train=2640 per-class=[171, 165, 176]; val=660
+MI_HighGamma: calibration=512 of train=3761 per-class=[256, 256]; val=941
+MI_Cho2017: calibration=512 of train=6464 per-class=[256, 256]; val=1616
+MI_Shin2017A: calibration=512 of train=1056 per-class=[255, 257]; val=264
+MI_PhysioNet: calibration=512 of train=11447 per-class=[257, 255]; val=2862
+EMO_FACED: calibration=512 of train=6720 per-class=[55, 55, 55, 55, 73, 55, 55, 55, 54]; val=1680
+EMO_SEED_3_seg4: calibration=512 of train=22545 per-class=[173, 162, 177]; val=7905
+EMO_SEED_4_seg4: calibration=512 of train=26025 per-class=[113, 156, 134, 109]; val=5340
+EMO_SEED_5_seg4: calibration=512 of train=8512 per-class=[86, 84, 170, 112, 60]; val=10672
+EMO_SEED_7_seg4: calibration=512 of train=34000 per-class=[58, 78, 45, 102, 72, 75, 82]; val=18542
+SSVEP_OpenBMI: calibration=512 of train=13440 per-class=[126, 129, 129, 128]; val=3360
+Workload: calibration=512 of train=1515 per-class=[382, 130]; val=379
+ADHD_AliMotie: calibration=512 of train=916 per-class=[224, 288]; val=115
+step 0 val macro BAcc=0.5814 loss=0.9927 | MI_OpenBMI=0.7792 MI_BCIC_IV2a=0.4731 MI_ShanghaiU=0.6018 MI_BCIC_Upperlimb=0.5103 MI_HighGamma=0.7542 MI_Cho2017=0.6776 MI_Shin2017A=0.7000 MI_PhysioNet=0.7116 EMO_FACED=0.4110 EMO_SEED_3_seg4=0.6200 EMO_SEED_4_seg4=0.4392 EMO_SEED_5_seg4=0.3400 EMO_SEED_7_seg4=0.2969 SSVEP_OpenBMI=0.6020 Workload=0.8192 ADHD_AliMotie=0.5659
+folded merged.ckpt val macro BAcc=0.5814 loss=0.9927 (selected step 0: 0.5814 / 0.9927)
+Saved merged.ckpt, best alpha, calibration indices and curves to /home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform

@@ -1,0 +1,16 @@
+MI_OpenBMI level=0: bAcc=0.6796, kappa=0.3592, n=4800
+MI_OpenBMI level=1: bAcc=0.6950, kappa=0.3900, n=4800
+MI_OpenBMI level=2: bAcc=0.6977, kappa=0.3954, n=4800
+MI_Cho2017 level=0: bAcc=0.6572, kappa=0.3144, n=1800
+MI_Cho2017 level=1: bAcc=0.6633, kappa=0.3267, n=1800
+MI_Cho2017 level=2: bAcc=0.6617, kappa=0.3233, n=1800
+MI_PhysioNet level=0: bAcc=0.7480, kappa=0.4960, n=5262
+MI_PhysioNet level=1: bAcc=0.7554, kappa=0.5108, n=5262
+MI_PhysioNet level=2: bAcc=0.7573, kappa=0.5146, n=5262
+EMO_SEED_3_seg4 level=0: bAcc=0.4459, kappa=0.1722, n=7620
+EMO_SEED_3_seg4 level=1: bAcc=0.4567, kappa=0.1891, n=7620
+EMO_SEED_3_seg4 level=2: bAcc=0.4617, kappa=0.1973, n=7620
+SSVEP_OpenBMI level=0: bAcc=0.3240, kappa=0.0986, n=4800
+SSVEP_OpenBMI level=1: bAcc=0.3796, kappa=0.1728, n=4800
+SSVEP_OpenBMI level=2: bAcc=0.3994, kappa=0.1992, n=4800
+Saved 5 datasets to /home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed2/direct_inference/expert_MI_PhysioNet.csv

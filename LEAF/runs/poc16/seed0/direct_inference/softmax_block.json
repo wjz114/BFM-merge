@@ -1,0 +1,259 @@
+{
+  "checkpoint": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/merge_softmax_block/merged.ckpt",
+  "config": "/home/jingzhou/BFM-merge/LEAF/configs/LEAF_mpnet.yaml",
+  "model_config": {
+    "transformers_version": "5.17.0",
+    "architectures": null,
+    "output_hidden_states": false,
+    "return_dict": true,
+    "dtype": null,
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "problem_type": null,
+    "_name_or_path": "",
+    "sfreq": 200,
+    "n_channels": 65,
+    "max_seq_len": 2000,
+    "ff_scale": 4,
+    "num_heads": 8,
+    "dropout": 0.1,
+    "window_len": 100,
+    "dim_cnn": 64,
+    "dim_token": 256,
+    "num_layers": 12,
+    "num_q": 8,
+    "num_qformer_layers": 4,
+    "text_emb_model_name": "mpnet-base",
+    "mask_ratio": 0.5,
+    "freq_cutoff_min": 1,
+    "freq_cutoff_max": 50,
+    "freq_cutoff_bandwidth": 6,
+    "text_emb_model_dim": 768,
+    "model_type": "",
+    "output_attentions": false
+  },
+  "seed": 42,
+  "batch_size": 256,
+  "device": "cuda:1",
+  "levels": [
+    0,
+    1,
+    2
+  ],
+  "datasets": [
+    "MI_OpenBMI",
+    "MI_BCIC_IV2a",
+    "MI_ShanghaiU",
+    "MI_BCIC_Upperlimb",
+    "MI_HighGamma",
+    "MI_Cho2017",
+    "MI_Shin2017A",
+    "MI_PhysioNet",
+    "EMO_FACED",
+    "EMO_SEED_3_seg4",
+    "EMO_SEED_4_seg4",
+    "EMO_SEED_5_seg4",
+    "EMO_SEED_7_seg4",
+    "SSVEP_OpenBMI",
+    "Workload",
+    "ADHD_AliMotie"
+  ],
+  "completed_datasets": [
+    "MI_OpenBMI",
+    "MI_BCIC_IV2a",
+    "MI_ShanghaiU",
+    "MI_BCIC_Upperlimb",
+    "MI_HighGamma",
+    "MI_Cho2017",
+    "MI_Shin2017A",
+    "MI_PhysioNet",
+    "EMO_FACED",
+    "EMO_SEED_3_seg4",
+    "EMO_SEED_4_seg4",
+    "EMO_SEED_5_seg4",
+    "EMO_SEED_7_seg4",
+    "SSVEP_OpenBMI",
+    "Workload",
+    "ADHD_AliMotie"
+  ],
+  "status": "complete",
+  "labels": {
+    "MI_OpenBMI": [
+      "Right",
+      "Left"
+    ],
+    "MI_BCIC_IV2a": [
+      "Left",
+      "Right",
+      "Foot",
+      "Tongue"
+    ],
+    "MI_ShanghaiU": [
+      "Right",
+      "Left"
+    ],
+    "MI_BCIC_Upperlimb": [
+      "Cylin",
+      "Sphe",
+      "Lumbrical"
+    ],
+    "MI_HighGamma": [
+      "Left",
+      "Right"
+    ],
+    "MI_Cho2017": [
+      "Left",
+      "Right"
+    ],
+    "MI_Shin2017A": [
+      "Left",
+      "Right"
+    ],
+    "MI_PhysioNet": [
+      "Left",
+      "Right"
+    ],
+    "EMO_FACED": [
+      "Anger",
+      "Fear",
+      "Disgust",
+      "Sad",
+      "Amusement",
+      "Inspiration",
+      "Joy",
+      "Tenderness",
+      "Neutral"
+    ],
+    "EMO_SEED_3_seg4": [
+      "Negative",
+      "Neutral",
+      "Positive"
+    ],
+    "EMO_SEED_4_seg4": [
+      "Neutral",
+      "Sad",
+      "Fear",
+      "Happy"
+    ],
+    "EMO_SEED_5_seg4": [
+      "Disgust",
+      "Fear",
+      "Sad",
+      "Neutral",
+      "Happy"
+    ],
+    "EMO_SEED_7_seg4": [
+      "Happy",
+      "Surprise",
+      "Neutral",
+      "Sad",
+      "Disgust",
+      "Fear",
+      "Anger"
+    ],
+    "SSVEP_OpenBMI": [
+      "12.0",
+      "8.6",
+      "6.6",
+      "5.4"
+    ],
+    "Workload": [
+      "Resting",
+      "Workload"
+    ],
+    "ADHD_AliMotie": [
+      "Healthy",
+      "ADHD"
+    ]
+  },
+  "instructions": {
+    "MI_OpenBMI": {
+      "0": "None",
+      "1": "Classify the motor imagery task",
+      "2": "Predict the type of imagined movement"
+    },
+    "MI_BCIC_IV2a": {
+      "0": "None",
+      "1": "Infer the imagined motor action from the EEG",
+      "2": "Analyze this EEG and classify the motor imagery"
+    },
+    "MI_ShanghaiU": {
+      "0": "Default",
+      "1": "Analyze this EEG and classify the motor imagery",
+      "2": "Identify the motor imagery class"
+    },
+    "MI_BCIC_Upperlimb": {
+      "0": "None",
+      "1": "Identify the motor imagery class",
+      "2": "This is a motor imagery decoding task"
+    },
+    "MI_HighGamma": {
+      "0": "None",
+      "1": "This is a motor imagery decoding task",
+      "2": "Infer the imagined motor action from the EEG"
+    },
+    "MI_Cho2017": {
+      "0": "None",
+      "1": "Please decode the motor imagery",
+      "2": "Which motor imagery category does this trial belong to"
+    },
+    "MI_Shin2017A": {
+      "0": "None",
+      "1": "Determine which motor imagery action is performed",
+      "2": "Decode motor imagery"
+    },
+    "MI_PhysioNet": {
+      "0": "None",
+      "1": "Predict the type of imagined movement",
+      "2": "Determine which motor imagery action is performed"
+    },
+    "EMO_FACED": {
+      "0": "Default",
+      "1": "Classify the emotion represented in the signal",
+      "2": "Decode emotional states"
+    },
+    "EMO_SEED_3_seg4": {
+      "0": "None",
+      "1": "Please decode the emotional states",
+      "2": "What emotion does this EEG signal reflect"
+    },
+    "EMO_SEED_4_seg4": {
+      "0": "None",
+      "1": "Identify the emotional state",
+      "2": "Classify the emotion represented in the signal"
+    },
+    "EMO_SEED_5_seg4": {
+      "0": "None",
+      "1": "Predict the emotion category",
+      "2": "Analyze the EEG and classify the emotion"
+    },
+    "EMO_SEED_7_seg4": {
+      "0": "None",
+      "1": "Decode emotional states",
+      "2": "Predict the emotion category"
+    },
+    "SSVEP_OpenBMI": {
+      "0": "None",
+      "1": "Decode SSVEP frequency",
+      "2": "Identify the SSVEP target frequency"
+    },
+    "Workload": {
+      "0": "None",
+      "1": "Decode mental workload states",
+      "2": "Decode mental workload states"
+    },
+    "ADHD_AliMotie": {
+      "0": "Default",
+      "1": "Decode ADHD vs Healthy",
+      "2": "Please decode ADHD vs Healthy"
+    }
+  }
+}

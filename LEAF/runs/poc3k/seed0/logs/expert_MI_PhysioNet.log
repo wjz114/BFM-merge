@@ -1,0 +1,36 @@
+MI_PhysioNet: train=11447 val=2862 classes=['Left', 'Right'] instruction='This is a motor imagery decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 3000 rounds x 1 datasets = 3000 optimizer steps, warmup=150, validation every 100 rounds
+round 0/3000 step 0/3000 val macro BAcc=0.6974 loss=0.6045 | MI_PhysioNet=0.6974
+round 100/3000 step 100/3000 val macro BAcc=0.7393 loss=0.5540 | MI_PhysioNet=0.7393
+round 200/3000 step 200/3000 val macro BAcc=0.7443 loss=0.5459 | MI_PhysioNet=0.7443
+round 300/3000 step 300/3000 val macro BAcc=0.7263 loss=0.5556 | MI_PhysioNet=0.7263
+round 400/3000 step 400/3000 val macro BAcc=0.7781 loss=0.5099 | MI_PhysioNet=0.7781
+round 500/3000 step 500/3000 val macro BAcc=0.7850 loss=0.5075 | MI_PhysioNet=0.7850
+round 600/3000 step 600/3000 val macro BAcc=0.7932 loss=0.4960 | MI_PhysioNet=0.7932
+round 700/3000 step 700/3000 val macro BAcc=0.7866 loss=0.5031 | MI_PhysioNet=0.7866
+round 800/3000 step 800/3000 val macro BAcc=0.7847 loss=0.5025 | MI_PhysioNet=0.7847
+round 900/3000 step 900/3000 val macro BAcc=0.7838 loss=0.5114 | MI_PhysioNet=0.7838
+round 1000/3000 step 1000/3000 val macro BAcc=0.7988 loss=0.4917 | MI_PhysioNet=0.7988
+round 1100/3000 step 1100/3000 val macro BAcc=0.7878 loss=0.4974 | MI_PhysioNet=0.7878
+round 1200/3000 step 1200/3000 val macro BAcc=0.7857 loss=0.5075 | MI_PhysioNet=0.7857
+round 1300/3000 step 1300/3000 val macro BAcc=0.7972 loss=0.4917 | MI_PhysioNet=0.7972
+round 1400/3000 step 1400/3000 val macro BAcc=0.7914 loss=0.4950 | MI_PhysioNet=0.7914
+round 1500/3000 step 1500/3000 val macro BAcc=0.7894 loss=0.4994 | MI_PhysioNet=0.7894
+round 1600/3000 step 1600/3000 val macro BAcc=0.7872 loss=0.5041 | MI_PhysioNet=0.7872
+round 1700/3000 step 1700/3000 val macro BAcc=0.7967 loss=0.4949 | MI_PhysioNet=0.7967
+round 1800/3000 step 1800/3000 val macro BAcc=0.7998 loss=0.4928 | MI_PhysioNet=0.7998
+round 1900/3000 step 1900/3000 val macro BAcc=0.7988 loss=0.4934 | MI_PhysioNet=0.7988
+round 2000/3000 step 2000/3000 val macro BAcc=0.7834 loss=0.5082 | MI_PhysioNet=0.7834
+round 2100/3000 step 2100/3000 val macro BAcc=0.7913 loss=0.5025 | MI_PhysioNet=0.7913
+round 2200/3000 step 2200/3000 val macro BAcc=0.7896 loss=0.5008 | MI_PhysioNet=0.7896
+round 2300/3000 step 2300/3000 val macro BAcc=0.7985 loss=0.4939 | MI_PhysioNet=0.7985
+round 2400/3000 step 2400/3000 val macro BAcc=0.7989 loss=0.4955 | MI_PhysioNet=0.7989
+round 2500/3000 step 2500/3000 val macro BAcc=0.7920 loss=0.5012 | MI_PhysioNet=0.7920
+round 2600/3000 step 2600/3000 val macro BAcc=0.7996 loss=0.4928 | MI_PhysioNet=0.7996
+round 2700/3000 step 2700/3000 val macro BAcc=0.8013 loss=0.4939 | MI_PhysioNet=0.8013
+round 2800/3000 step 2800/3000 val macro BAcc=0.8043 loss=0.4889 | MI_PhysioNet=0.8043
+round 2900/3000 step 2900/3000 val macro BAcc=0.7996 loss=0.4986 | MI_PhysioNet=0.7996
+round 3000/3000 step 3000/3000 val macro BAcc=0.7955 loss=0.4981 | MI_PhysioNet=0.7955
+Best round=2800 (step 2800); val macro BAcc=0.8043 (source 0.6974)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed0/experts/MI_PhysioNet

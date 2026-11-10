@@ -1,0 +1,31 @@
+softmax_block: K=16 experts, G=33 coefficient groups, 528 coefficients (learnable); 383 merged tensors, 9 unused tensors kept at theta_0
+task-vector L2 norms: MI_OpenBMI=19.165, MI_BCIC_IV2a=24.659, MI_ShanghaiU=28.209, MI_BCIC_Upperlimb=14.698, MI_HighGamma=20.556, MI_Cho2017=24.312, MI_Shin2017A=19.228, MI_PhysioNet=21.856, EMO_FACED=17.984, EMO_SEED_3_seg4=12.984, EMO_SEED_4_seg4=16.506, EMO_SEED_5_seg4=16.899, EMO_SEED_7_seg4=13.942, SSVEP_OpenBMI=21.468, Workload=17.166, ADHD_AliMotie=6.996
+MI_OpenBMI: calibration=512 of train=13440 per-class=[262, 250]; val=3360
+MI_BCIC_IV2a: calibration=512 of train=3148 per-class=[128, 129, 128, 127]; val=788
+MI_ShanghaiU: calibration=512 of train=7712 per-class=[257, 255]; val=1929
+MI_BCIC_Upperlimb: calibration=512 of train=2640 per-class=[171, 165, 176]; val=660
+MI_HighGamma: calibration=512 of train=3761 per-class=[256, 256]; val=941
+MI_Cho2017: calibration=512 of train=6464 per-class=[256, 256]; val=1616
+MI_Shin2017A: calibration=512 of train=1056 per-class=[255, 257]; val=264
+MI_PhysioNet: calibration=512 of train=11447 per-class=[257, 255]; val=2862
+EMO_FACED: calibration=512 of train=6720 per-class=[55, 55, 55, 55, 73, 55, 55, 55, 54]; val=1680
+EMO_SEED_3_seg4: calibration=512 of train=22545 per-class=[173, 162, 177]; val=7905
+EMO_SEED_4_seg4: calibration=512 of train=26025 per-class=[113, 156, 134, 109]; val=5340
+EMO_SEED_5_seg4: calibration=512 of train=8512 per-class=[86, 84, 170, 112, 60]; val=10672
+EMO_SEED_7_seg4: calibration=512 of train=34000 per-class=[58, 78, 45, 102, 72, 75, 82]; val=18542
+SSVEP_OpenBMI: calibration=512 of train=13440 per-class=[126, 129, 129, 128]; val=3360
+Workload: calibration=512 of train=1515 per-class=[382, 130]; val=379
+ADHD_AliMotie: calibration=512 of train=916 per-class=[224, 288]; val=115
+step 0 val macro BAcc=0.5813 loss=0.9927 | MI_OpenBMI=0.7792 MI_BCIC_IV2a=0.4731 MI_ShanghaiU=0.6018 MI_BCIC_Upperlimb=0.5103 MI_HighGamma=0.7542 MI_Cho2017=0.6776 MI_Shin2017A=0.7000 MI_PhysioNet=0.7116 EMO_FACED=0.4105 EMO_SEED_3_seg4=0.6200 EMO_SEED_4_seg4=0.4392 EMO_SEED_5_seg4=0.3400 EMO_SEED_7_seg4=0.2970 SSVEP_OpenBMI=0.6020 Workload=0.8192 ADHD_AliMotie=0.5659
+step 160 val macro BAcc=0.5985 loss=0.9793 | MI_OpenBMI=0.7948 MI_BCIC_IV2a=0.4679 MI_ShanghaiU=0.6022 MI_BCIC_Upperlimb=0.5221 MI_HighGamma=0.7634 MI_Cho2017=0.6850 MI_Shin2017A=0.6820 MI_PhysioNet=0.7188 EMO_FACED=0.4397 EMO_SEED_3_seg4=0.6347 EMO_SEED_4_seg4=0.4556 EMO_SEED_5_seg4=0.3474 EMO_SEED_7_seg4=0.3141 SSVEP_OpenBMI=0.6339 Workload=0.8144 ADHD_AliMotie=0.7000
+step 320 val macro BAcc=0.6030 loss=0.9731 | MI_OpenBMI=0.8067 MI_BCIC_IV2a=0.4669 MI_ShanghaiU=0.5940 MI_BCIC_Upperlimb=0.5222 MI_HighGamma=0.7676 MI_Cho2017=0.6912 MI_Shin2017A=0.6744 MI_PhysioNet=0.7259 EMO_FACED=0.4370 EMO_SEED_3_seg4=0.6434 EMO_SEED_4_seg4=0.4577 EMO_SEED_5_seg4=0.3544 EMO_SEED_7_seg4=0.3224 SSVEP_OpenBMI=0.6430 Workload=0.7954 ADHD_AliMotie=0.7455
+step 480 val macro BAcc=0.6087 loss=0.9693 | MI_OpenBMI=0.8092 MI_BCIC_IV2a=0.4800 MI_ShanghaiU=0.5944 MI_BCIC_Upperlimb=0.5163 MI_HighGamma=0.7677 MI_Cho2017=0.6931 MI_Shin2017A=0.6783 MI_PhysioNet=0.7227 EMO_FACED=0.4366 EMO_SEED_3_seg4=0.6470 EMO_SEED_4_seg4=0.4589 EMO_SEED_5_seg4=0.3566 EMO_SEED_7_seg4=0.3252 SSVEP_OpenBMI=0.6486 Workload=0.8044 ADHD_AliMotie=0.8000
+step 640 val macro BAcc=0.6098 loss=0.9671 | MI_OpenBMI=0.8118 MI_BCIC_IV2a=0.4854 MI_ShanghaiU=0.5899 MI_BCIC_Upperlimb=0.5113 MI_HighGamma=0.7669 MI_Cho2017=0.6955 MI_Shin2017A=0.6862 MI_PhysioNet=0.7234 EMO_FACED=0.4347 EMO_SEED_3_seg4=0.6484 EMO_SEED_4_seg4=0.4599 EMO_SEED_5_seg4=0.3569 EMO_SEED_7_seg4=0.3277 SSVEP_OpenBMI=0.6464 Workload=0.8028 ADHD_AliMotie=0.8091
+step 800 val macro BAcc=0.6119 loss=0.9656 | MI_OpenBMI=0.8148 MI_BCIC_IV2a=0.4907 MI_ShanghaiU=0.5920 MI_BCIC_Upperlimb=0.5100 MI_HighGamma=0.7648 MI_Cho2017=0.6918 MI_Shin2017A=0.6901 MI_PhysioNet=0.7241 EMO_FACED=0.4347 EMO_SEED_3_seg4=0.6497 EMO_SEED_4_seg4=0.4576 EMO_SEED_5_seg4=0.3568 EMO_SEED_7_seg4=0.3285 SSVEP_OpenBMI=0.6476 Workload=0.7925 ADHD_AliMotie=0.8455
+step 960 val macro BAcc=0.6129 loss=0.9647 | MI_OpenBMI=0.8165 MI_BCIC_IV2a=0.4869 MI_ShanghaiU=0.5931 MI_BCIC_Upperlimb=0.5084 MI_HighGamma=0.7670 MI_Cho2017=0.6925 MI_Shin2017A=0.6866 MI_PhysioNet=0.7255 EMO_FACED=0.4373 EMO_SEED_3_seg4=0.6514 EMO_SEED_4_seg4=0.4577 EMO_SEED_5_seg4=0.3566 EMO_SEED_7_seg4=0.3305 SSVEP_OpenBMI=0.6465 Workload=0.7960 ADHD_AliMotie=0.8545
+step 1120 val macro BAcc=0.6137 loss=0.9642 | MI_OpenBMI=0.8163 MI_BCIC_IV2a=0.4907 MI_ShanghaiU=0.5915 MI_BCIC_Upperlimb=0.5069 MI_HighGamma=0.7659 MI_Cho2017=0.6925 MI_Shin2017A=0.6864 MI_PhysioNet=0.7244 EMO_FACED=0.4395 EMO_SEED_3_seg4=0.6527 EMO_SEED_4_seg4=0.4587 EMO_SEED_5_seg4=0.3550 EMO_SEED_7_seg4=0.3321 SSVEP_OpenBMI=0.6471 Workload=0.7960 ADHD_AliMotie=0.8636
+step 1280 val macro BAcc=0.6137 loss=0.9638 | MI_OpenBMI=0.8157 MI_BCIC_IV2a=0.4907 MI_ShanghaiU=0.5915 MI_BCIC_Upperlimb=0.5086 MI_HighGamma=0.7659 MI_Cho2017=0.6912 MI_Shin2017A=0.6788 MI_PhysioNet=0.7286 EMO_FACED=0.4443 EMO_SEED_3_seg4=0.6533 EMO_SEED_4_seg4=0.4597 EMO_SEED_5_seg4=0.3552 EMO_SEED_7_seg4=0.3333 SSVEP_OpenBMI=0.6466 Workload=0.7926 ADHD_AliMotie=0.8636
+step 1440 val macro BAcc=0.6142 loss=0.9635 | MI_OpenBMI=0.8145 MI_BCIC_IV2a=0.4895 MI_ShanghaiU=0.5926 MI_BCIC_Upperlimb=0.5120 MI_HighGamma=0.7670 MI_Cho2017=0.6906 MI_Shin2017A=0.6823 MI_PhysioNet=0.7255 EMO_FACED=0.4392 EMO_SEED_3_seg4=0.6529 EMO_SEED_4_seg4=0.4597 EMO_SEED_5_seg4=0.3543 EMO_SEED_7_seg4=0.3335 SSVEP_OpenBMI=0.6487 Workload=0.7926 ADHD_AliMotie=0.8727
+step 1600 val macro BAcc=0.6148 loss=0.9632 | MI_OpenBMI=0.8160 MI_BCIC_IV2a=0.4882 MI_ShanghaiU=0.5904 MI_BCIC_Upperlimb=0.5105 MI_HighGamma=0.7638 MI_Cho2017=0.6906 MI_Shin2017A=0.6862 MI_PhysioNet=0.7262 EMO_FACED=0.4449 EMO_SEED_3_seg4=0.6532 EMO_SEED_4_seg4=0.4588 EMO_SEED_5_seg4=0.3535 EMO_SEED_7_seg4=0.3336 SSVEP_OpenBMI=0.6472 Workload=0.7926 ADHD_AliMotie=0.8818
+folded merged.ckpt val macro BAcc=0.6148 loss=0.9632 (selected step 1600: 0.6148 / 0.9632)
+Saved merged.ckpt, best alpha, calibration indices and curves to /home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_softmax_block

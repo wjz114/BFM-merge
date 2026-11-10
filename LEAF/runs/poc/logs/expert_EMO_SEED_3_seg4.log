@@ -1,0 +1,16 @@
+EMO_SEED_3_seg4: train=22545 val=7905 classes=['Negative', 'Neutral', 'Positive'] instruction='This is an emotion recognition task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 1000 rounds x 1 datasets = 1000 optimizer steps, warmup=50, validation every 100 rounds
+round 0/1000 step 0/1000 val macro BAcc=0.5761 loss=0.9932 | EMO_SEED_3_seg4=0.5761
+round 100/1000 step 100/1000 val macro BAcc=0.6901 loss=0.8730 | EMO_SEED_3_seg4=0.6901
+round 200/1000 step 200/1000 val macro BAcc=0.7164 loss=0.8453 | EMO_SEED_3_seg4=0.7164
+round 300/1000 step 300/1000 val macro BAcc=0.7097 loss=0.8500 | EMO_SEED_3_seg4=0.7097
+round 400/1000 step 400/1000 val macro BAcc=0.7065 loss=0.8551 | EMO_SEED_3_seg4=0.7065
+round 500/1000 step 500/1000 val macro BAcc=0.7203 loss=0.8387 | EMO_SEED_3_seg4=0.7203
+round 600/1000 step 600/1000 val macro BAcc=0.6995 loss=0.8627 | EMO_SEED_3_seg4=0.6995
+round 700/1000 step 700/1000 val macro BAcc=0.7100 loss=0.8559 | EMO_SEED_3_seg4=0.7100
+round 800/1000 step 800/1000 val macro BAcc=0.7092 loss=0.8556 | EMO_SEED_3_seg4=0.7092
+round 900/1000 step 900/1000 val macro BAcc=0.7112 loss=0.8514 | EMO_SEED_3_seg4=0.7112
+round 1000/1000 step 1000/1000 val macro BAcc=0.7123 loss=0.8559 | EMO_SEED_3_seg4=0.7123
+Best round=500 (step 500); val macro BAcc=0.7203 (source 0.5761)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc/experts/EMO_SEED_3_seg4

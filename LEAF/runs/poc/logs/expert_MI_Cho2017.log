@@ -1,0 +1,16 @@
+MI_Cho2017: train=6464 val=1616 classes=['Left', 'Right'] instruction='This is a motor imagery decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 1000 rounds x 1 datasets = 1000 optimizer steps, warmup=50, validation every 100 rounds
+round 0/1000 step 0/1000 val macro BAcc=0.6652 loss=0.6181 | MI_Cho2017=0.6652
+round 100/1000 step 100/1000 val macro BAcc=0.6095 loss=0.6283 | MI_Cho2017=0.6095
+round 200/1000 step 200/1000 val macro BAcc=0.7079 loss=0.5683 | MI_Cho2017=0.7079
+round 300/1000 step 300/1000 val macro BAcc=0.7265 loss=0.5525 | MI_Cho2017=0.7265
+round 400/1000 step 400/1000 val macro BAcc=0.7048 loss=0.5646 | MI_Cho2017=0.7048
+round 500/1000 step 500/1000 val macro BAcc=0.7197 loss=0.5582 | MI_Cho2017=0.7197
+round 600/1000 step 600/1000 val macro BAcc=0.7401 loss=0.5427 | MI_Cho2017=0.7401
+round 700/1000 step 700/1000 val macro BAcc=0.7481 loss=0.5298 | MI_Cho2017=0.7481
+round 800/1000 step 800/1000 val macro BAcc=0.7438 loss=0.5366 | MI_Cho2017=0.7438
+round 900/1000 step 900/1000 val macro BAcc=0.7599 loss=0.5283 | MI_Cho2017=0.7599
+round 1000/1000 step 1000/1000 val macro BAcc=0.7649 loss=0.5243 | MI_Cho2017=0.7649
+Best round=1000 (step 1000); val macro BAcc=0.7649 (source 0.6652)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc/experts/MI_Cho2017

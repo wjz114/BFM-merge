@@ -1,0 +1,140 @@
+{
+  "source_checkpoint": "/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt",
+  "source_checkpoint_sha256": "f9ca9cabbd734d2691fa6748adf3e78056f895d4031f7edc481e7d7b6822f3fa",
+  "datasets": [
+    "MI_PhysioNet"
+  ],
+  "labels": {
+    "MI_PhysioNet": [
+      "Left",
+      "Right"
+    ]
+  },
+  "instruction": {
+    "MI_PhysioNet": "This is a motor imagery decoding task"
+  },
+  "conditioning": "task+targets",
+  "seed": 0,
+  "mode": "steps",
+  "rounds": 3000,
+  "total_steps": 3000,
+  "warmup_steps": 150,
+  "eval_every_rounds": 100,
+  "lr_tokenizer": 0.001,
+  "lr_rest": 0.0001,
+  "weight_decay": 0.001,
+  "lr_schedule": "linear warmup then cosine to 0.1x peak (per optimizer step)",
+  "precision": "bf16-mixed",
+  "batch_size": 128,
+  "device": "cuda:0",
+  "cudnn_benchmark": false,
+  "batchnorm": "running statistics frozen at source checkpoint (SyncBatchNorm in eval mode); affine trained",
+  "schedule": "each round: one batch per dataset in shuffled order; one optimizer step per batch",
+  "split_sizes": {
+    "MI_PhysioNet": {
+      "train": 11447,
+      "validation": 2862
+    }
+  },
+  "model_config": {
+    "transformers_version": "5.17.0",
+    "architectures": null,
+    "output_hidden_states": false,
+    "return_dict": true,
+    "dtype": null,
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "problem_type": null,
+    "_name_or_path": "",
+    "sfreq": 200,
+    "n_channels": 65,
+    "max_seq_len": 2000,
+    "ff_scale": 4,
+    "num_heads": 8,
+    "dropout": 0.1,
+    "window_len": 100,
+    "dim_cnn": 64,
+    "dim_token": 256,
+    "num_layers": 12,
+    "num_q": 8,
+    "num_qformer_layers": 4,
+    "text_emb_model_name": "mpnet-base",
+    "mask_ratio": 0.5,
+    "freq_cutoff_min": 1,
+    "freq_cutoff_max": 50,
+    "freq_cutoff_bandwidth": 6,
+    "text_emb_model_dim": 768,
+    "model_type": "",
+    "output_attentions": false
+  },
+  "training_config": {
+    "transformers_version": "5.17.0",
+    "architectures": null,
+    "output_hidden_states": false,
+    "return_dict": true,
+    "dtype": null,
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "problem_type": null,
+    "_name_or_path": "",
+    "lr_base": 0.001,
+    "lr_scale_fast_params": 1.0,
+    "lr_scale_slow_params": 0.1,
+    "warmup_epochs": 1,
+    "max_epochs": 200,
+    "precision": "bf16-mixed",
+    "weight_decay": 0.001,
+    "check_val_every_n_epoch": 5,
+    "model_type": "",
+    "output_attentions": false
+  },
+  "selection": "maximum dataset-macro validation BAcc; ties resolved by minimum macro validation loss",
+  "command": "d_downstream_qformer_ce.py --ckpt checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt --ds MI_PhysioNet --steps-per-dataset 3000 --bs 128 --seed 0 --gpu 0 --outdir runs/poc16/seed0/experts/MI_PhysioNet",
+  "best_round": 2800,
+  "best_step": 2800,
+  "best_val_macro_BAcc": 0.804259344635064,
+  "best_val_macro_Loss": 0.4889186918735504,
+  "best_val": {
+    "MI_PhysioNet": {
+      "Loss": 0.4889186918735504,
+      "BAcc": 0.804259344635064,
+      "Auroc": 0.8755079136859297,
+      "wF1": 0.8043137107809675,
+      "Kappa": 0.6085882390866668
+    }
+  },
+  "source_val": {
+    "MI_PhysioNet": {
+      "Loss": 0.6045188903808594,
+      "BAcc": 0.6974299567491962,
+      "Auroc": 0.7832722534567433,
+      "wF1": 0.6922855663220806,
+      "Kappa": 0.3940019034614637
+    }
+  },
+  "actual_optimizer_steps": 3000,
+  "steps_per_dataset_actual": {
+    "MI_PhysioNet": 3000
+  },
+  "seconds": {
+    "data_loading": 13.667707920074463,
+    "training_incl_validation": 283.435720205307,
+    "total": 298.07441306114197
+  }
+}

@@ -1,0 +1,25 @@
+MI_OpenBMI: test=4800 classes=['Right', 'Left']
+MI_Cho2017: test=1800 classes=['Left', 'Right']
+MI_PhysioNet: test=5262 classes=['Left', 'Right']
+EMO_SEED_3_seg4: test=7620 classes=['Negative', 'Neutral', 'Positive']
+SSVEP_OpenBMI: test=4800 classes=['12.0', '8.6', '6.6', '5.4']
+MI_Weibo2014: all 10 subjects n=1580 classes=['Left', 'Right'] instruction='This is a motor imagery decoding task'; verified 0=Left;1=Right (raw event codes 1/2 minus 1)
+Base: MI_OpenBMI=0.7321 MI_Cho2017=0.7094 MI_PhysioNet=0.6900 EMO_SEED_3_seg4=0.5891 SSVEP_OpenBMI=0.5523 MI_Weibo2014=0.6228
+Joint: MI_OpenBMI=0.7819 MI_Cho2017=0.7917 MI_PhysioNet=0.7461 EMO_SEED_3_seg4=0.6866 SSVEP_OpenBMI=0.7950 MI_Weibo2014=0.6481
+Uniform: MI_OpenBMI=0.7554 MI_Cho2017=0.7828 MI_PhysioNet=0.6807 EMO_SEED_3_seg4=0.6166 SSVEP_OpenBMI=0.6119 MI_Weibo2014=0.6108
+Global: MI_OpenBMI=0.7540 MI_Cho2017=0.7617 MI_PhysioNet=0.6631 EMO_SEED_3_seg4=0.6449 SSVEP_OpenBMI=0.6629 MI_Weibo2014=0.6272
+Block: MI_OpenBMI=0.7629 MI_Cho2017=0.7739 MI_PhysioNet=0.7032 EMO_SEED_3_seg4=0.6548 SSVEP_OpenBMI=0.6127 MI_Weibo2014=0.6158
+Softmax-Global: MI_OpenBMI=0.7558 MI_Cho2017=0.7717 MI_PhysioNet=0.6796 EMO_SEED_3_seg4=0.6202 SSVEP_OpenBMI=0.6315 MI_Weibo2014=0.6076
+Softmax-Block: MI_OpenBMI=0.7637 MI_Cho2017=0.7717 MI_PhysioNet=0.7060 EMO_SEED_3_seg4=0.6423 SSVEP_OpenBMI=0.5985 MI_Weibo2014=0.6171
+
+Test BAcc (dBAcc vs Joint in pp for SOURCE_MACRO)
+model                           MI_OpenBMI      MI_Cho2017    MI_PhysioNet  EMO_SEED_3_seg   SSVEP_OpenBMI    MI_Weibo2014    SOURCE_MACRO  d_vs_Joint
+Base                                0.7321          0.7094          0.6900          0.5891          0.5523          0.6228          0.6546      -10.57
+Joint                               0.7819          0.7917          0.7461          0.6866          0.7950          0.6481          0.7603       +0.00
+Uniform                             0.7554          0.7828          0.6807          0.6166          0.6119          0.6108          0.6895       -7.08
+Global                              0.7540          0.7617          0.6631          0.6449          0.6629          0.6272          0.6973       -6.30
+Block                               0.7629          0.7739          0.7032          0.6548          0.6127          0.6158          0.7015       -5.88
+Softmax-Global                      0.7558          0.7717          0.6796          0.6202          0.6315          0.6076          0.6917       -6.85
+Softmax-Block                       0.7637          0.7717          0.7060          0.6423          0.5985          0.6171          0.6964       -6.38
+
+Saved /home/jingzhou/BFM-merge/LEAF/runs/poc/results_round2.csv and /home/jingzhou/BFM-merge/LEAF/runs/poc/results_round2.json

@@ -1,0 +1,36 @@
+SSVEP_OpenBMI: train=13440 val=3360 classes=['12.0', '8.6', '6.6', '5.4'] instruction='This is an SSVEP frequency decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 3000 rounds x 1 datasets = 3000 optimizer steps, warmup=150, validation every 100 rounds
+round 0/3000 step 0/3000 val macro BAcc=0.6340 loss=1.2670 | SSVEP_OpenBMI=0.6340
+round 100/3000 step 100/3000 val macro BAcc=0.6531 loss=1.1402 | SSVEP_OpenBMI=0.6531
+round 200/3000 step 200/3000 val macro BAcc=0.7557 loss=1.0996 | SSVEP_OpenBMI=0.7557
+round 300/3000 step 300/3000 val macro BAcc=0.7800 loss=1.0878 | SSVEP_OpenBMI=0.7800
+round 400/3000 step 400/3000 val macro BAcc=0.8338 loss=1.0643 | SSVEP_OpenBMI=0.8338
+round 500/3000 step 500/3000 val macro BAcc=0.8304 loss=1.0655 | SSVEP_OpenBMI=0.8304
+round 600/3000 step 600/3000 val macro BAcc=0.8751 loss=1.0437 | SSVEP_OpenBMI=0.8751
+round 700/3000 step 700/3000 val macro BAcc=0.8734 loss=1.0389 | SSVEP_OpenBMI=0.8734
+round 800/3000 step 800/3000 val macro BAcc=0.8918 loss=1.0318 | SSVEP_OpenBMI=0.8918
+round 900/3000 step 900/3000 val macro BAcc=0.8978 loss=1.0290 | SSVEP_OpenBMI=0.8978
+round 1000/3000 step 1000/3000 val macro BAcc=0.8800 loss=1.0355 | SSVEP_OpenBMI=0.8800
+round 1100/3000 step 1100/3000 val macro BAcc=0.9012 loss=1.0272 | SSVEP_OpenBMI=0.9012
+round 1200/3000 step 1200/3000 val macro BAcc=0.9088 loss=1.0235 | SSVEP_OpenBMI=0.9088
+round 1300/3000 step 1300/3000 val macro BAcc=0.9085 loss=1.0227 | SSVEP_OpenBMI=0.9085
+round 1400/3000 step 1400/3000 val macro BAcc=0.9236 loss=1.0149 | SSVEP_OpenBMI=0.9236
+round 1500/3000 step 1500/3000 val macro BAcc=0.9117 loss=1.0176 | SSVEP_OpenBMI=0.9117
+round 1600/3000 step 1600/3000 val macro BAcc=0.9223 loss=1.0160 | SSVEP_OpenBMI=0.9223
+round 1700/3000 step 1700/3000 val macro BAcc=0.9244 loss=1.0158 | SSVEP_OpenBMI=0.9244
+round 1800/3000 step 1800/3000 val macro BAcc=0.9309 loss=1.0104 | SSVEP_OpenBMI=0.9309
+round 1900/3000 step 1900/3000 val macro BAcc=0.9269 loss=1.0116 | SSVEP_OpenBMI=0.9269
+round 2000/3000 step 2000/3000 val macro BAcc=0.9364 loss=1.0067 | SSVEP_OpenBMI=0.9364
+round 2100/3000 step 2100/3000 val macro BAcc=0.9240 loss=1.0139 | SSVEP_OpenBMI=0.9240
+round 2200/3000 step 2200/3000 val macro BAcc=0.9299 loss=1.0099 | SSVEP_OpenBMI=0.9299
+round 2300/3000 step 2300/3000 val macro BAcc=0.9366 loss=1.0077 | SSVEP_OpenBMI=0.9366
+round 2400/3000 step 2400/3000 val macro BAcc=0.9376 loss=1.0080 | SSVEP_OpenBMI=0.9376
+round 2500/3000 step 2500/3000 val macro BAcc=0.9391 loss=1.0064 | SSVEP_OpenBMI=0.9391
+round 2600/3000 step 2600/3000 val macro BAcc=0.9435 loss=1.0036 | SSVEP_OpenBMI=0.9435
+round 2700/3000 step 2700/3000 val macro BAcc=0.9424 loss=1.0041 | SSVEP_OpenBMI=0.9424
+round 2800/3000 step 2800/3000 val macro BAcc=0.9403 loss=1.0044 | SSVEP_OpenBMI=0.9403
+round 2900/3000 step 2900/3000 val macro BAcc=0.9425 loss=1.0047 | SSVEP_OpenBMI=0.9425
+round 3000/3000 step 3000/3000 val macro BAcc=0.9447 loss=1.0040 | SSVEP_OpenBMI=0.9447
+Best round=3000 (step 3000); val macro BAcc=0.9447 (source 0.6340)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI

@@ -1,0 +1,16 @@
+MI_PhysioNet: train=11447 val=2862 classes=['Left', 'Right'] instruction='This is a motor imagery decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 1000 rounds x 1 datasets = 1000 optimizer steps, warmup=50, validation every 100 rounds
+round 0/1000 step 0/1000 val macro BAcc=0.6974 loss=0.6045 | MI_PhysioNet=0.6974
+round 100/1000 step 100/1000 val macro BAcc=0.7322 loss=0.5589 | MI_PhysioNet=0.7322
+round 200/1000 step 200/1000 val macro BAcc=0.7571 loss=0.5237 | MI_PhysioNet=0.7571
+round 300/1000 step 300/1000 val macro BAcc=0.7671 loss=0.5195 | MI_PhysioNet=0.7671
+round 400/1000 step 400/1000 val macro BAcc=0.7611 loss=0.5196 | MI_PhysioNet=0.7611
+round 500/1000 step 500/1000 val macro BAcc=0.7872 loss=0.4978 | MI_PhysioNet=0.7872
+round 600/1000 step 600/1000 val macro BAcc=0.7929 loss=0.4938 | MI_PhysioNet=0.7929
+round 700/1000 step 700/1000 val macro BAcc=0.7996 loss=0.4877 | MI_PhysioNet=0.7996
+round 800/1000 step 800/1000 val macro BAcc=0.7991 loss=0.4908 | MI_PhysioNet=0.7991
+round 900/1000 step 900/1000 val macro BAcc=0.7896 loss=0.5006 | MI_PhysioNet=0.7896
+round 1000/1000 step 1000/1000 val macro BAcc=0.7927 loss=0.4910 | MI_PhysioNet=0.7927
+Best round=700 (step 700); val macro BAcc=0.7996 (source 0.6974)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc/experts/MI_PhysioNet

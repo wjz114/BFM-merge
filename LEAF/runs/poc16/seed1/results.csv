@@ -1,0 +1,396 @@
+model,kind,dataset,role,split,n,Loss,BAcc,Auroc,wF1,Kappa,checkpoint,dBAcc_vs_Joint_pp
+Base,single model,MI_OpenBMI,source,test,4800,0.5828,0.7321,0.8054,0.7301,0.4642,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-3.4792
+Base,single model,MI_BCIC_IV2a,source,test,1152,1.3015,0.4427,0.7697,0.3962,0.2569,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-14.3229
+Base,single model,MI_ShanghaiU,source,test,2347,0.7001,0.5327,0.5761,0.4826,0.0655,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-3.5423
+Base,single model,MI_BCIC_Upperlimb,source,test,1200,1.0795,0.4083,0.6026,0.3652,0.1125,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-4.7500
+Base,single model,MI_HighGamma,source,test,2040,0.6822,0.5956,0.6106,0.5516,0.1912,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-9.7549
+Base,single model,MI_Cho2017,source,test,1800,0.5893,0.7094,0.8173,0.6989,0.4189,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-7.8889
+Base,single model,MI_Shin2017A,source,test,360,0.6031,0.7000,0.7670,0.6987,0.4000,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-3.8889
+Base,single model,MI_PhysioNet,source,test,5262,0.6096,0.6900,0.7621,0.6856,0.3801,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-4.5040
+Base,single model,EMO_FACED,source,test,1932,1.9935,0.4026,0.7318,0.3994,0.3242,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,0.0939
+Base,single model,EMO_SEED_3_seg4,source,test,7620,0.9747,0.5891,0.7579,0.5818,0.3954,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-9.3949
+Base,single model,EMO_SEED_4_seg4,source,test,6210,1.3754,0.3755,0.6082,0.3643,0.1556,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-7.2348
+Base,single model,EMO_SEED_5_seg4,source,test,9984,1.5860,0.3046,0.5871,0.3012,0.1273,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-7.6139
+Base,single model,EMO_SEED_7_seg4,source,test,17200,1.8939,0.2520,0.5868,0.2560,0.1287,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-6.9530
+Base,single model,SSVEP_OpenBMI,source,test,4800,1.2965,0.5523,0.7909,0.5302,0.4031,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-20.7083
+Base,single model,Workload,source,test,240,0.6680,0.6444,0.6036,0.7046,0.2600,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,6.9444
+Base,single model,ADHD_AliMotie,source,test,599,0.6153,0.6839,0.7801,0.6825,0.3619,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-0.3446
+Base,single model,MI_Weibo2014,external,all 10 subjects,1580,0.6544,0.6228,0.6971,0.5967,0.2456,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,0.6329
+Base,single model,SOURCE_MACRO,source,test,67546,1.0345,0.5385,0.6973,0.5268,0.2778,/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt,-6.0839
+Expert[MI_OpenBMI],single model,MI_OpenBMI,source,test,4800,0.4912,0.8048,0.8763,0.8046,0.6096,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,3.7917
+Expert[MI_OpenBMI],single model,MI_BCIC_IV2a,source,test,1152,1.2841,0.4531,0.7065,0.3854,0.2708,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-13.2812
+Expert[MI_OpenBMI],single model,MI_ShanghaiU,source,test,2347,0.7791,0.5374,0.5717,0.5278,0.0747,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-3.0704
+Expert[MI_OpenBMI],single model,MI_BCIC_Upperlimb,source,test,1200,1.0926,0.3550,0.5561,0.3350,0.0325,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-10.0833
+Expert[MI_OpenBMI],single model,MI_HighGamma,source,test,2040,1.0145,0.3294,0.2549,0.3294,-0.3412,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-36.3725
+Expert[MI_OpenBMI],single model,MI_Cho2017,source,test,1800,0.5682,0.7283,0.7943,0.7274,0.4567,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-6.0000
+Expert[MI_OpenBMI],single model,MI_Shin2017A,source,test,360,0.6708,0.6361,0.6897,0.6322,0.2722,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-10.2778
+Expert[MI_OpenBMI],single model,MI_PhysioNet,source,test,5262,0.6523,0.6549,0.7103,0.6543,0.3098,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-8.0198
+Expert[MI_OpenBMI],single model,EMO_FACED,source,test,1932,2.1656,0.1818,0.5714,0.1778,0.0774,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-21.9807
+Expert[MI_OpenBMI],single model,EMO_SEED_3_seg4,source,test,7620,1.0348,0.4644,0.7112,0.4368,0.2045,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-21.8651
+Expert[MI_OpenBMI],single model,EMO_SEED_4_seg4,source,test,6210,1.4124,0.2999,0.5451,0.3055,0.0618,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-14.7974
+Expert[MI_OpenBMI],single model,EMO_SEED_5_seg4,source,test,9984,1.6110,0.2618,0.5504,0.2538,0.0730,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-11.8956
+Expert[MI_OpenBMI],single model,EMO_SEED_7_seg4,source,test,17200,1.9115,0.2239,0.5610,0.2254,0.0985,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-9.7650
+Expert[MI_OpenBMI],single model,SSVEP_OpenBMI,source,test,4800,1.3501,0.4258,0.6613,0.4042,0.2344,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-33.3542
+Expert[MI_OpenBMI],single model,Workload,source,test,240,0.7091,0.5306,0.5500,0.3207,0.0343,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-4.4444
+Expert[MI_OpenBMI],single model,ADHD_AliMotie,source,test,599,0.6862,0.5077,0.6239,0.4501,0.0144,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-17.9555
+Expert[MI_OpenBMI],single model,MI_Weibo2014,external,all 10 subjects,1580,0.6810,0.6335,0.6982,0.6332,0.2671,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,1.7089
+Expert[MI_OpenBMI],single model,SOURCE_MACRO,source,test,67546,1.0896,0.4622,0.6209,0.4357,0.1552,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,-13.7107
+Expert[MI_BCIC_IV2a],single model,MI_OpenBMI,source,test,4800,0.7158,0.5485,0.5650,0.5461,0.0971,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-21.8333
+Expert[MI_BCIC_IV2a],single model,MI_BCIC_IV2a,source,test,1152,1.0711,0.6519,0.8242,0.6389,0.5359,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,6.5972
+Expert[MI_BCIC_IV2a],single model,MI_ShanghaiU,source,test,2347,0.7671,0.4811,0.4739,0.4602,-0.0378,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-8.6968
+Expert[MI_BCIC_IV2a],single model,MI_BCIC_Upperlimb,source,test,1200,1.0955,0.3308,0.5438,0.2942,-0.0037,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-12.5000
+Expert[MI_BCIC_IV2a],single model,MI_HighGamma,source,test,2040,0.8318,0.4186,0.3779,0.3698,-0.1627,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-27.4510
+Expert[MI_BCIC_IV2a],single model,MI_Cho2017,source,test,1800,0.8108,0.4472,0.3774,0.4000,-0.1056,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-34.1111
+Expert[MI_BCIC_IV2a],single model,MI_Shin2017A,source,test,360,0.7848,0.4500,0.4682,0.4364,-0.1000,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-28.8889
+Expert[MI_BCIC_IV2a],single model,MI_PhysioNet,source,test,5262,0.6996,0.5709,0.6021,0.5667,0.1418,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-16.4196
+Expert[MI_BCIC_IV2a],single model,EMO_FACED,source,test,1932,2.1853,0.1491,0.5551,0.1469,0.0426,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-25.2550
+Expert[MI_BCIC_IV2a],single model,EMO_SEED_3_seg4,source,test,7620,1.0220,0.5065,0.6781,0.4898,0.2713,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-17.6537
+Expert[MI_BCIC_IV2a],single model,EMO_SEED_4_seg4,source,test,6210,1.3893,0.2864,0.5296,0.3133,0.0515,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-16.1459
+Expert[MI_BCIC_IV2a],single model,EMO_SEED_5_seg4,source,test,9984,1.6093,0.2414,0.5369,0.2423,0.0529,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-13.9352
+Expert[MI_BCIC_IV2a],single model,EMO_SEED_7_seg4,source,test,17200,1.9444,0.1785,0.5228,0.1763,0.0417,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-14.3046
+Expert[MI_BCIC_IV2a],single model,SSVEP_OpenBMI,source,test,4800,1.3722,0.3133,0.5653,0.2814,0.0844,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-44.6042
+Expert[MI_BCIC_IV2a],single model,Workload,source,test,240,0.6336,0.5028,0.5615,0.6423,0.0061,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-7.2222
+Expert[MI_BCIC_IV2a],single model,ADHD_AliMotie,source,test,599,0.7231,0.5302,0.5628,0.4498,0.0553,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-15.7077
+Expert[MI_BCIC_IV2a],single model,MI_Weibo2014,external,all 10 subjects,1580,0.7253,0.5475,0.5564,0.5338,0.0949,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-6.8987
+Expert[MI_BCIC_IV2a],single model,SOURCE_MACRO,source,test,67546,1.1035,0.4130,0.5465,0.4034,0.0607,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,-18.6332
+Expert[MI_ShanghaiU],single model,MI_OpenBMI,source,test,4800,0.7404,0.5850,0.6119,0.5841,0.1700,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-18.1875
+Expert[MI_ShanghaiU],single model,MI_BCIC_IV2a,source,test,1152,1.5001,0.2109,0.5273,0.1240,-0.0521,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-37.5000
+Expert[MI_ShanghaiU],single model,MI_ShanghaiU,source,test,2347,0.7059,0.6141,0.6472,0.6133,0.2282,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,4.6052
+Expert[MI_ShanghaiU],single model,MI_BCIC_Upperlimb,source,test,1200,1.0947,0.3758,0.5518,0.3604,0.0637,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-8.0000
+Expert[MI_ShanghaiU],single model,MI_HighGamma,source,test,2040,0.7565,0.5701,0.5898,0.5699,0.1402,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-12.3039
+Expert[MI_ShanghaiU],single model,MI_Cho2017,source,test,1800,0.7665,0.5606,0.6287,0.5510,0.1211,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-22.7778
+Expert[MI_ShanghaiU],single model,MI_Shin2017A,source,test,360,0.7573,0.5722,0.5662,0.5720,0.1444,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-16.6667
+Expert[MI_ShanghaiU],single model,MI_PhysioNet,source,test,5262,0.8116,0.5205,0.5202,0.5185,0.0410,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-21.4557
+Expert[MI_ShanghaiU],single model,EMO_FACED,source,test,1932,2.1720,0.1808,0.5594,0.1733,0.0784,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-22.0880
+Expert[MI_ShanghaiU],single model,EMO_SEED_3_seg4,source,test,7620,1.0366,0.4862,0.6677,0.4727,0.2394,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-19.6821
+Expert[MI_ShanghaiU],single model,EMO_SEED_4_seg4,source,test,6210,1.4074,0.2650,0.5172,0.3091,0.0210,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-18.2893
+Expert[MI_ShanghaiU],single model,EMO_SEED_5_seg4,source,test,9984,1.6137,0.2292,0.5337,0.2337,0.0383,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-15.1553
+Expert[MI_ShanghaiU],single model,EMO_SEED_7_seg4,source,test,17200,1.9427,0.1790,0.5300,0.1713,0.0411,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-14.2563
+Expert[MI_ShanghaiU],single model,SSVEP_OpenBMI,source,test,4800,1.3735,0.3306,0.5771,0.2883,0.1075,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-42.8750
+Expert[MI_ShanghaiU],single model,Workload,source,test,240,0.6998,0.6056,0.6462,0.6339,0.1681,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,3.0556
+Expert[MI_ShanghaiU],single model,ADHD_AliMotie,source,test,599,0.6686,0.6398,0.7000,0.6164,0.2662,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-4.7536
+Expert[MI_ShanghaiU],single model,MI_Weibo2014,external,all 10 subjects,1580,0.8031,0.5215,0.5338,0.5215,0.0430,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-9.4937
+Expert[MI_ShanghaiU],single model,SOURCE_MACRO,source,test,67546,1.1279,0.4328,0.5859,0.4245,0.1135,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,-16.6456
+Expert[MI_BCIC_Upperlimb],single model,MI_OpenBMI,source,test,4800,0.6293,0.6740,0.7241,0.6734,0.3479,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-9.2917
+Expert[MI_BCIC_Upperlimb],single model,MI_BCIC_IV2a,source,test,1152,1.3038,0.4479,0.7271,0.3422,0.2639,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-13.8021
+Expert[MI_BCIC_Upperlimb],single model,MI_ShanghaiU,source,test,2347,0.6844,0.5660,0.5836,0.5641,0.1320,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-0.2107
+Expert[MI_BCIC_Upperlimb],single model,MI_BCIC_Upperlimb,source,test,1200,1.0489,0.4850,0.6544,0.4833,0.2275,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,2.9167
+Expert[MI_BCIC_Upperlimb],single model,MI_HighGamma,source,test,2040,0.6623,0.5946,0.6708,0.5846,0.1892,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-9.8529
+Expert[MI_BCIC_Upperlimb],single model,MI_Cho2017,source,test,1800,0.6486,0.6128,0.6925,0.6094,0.2256,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-17.5556
+Expert[MI_BCIC_Upperlimb],single model,MI_Shin2017A,source,test,360,0.6864,0.5194,0.5527,0.5194,0.0389,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-21.9444
+Expert[MI_BCIC_Upperlimb],single model,MI_PhysioNet,source,test,5262,0.6681,0.5819,0.6348,0.5809,0.1638,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-15.3174
+Expert[MI_BCIC_Upperlimb],single model,EMO_FACED,source,test,1932,2.1849,0.1562,0.5507,0.1443,0.0493,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-24.5437
+Expert[MI_BCIC_Upperlimb],single model,EMO_SEED_3_seg4,source,test,7620,1.0050,0.5536,0.7221,0.5575,0.3355,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-12.9441
+Expert[MI_BCIC_Upperlimb],single model,EMO_SEED_4_seg4,source,test,6210,1.3723,0.3445,0.5925,0.3535,0.1167,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-10.3345
+Expert[MI_BCIC_Upperlimb],single model,EMO_SEED_5_seg4,source,test,9984,1.6105,0.2524,0.5512,0.2502,0.0636,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-12.8420
+Expert[MI_BCIC_Upperlimb],single model,EMO_SEED_7_seg4,source,test,17200,1.9181,0.2169,0.5600,0.2159,0.0873,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-10.4657
+Expert[MI_BCIC_Upperlimb],single model,SSVEP_OpenBMI,source,test,4800,1.3565,0.3723,0.6245,0.3345,0.1631,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-38.7083
+Expert[MI_BCIC_Upperlimb],single model,Workload,source,test,240,0.6724,0.5194,0.5774,0.5681,0.0306,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-5.5556
+Expert[MI_BCIC_Upperlimb],single model,ADHD_AliMotie,source,test,599,0.6667,0.6248,0.6761,0.6094,0.2398,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-6.2521
+Expert[MI_BCIC_Upperlimb],single model,MI_Weibo2014,external,all 10 subjects,1580,0.6798,0.5595,0.5965,0.5595,0.1190,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-5.6962
+Expert[MI_BCIC_Upperlimb],single model,SOURCE_MACRO,source,test,67546,1.0699,0.4701,0.6309,0.4619,0.1672,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,-12.9190
+Expert[MI_HighGamma],single model,MI_OpenBMI,source,test,4800,1.0054,0.3517,0.2635,0.3319,-0.2967,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-41.5208
+Expert[MI_HighGamma],single model,MI_BCIC_IV2a,source,test,1152,1.4741,0.2318,0.6249,0.1298,-0.0243,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-35.4167
+Expert[MI_HighGamma],single model,MI_ShanghaiU,source,test,2347,0.8247,0.5041,0.5000,0.4823,0.0082,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-6.3992
+Expert[MI_HighGamma],single model,MI_BCIC_Upperlimb,source,test,1200,1.0974,0.3717,0.5459,0.3263,0.0575,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-8.4167
+Expert[MI_HighGamma],single model,MI_HighGamma,source,test,2040,0.4945,0.8049,0.8734,0.8040,0.6098,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,11.1765
+Expert[MI_HighGamma],single model,MI_Cho2017,source,test,1800,0.9119,0.4278,0.3714,0.4022,-0.1444,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-36.0556
+Expert[MI_HighGamma],single model,MI_Shin2017A,source,test,360,0.9591,0.3833,0.3404,0.3818,-0.2333,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-35.5556
+Expert[MI_HighGamma],single model,MI_PhysioNet,source,test,5262,0.9532,0.3953,0.3471,0.3866,-0.2094,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-33.9795
+Expert[MI_HighGamma],single model,EMO_FACED,source,test,1932,2.1660,0.1916,0.5703,0.1910,0.0906,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-21.0011
+Expert[MI_HighGamma],single model,EMO_SEED_3_seg4,source,test,7620,1.0145,0.5287,0.6976,0.5143,0.3038,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-15.4340
+Expert[MI_HighGamma],single model,EMO_SEED_4_seg4,source,test,6210,1.3986,0.3198,0.5626,0.3407,0.0917,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-12.8113
+Expert[MI_HighGamma],single model,EMO_SEED_5_seg4,source,test,9984,1.6039,0.2608,0.5484,0.2739,0.0791,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-11.9972
+Expert[MI_HighGamma],single model,EMO_SEED_7_seg4,source,test,17200,1.9256,0.2161,0.5442,0.2156,0.0859,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-10.5478
+Expert[MI_HighGamma],single model,SSVEP_OpenBMI,source,test,4800,1.3635,0.3629,0.6116,0.3366,0.1506,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-39.6458
+Expert[MI_HighGamma],single model,Workload,source,test,240,0.7177,0.5944,0.6484,0.6112,0.1453,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,1.9444
+Expert[MI_HighGamma],single model,ADHD_AliMotie,source,test,599,0.6454,0.6561,0.7198,0.6308,0.2967,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-3.1167
+Expert[MI_HighGamma],single model,MI_Weibo2014,external,all 10 subjects,1580,0.9500,0.3956,0.3363,0.3949,-0.2089,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-22.0886
+Expert[MI_HighGamma],single model,SOURCE_MACRO,source,test,67546,1.1597,0.4126,0.5481,0.3974,0.0632,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,-18.6736
+Expert[MI_Cho2017],single model,MI_OpenBMI,source,test,4800,0.6135,0.6927,0.7584,0.6927,0.3854,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-7.4167
+Expert[MI_Cho2017],single model,MI_BCIC_IV2a,source,test,1152,1.3862,0.3177,0.5485,0.2111,0.0903,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-26.8229
+Expert[MI_Cho2017],single model,MI_ShanghaiU,source,test,2347,0.7853,0.5310,0.5417,0.5306,0.0619,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-3.7110
+Expert[MI_Cho2017],single model,MI_BCIC_Upperlimb,source,test,1200,1.0985,0.3483,0.5241,0.3462,0.0225,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-10.7500
+Expert[MI_Cho2017],single model,MI_HighGamma,source,test,2040,0.9449,0.3824,0.3170,0.3788,-0.2353,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-31.0784
+Expert[MI_Cho2017],single model,MI_Cho2017,source,test,1800,0.5052,0.7933,0.8792,0.7933,0.5867,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,0.5000
+Expert[MI_Cho2017],single model,MI_Shin2017A,source,test,360,0.5974,0.7056,0.7873,0.7053,0.4111,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-3.3333
+Expert[MI_Cho2017],single model,MI_PhysioNet,source,test,5262,0.7909,0.5352,0.5458,0.5319,0.0703,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-19.9924
+Expert[MI_Cho2017],single model,EMO_FACED,source,test,1932,2.1597,0.1841,0.5880,0.1813,0.0855,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-21.7525
+Expert[MI_Cho2017],single model,EMO_SEED_3_seg4,source,test,7620,1.0497,0.4474,0.6788,0.4198,0.1783,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-23.5601
+Expert[MI_Cho2017],single model,EMO_SEED_4_seg4,source,test,6210,1.4062,0.2890,0.5182,0.3240,0.0536,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-15.8910
+Expert[MI_Cho2017],single model,EMO_SEED_5_seg4,source,test,9984,1.6202,0.2366,0.5366,0.2360,0.0451,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-14.4187
+Expert[MI_Cho2017],single model,EMO_SEED_7_seg4,source,test,17200,1.9279,0.1993,0.5520,0.2012,0.0671,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-12.2259
+Expert[MI_Cho2017],single model,SSVEP_OpenBMI,source,test,4800,1.3603,0.3827,0.6290,0.3830,0.1769,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-37.6667
+Expert[MI_Cho2017],single model,Workload,source,test,240,0.7321,0.5028,0.6031,0.2734,0.0031,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-7.2222
+Expert[MI_Cho2017],single model,ADHD_AliMotie,source,test,599,0.6107,0.7212,0.7765,0.7326,0.4552,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,3.3927
+Expert[MI_Cho2017],single model,MI_Weibo2014,external,all 10 subjects,1580,0.6614,0.6348,0.6970,0.6336,0.2696,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,1.8354
+Expert[MI_Cho2017],single model,SOURCE_MACRO,source,test,67546,1.0993,0.4543,0.6115,0.4338,0.1536,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,-14.4968
+Expert[MI_Shin2017A],single model,MI_OpenBMI,source,test,4800,0.7612,0.5683,0.5913,0.5678,0.1367,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-19.8542
+Expert[MI_Shin2017A],single model,MI_BCIC_IV2a,source,test,1152,1.2945,0.4410,0.7102,0.3563,0.2546,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-14.4965
+Expert[MI_Shin2017A],single model,MI_ShanghaiU,source,test,2347,0.8370,0.4902,0.5021,0.4886,-0.0196,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-7.7900
+Expert[MI_Shin2017A],single model,MI_BCIC_Upperlimb,source,test,1200,1.1036,0.3233,0.4926,0.3168,-0.0150,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-13.2500
+Expert[MI_Shin2017A],single model,MI_HighGamma,source,test,2040,0.9086,0.4417,0.4015,0.3960,-0.1167,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-25.1471
+Expert[MI_Shin2017A],single model,MI_Cho2017,source,test,1800,0.6109,0.7000,0.7716,0.6981,0.4000,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-8.8333
+Expert[MI_Shin2017A],single model,MI_Shin2017A,source,test,360,0.5526,0.7528,0.7949,0.7498,0.5056,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,1.3889
+Expert[MI_Shin2017A],single model,MI_PhysioNet,source,test,5262,0.8491,0.4907,0.4849,0.4879,-0.0186,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-24.4394
+Expert[MI_Shin2017A],single model,EMO_FACED,source,test,1932,2.1595,0.2022,0.5888,0.1995,0.1047,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-19.9410
+Expert[MI_Shin2017A],single model,EMO_SEED_3_seg4,source,test,7620,1.0444,0.4366,0.6921,0.3947,0.1615,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-24.6368
+Expert[MI_Shin2017A],single model,EMO_SEED_4_seg4,source,test,6210,1.3968,0.2965,0.5431,0.3145,0.0567,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-15.1410
+Expert[MI_Shin2017A],single model,EMO_SEED_5_seg4,source,test,9984,1.6146,0.2504,0.5431,0.2456,0.0590,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-13.0341
+Expert[MI_Shin2017A],single model,EMO_SEED_7_seg4,source,test,17200,1.9243,0.2031,0.5487,0.2013,0.0716,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-11.8431
+Expert[MI_Shin2017A],single model,SSVEP_OpenBMI,source,test,4800,1.3638,0.3629,0.6187,0.3631,0.1506,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-39.6458
+Expert[MI_Shin2017A],single model,Workload,source,test,240,0.7003,0.6083,0.6502,0.5540,0.1472,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,3.3333
+Expert[MI_Shin2017A],single model,ADHD_AliMotie,source,test,599,0.7170,0.5559,0.5936,0.4197,0.0997,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-13.1447
+Expert[MI_Shin2017A],single model,MI_Weibo2014,external,all 10 subjects,1580,0.7243,0.5943,0.6388,0.5937,0.1886,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-2.2152
+Expert[MI_Shin2017A],single model,SOURCE_MACRO,source,test,67546,1.1149,0.4452,0.5955,0.4221,0.1236,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,-15.4047
+Expert[MI_PhysioNet],single model,MI_OpenBMI,source,test,4800,0.6071,0.6996,0.7603,0.6992,0.3992,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-6.7292
+Expert[MI_PhysioNet],single model,MI_BCIC_IV2a,source,test,1152,1.3912,0.3177,0.4908,0.2137,0.0903,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-26.8229
+Expert[MI_PhysioNet],single model,MI_ShanghaiU,source,test,2347,0.7876,0.5332,0.5744,0.4993,0.0662,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-3.4938
+Expert[MI_PhysioNet],single model,MI_BCIC_Upperlimb,source,test,1200,1.0990,0.3408,0.5097,0.3338,0.0112,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-11.5000
+Expert[MI_PhysioNet],single model,MI_HighGamma,source,test,2040,0.9563,0.3971,0.3093,0.3424,-0.2059,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-29.6078
+Expert[MI_PhysioNet],single model,MI_Cho2017,source,test,1800,0.6629,0.6533,0.6716,0.6533,0.3067,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-13.5000
+Expert[MI_PhysioNet],single model,MI_Shin2017A,source,test,360,0.8133,0.5222,0.5169,0.5120,0.0444,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-21.6667
+Expert[MI_PhysioNet],single model,MI_PhysioNet,source,test,5262,0.5456,0.7545,0.8336,0.7541,0.5089,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,1.9384
+Expert[MI_PhysioNet],single model,EMO_FACED,source,test,1932,2.1791,0.1535,0.5435,0.1435,0.0469,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-24.8121
+Expert[MI_PhysioNet],single model,EMO_SEED_3_seg4,source,test,7620,1.0374,0.4727,0.6824,0.4580,0.2152,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-21.0261
+Expert[MI_PhysioNet],single model,EMO_SEED_4_seg4,source,test,6210,1.3610,0.3311,0.5830,0.3625,0.1023,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-11.6744
+Expert[MI_PhysioNet],single model,EMO_SEED_5_seg4,source,test,9984,1.6143,0.2466,0.5432,0.2446,0.0545,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-13.4180
+Expert[MI_PhysioNet],single model,EMO_SEED_7_seg4,source,test,17200,1.9282,0.2009,0.5476,0.1986,0.0683,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-12.0592
+Expert[MI_PhysioNet],single model,SSVEP_OpenBMI,source,test,4800,1.3560,0.3775,0.6342,0.3621,0.1700,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-38.1875
+Expert[MI_PhysioNet],single model,Workload,source,test,240,0.7107,0.4972,0.5480,0.2602,-0.0030,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-7.7778
+Expert[MI_PhysioNet],single model,ADHD_AliMotie,source,test,599,0.6837,0.5647,0.6495,0.5013,0.1194,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-12.2617
+Expert[MI_PhysioNet],single model,MI_Weibo2014,external,all 10 subjects,1580,0.7370,0.5791,0.6046,0.5767,0.1582,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-3.7342
+Expert[MI_PhysioNet],single model,SOURCE_MACRO,source,test,67546,1.1083,0.4414,0.5874,0.4087,0.1247,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,-15.7874
+Expert[EMO_FACED],single model,MI_OpenBMI,source,test,4800,0.6032,0.6969,0.7763,0.6931,0.3938,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-7.0000
+Expert[EMO_FACED],single model,MI_BCIC_IV2a,source,test,1152,1.3500,0.3628,0.6342,0.2946,0.1505,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-22.3090
+Expert[EMO_FACED],single model,MI_ShanghaiU,source,test,2347,0.6850,0.5574,0.5987,0.5407,0.1150,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-1.0678
+Expert[EMO_FACED],single model,MI_BCIC_Upperlimb,source,test,1200,1.0725,0.4000,0.6122,0.3611,0.1000,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-5.5833
+Expert[EMO_FACED],single model,MI_HighGamma,source,test,2040,0.6967,0.5627,0.5663,0.5201,0.1255,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-13.0392
+Expert[EMO_FACED],single model,MI_Cho2017,source,test,1800,0.5991,0.7089,0.7750,0.7077,0.4178,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-7.9444
+Expert[EMO_FACED],single model,MI_Shin2017A,source,test,360,0.6298,0.6778,0.7133,0.6719,0.3556,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-6.1111
+Expert[EMO_FACED],single model,MI_PhysioNet,source,test,5262,0.6331,0.6517,0.7292,0.6418,0.3033,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-8.3428
+Expert[EMO_FACED],single model,EMO_FACED,source,test,1932,1.9795,0.4062,0.7110,0.4016,0.3274,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,0.4563
+Expert[EMO_FACED],single model,EMO_SEED_3_seg4,source,test,7620,0.9926,0.5685,0.7409,0.5549,0.3657,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-11.4524
+Expert[EMO_FACED],single model,EMO_SEED_4_seg4,source,test,6210,1.3983,0.3280,0.5718,0.3383,0.1043,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-11.9918
+Expert[EMO_FACED],single model,EMO_SEED_5_seg4,source,test,9984,1.6136,0.2547,0.5610,0.2552,0.0709,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-12.6133
+Expert[EMO_FACED],single model,EMO_SEED_7_seg4,source,test,17200,1.9173,0.2215,0.5607,0.2228,0.0930,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-10.0072
+Expert[EMO_FACED],single model,SSVEP_OpenBMI,source,test,4800,1.3225,0.4883,0.7253,0.4617,0.3178,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-27.1042
+Expert[EMO_FACED],single model,Workload,source,test,240,0.6509,0.6667,0.6807,0.7328,0.3125,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,9.1667
+Expert[EMO_FACED],single model,ADHD_AliMotie,source,test,599,0.5982,0.7272,0.7805,0.7121,0.4377,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,3.9935
+Expert[EMO_FACED],single model,MI_Weibo2014,external,all 10 subjects,1580,0.6699,0.5918,0.6450,0.5688,0.1835,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-2.4684
+Expert[EMO_FACED],single model,SOURCE_MACRO,source,test,67546,1.0464,0.5174,0.6711,0.5069,0.2494,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,-8.1844
+Expert[EMO_SEED_3_seg4],single model,MI_OpenBMI,source,test,4800,0.6532,0.6258,0.7091,0.5825,0.2517,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-14.1042
+Expert[EMO_SEED_3_seg4],single model,MI_BCIC_IV2a,source,test,1152,1.2858,0.4913,0.7461,0.4173,0.3218,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-9.4618
+Expert[EMO_SEED_3_seg4],single model,MI_ShanghaiU,source,test,2347,0.6879,0.5633,0.5789,0.5632,0.1266,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-0.4767
+Expert[EMO_SEED_3_seg4],single model,MI_BCIC_Upperlimb,source,test,1200,1.0873,0.3667,0.5670,0.3568,0.0500,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-8.9167
+Expert[EMO_SEED_3_seg4],single model,MI_HighGamma,source,test,2040,0.6417,0.6279,0.6937,0.6279,0.2559,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-6.5196
+Expert[EMO_SEED_3_seg4],single model,MI_Cho2017,source,test,1800,0.6592,0.6111,0.7473,0.5515,0.2222,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-17.7222
+Expert[EMO_SEED_3_seg4],single model,MI_Shin2017A,source,test,360,0.6449,0.6417,0.7404,0.6069,0.2833,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-9.7222
+Expert[EMO_SEED_3_seg4],single model,MI_PhysioNet,source,test,5262,0.6894,0.5743,0.6647,0.5024,0.1486,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-16.0775
+Expert[EMO_SEED_3_seg4],single model,EMO_FACED,source,test,1932,2.1166,0.2586,0.6365,0.2636,0.1662,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-14.3049
+Expert[EMO_SEED_3_seg4],single model,EMO_SEED_3_seg4,source,test,7620,0.8844,0.6671,0.8005,0.6721,0.5059,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-1.5932
+Expert[EMO_SEED_3_seg4],single model,EMO_SEED_4_seg4,source,test,6210,1.3733,0.3858,0.6277,0.4025,0.1680,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-6.2079
+Expert[EMO_SEED_3_seg4],single model,EMO_SEED_5_seg4,source,test,9984,1.5790,0.2926,0.6007,0.3055,0.1195,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-8.8176
+Expert[EMO_SEED_3_seg4],single model,EMO_SEED_7_seg4,source,test,17200,1.8918,0.2586,0.5916,0.2514,0.1332,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-6.2930
+Expert[EMO_SEED_3_seg4],single model,SSVEP_OpenBMI,source,test,4800,1.3224,0.4788,0.7345,0.4337,0.3050,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-28.0625
+Expert[EMO_SEED_3_seg4],single model,Workload,source,test,240,0.6220,0.6500,0.7098,0.7117,0.2727,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,7.5000
+Expert[EMO_SEED_3_seg4],single model,ADHD_AliMotie,source,test,599,0.7863,0.5178,0.6224,0.3069,0.0311,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-16.9546
+Expert[EMO_SEED_3_seg4],single model,MI_Weibo2014,external,all 10 subjects,1580,0.6955,0.5563,0.6365,0.5221,0.1127,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-6.0127
+Expert[EMO_SEED_3_seg4],single model,SOURCE_MACRO,source,test,67546,1.0578,0.5007,0.6732,0.4722,0.2101,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-9.8584
+Expert[EMO_SEED_4_seg4],single model,MI_OpenBMI,source,test,4800,0.6143,0.6867,0.7698,0.6770,0.3733,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-8.0208
+Expert[EMO_SEED_4_seg4],single model,MI_BCIC_IV2a,source,test,1152,1.2540,0.5365,0.7916,0.5355,0.3819,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-4.9479
+Expert[EMO_SEED_4_seg4],single model,MI_ShanghaiU,source,test,2347,0.6957,0.5383,0.5558,0.5268,0.0765,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-2.9800
+Expert[EMO_SEED_4_seg4],single model,MI_BCIC_Upperlimb,source,test,1200,1.0817,0.4017,0.5862,0.3888,0.1025,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-5.4167
+Expert[EMO_SEED_4_seg4],single model,MI_HighGamma,source,test,2040,0.7008,0.5299,0.5383,0.5297,0.0598,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-16.3235
+Expert[EMO_SEED_4_seg4],single model,MI_Cho2017,source,test,1800,0.5971,0.7100,0.8090,0.7076,0.4200,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-7.8333
+Expert[EMO_SEED_4_seg4],single model,MI_Shin2017A,source,test,360,0.6287,0.6611,0.7204,0.6601,0.3222,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-7.7778
+Expert[EMO_SEED_4_seg4],single model,MI_PhysioNet,source,test,5262,0.6582,0.6133,0.6559,0.6131,0.2265,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-12.1817
+Expert[EMO_SEED_4_seg4],single model,EMO_FACED,source,test,1932,2.2122,0.1324,0.5236,0.1136,0.0251,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-26.9189
+Expert[EMO_SEED_4_seg4],single model,EMO_SEED_3_seg4,source,test,7620,0.9664,0.6110,0.7527,0.6094,0.4284,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-7.1955
+Expert[EMO_SEED_4_seg4],single model,EMO_SEED_4_seg4,source,test,6210,1.2611,0.4552,0.6817,0.4860,0.2703,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,0.7355
+Expert[EMO_SEED_4_seg4],single model,EMO_SEED_5_seg4,source,test,9984,1.5473,0.3460,0.6119,0.3436,0.1826,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-3.4790
+Expert[EMO_SEED_4_seg4],single model,EMO_SEED_7_seg4,source,test,17200,1.8549,0.3032,0.6165,0.3005,0.1893,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-1.8316
+Expert[EMO_SEED_4_seg4],single model,SSVEP_OpenBMI,source,test,4800,1.3101,0.5171,0.7729,0.5083,0.3561,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-24.2292
+Expert[EMO_SEED_4_seg4],single model,Workload,source,test,240,0.7778,0.5694,0.6638,0.4034,0.0814,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-0.5556
+Expert[EMO_SEED_4_seg4],single model,ADHD_AliMotie,source,test,599,0.6766,0.6232,0.7059,0.5696,0.2285,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-6.4125
+Expert[EMO_SEED_4_seg4],single model,MI_Weibo2014,external,all 10 subjects,1580,0.6817,0.5608,0.6563,0.5415,0.1215,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-5.5696
+Expert[EMO_SEED_4_seg4],single model,SOURCE_MACRO,source,test,67546,1.0523,0.5147,0.6722,0.4983,0.2328,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,-8.4605
+Expert[EMO_SEED_5_seg4],single model,MI_OpenBMI,source,test,4800,0.6378,0.6533,0.7386,0.6245,0.3067,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-11.3542
+Expert[EMO_SEED_5_seg4],single model,MI_BCIC_IV2a,source,test,1152,1.2330,0.5104,0.7807,0.4947,0.3472,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-7.5521
+Expert[EMO_SEED_5_seg4],single model,MI_ShanghaiU,source,test,2347,0.6881,0.5585,0.5797,0.5583,0.1170,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-0.9600
+Expert[EMO_SEED_5_seg4],single model,MI_BCIC_Upperlimb,source,test,1200,1.0864,0.3908,0.5709,0.3848,0.0863,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-6.5000
+Expert[EMO_SEED_5_seg4],single model,MI_HighGamma,source,test,2040,0.6760,0.5765,0.6386,0.5546,0.1529,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-11.6667
+Expert[EMO_SEED_5_seg4],single model,MI_Cho2017,source,test,1800,0.6426,0.6350,0.7481,0.6038,0.2700,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-15.3333
+Expert[EMO_SEED_5_seg4],single model,MI_Shin2017A,source,test,360,0.6694,0.6028,0.6925,0.5559,0.2056,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-13.6111
+Expert[EMO_SEED_5_seg4],single model,MI_PhysioNet,source,test,5262,0.6836,0.5810,0.6470,0.5401,0.1619,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-15.4124
+Expert[EMO_SEED_5_seg4],single model,EMO_FACED,source,test,1932,2.1897,0.1641,0.5441,0.1400,0.0579,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-23.7520
+Expert[EMO_SEED_5_seg4],single model,EMO_SEED_3_seg4,source,test,7620,0.9760,0.6025,0.7324,0.6027,0.4137,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-8.0479
+Expert[EMO_SEED_5_seg4],single model,EMO_SEED_4_seg4,source,test,6210,1.2887,0.4067,0.6420,0.4467,0.2125,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-4.1200
+Expert[EMO_SEED_5_seg4],single model,EMO_SEED_5_seg4,source,test,9984,1.5056,0.3752,0.6522,0.3827,0.2215,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-0.5616
+Expert[EMO_SEED_5_seg4],single model,EMO_SEED_7_seg4,source,test,17200,1.8975,0.2644,0.5817,0.2564,0.1405,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-5.7176
+Expert[EMO_SEED_5_seg4],single model,SSVEP_OpenBMI,source,test,4800,1.3102,0.5125,0.7466,0.5026,0.3500,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-24.6875
+Expert[EMO_SEED_5_seg4],single model,Workload,source,test,240,0.7420,0.5833,0.6319,0.4440,0.1007,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,0.8333
+Expert[EMO_SEED_5_seg4],single model,ADHD_AliMotie,source,test,599,0.6205,0.6898,0.7541,0.6676,0.3621,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,0.2516
+Expert[EMO_SEED_5_seg4],single model,MI_Weibo2014,external,all 10 subjects,1580,0.6947,0.5557,0.6169,0.5088,0.1114,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-6.0759
+Expert[EMO_SEED_5_seg4],single model,SOURCE_MACRO,source,test,67546,1.0529,0.5067,0.6676,0.4850,0.2192,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-9.2620
+Expert[EMO_SEED_7_seg4],single model,MI_OpenBMI,source,test,4800,0.6003,0.7085,0.7756,0.7085,0.4171,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-5.8333
+Expert[EMO_SEED_7_seg4],single model,MI_BCIC_IV2a,source,test,1152,1.2766,0.5017,0.7664,0.4812,0.3356,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-8.4201
+Expert[EMO_SEED_7_seg4],single model,MI_ShanghaiU,source,test,2347,0.6827,0.5669,0.5902,0.5537,0.1336,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-0.1192
+Expert[EMO_SEED_7_seg4],single model,MI_BCIC_Upperlimb,source,test,1200,1.0808,0.3992,0.5837,0.3943,0.0987,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-5.6667
+Expert[EMO_SEED_7_seg4],single model,MI_HighGamma,source,test,2040,0.6578,0.6034,0.6809,0.5851,0.2069,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-8.9706
+Expert[EMO_SEED_7_seg4],single model,MI_Cho2017,source,test,1800,0.6109,0.6828,0.7744,0.6798,0.3656,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-10.5556
+Expert[EMO_SEED_7_seg4],single model,MI_Shin2017A,source,test,360,0.5953,0.7167,0.7952,0.7166,0.4333,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-2.2222
+Expert[EMO_SEED_7_seg4],single model,MI_PhysioNet,source,test,5262,0.6485,0.6273,0.6802,0.6260,0.2547,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-10.7754
+Expert[EMO_SEED_7_seg4],single model,EMO_FACED,source,test,1932,2.2156,0.1204,0.5221,0.0856,0.0102,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-28.1267
+Expert[EMO_SEED_7_seg4],single model,EMO_SEED_3_seg4,source,test,7620,0.9613,0.6254,0.7727,0.6268,0.4473,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-5.7636
+Expert[EMO_SEED_7_seg4],single model,EMO_SEED_4_seg4,source,test,6210,1.3301,0.4141,0.6450,0.4180,0.2042,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-3.3807
+Expert[EMO_SEED_7_seg4],single model,EMO_SEED_5_seg4,source,test,9984,1.5600,0.3287,0.6074,0.3281,0.1592,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-5.2084
+Expert[EMO_SEED_7_seg4],single model,EMO_SEED_7_seg4,source,test,17200,1.8237,0.3300,0.6483,0.3354,0.2194,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,0.8508
+Expert[EMO_SEED_7_seg4],single model,SSVEP_OpenBMI,source,test,4800,1.3130,0.5038,0.7669,0.5184,0.3383,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-25.5625
+Expert[EMO_SEED_7_seg4],single model,Workload,source,test,240,0.8163,0.5167,0.6184,0.2533,0.0180,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-5.8333
+Expert[EMO_SEED_7_seg4],single model,ADHD_AliMotie,source,test,599,0.7397,0.5240,0.6609,0.3898,0.0429,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-16.3311
+Expert[EMO_SEED_7_seg4],single model,MI_Weibo2014,external,all 10 subjects,1580,0.6492,0.6190,0.6855,0.6169,0.2380,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,0.2532
+Expert[EMO_SEED_7_seg4],single model,SOURCE_MACRO,source,test,67546,1.0570,0.5106,0.6805,0.4813,0.2303,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,-8.8699
+Expert[SSVEP_OpenBMI],single model,MI_OpenBMI,source,test,4800,0.6694,0.5862,0.6334,0.5839,0.1725,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-18.0625
+Expert[SSVEP_OpenBMI],single model,MI_BCIC_IV2a,source,test,1152,1.3873,0.2943,0.5192,0.1943,0.0590,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-29.1667
+Expert[SSVEP_OpenBMI],single model,MI_ShanghaiU,source,test,2347,0.7149,0.5010,0.4982,0.4714,0.0020,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-6.7094
+Expert[SSVEP_OpenBMI],single model,MI_BCIC_Upperlimb,source,test,1200,1.0983,0.3392,0.5311,0.2310,0.0088,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-11.6667
+Expert[SSVEP_OpenBMI],single model,MI_HighGamma,source,test,2040,0.7338,0.4779,0.4844,0.3930,-0.0441,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-21.5196
+Expert[SSVEP_OpenBMI],single model,MI_Cho2017,source,test,1800,0.6336,0.6522,0.7172,0.6519,0.3044,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-13.6111
+Expert[SSVEP_OpenBMI],single model,MI_Shin2017A,source,test,360,0.6900,0.5306,0.5643,0.5042,0.0611,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-20.8333
+Expert[SSVEP_OpenBMI],single model,MI_PhysioNet,source,test,5262,0.7114,0.4964,0.5041,0.4961,-0.0072,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-23.8693
+Expert[SSVEP_OpenBMI],single model,EMO_FACED,source,test,1932,2.1761,0.1785,0.5465,0.1628,0.0749,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-22.3162
+Expert[SSVEP_OpenBMI],single model,EMO_SEED_3_seg4,source,test,7620,1.0087,0.5474,0.7311,0.5429,0.3307,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-13.5624
+Expert[SSVEP_OpenBMI],single model,EMO_SEED_4_seg4,source,test,6210,1.3653,0.3756,0.6110,0.3681,0.1428,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-7.2243
+Expert[SSVEP_OpenBMI],single model,EMO_SEED_5_seg4,source,test,9984,1.5953,0.2794,0.5731,0.2690,0.0928,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-10.1340
+Expert[SSVEP_OpenBMI],single model,EMO_SEED_7_seg4,source,test,17200,1.9139,0.2268,0.5622,0.2244,0.0987,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-9.4776
+Expert[SSVEP_OpenBMI],single model,SSVEP_OpenBMI,source,test,4800,1.0380,0.8883,0.9528,0.8886,0.8511,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,12.8958
+Expert[SSVEP_OpenBMI],single model,Workload,source,test,240,0.6988,0.5167,0.5974,0.3374,0.0191,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-5.8333
+Expert[SSVEP_OpenBMI],single model,ADHD_AliMotie,source,test,599,0.6580,0.5825,0.7067,0.5011,0.1506,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-10.4843
+Expert[SSVEP_OpenBMI],single model,MI_Weibo2014,external,all 10 subjects,1580,0.6934,0.5272,0.5553,0.5266,0.0544,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-8.9241
+Expert[SSVEP_OpenBMI],single model,SOURCE_MACRO,source,test,67546,1.0683,0.4671,0.6083,0.4263,0.1448,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,-13.2234
+Expert[Workload],single model,MI_OpenBMI,source,test,4800,0.6740,0.5735,0.6291,0.5615,0.1471,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-19.3333
+Expert[Workload],single model,MI_BCIC_IV2a,source,test,1152,1.3710,0.3932,0.6390,0.3366,0.1910,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-19.2708
+Expert[Workload],single model,MI_ShanghaiU,source,test,2347,0.6882,0.5279,0.5523,0.5065,0.0560,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-4.0144
+Expert[Workload],single model,MI_BCIC_Upperlimb,source,test,1200,1.0912,0.3950,0.5715,0.3448,0.0925,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-6.0833
+Expert[Workload],single model,MI_HighGamma,source,test,2040,0.7010,0.4873,0.4896,0.4336,-0.0255,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-20.5882
+Expert[Workload],single model,MI_Cho2017,source,test,1800,0.6539,0.6272,0.6794,0.6243,0.2544,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-16.1111
+Expert[Workload],single model,MI_Shin2017A,source,test,360,0.6605,0.5917,0.6567,0.5882,0.1833,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-14.7222
+Expert[Workload],single model,MI_PhysioNet,source,test,5262,0.6835,0.5479,0.5868,0.5347,0.0958,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-18.7191
+Expert[Workload],single model,EMO_FACED,source,test,1932,2.1826,0.1645,0.5374,0.1593,0.0615,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-23.7118
+Expert[Workload],single model,EMO_SEED_3_seg4,source,test,7620,1.0203,0.5462,0.7152,0.5356,0.3209,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-13.6831
+Expert[Workload],single model,EMO_SEED_4_seg4,source,test,6210,1.4095,0.3435,0.5858,0.2978,0.0998,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-10.4345
+Expert[Workload],single model,EMO_SEED_5_seg4,source,test,9984,1.6159,0.2467,0.5543,0.2331,0.0524,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-13.4054
+Expert[Workload],single model,EMO_SEED_7_seg4,source,test,17200,1.9172,0.2118,0.5643,0.2084,0.0816,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-10.9721
+Expert[Workload],single model,SSVEP_OpenBMI,source,test,4800,1.3622,0.3910,0.6542,0.3333,0.1881,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-36.8333
+Expert[Workload],single model,Workload,source,test,240,0.5433,0.6306,0.7312,0.7461,0.2919,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,5.5556
+Expert[Workload],single model,ADHD_AliMotie,source,test,599,0.6828,0.5666,0.6365,0.5439,0.1268,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-12.0746
+Expert[Workload],single model,MI_Weibo2014,external,all 10 subjects,1580,0.6925,0.5342,0.5624,0.4988,0.0684,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-8.2278
+Expert[Workload],single model,SOURCE_MACRO,source,test,67546,1.0786,0.4528,0.6115,0.4367,0.1386,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,-14.6501
+Expert[ADHD_AliMotie],single model,MI_OpenBMI,source,test,4800,0.6847,0.5192,0.7175,0.3933,0.0383,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-24.7708
+Expert[ADHD_AliMotie],single model,MI_BCIC_IV2a,source,test,1152,1.3621,0.2743,0.7435,0.1496,0.0324,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-31.1632
+Expert[ADHD_AliMotie],single model,MI_ShanghaiU,source,test,2347,0.6921,0.5089,0.5446,0.4105,0.0178,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-5.9229
+Expert[ADHD_AliMotie],single model,MI_BCIC_Upperlimb,source,test,1200,1.0956,0.3533,0.5541,0.3479,0.0300,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-10.2500
+Expert[ADHD_AliMotie],single model,MI_HighGamma,source,test,2040,0.6998,0.4985,0.3749,0.3453,-0.0029,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-19.4608
+Expert[ADHD_AliMotie],single model,MI_Cho2017,source,test,1800,0.6033,0.6867,0.7990,0.6741,0.3733,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-10.1667
+Expert[ADHD_AliMotie],single model,MI_Shin2017A,source,test,360,0.6421,0.6028,0.7514,0.5541,0.2056,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-13.6111
+Expert[ADHD_AliMotie],single model,MI_PhysioNet,source,test,5262,0.6834,0.5255,0.6656,0.4033,0.0509,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-20.9616
+Expert[ADHD_AliMotie],single model,EMO_FACED,source,test,1932,2.1127,0.2440,0.6441,0.2429,0.1537,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-15.7676
+Expert[ADHD_AliMotie],single model,EMO_SEED_3_seg4,source,test,7620,1.0120,0.5327,0.7390,0.5209,0.3076,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-15.0319
+Expert[ADHD_AliMotie],single model,EMO_SEED_4_seg4,source,test,6210,1.3983,0.3367,0.5776,0.3051,0.0933,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-11.1128
+Expert[ADHD_AliMotie],single model,EMO_SEED_5_seg4,source,test,9984,1.6132,0.2566,0.5471,0.2465,0.0672,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-12.4160
+Expert[ADHD_AliMotie],single model,EMO_SEED_7_seg4,source,test,17200,1.9129,0.2257,0.5670,0.2292,0.0980,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-9.5885
+Expert[ADHD_AliMotie],single model,SSVEP_OpenBMI,source,test,4800,1.3670,0.3890,0.6218,0.3064,0.1853,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-37.0417
+Expert[ADHD_AliMotie],single model,Workload,source,test,240,0.7401,0.5000,0.5897,0.1000,0.0000,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-7.5000
+Expert[ADHD_AliMotie],single model,ADHD_AliMotie,source,test,599,0.6123,0.6887,0.7686,0.6985,0.3844,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,0.1383
+Expert[ADHD_AliMotie],single model,MI_Weibo2014,external,all 10 subjects,1580,0.6862,0.5342,0.5889,0.4771,0.0684,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-8.2278
+Expert[ADHD_AliMotie],single model,SOURCE_MACRO,source,test,67546,1.0770,0.4464,0.6378,0.3705,0.1272,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,-15.2892
+Joint,single model,MI_OpenBMI,source,test,4800,0.5283,0.7669,0.8428,0.7664,0.5337,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,MI_BCIC_IV2a,source,test,1152,1.1275,0.5859,0.7895,0.5804,0.4479,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,MI_ShanghaiU,source,test,2347,0.7499,0.5681,0.5934,0.5582,0.1360,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,MI_BCIC_Upperlimb,source,test,1200,1.0833,0.4558,0.6315,0.4497,0.1837,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,MI_HighGamma,source,test,2040,0.6152,0.6931,0.7601,0.6925,0.3863,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,MI_Cho2017,source,test,1800,0.5015,0.7883,0.8794,0.7864,0.5767,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,MI_Shin2017A,source,test,360,0.5648,0.7389,0.8162,0.7368,0.4778,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,MI_PhysioNet,source,test,5262,0.5624,0.7351,0.8039,0.7351,0.4702,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,EMO_FACED,source,test,1932,1.9823,0.4016,0.7100,0.4015,0.3230,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,EMO_SEED_3_seg4,source,test,7620,0.8688,0.6830,0.8142,0.6875,0.5303,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,EMO_SEED_4_seg4,source,test,6210,1.2686,0.4479,0.6753,0.4822,0.2658,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,EMO_SEED_5_seg4,source,test,9984,1.4989,0.3808,0.6530,0.3872,0.2300,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,EMO_SEED_7_seg4,source,test,17200,1.8333,0.3215,0.6362,0.3253,0.2095,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,SSVEP_OpenBMI,source,test,4800,1.1036,0.7594,0.8969,0.7637,0.6792,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,Workload,source,test,240,0.5945,0.5750,0.6362,0.7016,0.1677,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,ADHD_AliMotie,source,test,599,0.6170,0.6873,0.7799,0.6956,0.3787,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,MI_Weibo2014,external,all 10 subjects,1580,0.6918,0.6165,0.6839,0.6119,0.2329,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Joint,single model,SOURCE_MACRO,source,test,67546,0.9687,0.5993,0.7449,0.6094,0.3748,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/joint/best.ckpt,0.0000
+Uniform,single model,MI_OpenBMI,source,test,4800,0.5609,0.7369,0.8194,0.7334,0.4738,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-3.0000
+Uniform,single model,MI_BCIC_IV2a,source,test,1152,1.2003,0.5130,0.8214,0.4762,0.3507,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-7.2917
+Uniform,single model,MI_ShanghaiU,source,test,2347,0.6916,0.5947,0.6291,0.5923,0.1892,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,2.6561
+Uniform,single model,MI_BCIC_Upperlimb,source,test,1200,1.0639,0.4375,0.6287,0.4155,0.1562,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-1.8333
+Uniform,single model,MI_HighGamma,source,test,2040,0.6513,0.6392,0.6738,0.6390,0.2784,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-5.3922
+Uniform,single model,MI_Cho2017,source,test,1800,0.5476,0.7306,0.8390,0.7292,0.4611,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-5.7778
+Uniform,single model,MI_Shin2017A,source,test,360,0.6368,0.6417,0.6944,0.6393,0.2833,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-9.7222
+Uniform,single model,MI_PhysioNet,source,test,5262,0.6251,0.6695,0.7296,0.6677,0.3390,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-6.5564
+Uniform,single model,EMO_FACED,source,test,1932,2.0886,0.2848,0.6397,0.2875,0.1964,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-11.6881
+Uniform,single model,EMO_SEED_3_seg4,source,test,7620,0.9607,0.6056,0.7515,0.6016,0.4200,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-7.7404
+Uniform,single model,EMO_SEED_4_seg4,source,test,6210,1.3341,0.4052,0.6351,0.4176,0.1892,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-4.2653
+Uniform,single model,EMO_SEED_5_seg4,source,test,9984,1.5750,0.3156,0.5886,0.3207,0.1431,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-6.5164
+Uniform,single model,EMO_SEED_7_seg4,source,test,17200,1.8755,0.2743,0.5994,0.2747,0.1544,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-4.7196
+Uniform,single model,SSVEP_OpenBMI,source,test,4800,1.2796,0.5475,0.7885,0.5238,0.3967,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-21.1875
+Uniform,single model,Workload,source,test,240,0.6375,0.5639,0.6497,0.6510,0.1168,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-1.1111
+Uniform,single model,ADHD_AliMotie,source,test,599,0.7894,0.5218,0.5861,0.3523,0.0386,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-16.5471
+Uniform,single model,MI_Weibo2014,external,all 10 subjects,1580,0.6762,0.6089,0.6875,0.5981,0.2177,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-0.7595
+Uniform,single model,SOURCE_MACRO,source,test,67546,1.0324,0.5301,0.6921,0.5201,0.2617,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_uniform/merged.ckpt,-6.9183
+Global,single model,MI_OpenBMI,source,test,4800,0.5785,0.7202,0.8028,0.7144,0.4404,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-4.6667
+Global,single model,MI_BCIC_IV2a,source,test,1152,1.2493,0.4740,0.7972,0.4334,0.2986,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-11.1979
+Global,single model,MI_ShanghaiU,source,test,2347,0.6884,0.5902,0.6168,0.5811,0.1803,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,2.2150
+Global,single model,MI_BCIC_Upperlimb,source,test,1200,1.0726,0.4200,0.6159,0.3953,0.1300,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-3.5833
+Global,single model,MI_HighGamma,source,test,2040,0.6887,0.5882,0.6060,0.5811,0.1765,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-10.4902
+Global,single model,MI_Cho2017,source,test,1800,0.5560,0.7278,0.8399,0.7252,0.4556,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-6.0556
+Global,single model,MI_Shin2017A,source,test,360,0.5966,0.7028,0.7562,0.6992,0.4056,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-3.6111
+Global,single model,MI_PhysioNet,source,test,5262,0.6495,0.6336,0.6960,0.6290,0.2672,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-10.1482
+Global,single model,EMO_FACED,source,test,1932,2.1073,0.2528,0.6240,0.2566,0.1599,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-14.8819
+Global,single model,EMO_SEED_3_seg4,source,test,7620,0.9481,0.6243,0.7672,0.6251,0.4460,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-5.8732
+Global,single model,EMO_SEED_4_seg4,source,test,6210,1.2940,0.4528,0.6741,0.4657,0.2497,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,0.4875
+Global,single model,EMO_SEED_5_seg4,source,test,9984,1.5489,0.3416,0.6146,0.3496,0.1770,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-3.9225
+Global,single model,EMO_SEED_7_seg4,source,test,17200,1.8577,0.2992,0.6149,0.3018,0.1840,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-2.2337
+Global,single model,SSVEP_OpenBMI,source,test,4800,1.2475,0.5946,0.8105,0.5903,0.4594,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-16.4792
+Global,single model,Workload,source,test,240,0.6363,0.5611,0.6831,0.6418,0.1089,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-1.3889
+Global,single model,ADHD_AliMotie,source,test,599,0.7127,0.6034,0.6920,0.5097,0.1874,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-8.3940
+Global,single model,MI_Weibo2014,external,all 10 subjects,1580,0.6811,0.5918,0.6831,0.5766,0.1835,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-2.4684
+Global,single model,SOURCE_MACRO,source,test,67546,1.0270,0.5367,0.7007,0.5312,0.2704,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_global/merged.ckpt,-6.2640
+Block,single model,MI_OpenBMI,source,test,4800,0.5599,0.7363,0.8048,0.7355,0.4725,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-3.0625
+Block,single model,MI_BCIC_IV2a,source,test,1152,1.1190,0.6267,0.8426,0.6062,0.5023,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,4.0799
+Block,single model,MI_ShanghaiU,source,test,2347,0.7282,0.5751,0.6064,0.5585,0.1499,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,0.6987
+Block,single model,MI_BCIC_Upperlimb,source,test,1200,1.0765,0.4308,0.6104,0.4144,0.1462,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-2.5000
+Block,single model,MI_HighGamma,source,test,2040,0.6483,0.6412,0.6995,0.6404,0.2824,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-5.1961
+Block,single model,MI_Cho2017,source,test,1800,0.5383,0.7478,0.8498,0.7478,0.4956,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-4.0556
+Block,single model,MI_Shin2017A,source,test,360,0.5626,0.7389,0.7889,0.7388,0.4778,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,0.0000
+Block,single model,MI_PhysioNet,source,test,5262,0.5915,0.7062,0.7764,0.7059,0.4124,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-2.8886
+Block,single model,EMO_FACED,source,test,1932,2.0450,0.3375,0.6743,0.3363,0.2521,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-6.4144
+Block,single model,EMO_SEED_3_seg4,source,test,7620,0.9139,0.6464,0.7867,0.6500,0.4777,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-3.6632
+Block,single model,EMO_SEED_4_seg4,source,test,6210,1.3114,0.4133,0.6464,0.4451,0.2154,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-3.4607
+Block,single model,EMO_SEED_5_seg4,source,test,9984,1.5466,0.3372,0.6165,0.3436,0.1707,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-4.3553
+Block,single model,EMO_SEED_7_seg4,source,test,17200,1.8610,0.2940,0.6171,0.2998,0.1777,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-2.7584
+Block,single model,SSVEP_OpenBMI,source,test,4800,1.2093,0.5958,0.8231,0.6025,0.4611,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-16.3542
+Block,single model,Workload,source,test,240,0.5861,0.5611,0.6786,0.6858,0.1325,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-1.3889
+Block,single model,ADHD_AliMotie,source,test,599,0.6335,0.6641,0.7448,0.6706,0.3291,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-2.3232
+Block,single model,MI_Weibo2014,external,all 10 subjects,1580,0.6851,0.6146,0.6740,0.6087,0.2291,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-0.1899
+Block,single model,SOURCE_MACRO,source,test,67546,0.9957,0.5658,0.7229,0.5738,0.3222,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/merge_block/merged.ckpt,-3.3526
+Specialist,specialist reference: 16 separate models (not one deployable model),MI_OpenBMI,source,test,4800,0.4912,0.8048,0.8763,0.8046,0.6096,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt,3.7917
+Specialist,specialist reference: 16 separate models (not one deployable model),MI_BCIC_IV2a,source,test,1152,1.0711,0.6519,0.8242,0.6389,0.5359,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt,6.5972
+Specialist,specialist reference: 16 separate models (not one deployable model),MI_ShanghaiU,source,test,2347,0.7059,0.6141,0.6472,0.6133,0.2282,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt,4.6052
+Specialist,specialist reference: 16 separate models (not one deployable model),MI_BCIC_Upperlimb,source,test,1200,1.0489,0.4850,0.6544,0.4833,0.2275,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt,2.9167
+Specialist,specialist reference: 16 separate models (not one deployable model),MI_HighGamma,source,test,2040,0.4945,0.8049,0.8734,0.8040,0.6098,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt,11.1765
+Specialist,specialist reference: 16 separate models (not one deployable model),MI_Cho2017,source,test,1800,0.5052,0.7933,0.8792,0.7933,0.5867,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt,0.5000
+Specialist,specialist reference: 16 separate models (not one deployable model),MI_Shin2017A,source,test,360,0.5526,0.7528,0.7949,0.7498,0.5056,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt,1.3889
+Specialist,specialist reference: 16 separate models (not one deployable model),MI_PhysioNet,source,test,5262,0.5456,0.7545,0.8336,0.7541,0.5089,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt,1.9384
+Specialist,specialist reference: 16 separate models (not one deployable model),EMO_FACED,source,test,1932,1.9795,0.4062,0.7110,0.4016,0.3274,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt,0.4563
+Specialist,specialist reference: 16 separate models (not one deployable model),EMO_SEED_3_seg4,source,test,7620,0.8844,0.6671,0.8005,0.6721,0.5059,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt,-1.5932
+Specialist,specialist reference: 16 separate models (not one deployable model),EMO_SEED_4_seg4,source,test,6210,1.2611,0.4552,0.6817,0.4860,0.2703,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt,0.7355
+Specialist,specialist reference: 16 separate models (not one deployable model),EMO_SEED_5_seg4,source,test,9984,1.5056,0.3752,0.6522,0.3827,0.2215,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt,-0.5616
+Specialist,specialist reference: 16 separate models (not one deployable model),EMO_SEED_7_seg4,source,test,17200,1.8237,0.3300,0.6483,0.3354,0.2194,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt,0.8508
+Specialist,specialist reference: 16 separate models (not one deployable model),SSVEP_OpenBMI,source,test,4800,1.0380,0.8883,0.9528,0.8886,0.8511,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt,12.8958
+Specialist,specialist reference: 16 separate models (not one deployable model),Workload,source,test,240,0.5433,0.6306,0.7312,0.7461,0.2919,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt,5.5556
+Specialist,specialist reference: 16 separate models (not one deployable model),ADHD_AliMotie,source,test,599,0.6123,0.6887,0.7686,0.6985,0.3844,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,0.1383
+Specialist,specialist reference: 16 separate models (not one deployable model),SOURCE_MACRO,source,test,67546,0.9414,0.6314,0.7706,0.6408,0.4303,/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_OpenBMI/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_IV2a/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_ShanghaiU/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_BCIC_Upperlimb/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_HighGamma/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Cho2017/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_Shin2017A/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/MI_PhysioNet/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_FACED/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_3_seg4/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_4_seg4/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_5_seg4/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/EMO_SEED_7_seg4/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/SSVEP_OpenBMI/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/Workload/best.ckpt;/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed1/experts/ADHD_AliMotie/best.ckpt,3.2120

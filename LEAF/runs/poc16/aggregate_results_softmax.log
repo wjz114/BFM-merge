@@ -1,0 +1,8 @@
+Test BAcc mean ± std over 3 seeds
+model                              level     source macro BAcc     d vs Joint (pp)
+Base                                             0.5385±0.0000          -6.37±0.26
+Joint                                            0.6022±0.0026          +0.00±0.00
+Softmax-Global                                   0.5424±0.0017          -5.98±0.13
+Softmax-Block                                    0.5527±0.0012          -4.95±0.19
+
+Saved /home/jingzhou/BFM-merge/LEAF/runs/poc16/results_seeds_softmax.csv and /home/jingzhou/BFM-merge/LEAF/runs/poc16/results_seeds_softmax.json

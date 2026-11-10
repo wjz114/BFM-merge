@@ -1,0 +1,50 @@
+# Python caches and build artifacts
+__pycache__/
+*.py[codz]
+*.so
+build/
+dist/
+*.egg-info/
+
+# Virtual environments and local credentials
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.envrc
+.pypirc
+
+# Editor and notebook files
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Tests, analysis caches, and logs
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.log
+
+# Model checkpoints, EEG data, and figures outside recorded experiments
+ckpt*/
+checkpoint/
+checkpoints/
+*.ckpt
+*.h5
+*.hdf5
+figures/
+
+# Local experiments
+/v11/
+/local_debug/
+
+# Keep recorded experiment figures and logs alongside metrics and reports.
+!/runs/**/figures/
+!/runs/**/*.log

@@ -1,0 +1,36 @@
+MI_ShanghaiU: train=7712 val=1929 classes=['Right', 'Left'] instruction='This is a motor imagery decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 3000 rounds x 1 datasets = 3000 optimizer steps, warmup=150, validation every 100 rounds
+round 0/3000 step 0/3000 val macro BAcc=0.5393 loss=0.6911 | MI_ShanghaiU=0.5393
+round 100/3000 step 100/3000 val macro BAcc=0.5995 loss=0.6595 | MI_ShanghaiU=0.5995
+round 200/3000 step 200/3000 val macro BAcc=0.6007 loss=0.6561 | MI_ShanghaiU=0.6007
+round 300/3000 step 300/3000 val macro BAcc=0.6201 loss=0.6397 | MI_ShanghaiU=0.6201
+round 400/3000 step 400/3000 val macro BAcc=0.6420 loss=0.6335 | MI_ShanghaiU=0.6420
+round 500/3000 step 500/3000 val macro BAcc=0.6304 loss=0.6454 | MI_ShanghaiU=0.6304
+round 600/3000 step 600/3000 val macro BAcc=0.6368 loss=0.6419 | MI_ShanghaiU=0.6368
+round 700/3000 step 700/3000 val macro BAcc=0.6464 loss=0.6464 | MI_ShanghaiU=0.6464
+round 800/3000 step 800/3000 val macro BAcc=0.6520 loss=0.6412 | MI_ShanghaiU=0.6520
+round 900/3000 step 900/3000 val macro BAcc=0.6616 loss=0.6429 | MI_ShanghaiU=0.6616
+round 1000/3000 step 1000/3000 val macro BAcc=0.6668 loss=0.6309 | MI_ShanghaiU=0.6668
+round 1100/3000 step 1100/3000 val macro BAcc=0.6543 loss=0.6486 | MI_ShanghaiU=0.6543
+round 1200/3000 step 1200/3000 val macro BAcc=0.6553 loss=0.6430 | MI_ShanghaiU=0.6553
+round 1300/3000 step 1300/3000 val macro BAcc=0.6504 loss=0.6520 | MI_ShanghaiU=0.6504
+round 1400/3000 step 1400/3000 val macro BAcc=0.6572 loss=0.6419 | MI_ShanghaiU=0.6572
+round 1500/3000 step 1500/3000 val macro BAcc=0.6607 loss=0.6450 | MI_ShanghaiU=0.6607
+round 1600/3000 step 1600/3000 val macro BAcc=0.6524 loss=0.6515 | MI_ShanghaiU=0.6524
+round 1700/3000 step 1700/3000 val macro BAcc=0.6708 loss=0.6363 | MI_ShanghaiU=0.6708
+round 1800/3000 step 1800/3000 val macro BAcc=0.6564 loss=0.6503 | MI_ShanghaiU=0.6564
+round 1900/3000 step 1900/3000 val macro BAcc=0.6622 loss=0.6465 | MI_ShanghaiU=0.6622
+round 2000/3000 step 2000/3000 val macro BAcc=0.6647 loss=0.6429 | MI_ShanghaiU=0.6647
+round 2100/3000 step 2100/3000 val macro BAcc=0.6601 loss=0.6492 | MI_ShanghaiU=0.6601
+round 2200/3000 step 2200/3000 val macro BAcc=0.6632 loss=0.6467 | MI_ShanghaiU=0.6632
+round 2300/3000 step 2300/3000 val macro BAcc=0.6634 loss=0.6463 | MI_ShanghaiU=0.6634
+round 2400/3000 step 2400/3000 val macro BAcc=0.6571 loss=0.6506 | MI_ShanghaiU=0.6571
+round 2500/3000 step 2500/3000 val macro BAcc=0.6606 loss=0.6489 | MI_ShanghaiU=0.6606
+round 2600/3000 step 2600/3000 val macro BAcc=0.6627 loss=0.6466 | MI_ShanghaiU=0.6627
+round 2700/3000 step 2700/3000 val macro BAcc=0.6660 loss=0.6459 | MI_ShanghaiU=0.6660
+round 2800/3000 step 2800/3000 val macro BAcc=0.6726 loss=0.6393 | MI_ShanghaiU=0.6726
+round 2900/3000 step 2900/3000 val macro BAcc=0.6638 loss=0.6441 | MI_ShanghaiU=0.6638
+round 3000/3000 step 3000/3000 val macro BAcc=0.6651 loss=0.6454 | MI_ShanghaiU=0.6651
+Best round=2800 (step 2800); val macro BAcc=0.6726 (source 0.5393)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_ShanghaiU

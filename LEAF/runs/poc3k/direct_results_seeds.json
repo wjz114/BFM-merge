@@ -1,0 +1,8 @@
+{
+  "sources": [
+    "/home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed0/direct_results.csv",
+    "/home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed1/direct_results.csv",
+    "/home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed2/direct_results.csv"
+  ],
+  "note": "mean and sample std (ddof=1) over seeds; dBAcc_vs_Joint_pp is paired within each seed"
+}

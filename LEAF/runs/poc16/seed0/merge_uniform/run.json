@@ -1,0 +1,507 @@
+{
+  "method": "uniform",
+  "base_checkpoint": "/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt",
+  "base_checkpoint_sha256": "f9ca9cabbd734d2691fa6748adf3e78056f895d4031f7edc481e7d7b6822f3fa",
+  "experts": {
+    "MI_OpenBMI": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_OpenBMI/best.ckpt",
+    "MI_BCIC_IV2a": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_BCIC_IV2a/best.ckpt",
+    "MI_ShanghaiU": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_ShanghaiU/best.ckpt",
+    "MI_BCIC_Upperlimb": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_BCIC_Upperlimb/best.ckpt",
+    "MI_HighGamma": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_HighGamma/best.ckpt",
+    "MI_Cho2017": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_Cho2017/best.ckpt",
+    "MI_Shin2017A": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_Shin2017A/best.ckpt",
+    "MI_PhysioNet": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_PhysioNet/best.ckpt",
+    "EMO_FACED": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/EMO_FACED/best.ckpt",
+    "EMO_SEED_3_seg4": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/EMO_SEED_3_seg4/best.ckpt",
+    "EMO_SEED_4_seg4": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/EMO_SEED_4_seg4/best.ckpt",
+    "EMO_SEED_5_seg4": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/EMO_SEED_5_seg4/best.ckpt",
+    "EMO_SEED_7_seg4": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/EMO_SEED_7_seg4/best.ckpt",
+    "SSVEP_OpenBMI": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/SSVEP_OpenBMI/best.ckpt",
+    "Workload": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/Workload/best.ckpt",
+    "ADHD_AliMotie": "/home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/ADHD_AliMotie/best.ckpt"
+  },
+  "datasets": [
+    "MI_OpenBMI",
+    "MI_BCIC_IV2a",
+    "MI_ShanghaiU",
+    "MI_BCIC_Upperlimb",
+    "MI_HighGamma",
+    "MI_Cho2017",
+    "MI_Shin2017A",
+    "MI_PhysioNet",
+    "EMO_FACED",
+    "EMO_SEED_3_seg4",
+    "EMO_SEED_4_seg4",
+    "EMO_SEED_5_seg4",
+    "EMO_SEED_7_seg4",
+    "SSVEP_OpenBMI",
+    "Workload",
+    "ADHD_AliMotie"
+  ],
+  "labels": {
+    "MI_OpenBMI": [
+      "Right",
+      "Left"
+    ],
+    "MI_BCIC_IV2a": [
+      "Left",
+      "Right",
+      "Foot",
+      "Tongue"
+    ],
+    "MI_ShanghaiU": [
+      "Right",
+      "Left"
+    ],
+    "MI_BCIC_Upperlimb": [
+      "Cylin",
+      "Sphe",
+      "Lumbrical"
+    ],
+    "MI_HighGamma": [
+      "Left",
+      "Right"
+    ],
+    "MI_Cho2017": [
+      "Left",
+      "Right"
+    ],
+    "MI_Shin2017A": [
+      "Left",
+      "Right"
+    ],
+    "MI_PhysioNet": [
+      "Left",
+      "Right"
+    ],
+    "EMO_FACED": [
+      "Anger",
+      "Fear",
+      "Disgust",
+      "Sad",
+      "Amusement",
+      "Inspiration",
+      "Joy",
+      "Tenderness",
+      "Neutral"
+    ],
+    "EMO_SEED_3_seg4": [
+      "Negative",
+      "Neutral",
+      "Positive"
+    ],
+    "EMO_SEED_4_seg4": [
+      "Neutral",
+      "Sad",
+      "Fear",
+      "Happy"
+    ],
+    "EMO_SEED_5_seg4": [
+      "Disgust",
+      "Fear",
+      "Sad",
+      "Neutral",
+      "Happy"
+    ],
+    "EMO_SEED_7_seg4": [
+      "Happy",
+      "Surprise",
+      "Neutral",
+      "Sad",
+      "Disgust",
+      "Fear",
+      "Anger"
+    ],
+    "SSVEP_OpenBMI": [
+      "12.0",
+      "8.6",
+      "6.6",
+      "5.4"
+    ],
+    "Workload": [
+      "Resting",
+      "Workload"
+    ],
+    "ADHD_AliMotie": [
+      "Healthy",
+      "ADHD"
+    ]
+  },
+  "instruction": {
+    "MI_OpenBMI": "This is a motor imagery decoding task",
+    "MI_BCIC_IV2a": "This is a motor imagery decoding task",
+    "MI_ShanghaiU": "This is a motor imagery decoding task",
+    "MI_BCIC_Upperlimb": "This is a motor imagery decoding task",
+    "MI_HighGamma": "This is a motor imagery decoding task",
+    "MI_Cho2017": "This is a motor imagery decoding task",
+    "MI_Shin2017A": "This is a motor imagery decoding task",
+    "MI_PhysioNet": "This is a motor imagery decoding task",
+    "EMO_FACED": "This is an emotion recognition task",
+    "EMO_SEED_3_seg4": "This is an emotion recognition task",
+    "EMO_SEED_4_seg4": "This is an emotion recognition task",
+    "EMO_SEED_5_seg4": "This is an emotion recognition task",
+    "EMO_SEED_7_seg4": "This is an emotion recognition task",
+    "SSVEP_OpenBMI": "This is an SSVEP frequency decoding task",
+    "Workload": "Decode mental workload states",
+    "ADHD_AliMotie": "Decode mental disorder"
+  },
+  "K": 16,
+  "groups": [
+    "all"
+  ],
+  "num_coefficients": 16,
+  "params_per_group": {
+    "all": 25751552
+  },
+  "merged_tensors": 383,
+  "unused_tensors_kept_at_base": [
+    "tower.mask_token",
+    "tower.mask_outProj.0.weight",
+    "tower.mask_outProj.0.bias",
+    "tower.mask_outProj.3.weight",
+    "tower.mask_outProj.3.bias",
+    "tower.next_outProj.0.weight",
+    "tower.next_outProj.0.bias",
+    "tower.next_outProj.3.weight",
+    "tower.next_outProj.3.bias"
+  ],
+  "task_vector_l2": {
+    "MI_OpenBMI": 19.684704535963213,
+    "MI_BCIC_IV2a": 24.476752176134017,
+    "MI_ShanghaiU": 28.16682565625818,
+    "MI_BCIC_Upperlimb": 14.68816049563432,
+    "MI_HighGamma": 20.765408477629375,
+    "MI_Cho2017": 24.58385631345616,
+    "MI_Shin2017A": 14.969881062583008,
+    "MI_PhysioNet": 21.998565354267072,
+    "EMO_FACED": 18.664396932410813,
+    "EMO_SEED_3_seg4": 11.721838499529063,
+    "EMO_SEED_4_seg4": 17.030879393309846,
+    "EMO_SEED_5_seg4": 12.752509181751321,
+    "EMO_SEED_7_seg4": 17.000500348662026,
+    "SSVEP_OpenBMI": 21.369325200570195,
+    "Workload": 17.15407434784345,
+    "ADHD_AliMotie": 10.389929128018391
+  },
+  "alpha_init": 0.0625,
+  "alpha_parametrization": "unconstrained real coefficients",
+  "optimizer": null,
+  "lr": null,
+  "weight_decay": 0.0,
+  "steps_requested": 1600,
+  "alpha_updates_actual": 0,
+  "eval_every": 160,
+  "batch_size": 128,
+  "seed": 0,
+  "precision": "bf16-mixed",
+  "calibration_per_dataset": 512,
+  "calibration_sizes": {
+    "MI_OpenBMI": 512,
+    "MI_BCIC_IV2a": 512,
+    "MI_ShanghaiU": 512,
+    "MI_BCIC_Upperlimb": 512,
+    "MI_HighGamma": 512,
+    "MI_Cho2017": 512,
+    "MI_Shin2017A": 512,
+    "MI_PhysioNet": 512,
+    "EMO_FACED": 512,
+    "EMO_SEED_3_seg4": 512,
+    "EMO_SEED_4_seg4": 512,
+    "EMO_SEED_5_seg4": 512,
+    "EMO_SEED_7_seg4": 512,
+    "SSVEP_OpenBMI": 512,
+    "Workload": 512,
+    "ADHD_AliMotie": 512
+  },
+  "calibration_source": "stratified subset of each load_dataset() train split; indices in calibration_indices.npz",
+  "selection": "maximum source validation macro BAcc; ties resolved by minimum macro validation loss",
+  "best_step": 0,
+  "best_alpha": [
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ],
+    [
+      0.0625
+    ]
+  ],
+  "best_val_macro_BAcc": 0.5859159709633438,
+  "best_val_macro_Loss": 0.9904850348830223,
+  "best_val": {
+    "MI_OpenBMI": {
+      "Loss": 0.5079125165939331,
+      "BAcc": 0.7876003097131719,
+      "Auroc": 0.8741580925447003,
+      "wF1": 0.7915710146492458,
+      "Kappa": 0.5782228559014415
+    },
+    "MI_BCIC_IV2a": {
+      "Loss": 1.2269450426101685,
+      "BAcc": 0.4836588158835474,
+      "Auroc": 0.7586652282033166,
+      "wF1": 0.4900620135113936,
+      "Kappa": 0.31054023260313435
+    },
+    "MI_ShanghaiU": {
+      "Loss": 0.6778386831283569,
+      "BAcc": 0.5951913150083882,
+      "Auroc": 0.6422882522476018,
+      "wF1": 0.5951909274902427,
+      "Kappa": 0.19069054270429564
+    },
+    "MI_BCIC_Upperlimb": {
+      "Loss": 1.034672737121582,
+      "BAcc": 0.5053942264785638,
+      "Auroc": 0.6933430730715037,
+      "wF1": 0.4600865083519324,
+      "Kappa": 0.2424504057938628
+    },
+    "MI_HighGamma": {
+      "Loss": 0.5468161702156067,
+      "BAcc": 0.749480460808674,
+      "Auroc": 0.8297402304043369,
+      "wF1": 0.748474598457285,
+      "Kappa": 0.499722866353713
+    },
+    "MI_Cho2017": {
+      "Loss": 0.595146656036377,
+      "BAcc": 0.6714108910891089,
+      "Auroc": 0.7658394397608078,
+      "wF1": 0.6712385449220658,
+      "Kappa": 0.3428217821782178
+    },
+    "MI_Shin2017A": {
+      "Loss": 0.6033983826637268,
+      "BAcc": 0.7121447028423773,
+      "Auroc": 0.7407407407407407,
+      "wF1": 0.712154263646801,
+      "Kappa": 0.4241432753573273
+    },
+    "MI_PhysioNet": {
+      "Loss": 0.579752504825592,
+      "BAcc": 0.7122117101453805,
+      "Auroc": 0.7861346401040833,
+      "wF1": 0.712057108880929,
+      "Kappa": 0.4242995034640341
+    },
+    "EMO_FACED": {
+      "Loss": 1.9761351346969604,
+      "BAcc": 0.4126543209876543,
+      "Auroc": 0.7425948302469136,
+      "wF1": 0.419960414636955,
+      "Kappa": 0.3438765670202508
+    },
+    "EMO_SEED_3_seg4": {
+      "Loss": 0.9606146812438965,
+      "BAcc": 0.6280662656174053,
+      "Auroc": 0.7322709277187177,
+      "wF1": 0.6010041332263724,
+      "Kappa": 0.4442471526893971
+    },
+    "EMO_SEED_4_seg4": {
+      "Loss": 1.2608247995376587,
+      "BAcc": 0.43904305300409197,
+      "Auroc": 0.6781301381239379,
+      "wF1": 0.47842886790194644,
+      "Kappa": 0.27741019843538584
+    },
+    "EMO_SEED_5_seg4": {
+      "Loss": 1.54439115524292,
+      "BAcc": 0.3400535900863291,
+      "Auroc": 0.6096895006948302,
+      "wF1": 0.3499534601538673,
+      "Kappa": 0.17715475658831348
+    },
+    "EMO_SEED_7_seg4": {
+      "Loss": 1.8548717498779297,
+      "BAcc": 0.30046755679825965,
+      "Auroc": 0.6217140941838785,
+      "wF1": 0.29457132356732924,
+      "Kappa": 0.17339813231377077
+    },
+    "SSVEP_OpenBMI": {
+      "Loss": 1.254650592803955,
+      "BAcc": 0.6148575545562871,
+      "Auroc": 0.8358378398013491,
+      "wF1": 0.5992038473013028,
+      "Kappa": 0.491884663673434
+    },
+    "Workload": {
+      "Loss": 0.5626964569091797,
+      "BAcc": 0.7943904593639576,
+      "Auroc": 0.8749263839811543,
+      "wF1": 0.7700194433821563,
+      "Kappa": 0.47579529737206083
+    },
+    "ADHD_AliMotie": {
+      "Loss": 0.6610932946205139,
+      "BAcc": 0.6280303030303029,
+      "Auroc": 0.7024242424242424,
+      "wF1": 0.5892846826653109,
+      "Kappa": 0.263856362217018
+    }
+  },
+  "folded_val_macro_BAcc": 0.5859159709633438,
+  "folded_val_macro_Loss": 0.9904850460588932,
+  "folded_val": {
+    "MI_OpenBMI": {
+      "Loss": 0.5079125165939331,
+      "BAcc": 0.7876003097131719,
+      "Auroc": 0.8741580925447003,
+      "wF1": 0.7915710146492458,
+      "Kappa": 0.5782228559014415
+    },
+    "MI_BCIC_IV2a": {
+      "Loss": 1.2269450426101685,
+      "BAcc": 0.4836588158835474,
+      "Auroc": 0.7586652282033166,
+      "wF1": 0.4900620135113936,
+      "Kappa": 0.31054023260313435
+    },
+    "MI_ShanghaiU": {
+      "Loss": 0.6778386831283569,
+      "BAcc": 0.5951913150083882,
+      "Auroc": 0.6422882522476018,
+      "wF1": 0.5951909274902427,
+      "Kappa": 0.19069054270429564
+    },
+    "MI_BCIC_Upperlimb": {
+      "Loss": 1.034672737121582,
+      "BAcc": 0.5053942264785638,
+      "Auroc": 0.6933430730715037,
+      "wF1": 0.4600865083519324,
+      "Kappa": 0.2424504057938628
+    },
+    "MI_HighGamma": {
+      "Loss": 0.5468161702156067,
+      "BAcc": 0.749480460808674,
+      "Auroc": 0.8297402304043369,
+      "wF1": 0.748474598457285,
+      "Kappa": 0.499722866353713
+    },
+    "MI_Cho2017": {
+      "Loss": 0.595146656036377,
+      "BAcc": 0.6714108910891089,
+      "Auroc": 0.7658394397608078,
+      "wF1": 0.6712385449220658,
+      "Kappa": 0.3428217821782178
+    },
+    "MI_Shin2017A": {
+      "Loss": 0.6033984422683716,
+      "BAcc": 0.7121447028423773,
+      "Auroc": 0.7407407407407407,
+      "wF1": 0.712154263646801,
+      "Kappa": 0.4241432753573273
+    },
+    "MI_PhysioNet": {
+      "Loss": 0.579752504825592,
+      "BAcc": 0.7122117101453805,
+      "Auroc": 0.7861346401040833,
+      "wF1": 0.712057108880929,
+      "Kappa": 0.4242995034640341
+    },
+    "EMO_FACED": {
+      "Loss": 1.9761351346969604,
+      "BAcc": 0.4126543209876543,
+      "Auroc": 0.7425954475308642,
+      "wF1": 0.419960414636955,
+      "Kappa": 0.3438765670202508
+    },
+    "EMO_SEED_3_seg4": {
+      "Loss": 0.9606146812438965,
+      "BAcc": 0.6280662656174053,
+      "Auroc": 0.7322709277187177,
+      "wF1": 0.6010041332263724,
+      "Kappa": 0.4442471526893971
+    },
+    "EMO_SEED_4_seg4": {
+      "Loss": 1.2608247995376587,
+      "BAcc": 0.43904305300409197,
+      "Auroc": 0.6781301381239379,
+      "wF1": 0.47842886790194644,
+      "Kappa": 0.27741019843538584
+    },
+    "EMO_SEED_5_seg4": {
+      "Loss": 1.54439115524292,
+      "BAcc": 0.3400535900863291,
+      "Auroc": 0.6096894844315606,
+      "wF1": 0.3499534601538673,
+      "Kappa": 0.17715475658831348
+    },
+    "EMO_SEED_7_seg4": {
+      "Loss": 1.8548718690872192,
+      "BAcc": 0.30046755679825965,
+      "Auroc": 0.6217141035594517,
+      "wF1": 0.29457132356732924,
+      "Kappa": 0.17339813231377077
+    },
+    "SSVEP_OpenBMI": {
+      "Loss": 1.254650592803955,
+      "BAcc": 0.6148575545562871,
+      "Auroc": 0.8358378398013491,
+      "wF1": 0.5992038473013028,
+      "Kappa": 0.491884663673434
+    },
+    "Workload": {
+      "Loss": 0.5626964569091797,
+      "BAcc": 0.7943904593639576,
+      "Auroc": 0.8749263839811543,
+      "wF1": 0.7700194433821563,
+      "Kappa": 0.47579529737206083
+    },
+    "ADHD_AliMotie": {
+      "Loss": 0.6610932946205139,
+      "BAcc": 0.6280303030303029,
+      "Auroc": 0.7024242424242424,
+      "wF1": 0.5892846826653109,
+      "Kappa": 0.263856362217018
+    }
+  },
+  "seconds": {
+    "data_and_setup": 39.253904819488525,
+    "optimization_incl_validation": 12.186952352523804,
+    "total": 63.80771851539612
+  },
+  "command": "merge_poc.py --base checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt --experts-dir runs/poc16/seed0/experts --datasets MI_OpenBMI,MI_BCIC_IV2a,MI_ShanghaiU,MI_BCIC_Upperlimb,MI_HighGamma,MI_Cho2017,MI_Shin2017A,MI_PhysioNet,EMO_FACED,EMO_SEED_3_seg4,EMO_SEED_4_seg4,EMO_SEED_5_seg4,EMO_SEED_7_seg4,SSVEP_OpenBMI,Workload,ADHD_AliMotie --calibration-per-dataset 512 --steps 1600 --eval-every 160 --lr 1e-2 --bs 128 --seed 0 --method uniform --gpu 0 --outdir runs/poc16/seed0/merge_uniform"
+}

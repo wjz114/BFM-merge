@@ -1,0 +1,36 @@
+MI_HighGamma: train=3761 val=941 classes=['Left', 'Right'] instruction='This is a motor imagery decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 3000 rounds x 1 datasets = 3000 optimizer steps, warmup=150, validation every 100 rounds
+round 0/3000 step 0/3000 val macro BAcc=0.6510 loss=0.6231 | MI_HighGamma=0.6510
+round 100/3000 step 100/3000 val macro BAcc=0.7927 loss=0.4933 | MI_HighGamma=0.7927
+round 200/3000 step 200/3000 val macro BAcc=0.8186 loss=0.4683 | MI_HighGamma=0.8186
+round 300/3000 step 300/3000 val macro BAcc=0.8175 loss=0.4746 | MI_HighGamma=0.8175
+round 400/3000 step 400/3000 val macro BAcc=0.7960 loss=0.4908 | MI_HighGamma=0.7960
+round 500/3000 step 500/3000 val macro BAcc=0.8453 loss=0.4438 | MI_HighGamma=0.8453
+round 600/3000 step 600/3000 val macro BAcc=0.8504 loss=0.4294 | MI_HighGamma=0.8504
+round 700/3000 step 700/3000 val macro BAcc=0.8585 loss=0.4208 | MI_HighGamma=0.8585
+round 800/3000 step 800/3000 val macro BAcc=0.8539 loss=0.4349 | MI_HighGamma=0.8539
+round 900/3000 step 900/3000 val macro BAcc=0.8412 loss=0.4460 | MI_HighGamma=0.8412
+round 1000/3000 step 1000/3000 val macro BAcc=0.8587 loss=0.4328 | MI_HighGamma=0.8587
+round 1100/3000 step 1100/3000 val macro BAcc=0.8862 loss=0.4028 | MI_HighGamma=0.8862
+round 1200/3000 step 1200/3000 val macro BAcc=0.8767 loss=0.4083 | MI_HighGamma=0.8767
+round 1300/3000 step 1300/3000 val macro BAcc=0.8678 loss=0.4205 | MI_HighGamma=0.8678
+round 1400/3000 step 1400/3000 val macro BAcc=0.8426 loss=0.4508 | MI_HighGamma=0.8426
+round 1500/3000 step 1500/3000 val macro BAcc=0.8822 loss=0.4074 | MI_HighGamma=0.8822
+round 1600/3000 step 1600/3000 val macro BAcc=0.8803 loss=0.4085 | MI_HighGamma=0.8803
+round 1700/3000 step 1700/3000 val macro BAcc=0.8625 loss=0.4276 | MI_HighGamma=0.8625
+round 1800/3000 step 1800/3000 val macro BAcc=0.8783 loss=0.4198 | MI_HighGamma=0.8783
+round 1900/3000 step 1900/3000 val macro BAcc=0.8736 loss=0.4131 | MI_HighGamma=0.8736
+round 2000/3000 step 2000/3000 val macro BAcc=0.8813 loss=0.4077 | MI_HighGamma=0.8813
+round 2100/3000 step 2100/3000 val macro BAcc=0.8834 loss=0.4087 | MI_HighGamma=0.8834
+round 2200/3000 step 2200/3000 val macro BAcc=0.8865 loss=0.4056 | MI_HighGamma=0.8865
+round 2300/3000 step 2300/3000 val macro BAcc=0.8802 loss=0.4072 | MI_HighGamma=0.8802
+round 2400/3000 step 2400/3000 val macro BAcc=0.8769 loss=0.4121 | MI_HighGamma=0.8769
+round 2500/3000 step 2500/3000 val macro BAcc=0.8926 loss=0.3998 | MI_HighGamma=0.8926
+round 2600/3000 step 2600/3000 val macro BAcc=0.8883 loss=0.4041 | MI_HighGamma=0.8883
+round 2700/3000 step 2700/3000 val macro BAcc=0.8769 loss=0.4143 | MI_HighGamma=0.8769
+round 2800/3000 step 2800/3000 val macro BAcc=0.8696 loss=0.4210 | MI_HighGamma=0.8696
+round 2900/3000 step 2900/3000 val macro BAcc=0.8760 loss=0.4163 | MI_HighGamma=0.8760
+round 3000/3000 step 3000/3000 val macro BAcc=0.8790 loss=0.4111 | MI_HighGamma=0.8790
+Best round=2500 (step 2500); val macro BAcc=0.8926 (source 0.6510)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/MI_HighGamma

@@ -1,0 +1,36 @@
+MI_Cho2017: train=6464 val=1616 classes=['Left', 'Right'] instruction='This is a motor imagery decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 3000 rounds x 1 datasets = 3000 optimizer steps, warmup=150, validation every 100 rounds
+round 0/3000 step 0/3000 val macro BAcc=0.6652 loss=0.6181 | MI_Cho2017=0.6652
+round 100/3000 step 100/3000 val macro BAcc=0.6757 loss=0.5944 | MI_Cho2017=0.6757
+round 200/3000 step 200/3000 val macro BAcc=0.6974 loss=0.5745 | MI_Cho2017=0.6974
+round 300/3000 step 300/3000 val macro BAcc=0.7017 loss=0.5761 | MI_Cho2017=0.7017
+round 400/3000 step 400/3000 val macro BAcc=0.7246 loss=0.5571 | MI_Cho2017=0.7246
+round 500/3000 step 500/3000 val macro BAcc=0.7141 loss=0.5686 | MI_Cho2017=0.7141
+round 600/3000 step 600/3000 val macro BAcc=0.7184 loss=0.5657 | MI_Cho2017=0.7184
+round 700/3000 step 700/3000 val macro BAcc=0.7123 loss=0.5616 | MI_Cho2017=0.7123
+round 800/3000 step 800/3000 val macro BAcc=0.7178 loss=0.5636 | MI_Cho2017=0.7178
+round 900/3000 step 900/3000 val macro BAcc=0.7351 loss=0.5447 | MI_Cho2017=0.7351
+round 1000/3000 step 1000/3000 val macro BAcc=0.7525 loss=0.5328 | MI_Cho2017=0.7525
+round 1100/3000 step 1100/3000 val macro BAcc=0.7618 loss=0.5264 | MI_Cho2017=0.7618
+round 1200/3000 step 1200/3000 val macro BAcc=0.7587 loss=0.5287 | MI_Cho2017=0.7587
+round 1300/3000 step 1300/3000 val macro BAcc=0.7512 loss=0.5317 | MI_Cho2017=0.7512
+round 1400/3000 step 1400/3000 val macro BAcc=0.7618 loss=0.5261 | MI_Cho2017=0.7618
+round 1500/3000 step 1500/3000 val macro BAcc=0.7772 loss=0.5224 | MI_Cho2017=0.7772
+round 1600/3000 step 1600/3000 val macro BAcc=0.7667 loss=0.5308 | MI_Cho2017=0.7667
+round 1700/3000 step 1700/3000 val macro BAcc=0.7543 loss=0.5272 | MI_Cho2017=0.7543
+round 1800/3000 step 1800/3000 val macro BAcc=0.7661 loss=0.5275 | MI_Cho2017=0.7661
+round 1900/3000 step 1900/3000 val macro BAcc=0.7797 loss=0.5169 | MI_Cho2017=0.7797
+round 2000/3000 step 2000/3000 val macro BAcc=0.7531 loss=0.5372 | MI_Cho2017=0.7531
+round 2100/3000 step 2100/3000 val macro BAcc=0.7710 loss=0.5246 | MI_Cho2017=0.7710
+round 2200/3000 step 2200/3000 val macro BAcc=0.7717 loss=0.5158 | MI_Cho2017=0.7717
+round 2300/3000 step 2300/3000 val macro BAcc=0.7748 loss=0.5170 | MI_Cho2017=0.7748
+round 2400/3000 step 2400/3000 val macro BAcc=0.7673 loss=0.5219 | MI_Cho2017=0.7673
+round 2500/3000 step 2500/3000 val macro BAcc=0.7754 loss=0.5181 | MI_Cho2017=0.7754
+round 2600/3000 step 2600/3000 val macro BAcc=0.7803 loss=0.5208 | MI_Cho2017=0.7803
+round 2700/3000 step 2700/3000 val macro BAcc=0.7772 loss=0.5178 | MI_Cho2017=0.7772
+round 2800/3000 step 2800/3000 val macro BAcc=0.7822 loss=0.5190 | MI_Cho2017=0.7822
+round 2900/3000 step 2900/3000 val macro BAcc=0.7766 loss=0.5226 | MI_Cho2017=0.7766
+round 3000/3000 step 3000/3000 val macro BAcc=0.7785 loss=0.5185 | MI_Cho2017=0.7785
+Best round=2800 (step 2800); val macro BAcc=0.7822 (source 0.6652)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed2/experts/MI_Cho2017

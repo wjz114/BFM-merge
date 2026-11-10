@@ -1,0 +1,36 @@
+MI_OpenBMI: train=13440 val=3360 classes=['Right', 'Left'] instruction='This is a motor imagery decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 3000 rounds x 1 datasets = 3000 optimizer steps, warmup=150, validation every 100 rounds
+round 0/3000 step 0/3000 val macro BAcc=0.7830 loss=0.5468 | MI_OpenBMI=0.7830
+round 100/3000 step 100/3000 val macro BAcc=0.7698 loss=0.5129 | MI_OpenBMI=0.7698
+round 200/3000 step 200/3000 val macro BAcc=0.7689 loss=0.4994 | MI_OpenBMI=0.7689
+round 300/3000 step 300/3000 val macro BAcc=0.8167 loss=0.4597 | MI_OpenBMI=0.8167
+round 400/3000 step 400/3000 val macro BAcc=0.7686 loss=0.4994 | MI_OpenBMI=0.7686
+round 500/3000 step 500/3000 val macro BAcc=0.8227 loss=0.4684 | MI_OpenBMI=0.8227
+round 600/3000 step 600/3000 val macro BAcc=0.8318 loss=0.4478 | MI_OpenBMI=0.8318
+round 700/3000 step 700/3000 val macro BAcc=0.8410 loss=0.4459 | MI_OpenBMI=0.8410
+round 800/3000 step 800/3000 val macro BAcc=0.8335 loss=0.4497 | MI_OpenBMI=0.8335
+round 900/3000 step 900/3000 val macro BAcc=0.8439 loss=0.4404 | MI_OpenBMI=0.8439
+round 1000/3000 step 1000/3000 val macro BAcc=0.8391 loss=0.4391 | MI_OpenBMI=0.8391
+round 1100/3000 step 1100/3000 val macro BAcc=0.8453 loss=0.4460 | MI_OpenBMI=0.8453
+round 1200/3000 step 1200/3000 val macro BAcc=0.8389 loss=0.4404 | MI_OpenBMI=0.8389
+round 1300/3000 step 1300/3000 val macro BAcc=0.8472 loss=0.4352 | MI_OpenBMI=0.8472
+round 1400/3000 step 1400/3000 val macro BAcc=0.8536 loss=0.4382 | MI_OpenBMI=0.8536
+round 1500/3000 step 1500/3000 val macro BAcc=0.8384 loss=0.4454 | MI_OpenBMI=0.8384
+round 1600/3000 step 1600/3000 val macro BAcc=0.8516 loss=0.4365 | MI_OpenBMI=0.8516
+round 1700/3000 step 1700/3000 val macro BAcc=0.8620 loss=0.4238 | MI_OpenBMI=0.8620
+round 1800/3000 step 1800/3000 val macro BAcc=0.8545 loss=0.4302 | MI_OpenBMI=0.8545
+round 1900/3000 step 1900/3000 val macro BAcc=0.8578 loss=0.4349 | MI_OpenBMI=0.8578
+round 2000/3000 step 2000/3000 val macro BAcc=0.8581 loss=0.4275 | MI_OpenBMI=0.8581
+round 2100/3000 step 2100/3000 val macro BAcc=0.8611 loss=0.4241 | MI_OpenBMI=0.8611
+round 2200/3000 step 2200/3000 val macro BAcc=0.8558 loss=0.4267 | MI_OpenBMI=0.8558
+round 2300/3000 step 2300/3000 val macro BAcc=0.8623 loss=0.4253 | MI_OpenBMI=0.8623
+round 2400/3000 step 2400/3000 val macro BAcc=0.8609 loss=0.4296 | MI_OpenBMI=0.8609
+round 2500/3000 step 2500/3000 val macro BAcc=0.8675 loss=0.4182 | MI_OpenBMI=0.8675
+round 2600/3000 step 2600/3000 val macro BAcc=0.8631 loss=0.4223 | MI_OpenBMI=0.8631
+round 2700/3000 step 2700/3000 val macro BAcc=0.8608 loss=0.4228 | MI_OpenBMI=0.8608
+round 2800/3000 step 2800/3000 val macro BAcc=0.8622 loss=0.4230 | MI_OpenBMI=0.8622
+round 2900/3000 step 2900/3000 val macro BAcc=0.8616 loss=0.4238 | MI_OpenBMI=0.8616
+round 3000/3000 step 3000/3000 val macro BAcc=0.8624 loss=0.4238 | MI_OpenBMI=0.8624
+Best round=2500 (step 2500); val macro BAcc=0.8675 (source 0.7830)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed1/experts/MI_OpenBMI

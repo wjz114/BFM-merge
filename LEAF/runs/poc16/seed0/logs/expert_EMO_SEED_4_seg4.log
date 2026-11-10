@@ -1,0 +1,36 @@
+EMO_SEED_4_seg4: train=26025 val=5340 classes=['Neutral', 'Sad', 'Fear', 'Happy'] instruction='This is an emotion recognition task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 3000 rounds x 1 datasets = 3000 optimizer steps, warmup=150, validation every 100 rounds
+round 0/3000 step 0/3000 val macro BAcc=0.4242 loss=1.3039 | EMO_SEED_4_seg4=0.4242
+round 100/3000 step 100/3000 val macro BAcc=0.4143 loss=1.2709 | EMO_SEED_4_seg4=0.4143
+round 200/3000 step 200/3000 val macro BAcc=0.4147 loss=1.2856 | EMO_SEED_4_seg4=0.4147
+round 300/3000 step 300/3000 val macro BAcc=0.4282 loss=1.2796 | EMO_SEED_4_seg4=0.4282
+round 400/3000 step 400/3000 val macro BAcc=0.4424 loss=1.2516 | EMO_SEED_4_seg4=0.4424
+round 500/3000 step 500/3000 val macro BAcc=0.4464 loss=1.2473 | EMO_SEED_4_seg4=0.4464
+round 600/3000 step 600/3000 val macro BAcc=0.4349 loss=1.2648 | EMO_SEED_4_seg4=0.4349
+round 700/3000 step 700/3000 val macro BAcc=0.4274 loss=1.2680 | EMO_SEED_4_seg4=0.4274
+round 800/3000 step 800/3000 val macro BAcc=0.4457 loss=1.2468 | EMO_SEED_4_seg4=0.4457
+round 900/3000 step 900/3000 val macro BAcc=0.4444 loss=1.2502 | EMO_SEED_4_seg4=0.4444
+round 1000/3000 step 1000/3000 val macro BAcc=0.4549 loss=1.2394 | EMO_SEED_4_seg4=0.4549
+round 1100/3000 step 1100/3000 val macro BAcc=0.4427 loss=1.2505 | EMO_SEED_4_seg4=0.4427
+round 1200/3000 step 1200/3000 val macro BAcc=0.4390 loss=1.2618 | EMO_SEED_4_seg4=0.4390
+round 1300/3000 step 1300/3000 val macro BAcc=0.4277 loss=1.2622 | EMO_SEED_4_seg4=0.4277
+round 1400/3000 step 1400/3000 val macro BAcc=0.4381 loss=1.2587 | EMO_SEED_4_seg4=0.4381
+round 1500/3000 step 1500/3000 val macro BAcc=0.4337 loss=1.2548 | EMO_SEED_4_seg4=0.4337
+round 1600/3000 step 1600/3000 val macro BAcc=0.4435 loss=1.2479 | EMO_SEED_4_seg4=0.4435
+round 1700/3000 step 1700/3000 val macro BAcc=0.4551 loss=1.2468 | EMO_SEED_4_seg4=0.4551
+round 1800/3000 step 1800/3000 val macro BAcc=0.4336 loss=1.2618 | EMO_SEED_4_seg4=0.4336
+round 1900/3000 step 1900/3000 val macro BAcc=0.4473 loss=1.2536 | EMO_SEED_4_seg4=0.4473
+round 2000/3000 step 2000/3000 val macro BAcc=0.4364 loss=1.2645 | EMO_SEED_4_seg4=0.4364
+round 2100/3000 step 2100/3000 val macro BAcc=0.4394 loss=1.2593 | EMO_SEED_4_seg4=0.4394
+round 2200/3000 step 2200/3000 val macro BAcc=0.4334 loss=1.2677 | EMO_SEED_4_seg4=0.4334
+round 2300/3000 step 2300/3000 val macro BAcc=0.4341 loss=1.2670 | EMO_SEED_4_seg4=0.4341
+round 2400/3000 step 2400/3000 val macro BAcc=0.4410 loss=1.2630 | EMO_SEED_4_seg4=0.4410
+round 2500/3000 step 2500/3000 val macro BAcc=0.4373 loss=1.2652 | EMO_SEED_4_seg4=0.4373
+round 2600/3000 step 2600/3000 val macro BAcc=0.4414 loss=1.2587 | EMO_SEED_4_seg4=0.4414
+round 2700/3000 step 2700/3000 val macro BAcc=0.4477 loss=1.2557 | EMO_SEED_4_seg4=0.4477
+round 2800/3000 step 2800/3000 val macro BAcc=0.4430 loss=1.2580 | EMO_SEED_4_seg4=0.4430
+round 2900/3000 step 2900/3000 val macro BAcc=0.4455 loss=1.2583 | EMO_SEED_4_seg4=0.4455
+round 3000/3000 step 3000/3000 val macro BAcc=0.4481 loss=1.2542 | EMO_SEED_4_seg4=0.4481
+Best round=1700 (step 1700); val macro BAcc=0.4551 (source 0.4242)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc16/seed0/experts/EMO_SEED_4_seg4

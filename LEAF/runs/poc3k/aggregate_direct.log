@@ -1,0 +1,37 @@
+Test BAcc mean ± std over 3 seeds
+model                              level     source macro BAcc     d vs Joint (pp)
+Base                                   0         0.6094±0.0000         -13.39±0.44
+Base                                   1         0.6495±0.0000         -12.13±0.48
+Base                                   2         0.6575±0.0000         -11.78±0.42
+Expert[MI_OpenBMI]                     0         0.5834±0.0062         -15.99±0.23
+Expert[MI_OpenBMI]                     1         0.5998±0.0077         -17.10±0.60
+Expert[MI_OpenBMI]                     2         0.6084±0.0089         -16.69±0.64
+Expert[MI_Cho2017]                     0         0.5495±0.0083         -19.39±0.86
+Expert[MI_Cho2017]                     1         0.5609±0.0093         -20.99±0.51
+Expert[MI_Cho2017]                     2         0.5675±0.0071         -20.78±0.42
+Expert[MI_PhysioNet]                   0         0.5688±0.0051         -17.45±0.52
+Expert[MI_PhysioNet]                   1         0.5862±0.0041         -18.46±0.82
+Expert[MI_PhysioNet]                   2         0.5916±0.0045         -18.37±0.76
+Expert[EMO_SEED_3_seg4]                0         0.5642±0.0097         -17.91±0.70
+Expert[EMO_SEED_3_seg4]                1         0.5830±0.0073         -18.78±0.29
+Expert[EMO_SEED_3_seg4]                2         0.5876±0.0073         -18.78±0.33
+Expert[SSVEP_OpenBMI]                  0         0.5949±0.0094         -14.85±1.01
+Expert[SSVEP_OpenBMI]                  1         0.6196±0.0087         -15.12±0.57
+Expert[SSVEP_OpenBMI]                  2         0.6325±0.0087         -14.28±0.58
+Joint                                  0         0.7433±0.0044          +0.00±0.00
+Joint                                  1         0.7707±0.0048          +0.00±0.00
+Joint                                  2         0.7753±0.0042          +0.00±0.00
+Uniform                                0         0.6772±0.0025          -6.61±0.33
+Uniform                                1         0.6874±0.0033          -8.33±0.16
+Uniform                                2         0.6872±0.0014          -8.82±0.29
+Global                                 0         0.6874±0.0027          -5.60±0.34
+Global                                 1         0.6966±0.0019          -7.41±0.31
+Global                                 2         0.6962±0.0016          -7.91±0.28
+Block                                  0         0.6953±0.0071          -4.80±0.47
+Block                                  1         0.7082±0.0045          -6.26±0.53
+Block                                  2         0.7102±0.0046          -6.51±0.48
+Specialist                             0         0.7755±0.0039          +3.22±0.78
+Specialist                             1         0.7809±0.0048          +1.01±0.95
+Specialist                             2         0.7836±0.0048          +0.82±0.88
+
+Saved /home/jingzhou/BFM-merge/LEAF/runs/poc3k/direct_results_seeds.csv and /home/jingzhou/BFM-merge/LEAF/runs/poc3k/direct_results_seeds.json

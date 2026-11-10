@@ -1,0 +1,73 @@
+{
+  "checkpoints": {
+    "Base": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt",
+      "sha256": "f9ca9cabbd734d2691fa6748adf3e78056f895d4031f7edc481e7d7b6822f3fa"
+    },
+    "Joint": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc/joint/best.ckpt",
+      "sha256": "1b225e63e10f739a23f23d4e71f0e0e1a8f0ee8885cfc87fd4af10804acebe61"
+    },
+    "Uniform": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc/merge_uniform/merged.ckpt",
+      "sha256": "13c25fc1e43daa05baf52bfc76f15ce2d1d426920fee7033bba79f7463373095"
+    },
+    "Global": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc/merge_global/merged.ckpt",
+      "sha256": "0818276a218cf29affffc555a0c01fa1f7ac0b05150891faa0b294685769874e"
+    },
+    "Block": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc/merge_block/merged.ckpt",
+      "sha256": "da4f287c45e94eb18e5629a1d2f5e0803c2e82d23b17e7d5215c94afc9b10040"
+    },
+    "Softmax-Global": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc/merge_softmax_global/merged.ckpt",
+      "sha256": "37a0d29ff8e6ba012dce1deb99c96a066fcf5ab3062fb53b7213018545dfe157"
+    },
+    "Softmax-Block": {
+      "path": "/home/jingzhou/BFM-merge/LEAF/runs/poc/merge_softmax_block/merged.ckpt",
+      "sha256": "d54a0eac212723b9f320d8134e50eafb10e333aade3b0ee560dbc0194fb3705a"
+    }
+  },
+  "datasets": {
+    "MI_OpenBMI": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 4800
+    },
+    "MI_Cho2017": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 1800
+    },
+    "MI_PhysioNet": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 5262
+    },
+    "EMO_SEED_3_seg4": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 7620
+    },
+    "SSVEP_OpenBMI": {
+      "role": "source",
+      "split": "test",
+      "label_mapping": "configs/tasks.yaml order",
+      "n": 4800
+    },
+    "MI_Weibo2014": {
+      "role": "external",
+      "split": "all 10 subjects",
+      "label_mapping": "verified 0=Left;1=Right (raw event codes 1/2 minus 1)",
+      "n": 1580
+    }
+  },
+  "metric_note": "BAcc/Kappa/Auroc/wF1/Loss from d_downstream_qformer_ce.evaluate; fp32 evaluation",
+  "external_note": "External MI datasets never touched training, selection or alpha updates. They are absent from configs/tasks.yaml (instruction tuning); whether they are strictly unseen also depends on the released checkpoint pretraining corpus.",
+  "seconds": 36.89037108421326
+}

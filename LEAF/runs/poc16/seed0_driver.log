@@ -1,0 +1,7 @@
+seed=0 steps-per-dataset=3000 merge-steps=1600 run=runs/poc16/seed0 start=2026-11-04T01:47:46+08:00
+datasets=MI_OpenBMI,MI_BCIC_IV2a,MI_ShanghaiU,MI_BCIC_Upperlimb,MI_HighGamma,MI_Cho2017,MI_Shin2017A,MI_PhysioNet,EMO_FACED,EMO_SEED_3_seg4,EMO_SEED_4_seg4,EMO_SEED_5_seg4,EMO_SEED_7_seg4,SSVEP_OpenBMI,Workload,ADHD_AliMotie
+experts done 2026-11-04T03:16:39+08:00
+joint done 2026-11-04T03:17:47+08:00
+merges done 2026-11-04T03:24:26+08:00
+direct inference done 2026-11-04T03:35:34+08:00
+seed=0 done=2026-11-04T03:40:12+08:00

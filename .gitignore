@@ -1,0 +1,57 @@
+# Local tooling and credentials
+.agents/
+.aws/
+.codex/
+.env
+.env.*
+!.env.example
+.envrc
+.venv/
+venv/
+__pycache__/
+*.py[codz]
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Model weights and training checkpoints stay local.
+checkpoints/
+checkpoint/
+ckpt*/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.bin
+
+# Raw EEG datasets and generated data caches stay local.
+data/
+datasets/
+cache/
+caches/
+data_cache/
+*.h5
+*.hdf5
+*.mat
+*.edf
+*.bdf
+*.fif
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Small fixed text prototypes and experiment artifacts are versioned.
+!LEAF/text_embeddings/*.npy
+!LEAF/runs/**/metrics.npz
+!LEAF/runs/**/text_readout.npz
+!LEAF/runs/**/calibration_indices.npz
+!LEAF/runs/**/best_alpha.npy
+!LEAF/runs/**/best_logits.npy
+
+# The upstream checkout metadata is not part of the project snapshot.
+/LEAF/.git/

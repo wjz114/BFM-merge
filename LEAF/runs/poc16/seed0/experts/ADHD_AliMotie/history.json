@@ -1,0 +1,589 @@
+[
+  {
+    "round": 0,
+    "step": 0,
+    "elapsed_s": 0.0,
+    "val_macro_BAcc": 0.9,
+    "val_macro_Loss": 0.44492286443710327,
+    "train_loss": null,
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.44492286443710327,
+        "BAcc": 0.9,
+        "Auroc": 0.9806060606060606,
+        "wF1": 0.9030497473909355,
+        "Kappa": 0.8067226890756303
+      }
+    }
+  },
+  {
+    "round": 100,
+    "step": 100,
+    "elapsed_s": 14.546013355255127,
+    "val_macro_BAcc": 0.9181818181818182,
+    "val_macro_Loss": 0.3559228181838989,
+    "train_loss": {
+      "ADHD_AliMotie": 0.3121649721981919
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.3559228181838989,
+        "BAcc": 0.9181818181818182,
+        "Auroc": 0.9951515151515152,
+        "wF1": 0.92098229034228,
+        "Kappa": 0.8421052631578947
+      }
+    }
+  },
+  {
+    "round": 200,
+    "step": 200,
+    "elapsed_s": 27.967926263809204,
+    "val_macro_BAcc": 0.9363636363636363,
+    "val_macro_Loss": 0.3403487801551819,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2825464384415226
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.3403487801551819,
+        "BAcc": 0.9363636363636363,
+        "Auroc": 0.9112121212121211,
+        "wF1": 0.9387395592013641,
+        "Kappa": 0.8773800456968773
+      }
+    }
+  },
+  {
+    "round": 300,
+    "step": 300,
+    "elapsed_s": 41.51325225830078,
+    "val_macro_BAcc": 0.9636363636363636,
+    "val_macro_Loss": 0.306575745344162,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2752684181211555
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.306575745344162,
+        "BAcc": 0.9636363636363636,
+        "Auroc": 1.0,
+        "wF1": 0.9651221254862526,
+        "Kappa": 0.9300911854103343
+      }
+    }
+  },
+  {
+    "round": 400,
+    "step": 400,
+    "elapsed_s": 54.94781851768494,
+    "val_macro_BAcc": 0.9916666666666667,
+    "val_macro_Loss": 0.27627116441726685,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2709550148522741
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.27627116441726685,
+        "BAcc": 0.9916666666666667,
+        "Auroc": 1.0,
+        "wF1": 0.9913069810768022,
+        "Kappa": 0.9825889477668432
+      }
+    }
+  },
+  {
+    "round": 500,
+    "step": 500,
+    "elapsed_s": 68.6241180896759,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.26799091696739197,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2688046201897762
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.26799091696739197,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 600,
+    "step": 600,
+    "elapsed_s": 82.181316614151,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679699659347534,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2686758396310863
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679699659347534,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 700,
+    "step": 700,
+    "elapsed_s": 95.66668033599854,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.267956405878067,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2685768594537889
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.267956405878067,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 800,
+    "step": 800,
+    "elapsed_s": 109.03368782997131,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679457664489746,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2685136657382112
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679457664489746,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 900,
+    "step": 900,
+    "elapsed_s": 122.52479004859924,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679457366466522,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2684544690253837
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679457366466522,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 1000,
+    "step": 1000,
+    "elapsed_s": 135.92044258117676,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.26793596148490906,
+    "train_loss": {
+      "ADHD_AliMotie": 0.26840694294180023
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.26793596148490906,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 1100,
+    "step": 1100,
+    "elapsed_s": 149.39141631126404,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679327130317688,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2683665596663703
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679327130317688,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 1200,
+    "step": 1200,
+    "elapsed_s": 162.8919379711151,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.26793038845062256,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2683323664743049
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.26793038845062256,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 1300,
+    "step": 1300,
+    "elapsed_s": 176.52780508995056,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.26792699098587036,
+    "train_loss": {
+      "ADHD_AliMotie": 0.268306993507626
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.26792699098587036,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 1400,
+    "step": 1400,
+    "elapsed_s": 189.95665001869202,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679222524166107,
+    "train_loss": {
+      "ADHD_AliMotie": 0.26827818493166905
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679222524166107,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 1500,
+    "step": 1500,
+    "elapsed_s": 203.78607559204102,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679218053817749,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2682603886027164
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679218053817749,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 1600,
+    "step": 1600,
+    "elapsed_s": 217.2319827079773,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679184079170227,
+    "train_loss": {
+      "ADHD_AliMotie": 0.26824502960218805
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679184079170227,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 1700,
+    "step": 1700,
+    "elapsed_s": 230.89679598808289,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679188549518585,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2682290954595647
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679188549518585,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 1800,
+    "step": 1800,
+    "elapsed_s": 244.4988284111023,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679179310798645,
+    "train_loss": {
+      "ADHD_AliMotie": 0.26821454706715886
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679179310798645,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 1900,
+    "step": 1900,
+    "elapsed_s": 258.27988481521606,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.267916202545166,
+    "train_loss": {
+      "ADHD_AliMotie": 0.26820235407194937
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.267916202545166,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 2000,
+    "step": 2000,
+    "elapsed_s": 271.87253427505493,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.26791465282440186,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2681940164470639
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.26791465282440186,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 2100,
+    "step": 2100,
+    "elapsed_s": 285.27288007736206,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679143249988556,
+    "train_loss": {
+      "ADHD_AliMotie": 0.26818491874964745
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679143249988556,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 2200,
+    "step": 2200,
+    "elapsed_s": 298.89610171318054,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679131031036377,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2681746348534688
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679131031036377,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 2300,
+    "step": 2300,
+    "elapsed_s": 312.3746819496155,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679124176502228,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2681703209379618
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679124176502228,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 2400,
+    "step": 2400,
+    "elapsed_s": 326.2080707550049,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.26791223883628845,
+    "train_loss": {
+      "ADHD_AliMotie": 0.26816460310303986
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.26791223883628845,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 2500,
+    "step": 2500,
+    "elapsed_s": 339.91902017593384,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.26791176199913025,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2681579048303636
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.26791176199913025,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 2600,
+    "step": 2600,
+    "elapsed_s": 353.215069770813,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679118812084198,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2681527880774585
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679118812084198,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 2700,
+    "step": 2700,
+    "elapsed_s": 366.5604758262634,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.26791122555732727,
+    "train_loss": {
+      "ADHD_AliMotie": 0.2681503694540768
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.26791122555732727,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 2800,
+    "step": 2800,
+    "elapsed_s": 379.96323823928833,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.2679113745689392,
+    "train_loss": {
+      "ADHD_AliMotie": 0.26814668863310903
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.2679113745689392,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 2900,
+    "step": 2900,
+    "elapsed_s": 393.3797879219055,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.26791054010391235,
+    "train_loss": {
+      "ADHD_AliMotie": 0.26814181504768525
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.26791054010391235,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  },
+  {
+    "round": 3000,
+    "step": 3000,
+    "elapsed_s": 406.74618768692017,
+    "val_macro_BAcc": 1.0,
+    "val_macro_Loss": 0.267910361289978,
+    "train_loss": {
+      "ADHD_AliMotie": 0.268141080744018
+    },
+    "val": {
+      "ADHD_AliMotie": {
+        "Loss": 0.267910361289978,
+        "BAcc": 1.0,
+        "Auroc": 1.0,
+        "wF1": 1.0,
+        "Kappa": 1.0
+      }
+    }
+  }
+]

@@ -1,0 +1,16 @@
+MI_OpenBMI: train=13440 val=3360 classes=['Right', 'Left'] instruction='This is a motor imagery decoding task'
+Loaded all LEAF weights from /home/jingzhou/BFM-merge/LEAF/checkpoints/leaf-v1.0-instruct-mpnet-base.ckpt; no new trainable parameters.
+steps mode: 1000 rounds x 1 datasets = 1000 optimizer steps, warmup=50, validation every 100 rounds
+round 0/1000 step 0/1000 val macro BAcc=0.7830 loss=0.5468 | MI_OpenBMI=0.7830
+round 100/1000 step 100/1000 val macro BAcc=0.7525 loss=0.5240 | MI_OpenBMI=0.7525
+round 200/1000 step 200/1000 val macro BAcc=0.8243 loss=0.4661 | MI_OpenBMI=0.8243
+round 300/1000 step 300/1000 val macro BAcc=0.7965 loss=0.4816 | MI_OpenBMI=0.7965
+round 400/1000 step 400/1000 val macro BAcc=0.8278 loss=0.4642 | MI_OpenBMI=0.8278
+round 500/1000 step 500/1000 val macro BAcc=0.8321 loss=0.4628 | MI_OpenBMI=0.8321
+round 600/1000 step 600/1000 val macro BAcc=0.8337 loss=0.4541 | MI_OpenBMI=0.8337
+round 700/1000 step 700/1000 val macro BAcc=0.8367 loss=0.4458 | MI_OpenBMI=0.8367
+round 800/1000 step 800/1000 val macro BAcc=0.8419 loss=0.4430 | MI_OpenBMI=0.8419
+round 900/1000 step 900/1000 val macro BAcc=0.8409 loss=0.4418 | MI_OpenBMI=0.8409
+round 1000/1000 step 1000/1000 val macro BAcc=0.8484 loss=0.4387 | MI_OpenBMI=0.8484
+Best round=1000 (step 1000); val macro BAcc=0.8484 (source 0.7830)
+Saved checkpoint, fixed text readout, and metrics to /home/jingzhou/BFM-merge/LEAF/runs/poc/experts/MI_OpenBMI

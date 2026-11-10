@@ -1,0 +1,10 @@
+uniform: K=5 experts, G=1 coefficient groups, 5 coefficients (fixed); 383 merged tensors, 9 unused tensors kept at theta_0
+task-vector L2 norms: MI_OpenBMI=19.165, MI_Cho2017=24.312, MI_PhysioNet=21.856, EMO_SEED_3_seg4=12.984, SSVEP_OpenBMI=21.468
+MI_OpenBMI: calibration=512 of train=13440 per-class=[262, 250]; val=3360
+MI_Cho2017: calibration=512 of train=6464 per-class=[256, 256]; val=1616
+MI_PhysioNet: calibration=512 of train=11447 per-class=[257, 255]; val=2862
+EMO_SEED_3_seg4: calibration=512 of train=22545 per-class=[173, 162, 177]; val=7905
+SSVEP_OpenBMI: calibration=512 of train=13440 per-class=[126, 129, 129, 128]; val=3360
+step 0 val macro BAcc=0.7096 loss=0.7522 | MI_OpenBMI=0.8172 MI_Cho2017=0.7024 MI_PhysioNet=0.7212 EMO_SEED_3_seg4=0.6324 SSVEP_OpenBMI=0.6749
+folded merged.ckpt val macro BAcc=0.7096 loss=0.7522 (selected step 0: 0.7096 / 0.7522)
+Saved merged.ckpt, best alpha, calibration indices and curves to /home/jingzhou/BFM-merge/LEAF/runs/poc3k/seed1/merge_uniform
