@@ -50,6 +50,9 @@ from d_downstream_qformer_ce import (
 from load_config import build_model_config, load_yaml
 from load_datasets import load_dataset
 from utils import seed_all
+from aligned_support import cached_teacher, distillation_loss
+from expert_alignment import cached_hidden_teacher, capture_hidden, expert_alignment_terms, hidden_layer_names
+from ties_support import transform_task_vectors
 
 
 # Not used by the classification forward; kept at theta_0.
@@ -97,8 +100,19 @@ def parse_args():
     p.add_argument('--base', type=Path, required=True, help='theta_0: the checkpoint every expert started from')
     p.add_argument('--experts-dir', type=Path, required=True, help='Contains <dataset>/best.ckpt and run.json')
     p.add_argument('--datasets', required=True, help='Comma-separated expert datasets (merge order)')
-    p.add_argument('--method', choices=['uniform', 'global', 'block', 'softmax_global', 'softmax_block'],
+    p.add_argument('--method', choices=['uniform', 'global', 'block', 'group_scale', 'softmax_global', 'softmax_block'],
                    required=True)
+    p.add_argument('--loss', choices=['ce', 'semkd', 'logitkd', 'expert_adapted', 'hidden_ce'], default='ce')
+    p.add_argument('--class-balanced-ce', action='store_true',
+                   help='Weight calibration CE by N/(C*n_class), then average over minibatch examples')
+    p.add_argument('--kd-weight', type=float, default=1.0)
+    p.add_argument('--hidden-weight', type=float, default=1.0)
+    p.add_argument('--anchor-weight', type=float, default=0.1)
+    p.add_argument('--ties-density', type=float, help='Global per-expert magnitude retention before TIES sign election')
+    p.add_argument('--granularity', choices=['block', 'tensor'], default='block',
+                   help='Prepared tensor comparison unties each active parameter tensor')
+    p.add_argument('--teacher-cache', type=Path)
+    p.add_argument('--calibration', type=Path, help='Reuse exact train-split indices, independently of optimizer seed')
     p.add_argument('--calibration-per-dataset', type=int, default=512)
     p.add_argument('--steps', type=int, default=500, help='Total alpha updates (ignored for uniform)')
     p.add_argument('--eval-every', type=int, default=50)
@@ -119,6 +133,20 @@ def parse_args():
         p.error('--steps must be a multiple of the number of datasets (equal-frequency rounds)')
     if args.gpu != '-1' and not args.gpu.isdigit():
         p.error('--gpu must be one nonnegative GPU index, or -1 for CPU')
+    if args.loss != 'ce' and args.teacher_cache is None:
+        p.error('--teacher-cache is required for KD')
+    if min(args.kd_weight, args.hidden_weight, args.anchor_weight) < 0:
+        p.error('Loss weights must be nonnegative')
+    if args.loss in ('expert_adapted', 'hidden_ce') and args.method != 'block':
+        p.error('The prepared hidden-alignment comparison uses block coefficients')
+    if args.ties_density is not None and (not 0 < args.ties_density < 1 or
+            args.method not in ('uniform', 'block') or args.loss != 'ce'):
+        p.error('Prepared TIES variants use uniform/block CE and density in (0,1)')
+    if args.granularity == 'tensor' and (args.method not in ('block', 'group_scale') or
+            args.loss != 'ce' or args.ties_density is not None):
+        p.error('Prepared tensor variants use original vectors and block/group_scale CE')
+    if args.class_balanced_ce and (args.method != 'block' or args.loss != 'ce' or args.ties_density is not None):
+        p.error('Prepared class-balanced variants use original vectors and block/tensor CE')
     return args
 
 
@@ -138,14 +166,17 @@ def save_alpha_table(path_csv, path_png, alpha, groups, experts, title):
     span = max(float(np.abs(table - center).max()), 1e-6)
     cmap = LinearSegmentedColormap.from_list('div', ['#2a78d6', '#f0efec', '#e34948'])
     norm = TwoSlopeNorm(vmin=center - span, vcenter=center, vmax=center + span)
-    height = max(2.0, 0.28 * len(groups) + 1.2)
+    height = min(24.0, max(2.0, 0.28 * len(groups) + 1.2))
     fig, ax = plt.subplots(figsize=(1.3 * len(experts) + 2.6, height))
     image = ax.imshow(table, cmap=cmap, norm=norm, aspect='auto')
-    for i in range(table.shape[0]):
-        for k in range(table.shape[1]):
-            ax.text(k, i, f'{table[i, k]:.2f}', ha='center', va='center', fontsize=7, color='#222222')
+    if len(groups) <= 64:
+        for i in range(table.shape[0]):
+            for k in range(table.shape[1]):
+                ax.text(k, i, f'{table[i, k]:.2f}', ha='center', va='center', fontsize=7, color='#222222')
     ax.set_xticks(range(len(experts)), experts, rotation=30, ha='right', fontsize=8)
-    ax.set_yticks(range(len(groups)), groups, fontsize=7)
+    tick_stride = max(1, math.ceil(len(groups) / 64))
+    ticks = list(range(0, len(groups), tick_stride))
+    ax.set_yticks(ticks, [groups[i] for i in ticks], fontsize=7)
     ax.tick_params(length=0)
     for spine in ax.spines.values():
         spine.set_visible(False)
@@ -173,6 +204,8 @@ def main():
     use_bf16 = device.type == 'cuda' and args.precision == 'bf16-mixed'
     seed_all(args.seed)
     torch.backends.cudnn.benchmark = False
+    torch.backends.cuda.matmul.allow_tf32 = False
+    torch.backends.cudnn.allow_tf32 = False
 
     # ---- theta_0 and experts (strict loading, same initialization) ----
     leaf = load_leaf(config, base_path).to(device).eval()
@@ -205,18 +238,25 @@ def main():
         expert_paths.append(str(run_dir / 'best.ckpt'))
         del state
     deltas = {n: torch.stack(v) for n, v in deltas.items()}  # (K, *shape), constants
+    ties_info = None
+    if args.ties_density is not None:
+        deltas, ties_info = transform_task_vectors(deltas, args.ties_density)
     base_params = {n: base_state[n].float() for n in param_names}
     base_buffers = {n: base_state[n] for n in buffer_names}
 
-    if args.method in ('block', 'softmax_block'):
-        groups = group_names
-        group_of = {n: groups.index(group_for_name(n)) for n in selected}
+    if args.method in ('block', 'softmax_block', 'group_scale'):
+        groups = selected if args.granularity == 'tensor' else group_names
+        group_of = ({n: i for i, n in enumerate(selected)} if args.granularity == 'tensor'
+                    else {n: groups.index(group_for_name(n)) for n in selected})
     else:
         groups = ['all']
         group_of = {n: 0 for n in selected}
     G = len(groups)
     learnable = args.method != 'uniform'
-    if softmax:
+    if args.method == 'group_scale':
+        trainable = torch.ones((1, G), device=device, requires_grad=True)
+        coefficients = lambda: trainable.expand(K, G) / K
+    elif softmax:
         beta = torch.zeros((K, G), device=device, requires_grad=True)  # softmax(0) = 1/K
         coefficients = lambda: torch.softmax(beta, dim=0)  # normalized over experts, per group
         trainable = beta
@@ -228,7 +268,7 @@ def main():
     delta_norm = {ds: math.sqrt(sum(float((deltas[n][k] - offset(n)).pow(2).sum()) for n in selected))
                   for k, ds in enumerate(names)}
     print(f'{args.method}: K={K} experts, G={G} coefficient groups, '
-          f'{K * G} coefficients ({"learnable" if learnable else "fixed"}); '
+          f'{trainable.numel()} coefficients ({"learnable" if learnable else "fixed"}); '
           f'{len(selected)} merged tensors, {len(unused)} unused tensors kept at theta_0', flush=True)
     print('task-vector L2 norms: ' + ', '.join(f'{ds}={v:.3f}' for ds, v in delta_norm.items()), flush=True)
 
@@ -247,24 +287,57 @@ def main():
         readouts[ds] = (instruction.to(device), prototypes.to(device))
         texts[ds] = (labels, text)
 
-    def merged_logits(params, ds, x):
+    def merged_embedding(params, ds, x):
         instruction, prototypes = readouts[ds]
         embedding, _ = functional_call(leaf, (params, base_buffers),
                                        (x, instruction.unsqueeze(0).expand(len(x), -1)))
-        return prototype_logits(embedding, prototypes)
+        return embedding
 
-    cal_loaders, val_loaders, calibration = {}, {}, {}
+    def merged_logits(params, ds, x):
+        return prototype_logits(merged_embedding(params, ds, x), readouts[ds][1])
+
+    cal_loaders, val_loaders, calibration, teachers = {}, {}, {}, {}
+    class_counts, class_weights = {}, {}
+    hidden_alignment = args.loss in ('expert_adapted', 'hidden_ce')
+    hidden_names = hidden_layer_names(leaf) if hidden_alignment else []
+    supplied_indices = np.load(args.calibration) if args.calibration else None
+    teacher_seconds = 0.0
     for k, ds in enumerate(names):
         _, train_x, train_y, val_x, val_y, test_x, test_y = load_dataset(ds)
         del test_x, test_y  # never used for merging
         # Deterministic in (seed, dataset): identical across uniform/global/block.
         rng = np.random.default_rng([args.seed, k])
-        index = stratified_indices(train_y, args.calibration_per_dataset, rng)
+        index = (supplied_indices[ds] if supplied_indices is not None
+                 else stratified_indices(train_y, args.calibration_per_dataset, rng))
+        if (index.ndim != 1 or not np.issubdtype(index.dtype, np.integer) or len(index) == 0
+                or len(np.unique(index)) != len(index) or index.min() < 0 or index.max() >= len(train_y)
+                or len(index) > args.calibration_per_dataset):
+            raise ValueError(f'{ds}: invalid train calibration indices')
         calibration[ds] = index
         n_classes = len(texts[ds][0])
         cal_loaders[ds] = make_loader(train_x[index], train_y[index], config, n_classes, args.bs, True)
         val_loaders[ds] = make_loader(val_x, val_y, config, n_classes, args.bs, False)
+        if args.loss != 'ce':
+            teacher_started = time.time()
+            tensors = cal_loaders[ds].dataset.tensors
+            if hidden_alignment:
+                targets, teachers[ds] = cached_hidden_teacher(
+                    leaf, expert_paths[k], ds, *tensors, index, *readouts[ds], base_sha,
+                    args.teacher_cache, args.bs, device)
+                cal_loaders[ds].dataset.tensors = (*tensors, *targets)
+            else:
+                target, teachers[ds] = cached_teacher(
+                    leaf, expert_paths[k], ds, *tensors, index, *readouts[ds], base_sha,
+                    args.teacher_cache, args.bs, device)
+                cal_loaders[ds].dataset.tensors = (*tensors, target)
+            teacher_seconds += time.time() - teacher_started
         counts = np.bincount(train_y[index], minlength=n_classes).tolist()
+        class_counts[ds] = counts
+        if args.class_balanced_ce:
+            if min(counts) <= 0:
+                raise ValueError(f'{ds}: class-balanced CE needs every class in calibration')
+            class_weights[ds] = torch.tensor([len(index) / (n_classes * count) for count in counts],
+                                             dtype=torch.float32, device=device)
         print(f'{ds}: calibration={len(index)} of train={len(train_y)} per-class={counts}; '
               f'val={len(val_y)}', flush=True)
         del train_x, train_y
@@ -300,6 +373,9 @@ def main():
                         val=validation,
                         bacc=bacc, loss=loss)
         per_ds = ' '.join(f'{ds}={validation[ds]["BAcc"]:.4f}' for ds in names)
+        (outdir / 'history.json').write_text(json.dumps(history, indent=2) + '\n')
+        np.savez(outdir / 'coefficient_history.npz', alpha=np.stack(alpha_history),
+                 trainable=np.stack(logit_history), step=[h['step'] for h in history])
         print(f'step {step} val macro BAcc={bacc:.4f} loss={loss:.4f} | {per_ds}', flush=True)
 
     optimize_started = time.time()
@@ -307,6 +383,8 @@ def main():
     steps = args.steps if learnable else 0
     step_dataset = np.zeros(steps, dtype=np.int16)
     step_loss = np.zeros(steps, dtype=np.float32)
+    gradient_max = torch.zeros(G, device=device)
+    initial_data_gradient = None
     if learnable:
         optimizer = torch.optim.Adam([trainable], lr=args.lr, weight_decay=0)
         streams = {ds: BatchStream(cal_loaders[ds]) for ds in names}
@@ -317,18 +395,59 @@ def main():
         for _ in range(steps // K):
             for index in order_rng.permutation(K):
                 ds = names[index]
-                x, y = streams[ds].next()
+                batch = streams[ds].next()
+                x, y = batch[:2]
                 x, y = x.to(device), y.to(device)
                 params = compose(coefficients())
                 with torch.autocast(device_type=device.type, dtype=torch.bfloat16, enabled=use_bf16):
-                    loss = F.cross_entropy(merged_logits(params, ds, x), y)
+                    if hidden_alignment:
+                        with capture_hidden(leaf, hidden_names) as student_hidden:
+                            embedding = merged_embedding(params, ds, x)
+                    else:
+                        embedding = merged_embedding(params, ds, x)
+                    logits = prototype_logits(embedding, readouts[ds][1])
+                    if args.class_balanced_ce:
+                        per_example_ce = F.cross_entropy(logits, y, reduction='none')
+                        ce = (per_example_ce * class_weights[ds][y]).mean()
+                        unweighted_ce = per_example_ce.mean()
+                    else:
+                        ce = F.cross_entropy(logits, y)
+                        unweighted_ce = ce
+                    if hidden_alignment:
+                        teacher_hidden = {name: value.to(device) for name, value in zip(hidden_names, batch[3:])}
+                        kd, hidden, anchor, layer_mse = expert_alignment_terms(
+                            embedding, batch[2].to(device), student_hidden, teacher_hidden,
+                            readouts[ds][1], coefficients())
+                        loss = args.kd_weight * kd + args.hidden_weight * hidden + args.anchor_weight * anchor
+                        if args.loss == 'hidden_ce':
+                            loss = loss + ce
+                    else:
+                        kd = (distillation_loss(embedding, batch[2].to(device), readouts[ds][1], args.loss)
+                              if args.loss != 'ce' else ce.new_zeros(()))
+                        loss = ce + args.kd_weight * kd
                 if not torch.isfinite(loss):
                     raise FloatingPointError(f'Non-finite merge loss at step {step + 1} ({ds})')
                 optimizer.zero_grad(set_to_none=True)
                 loss.backward()
+                if trainable.grad is None or not torch.isfinite(trainable.grad).all():
+                    raise FloatingPointError('Missing/non-finite merge coefficient gradient')
+                group_grad = trainable.grad.detach().norm(dim=0)
+                if hidden_alignment and step == 0:
+                    # At the exact uniform initialization the L1 anchor has zero gradient.
+                    initial_data_gradient = group_grad.cpu().tolist()
+                gradient_max = torch.maximum(gradient_max, group_grad)
                 optimizer.step()
                 value = loss.item()
                 step_dataset[step], step_loss[step] = index, value
+                with (outdir / 'dynamics.jsonl').open('a') as handle:
+                    row = {'step': step + 1, 'dataset': ds, 'ce': ce.item(),
+                        'unweighted_ce': unweighted_ce.item(),
+                        'kd': kd.item(), 'total': value, 'grad_norm': group_grad.norm().item(),
+                        'coefficient_l2': coefficients().detach().norm().item()}
+                    if hidden_alignment:
+                        row.update(hidden=hidden.item(), anchor=anchor.item(),
+                                   hidden_by_layer=dict(zip(layer_mse, torch.stack(list(layer_mse.values())).detach().cpu().tolist())))
+                    handle.write(json.dumps(row) + '\n')
                 interval[ds][0] += value * len(y)
                 interval[ds][1] += len(y)
                 step += 1
@@ -353,6 +472,16 @@ def main():
 
     # The deployable checkpoint must reproduce the selected validation result.
     check = load_leaf(config, outdir / 'merged.ckpt').to(device)
+    check.eval()
+    export_errors = {}
+    with torch.no_grad():
+        for ds in names:
+            x = val_loaders[ds].dataset.tensors[0][:min(8, args.bs)].to(device)
+            z, _ = check(x, readouts[ds][0][None].expand(len(x), -1))
+            error = (prototype_logits(z, readouts[ds][1]) - merged_logits(folded, ds, x)).abs().max().item()
+            export_errors[ds] = error
+            if error > 1e-5:
+                raise AssertionError(f'{ds}: functional/reloaded logit error {error}')
     folded_val = {}
     for ds in names:
         instruction, prototypes = readouts[ds]
@@ -381,13 +510,37 @@ def main():
         'method': args.method, 'base_checkpoint': str(base_path), 'base_checkpoint_sha256': base_sha,
         'experts': dict(zip(names, expert_paths)), 'datasets': names,
         'labels': {ds: texts[ds][0] for ds in names}, 'instruction': {ds: texts[ds][1] for ds in names},
-        'K': K, 'groups': groups, 'num_coefficients': K * G,
+        'K': K, 'groups': groups, 'num_coefficients': trainable.numel(),
+        'granularity': args.granularity, 'structural_groups': group_names,
+        'loss': args.loss, 'kd_weight': args.kd_weight, 'teacher_cache': teachers,
+        'class_balanced_ce': args.class_balanced_ce,
+        'calibration_class_counts': class_counts,
+        'ce_class_weights': {ds: weights.tolist() for ds, weights in class_weights.items()},
+        'ce_reduction': ('minibatch mean of N_cal/(C*n_class) times per-example CE'
+                         if args.class_balanced_ce else 'ordinary minibatch mean CE'),
+        'task_vector_preprocessing': ties_info,
+        'hidden_alignment': ({'reference_commit': '0670bb957d8a353c74dbb73d61b2e99d43112a39',
+                              'layers': hidden_names, 'hidden_weight': args.hidden_weight,
+                              'anchor_weight': args.anchor_weight, 'logit_temperature': 1,
+                              'hard_label_fitting_loss': args.loss == 'hidden_ce',
+                              'labeled_validation_selection': True,
+                              'definition': 'EEG adaptation; mean full-state MSE + KL + mean L1 uniform anchor; no importance-guided chunking',
+                              'initial_data_gradient_by_group': dict(zip(groups, initial_data_gradient or [])),
+                              'helper_sha256': sha256(ROOT / 'expert_alignment.py')}
+                             if hidden_alignment else None),
+        'calibration_input': str(args.calibration.resolve()) if args.calibration else None,
+        'gradient_max_by_group': dict(zip(groups, gradient_max.tolist())),
+        'export_logit_max_abs': export_errors,
+        'code_sha256': {p: sha256(ROOT / p) for p in ['merge_poc.py', 'aligned_support.py', 'LEAF.py',
+                                                    *(['expert_alignment.py'] if hidden_alignment else []),
+                                                    *(['ties_support.py'] if ties_info else [])]},
         'params_per_group': {g: sum(base_params[n].numel() for n in selected if group_of[n] == i)
                              for i, g in enumerate(groups)},
         'merged_tensors': len(selected), 'unused_tensors_kept_at_base': unused,
         'task_vector_l2': delta_norm,
         'alpha_init': 1.0 / K,
         'alpha_parametrization': ('softmax over experts per group of logits initialized to 0' if softmax
+                                  else 'one signed scale per group, alpha=lambda/K' if args.method == 'group_scale'
                                   else 'unconstrained real coefficients'),
         'composition': ('theta_M = sum_k alpha_k theta_k (direct weighted average)' if softmax
                         else 'theta_M = theta_0 + sum_k alpha_k (theta_k - theta_0)'),
@@ -404,7 +557,9 @@ def main():
         'best_val_macro_BAcc': best['bacc'], 'best_val_macro_Loss': best['loss'], 'best_val': best['val'],
         'folded_val_macro_BAcc': folded_bacc, 'folded_val_macro_Loss': folded_loss, 'folded_val': folded_val,
         'seconds': {'data_and_setup': data_seconds, 'optimization_incl_validation': optimize_seconds,
+                    'teacher_cache_included_in_setup': teacher_seconds,
                     'total': time.time() - started},
+        'peak_cuda_memory_bytes': torch.cuda.max_memory_allocated(device) if device.type == 'cuda' else 0,
         'command': ' '.join(sys.argv),
     }
     (outdir / 'run.json').write_text(json.dumps(metadata, indent=2) + '\n')

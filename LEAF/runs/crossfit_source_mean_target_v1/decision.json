@@ -1,0 +1,166 @@
+{
+  "created_unix": 1794919781.3377392,
+  "decision": "Close this fine-tuning-row-exclusion coefficient-transfer configuration, including the fixed source-mean target refinement. No full16 source expansion or fold/source-seed sweep selected.",
+  "overall_goal_achieved": false,
+  "superiority_established": false,
+  "novelty_established": false,
+  "comparison_sha256": "d1efe4358bafde671d8b2fb6530075b7fedd647c17880239fa49082295747147",
+  "results": {
+    "out_of_fold": {
+      "forward": 0.7540381615758097,
+      "reverse": 0.7600547181100183,
+      "mean": 0.757046439842914
+    },
+    "in_fold": {
+      "forward": 0.7512512658652967,
+      "reverse": 0.7626645647665726,
+      "mean": 0.7569579153159347
+    },
+    "source_soup": {
+      "forward": 0.7655259001942109,
+      "reverse": 0.7645285673185478,
+      "mean": 0.7650272337563793
+    },
+    "single_full": {
+      "forward": 0.758290326767421,
+      "reverse": 0.7635343957074366,
+      "mean": 0.7609123612374289
+    },
+    "out_of_fold_full_target": {
+      "forward": 0.7546263055471475,
+      "reverse": 0.7637960045419498,
+      "mean": 0.7592111550445486
+    },
+    "in_fold_full_target": {
+      "forward": 0.7517895458971566,
+      "reverse": 0.7598983031738498,
+      "mean": 0.7558439245355032
+    }
+  },
+  "contrasts": {
+    "out_of_fold_minus_in_fold": {
+      "forward": 0.2786895710513049,
+      "reverse": -0.2609846656554282,
+      "mean_pp": 0.008852452697938329,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 0.08744674121347051,
+          "EMO_FACED": 1.2499999999999956,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -0.22268845700824658
+        },
+        "reverse": {
+          "MI_OpenBMI": 0.46975788272975993,
+          "EMO_FACED": 0.5401234567901203,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": -1.1447290930506338
+        }
+      }
+    },
+    "out_of_fold_minus_source_soup": {
+      "forward": -1.1487738618401133,
+      "reverse": -0.44738492085294457,
+      "mean_pp": -0.7980793913465289,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -0.9140045025768817,
+          "EMO_FACED": 1.1111111111111072,
+          "ADHD_AliMotie": -2.7272727272727337,
+          "Workload": -2.0649293286219117
+        },
+        "reverse": {
+          "MI_OpenBMI": 1.8057179577822602,
+          "EMO_FACED": 1.620370370370361,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": -4.306537102473484
+        }
+      }
+    },
+    "in_fold_minus_source_soup": {
+      "forward": -1.4274634328914182,
+      "reverse": -0.18640025519751635,
+      "mean_pp": -0.8069318440444673,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -1.0014512437903522,
+          "EMO_FACED": -0.1388888888888884,
+          "ADHD_AliMotie": -2.7272727272727337,
+          "Workload": -1.8422408716136651
+        },
+        "reverse": {
+          "MI_OpenBMI": 1.3359600750525003,
+          "EMO_FACED": 1.0802469135802406,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -3.1618080094228507
+        }
+      }
+    },
+    "out_of_fold_minus_out_of_fold_full_target": {
+      "forward": -0.05881439713377734,
+      "reverse": -0.3741286431931501,
+      "mean_pp": -0.21647152016346372,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -0.2608732365741995,
+          "EMO_FACED": -0.12345679012345512,
+          "ADHD_AliMotie": 0.0,
+          "Workload": 0.14907243816253413
+        },
+        "reverse": {
+          "MI_OpenBMI": 0.0774640731289411,
+          "EMO_FACED": -0.16975308641976605,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -1.404225559481731
+        }
+      }
+    },
+    "in_fold_minus_in_fold_full_target": {
+      "forward": -0.05382800318599612,
+      "reverse": 0.2766261592722863,
+      "mean_pp": 0.11139907804314508,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -0.47161845169175765,
+          "EMO_FACED": 0.9722222222222299,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -0.7159157832744456
+        },
+        "reverse": {
+          "MI_OpenBMI": 0.8051969984729013,
+          "EMO_FACED": 0.7098765432098753,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -0.4085689045936425
+        }
+      }
+    },
+    "out_of_fold_minus_single_full": {
+      "forward": -0.42521651916113123,
+      "reverse": -0.3479677597418296,
+      "mean_pp": -0.3865921394514804,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 0.016637780140860148,
+          "EMO_FACED": 1.3117283950617287,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": -2.1201413427561877
+        },
+        "reverse": {
+          "MI_OpenBMI": 2.9769818995264097,
+          "EMO_FACED": -1.3580246913580396,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": -2.1017373380447513
+        }
+      }
+    }
+  },
+  "reasoning": [
+    "With the same source-mean target, out-of-fold transfer is0.7981pp below direct source-soup calibration on average and is lower in both orders. In-fold transfer is similarly below it.",
+    "Out-of-fold versus in-fold under the common target is only+0.0089pp with opposite signs across orders. The previous+0.3367pp contrast does not persist across deployment targets.",
+    "Averaging the target changes out-of-fold performance by-0.2165pp versus its full-source target. The tested failure is not rescued by folding the other two sources into the deployed target.",
+    "All fixed-trace, native-export and affine averaging checks passed. The refinement required zero new scientific optimization updates, and its target-independence engineering check used16updates64CE.",
+    "Source calibration diagnostics show strong and heterogeneous exposure effects; FACED already has a large base calibration/development gap. Row exclusion during expert fine-tuning is not a guarantee of base-stage exclusion or an unbiased risk estimate."
+  ],
+  "source_exposure_evidence": "runs/crossfit_merge_candidate_v1/source_exposure_summary.json",
+  "next_selected_step": "Prepare a matched calibration-domain pilot on the same four tasks and frozen sources: class/count-matched pools from original training calibration versus a new subset of the existing development-validation pool; evaluate both on the same remaining development rows. Use replacement sampling with identical label schedules and fixed update budget. This is a baseline diagnostic for method discovery, not itself a novel merging-method contribution.",
+  "evaluation_scope": "The development pool was already exposed and used to select source checkpoints. Its new complementary evaluation subset is not a blind independent test. Official test remains unused by these new studies. Historical full-validation scores must not be compared directly to new-subset scores."
+}

@@ -1,0 +1,7 @@
+method,source_macro_bacc,datasets,protocol
+block_balanced_avg,0.56800625,16,"official L2, seed 42, batch 256"
+block_balanced_ce,0.5667875,16,"official L2, seed 42, batch 256"
+block_ce,0.5677375,16,"official L2, seed 42, batch 256"
+tensor_balanced_avg,0.57193125,16,"official L2, seed 42, batch 256"
+tensor_balanced_ce,0.56956875,16,"official L2, seed 42, batch 256"
+tensor_ce,0.56908125,16,"official L2, seed 42, batch 256"

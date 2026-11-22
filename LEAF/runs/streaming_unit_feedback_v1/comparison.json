@@ -1,0 +1,491 @@
+{
+  "sources": {
+    "runs/streaming_unit_feedback_v1/seed0/unit_feedback_forward/run.json": "b2fa18481efeae2a695b3c32ef859bcc435d39326c640b64d4a535e7299a1d99",
+    "runs/streaming_strict_history_v1/old_rows_forward/run.json": "a5a60808433a112515febc2fd7625797237822673a43f6990be0df223bfbe408",
+    "runs/streaming_complement_memory_v1/joint_memory_forward/run.json": "d296c9216fef7fce521cd7eee584a2d5babe8e64ed437c2c592f451f4dba09ea",
+    "runs/streaming_unit_feedback_v1/seed0/unit_feedback_reverse/run.json": "318e6493730bfa809899ae650638f63e69f2a6e14be1b6791ebb4216d5f7e35b",
+    "runs/streaming_strict_history_v1/old_rows_reverse/run.json": "c9b1a70e2cbe0e640749b80cf23157c10b7bbed36e597f4bc7b618b5d54b0efd",
+    "runs/streaming_complement_memory_v1/joint_memory_reverse/run.json": "39bf26ecdf060a716482509669aeafc3b71cee776e798147f1b7ec71eb3d6ad4",
+    "runs/streaming_unit_feedback_v1/seed2/unit_feedback_forward/run.json": "e011f6d8f30844fdb524c49bdda2805c7f2bd6b5ab82f4e2e09b6dd8208fe3d7",
+    "runs/streaming_joint_memory_replication_v2/seed2/old_rows_forward/run.json": "f66a7b7a9a796830cc0f8426c8b5e68de1bf6c6608df5efe9f5b419e2b1363af",
+    "runs/streaming_joint_memory_replication_v2/seed2/joint_memory_forward/run.json": "5df9120bb6534ee15df1e7e040b5bebc9c3add1e65a7e739e4d9a564051b1fa6",
+    "runs/streaming_unit_feedback_v1/seed2/unit_feedback_reverse/run.json": "fb25a2c4f9c86706e4d85e8407e117290ed771a764abba9ac14866fd5f5e952a",
+    "runs/streaming_joint_memory_replication_v2/seed2/old_rows_reverse/run.json": "03e7009169a87f21026ff349bd9525e26a823ffd3be5b6d60ca8e00270c42501",
+    "runs/streaming_joint_memory_replication_v2/seed2/joint_memory_reverse/run.json": "2194e17e2f73834ba91e2561ebe955cdbc79c1bf3fc9fbee1333ca97baa1fa2f"
+  },
+  "banks": {
+    "0": {
+      "orders": {
+        "forward": {
+          "macro_BAcc": {
+            "unit_feedback": 0.6391834498038447,
+            "old_rows": 0.6370832815325755,
+            "joint_memory": 0.6370156340001378
+          },
+          "contrasts": {
+            "unit_feedback_minus_old_rows": {
+              "gain_pp": 0.21001682712690312,
+              "per_task_pp": {
+                "MI_OpenBMI": -0.028516797359712243,
+                "MI_BCIC_IV2a": 0.2230711736579183,
+                "MI_ShanghaiU": -0.6221770551038897,
+                "MI_BCIC_Upperlimb": -0.48633279556974385,
+                "MI_HighGamma": -0.6214140501468401,
+                "MI_Cho2017": -0.6806930693069257,
+                "MI_Shin2017A": 3.5055986218776924,
+                "MI_PhysioNet": 0.9746082227318764,
+                "EMO_FACED": 0.648148148148131,
+                "EMO_SEED_3_seg4": 0.32124527960295524,
+                "EMO_SEED_4_seg4": 0.4291615574083085,
+                "EMO_SEED_5_seg4": 0.4019178091340059,
+                "EMO_SEED_7_seg4": 0.10924011244808352,
+                "SSVEP_OpenBMI": -2.7418926135010513,
+                "Workload": 0.185880447585407,
+                "ADHD_AliMotie": 1.7424242424242342
+              },
+              "improved": 10,
+              "declined": 6,
+              "tied": 0,
+              "task_deletion_range_pp": [
+                -0.009688625856482839,
+                0.40681078983543345
+              ]
+            },
+            "unit_feedback_minus_joint_memory": {
+              "gain_pp": 0.21678158037069273,
+              "per_task_pp": {
+                "MI_OpenBMI": 0.15324647815763148,
+                "MI_BCIC_IV2a": -0.885189289147581,
+                "MI_ShanghaiU": 1.662149954832881,
+                "MI_BCIC_Upperlimb": -0.20801153331273525,
+                "MI_HighGamma": 2.2608990286875796,
+                "MI_Cho2017": -0.5569306930693019,
+                "MI_Shin2017A": 2.558139534883719,
+                "MI_PhysioNet": -0.05113323357387456,
+                "EMO_FACED": -0.462962962962965,
+                "EMO_SEED_3_seg4": 0.783103782811545,
+                "EMO_SEED_4_seg4": 0.59357236305288,
+                "EMO_SEED_5_seg4": 0.30954110563271575,
+                "EMO_SEED_7_seg4": -0.49847758418898325,
+                "SSVEP_OpenBMI": -2.5059905469089427,
+                "Workload": 0.3165488810365158,
+                "ADHD_AliMotie": 0.0
+              },
+              "improved": 8,
+              "declined": 7,
+              "tied": 1,
+              "task_deletion_range_pp": [
+                0.06069105006982432,
+                0.39829972218933507
+              ]
+            }
+          },
+          "gain_over_stages_pp": {
+            "old_rows": {
+              "1": 0.0,
+              "4": -0.583933677017523,
+              "8": -0.49857911388613285,
+              "12": 0.03407413591327568,
+              "16": 0.21001682712691316
+            },
+            "joint_memory": {
+              "1": 0.0,
+              "4": -0.26570395521617884,
+              "8": 0.34198459882033294,
+              "12": 0.3276029581405493,
+              "16": 0.21678158037068407
+            }
+          },
+          "audits_and_costs": {
+            "unit_feedback": {
+              "coefficient_count": 694566,
+              "logical_history_bytes": 206012416,
+              "memory_update_seconds": 11.84256065392401,
+              "training_and_export_seconds": 434.40736531699076,
+              "elapsed_seconds": 733.02269694797,
+              "peak_reserved_bytes": 5932843008
+            },
+            "old_rows": {
+              "coefficient_count": 347666,
+              "history_used_by_merger": false,
+              "logical_history_bytes": 0,
+              "raw_history_audit_bytes": 206012416,
+              "history_update_seconds": 4.378810449910816,
+              "training_and_export_seconds": 345.64870772510767,
+              "elapsed_seconds": 621.8291295459494,
+              "peak_reserved_bytes": 5725224960
+            },
+            "joint_memory": {
+              "coefficient_count": 694566,
+              "logical_history_bytes": 206012416,
+              "memory_update_seconds": 11.681531993148383,
+              "training_and_export_seconds": 428.61960828100564,
+              "elapsed_seconds": 726.7654710710049,
+              "peak_reserved_bytes": 5932843008
+            }
+          }
+        },
+        "reverse": {
+          "macro_BAcc": {
+            "unit_feedback": 0.6332559933817341,
+            "old_rows": 0.6304747315597239,
+            "joint_memory": 0.6350626162741336
+          },
+          "contrasts": {
+            "unit_feedback_minus_old_rows": {
+              "gain_pp": 0.2781261822010238,
+              "per_task_pp": {
+                "MI_OpenBMI": 0.34806951658125085,
+                "MI_BCIC_IV2a": 0.6606765713608964,
+                "MI_ShanghaiU": 0.5563621112401718,
+                "MI_BCIC_Upperlimb": 1.6780226318378944,
+                "MI_HighGamma": -1.4696182516376721,
+                "MI_Cho2017": 0.7425742574257432,
+                "MI_Shin2017A": 0.3531438415159349,
+                "MI_PhysioNet": -0.029205036940949114,
+                "EMO_FACED": -0.12345679012345512,
+                "EMO_SEED_3_seg4": 0.4093560778248184,
+                "EMO_SEED_4_seg4": 0.1036272505428315,
+                "EMO_SEED_5_seg4": -0.047397998089715454,
+                "EMO_SEED_7_seg4": 0.24979433571436505,
+                "SSVEP_OpenBMI": 0.8538397522848684,
+                "Workload": 1.9066548881036427,
+                "ADHD_AliMotie": -1.7424242424242453
+              },
+              "improved": 11,
+              "declined": 5,
+              "tied": 0,
+              "task_deletion_range_pp": [
+                0.1695576018075159,
+                0.4128295438427084
+              ]
+            },
+            "unit_feedback_minus_joint_memory": {
+              "gain_pp": -0.18066228923994015,
+              "per_task_pp": {
+                "MI_OpenBMI": 0.577599322180411,
+                "MI_BCIC_IV2a": 0.6645327251796451,
+                "MI_ShanghaiU": -0.4629629629629539,
+                "MI_BCIC_Upperlimb": 1.8761656311857111,
+                "MI_HighGamma": -3.7528800542127816,
+                "MI_Cho2017": 1.6089108910891103,
+                "MI_Shin2017A": -0.8613264427217882,
+                "MI_PhysioNet": -0.8389366631633699,
+                "EMO_FACED": -0.18518518518518823,
+                "EMO_SEED_3_seg4": 0.5424201099244796,
+                "EMO_SEED_4_seg4": -0.09283133065601246,
+                "EMO_SEED_5_seg4": 0.05949907547054267,
+                "EMO_SEED_7_seg4": -0.04296961623064255,
+                "SSVEP_OpenBMI": -0.002662377227580226,
+                "Workload": -2.055727326266199,
+                "ADHD_AliMotie": 0.07575757575757347
+              },
+              "improved": 7,
+              "declined": 9,
+              "tied": 0,
+              "task_deletion_range_pp": [
+                -0.3177841506016502,
+                0.05748556175824927
+              ]
+            }
+          },
+          "gain_over_stages_pp": {
+            "old_rows": {
+              "1": 0.0,
+              "4": 0.683442716589111,
+              "8": 0.0019163200552507753,
+              "12": 0.4471976099625352,
+              "16": 0.2781261822010217
+            },
+            "joint_memory": {
+              "1": 0.0,
+              "4": 0.002813377899946179,
+              "8": -0.15296911617203035,
+              "12": 0.2863854134128152,
+              "16": -0.1806622892399523
+            }
+          },
+          "audits_and_costs": {
+            "unit_feedback": {
+              "coefficient_count": 694566,
+              "logical_history_bytes": 206012416,
+              "memory_update_seconds": 12.57099887309596,
+              "training_and_export_seconds": 433.97523822507355,
+              "elapsed_seconds": 845.6140872339602,
+              "peak_reserved_bytes": 6142558208
+            },
+            "old_rows": {
+              "coefficient_count": 347666,
+              "history_used_by_merger": false,
+              "logical_history_bytes": 0,
+              "raw_history_audit_bytes": 206012416,
+              "history_update_seconds": 4.405768615950365,
+              "training_and_export_seconds": 355.5574528538855,
+              "elapsed_seconds": 722.6228054689709,
+              "peak_reserved_bytes": 5913968640
+            },
+            "joint_memory": {
+              "coefficient_count": 694566,
+              "logical_history_bytes": 206012416,
+              "memory_update_seconds": 12.367902570811566,
+              "training_and_export_seconds": 431.85734090791084,
+              "elapsed_seconds": 842.5368558279588,
+              "peak_reserved_bytes": 6142558208
+            }
+          }
+        }
+      },
+      "mean_gain_over_orders_pp": {
+        "unit_feedback_minus_old_rows": 0.24407150466396346,
+        "unit_feedback_minus_joint_memory": 0.018059645565376287
+      }
+    },
+    "2": {
+      "orders": {
+        "forward": {
+          "macro_BAcc": {
+            "unit_feedback": 0.633105302766352,
+            "old_rows": 0.6333704053008904,
+            "joint_memory": 0.6352365498265413
+          },
+          "contrasts": {
+            "unit_feedback_minus_old_rows": {
+              "gain_pp": -0.02651025345383612,
+              "per_task_pp": {
+                "MI_OpenBMI": -0.15231619367664928,
+                "MI_BCIC_IV2a": -0.9441066367074535,
+                "MI_ShanghaiU": -0.5803974706413695,
+                "MI_BCIC_Upperlimb": -1.5278778933397352,
+                "MI_HighGamma": 0.81770950982607,
+                "MI_Cho2017": -0.061881188118806385,
+                "MI_Shin2017A": 1.6881998277347154,
+                "MI_PhysioNet": 1.2103485459993957,
+                "EMO_FACED": -0.44753086419752064,
+                "EMO_SEED_3_seg4": 0.3774325172630322,
+                "EMO_SEED_4_seg4": -0.322925071301694,
+                "EMO_SEED_5_seg4": -0.07221793790634923,
+                "EMO_SEED_7_seg4": 0.1583634225694741,
+                "SSVEP_OpenBMI": -0.23930641524761986,
+                "Workload": -1.2367491166077826,
+                "ADHD_AliMotie": 0.909090909090915
+              },
+              "improved": 6,
+              "declined": 10,
+              "tied": 0,
+              "task_deletion_range_pp": [
+                -0.14082425886640623,
+                0.07358092253855715
+              ]
+            },
+            "unit_feedback_minus_joint_memory": {
+              "gain_pp": -0.21312470601892658,
+              "per_task_pp": {
+                "MI_OpenBMI": 0.7895252829853816,
+                "MI_BCIC_IV2a": -0.9576170066617484,
+                "MI_ShanghaiU": -0.37295134856111245,
+                "MI_BCIC_Upperlimb": -1.5620316021922376,
+                "MI_HighGamma": 0.3015586175739715,
+                "MI_Cho2017": 0.6188118811881194,
+                "MI_Shin2017A": 0.0,
+                "MI_PhysioNet": 1.4987849141821163,
+                "EMO_FACED": -1.1111111111111072,
+                "EMO_SEED_3_seg4": -0.0671359021738871,
+                "EMO_SEED_4_seg4": -0.07874953085991732,
+                "EMO_SEED_5_seg4": 0.20343178776316417,
+                "EMO_SEED_7_seg4": -0.2411785190038762,
+                "SSVEP_OpenBMI": -1.5387385309275747,
+                "Workload": -0.8925942285041177,
+                "ADHD_AliMotie": 0.0
+              },
+              "improved": 5,
+              "declined": 9,
+              "tied": 2,
+              "task_deletion_range_pp": [
+                -0.32725201403232945,
+                -0.12319757960737251
+              ]
+            }
+          },
+          "gain_over_stages_pp": {
+            "old_rows": {
+              "1": 0.0,
+              "4": -0.021810704117686264,
+              "8": -0.3192778859252954,
+              "12": 0.24391401897980725,
+              "16": -0.026510253453837507
+            },
+            "joint_memory": {
+              "1": 0.0,
+              "4": -0.037777442566067077,
+              "8": 0.4545070975912724,
+              "12": 0.5288909527800367,
+              "16": -0.21312470601893008
+            }
+          },
+          "audits_and_costs": {
+            "unit_feedback": {
+              "coefficient_count": 694566,
+              "logical_history_bytes": 206012416,
+              "memory_update_seconds": 11.763538911065552,
+              "training_and_export_seconds": 424.08679780503735,
+              "elapsed_seconds": 724.885949751013,
+              "peak_reserved_bytes": 5932843008
+            },
+            "old_rows": {
+              "coefficient_count": 347666,
+              "history_used_by_merger": false,
+              "logical_history_bytes": 0,
+              "raw_history_audit_bytes": 206012416,
+              "history_update_seconds": 4.409577489015646,
+              "training_and_export_seconds": 345.06413688510656,
+              "elapsed_seconds": 608.7676208200282,
+              "peak_reserved_bytes": 5725224960
+            },
+            "joint_memory": {
+              "coefficient_count": 694566,
+              "logical_history_bytes": 206012416,
+              "memory_update_seconds": 11.908975939033553,
+              "training_and_export_seconds": 432.9095046511502,
+              "elapsed_seconds": 705.1782999719726,
+              "peak_reserved_bytes": 5932843008
+            }
+          }
+        },
+        "reverse": {
+          "macro_BAcc": {
+            "unit_feedback": 0.6302471595387291,
+            "old_rows": 0.6341228198715757,
+            "joint_memory": 0.6226139137800317
+          },
+          "contrasts": {
+            "unit_feedback_minus_old_rows": {
+              "gain_pp": -0.3875660332846652,
+              "per_task_pp": {
+                "MI_OpenBMI": -0.3190517968086892,
+                "MI_BCIC_IV2a": 0.9408224988770475,
+                "MI_ShanghaiU": 0.10275519421860668,
+                "MI_BCIC_Upperlimb": -0.2843568004210484,
+                "MI_HighGamma": -5.7284843008809645,
+                "MI_Cho2017": -0.433168316831678,
+                "MI_Shin2017A": -1.3350559862187805,
+                "MI_PhysioNet": -0.5000507913685892,
+                "EMO_FACED": -0.7561728395061751,
+                "EMO_SEED_3_seg4": 0.20229570200348546,
+                "EMO_SEED_4_seg4": 0.23449074179593965,
+                "EMO_SEED_5_seg4": -0.9594051229026623,
+                "EMO_SEED_7_seg4": 0.08715062604173762,
+                "SSVEP_OpenBMI": -0.08269069016204611,
+                "Workload": 1.720774440518258,
+                "ADHD_AliMotie": 0.909090909090915
+              },
+              "improved": 7,
+              "declined": 9,
+              "tied": 0,
+              "task_deletion_range_pp": [
+                -0.5281220648715268,
+                -0.031504815444911925
+              ]
+            },
+            "unit_feedback_minus_joint_memory": {
+              "gain_pp": 0.7633245758697341,
+              "per_task_pp": {
+                "MI_OpenBMI": 0.29010563738083306,
+                "MI_BCIC_IV2a": 0.5512998927014512,
+                "MI_ShanghaiU": 0.827687443541103,
+                "MI_BCIC_Upperlimb": -0.006035538164050891,
+                "MI_HighGamma": 0.7002484752654192,
+                "MI_Cho2017": 0.9282178217821735,
+                "MI_Shin2017A": -0.017226528854441536,
+                "MI_PhysioNet": -0.7262188951705273,
+                "EMO_FACED": 0.3086419753086378,
+                "EMO_SEED_3_seg4": 0.11951287667244515,
+                "EMO_SEED_4_seg4": 0.2521072366851562,
+                "EMO_SEED_5_seg4": -0.10270192755199026,
+                "EMO_SEED_7_seg4": -0.03954688271626816,
+                "SSVEP_OpenBMI": -0.4483681770117376,
+                "Workload": 7.757287985865724,
+                "ADHD_AliMotie": 1.8181818181818188
+              },
+              "improved": 10,
+              "declined": 6,
+              "tied": 0,
+              "task_deletion_range_pp": [
+                0.29706034853666813,
+                0.8626274739390849
+              ]
+            }
+          },
+          "gain_over_stages_pp": {
+            "old_rows": {
+              "1": 0.0,
+              "4": 0.578968835723781,
+              "8": 0.5262110730714031,
+              "12": 0.03265331715371911,
+              "16": -0.38756603328465866
+            },
+            "joint_memory": {
+              "1": 0.0,
+              "4": -0.014601737237918133,
+              "8": 0.20376890500398703,
+              "12": 0.2087077979776697,
+              "16": 0.7633245758697393
+            }
+          },
+          "audits_and_costs": {
+            "unit_feedback": {
+              "coefficient_count": 694566,
+              "logical_history_bytes": 206012416,
+              "memory_update_seconds": 12.774982450064272,
+              "training_and_export_seconds": 433.28804273501737,
+              "elapsed_seconds": 845.5957815740258,
+              "peak_reserved_bytes": 5995757568
+            },
+            "old_rows": {
+              "coefficient_count": 347666,
+              "history_used_by_merger": false,
+              "logical_history_bytes": 0,
+              "raw_history_audit_bytes": 206012416,
+              "history_update_seconds": 4.506573340971954,
+              "training_and_export_seconds": 351.974475140858,
+              "elapsed_seconds": 706.878902860044,
+              "peak_reserved_bytes": 5934940160
+            },
+            "joint_memory": {
+              "coefficient_count": 694566,
+              "logical_history_bytes": 206012416,
+              "memory_update_seconds": 11.904364534013439,
+              "training_and_export_seconds": 430.3337356778793,
+              "elapsed_seconds": 792.1697078329744,
+              "peak_reserved_bytes": 5995757568
+            }
+          }
+        }
+      },
+      "mean_gain_over_orders_pp": {
+        "unit_feedback_minus_old_rows": -0.20703814336925067,
+        "unit_feedback_minus_joint_memory": 0.27509993492540374
+      }
+    }
+  },
+  "mean_gain_over_two_banks_pp": {
+    "unit_feedback_minus_old_rows": 0.0185166806473564,
+    "unit_feedback_minus_joint_memory": 0.14657979024539003
+  },
+  "checks": {
+    "four_new_complete_runs": true,
+    "strict_settings_recorded": true,
+    "within_bank_actual_data_schedules_auxiliary_ids_match": true,
+    "first_expert_unchanged": true,
+    "stages2_and3_exact_coefficients_and_native_weights": true,
+    "new_checkpoint_and_coefficient_hashes": true,
+    "new_fixed_coefficient_means_exact": true,
+    "new_native_exports_pass": true,
+    "new_unit_feedback_lineages_replay_exactly": true,
+    "frozen_reference_audits_match": true,
+    "native_storage_links_resolve_to_audited_paths": true
+  },
+  "new_scientific_updates": 6480,
+  "new_scientific_CE_example_passes": 103680,
+  "extra_score_VJPs": 0,
+  "scope": "One fixed feedback-weight revision selected after bank2 failure: one model covariance contribution per arrival instead of count-weighted contribution. Two already exposed banks, two correlated orders each; this is a development stress test, not an independent holdout. Report strong-baseline and previous-candidate comparisons separately. No rank, learning-rate or weight sweep. Both mean and single-task-deletion sensitivity are descriptive, not confidence intervals. Replay grows; two model-sized memory slots and a single native inference model are retained. Bulk native checkpoints are stored on the same machine under the frozen absolute storage root and linked from each run. Shared-hardware and storage timing differences are not speedup evidence."
+}

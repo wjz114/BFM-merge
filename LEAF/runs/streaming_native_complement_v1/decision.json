@@ -1,0 +1,20 @@
+{
+  "created_unix": 1794899495.432692,
+  "comparison_sha256": "421a924d9b8778c7666a88192a36b1971533d6dc4ebca1c44c1bc7717c3639d2",
+  "all_checks_pass": true,
+  "figure_inspected": true,
+  "mean_gain_over_orders_pp": {
+    "complement_hybrid_minus_old_rows": -0.16448954796814008,
+    "complement_hybrid_minus_unprojected_hybrid": -0.009172353266861596,
+    "complement_hybrid_minus_native_only": 0.6574482872778336,
+    "unprojected_hybrid_minus_old_rows": -0.1553171947012785,
+    "native_only_minus_old_rows": -0.8219378352459735,
+    "unprojected_hybrid_minus_native_only": 0.6666206405446952,
+    "complement_hybrid_minus_raw_columns": -0.24616672607327988
+  },
+  "decision": "Stop native-complement, unprojected-hybrid and native-only branch; no second bank or learning-rate/projection/carry variants.",
+  "reason": "Both hybrid operators lose to the strong bilateral reference in each order. Complement and unprojected hybrid have near-identical order-averaged effects. Improvement over native-only does not demonstrate superiority to the strong coefficient merger.",
+  "scope": "One exposed development expert bank and two correlated orders; no universal impossibility conclusion.",
+  "next": "Test paired block gradient selection for calibration against same-pool random selection.",
+  "overall_goal_achieved": false
+}

@@ -1,0 +1,37 @@
+{
+  "order": [
+    "MI_BCIC_IV2a",
+    "EMO_FACED"
+  ],
+  "n_per_task": 32,
+  "validation_per_task": 64,
+  "ridge": 0.001,
+  "rows": [
+    {
+      "method": "old",
+      "objective": 0.24474073201417923,
+      "weighted_old_mse": 0.027465172111988068,
+      "weighted_new_mse": 0.21727555990219116,
+      "old_bacc": 0.625,
+      "new_bacc": 0.10317460317460318
+    },
+    {
+      "method": "three_steps",
+      "objective": 0.24365564006054774,
+      "weighted_old_mse": 0.027015425264835358,
+      "weighted_new_mse": 0.21663857996463776,
+      "old_bacc": 0.625,
+      "new_bacc": 0.1507936507936508
+    },
+    {
+      "method": "converged",
+      "objective": 0.18761236955970526,
+      "weighted_old_mse": 0.013770951889455318,
+      "weighted_new_mse": 0.14281342923641205,
+      "old_bacc": 0.59375,
+      "new_bacc": 0.1388888888888889
+    }
+  ],
+  "cg_steps": 33,
+  "relative_residual": 3.6975859694926197e-09
+}

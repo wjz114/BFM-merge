@@ -1,0 +1,248 @@
+{
+  "status": "passed",
+  "plan_sha256": "f9fe10871feec0e1d2f873e71a3f4da295a8657313460d511d927b4f2bcc1f14",
+  "results": {
+    "direct_ce": {
+      "forward": 0.758290326767421,
+      "reverse": 0.7635343957074366,
+      "mean": 0.7609123612374289
+    },
+    "table_mean": {
+      "forward": 0.7569557146768036,
+      "reverse": 0.7514087516995792,
+      "mean": 0.7541822331881913
+    },
+    "table_difference": {
+      "forward": 0.7603110292962816,
+      "reverse": 0.7656177699705865,
+      "mean": 0.7629643996334341
+    },
+    "simultaneous_mean_adam": {
+      "forward": 0.7685218738548318,
+      "reverse": 0.7768359999106038,
+      "mean": 0.7726789368827178
+    }
+  },
+  "contrasts": {
+    "table_mean_minus_direct_ce": {
+      "forward": -0.13346120906174708,
+      "reverse": -1.2125644007857428,
+      "mean_pp": -0.6730128049237449,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -4.977415555215248,
+          "EMO_FACED": -1.0648148148148184,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 6.417476442873971
+        },
+        "reverse": {
+          "MI_OpenBMI": -1.6186234365853647,
+          "EMO_FACED": -2.5617283950617353,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -0.6699057714958823
+        }
+      }
+    },
+    "table_difference_minus_direct_ce": {
+      "forward": 0.20207025288605518,
+      "reverse": 0.2083374263149862,
+      "mean_pp": 0.2052038396005207,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -0.8175411579322556,
+          "EMO_FACED": -0.38580246913579863,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 2.9207155477031788
+        },
+        "reverse": {
+          "MI_OpenBMI": 2.7099186931363595,
+          "EMO_FACED": -1.9907407407407596,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 1.0232626619552487
+        }
+      }
+    },
+    "table_difference_minus_table_mean": {
+      "forward": 0.33553146194780226,
+      "reverse": 1.420901827100729,
+      "mean_pp": 0.8782166445242656,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 4.159874397282993,
+          "EMO_FACED": 0.6790123456790198,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -3.496760895170792
+        },
+        "reverse": {
+          "MI_OpenBMI": 4.328542129721724,
+          "EMO_FACED": 0.5709876543209758,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 1.693168433451131
+        }
+      }
+    },
+    "table_mean_minus_simultaneous_mean_adam": {
+      "forward": -1.156615917802828,
+      "reverse": -2.54272482110246,
+      "mean_pp": -1.849670369452644,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -3.7977790531421474,
+          "EMO_FACED": 0.9104938271604968,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -1.7391784452296832
+        },
+        "reverse": {
+          "MI_OpenBMI": -3.249412131768359,
+          "EMO_FACED": -0.3549382716049432,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -6.566548881036516
+        }
+      }
+    },
+    "table_difference_minus_simultaneous_mean_adam": {
+      "forward": -0.8210844558550257,
+      "reverse": -1.121822994001731,
+      "mean_pp": -0.9714537249283783,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 0.36209534414084477,
+          "EMO_FACED": 1.5895061728395166,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -5.235939340400475
+        },
+        "reverse": {
+          "MI_OpenBMI": 1.0791299979533653,
+          "EMO_FACED": 0.21604938271603258,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": -4.873380447585385
+        }
+      }
+    }
+  },
+  "audits": {
+    "direct_ce_forward": {
+      "run_sha256": "28d82682801c50bdedaa32bff822a80ac09eb92cf237a9d027358ac5527a0bcd",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "e8b7d9f01c825d7b2bcd3f1d14ce04d035e4b094204f686e854920e991b923c3",
+        "5f4290b878db0b5784f8e1967dc4234bdd17e3656a61df9136a15c850f8d1fec",
+        "60b6ff822c7b3c28d64b015bd705af0a158297b445dd4406e1635ef4b0ac29b7"
+      ],
+      "initialization_schedules": [
+        "99b860df5ac5d59d942c6f39b1f0d3ef204aa79984ebf34104afdfd536d09d77",
+        "33407ad55cdebadb033f322ec9255b156506e45840480ac840fb4a80db57a207",
+        "b51f7d1797e08cb4d93a86ac0343b8802e3bac26817e3e028e8ac21e74c9b303"
+      ],
+      "direct_matches_original_bitwise": true,
+      "peak_reserved_bytes": 5853151232,
+      "training_seconds": 26.810567858978175
+    },
+    "direct_ce_reverse": {
+      "run_sha256": "c57cf6ac2a718e618e60d589d16c1af5c33b433c1b9a68b95e48b0753907a8fb",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "2dba82d89e2054b7cdc1fd64bbdfdb833c77835878bd82ea8ed785650b1dbe21",
+        "c15d738cd5bb64fb73d9901b0ae9faace9856a5da7b8bd307dfdef3a4ddb86ac",
+        "cbbf708d3ed2b8ede60dbe76ee752b2e4dcabdba7093691c9294c186cfcaa32c"
+      ],
+      "initialization_schedules": [
+        "8ade11a7edbe79bd3b61607bc84425febad38195a5e99d57e5c908cc5627db40",
+        "ed0e55b997a0b1f97544cba7a2b6354570288cbb9d8d377357d6c9c4e22faf96",
+        "d5737dee134d4f031a80b211534a2b924b5596d9a1129c558d41e79a1ca287b6"
+      ],
+      "direct_matches_original_bitwise": true,
+      "peak_reserved_bytes": 5853151232,
+      "training_seconds": 25.856564307992812
+    },
+    "table_mean_forward": {
+      "run_sha256": "7c9c32dd1e9a5291050659f8fbad14ac6299eccf5dd1a0d39d9754b1c176127d",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "e8b7d9f01c825d7b2bcd3f1d14ce04d035e4b094204f686e854920e991b923c3",
+        "5f4290b878db0b5784f8e1967dc4234bdd17e3656a61df9136a15c850f8d1fec",
+        "60b6ff822c7b3c28d64b015bd705af0a158297b445dd4406e1635ef4b0ac29b7"
+      ],
+      "initialization_schedules": [
+        "99b860df5ac5d59d942c6f39b1f0d3ef204aa79984ebf34104afdfd536d09d77",
+        "33407ad55cdebadb033f322ec9255b156506e45840480ac840fb4a80db57a207",
+        "b51f7d1797e08cb4d93a86ac0343b8802e3bac26817e3e028e8ac21e74c9b303"
+      ],
+      "direct_matches_original_bitwise": false,
+      "peak_reserved_bytes": 5853151232,
+      "training_seconds": 26.533505923987832
+    },
+    "table_mean_reverse": {
+      "run_sha256": "8f1be4f45749f853ec5a505496b3bbfd7be58eb7c8c54fa3c078218bee570f18",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "2dba82d89e2054b7cdc1fd64bbdfdb833c77835878bd82ea8ed785650b1dbe21",
+        "c15d738cd5bb64fb73d9901b0ae9faace9856a5da7b8bd307dfdef3a4ddb86ac",
+        "cbbf708d3ed2b8ede60dbe76ee752b2e4dcabdba7093691c9294c186cfcaa32c"
+      ],
+      "initialization_schedules": [
+        "8ade11a7edbe79bd3b61607bc84425febad38195a5e99d57e5c908cc5627db40",
+        "ed0e55b997a0b1f97544cba7a2b6354570288cbb9d8d377357d6c9c4e22faf96",
+        "d5737dee134d4f031a80b211534a2b924b5596d9a1129c558d41e79a1ca287b6"
+      ],
+      "direct_matches_original_bitwise": false,
+      "peak_reserved_bytes": 5853151232,
+      "training_seconds": 25.85824477399001
+    },
+    "table_difference_forward": {
+      "run_sha256": "627380de689daf34b7920fc192ceb5930ec737c8c63cde9cccc9694fd6a046b1",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "e8b7d9f01c825d7b2bcd3f1d14ce04d035e4b094204f686e854920e991b923c3",
+        "5f4290b878db0b5784f8e1967dc4234bdd17e3656a61df9136a15c850f8d1fec",
+        "60b6ff822c7b3c28d64b015bd705af0a158297b445dd4406e1635ef4b0ac29b7"
+      ],
+      "initialization_schedules": [
+        "99b860df5ac5d59d942c6f39b1f0d3ef204aa79984ebf34104afdfd536d09d77",
+        "33407ad55cdebadb033f322ec9255b156506e45840480ac840fb4a80db57a207",
+        "b51f7d1797e08cb4d93a86ac0343b8802e3bac26817e3e028e8ac21e74c9b303"
+      ],
+      "direct_matches_original_bitwise": false,
+      "peak_reserved_bytes": 5853151232,
+      "training_seconds": 25.96502998401411
+    },
+    "table_difference_reverse": {
+      "run_sha256": "3c147ed638b49791cbb8a907ce4dd38fcb8bbe4688540ac991d1005cad7617e0",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "2dba82d89e2054b7cdc1fd64bbdfdb833c77835878bd82ea8ed785650b1dbe21",
+        "c15d738cd5bb64fb73d9901b0ae9faace9856a5da7b8bd307dfdef3a4ddb86ac",
+        "cbbf708d3ed2b8ede60dbe76ee752b2e4dcabdba7093691c9294c186cfcaa32c"
+      ],
+      "initialization_schedules": [
+        "8ade11a7edbe79bd3b61607bc84425febad38195a5e99d57e5c908cc5627db40",
+        "ed0e55b997a0b1f97544cba7a2b6354570288cbb9d8d377357d6c9c4e22faf96",
+        "d5737dee134d4f031a80b211534a2b924b5596d9a1129c558d41e79a1ca287b6"
+      ],
+      "direct_matches_original_bitwise": false,
+      "peak_reserved_bytes": 5853151232,
+      "training_seconds": 26.477767719945405
+    }
+  },
+  "checks": {
+    "frozen_sources": true,
+    "paired_update_and_initialization_schedules": true,
+    "paired_CE_and_update_budgets": true,
+    "independent_native_exports": true,
+    "same_full_development_data": true,
+    "independent_cache_age_schedule": true,
+    "first_merge_initial_table_identical": true,
+    "direct_trajectory_bitwise_matches_original": true
+  },
+  "scientific_runs": 6,
+  "scientific_updates": 648,
+  "training_CE_examples": 11232,
+  "initialization_CE_examples": 864,
+  "update_CE_examples": 10368,
+  "new_source_steps": 0,
+  "official_test_read": false,
+  "gradient_exposure_fraction_of_simultaneous_reference": 0.33620689655172414,
+  "novelty_established": false,
+  "overall_goal_achieved": false,
+  "scope": "Known within-stage gradient-table components inside Adam; one source/calibration seed,four tasks,two orders,exposed development data. These results do not establish a novel method or full16 improvement."
+}

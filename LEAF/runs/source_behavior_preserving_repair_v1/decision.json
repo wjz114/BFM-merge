@@ -1,0 +1,81 @@
+{
+  "created_unix": 1794926751.1435065,
+  "all_six_scientific_runs_audited": true,
+  "comparison_sha256": "6da7795d2c6c0214cd8366576b767e03bfc1b4624e01a9cd9e12dcd017e26472",
+  "primary_contrasts": {
+    "source_context_kl_minus_plain_ce": {
+      "paired_effects_pp": {
+        "forward": -0.44940084354327947,
+        "reverse": -0.7918870096596642
+      },
+      "mean_pp": -0.6206439266014718,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.46734272109641983,
+        "EMO_FACED": 0.023148148148149916,
+        "ADHD_AliMotie": -1.3636363636363613,
+        "Workload": -1.6094302120141402
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.9833061425007839,
+        "EMO_FACED": -0.8352412848513605,
+        "ADHD_AliMotie": -0.3729797809231901,
+        "Workload": -0.2910484981305972
+      }
+    },
+    "source_context_kl_minus_merged_context_kl": {
+      "paired_effects_pp": {
+        "forward": -0.3712994121534585,
+        "reverse": -0.49626677195728774
+      },
+      "mean_pp": -0.43378309205537313,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.18153070439709817,
+        "EMO_FACED": 0.2006172839506104,
+        "ADHD_AliMotie": -1.3636363636363669,
+        "Workload": -0.7536439929328564
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.638887690872871,
+        "EMO_FACED": -0.645249884057375,
+        "ADHD_AliMotie": -0.12383200152838263,
+        "Workload": -0.3271627917628861
+      }
+    },
+    "source_context_kl_minus_bilateral": {
+      "paired_effects_pp": {
+        "forward": 0.5926160994461749,
+        "reverse": -0.04075201232259795
+      },
+      "mean_pp": 0.27593204356178846,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 1.2044321615088394,
+        "EMO_FACED": -0.7098765432098864,
+        "ADHD_AliMotie": 0.0,
+        "Workload": 0.6091725559481731
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.03356799575390442,
+        "EMO_FACED": 0.6045349058190042,
+        "ADHD_AliMotie": 0.3679093914157087,
+        "Workload": 0.16485187276631766
+      }
+    }
+  },
+  "decision": "Close this fixed source-context KL repair operator. It loses to direct hybrid CE and ordinary merged-context teacher KL in both orders,and every leave-one-task-out contrast against those controls remains negative. Do not expand this recipe to a second bank,full16 or a KL-weight/projection grid.",
+  "control_context": {
+    "four_task_plain_hybrid_minus_bilateral_pp": 0.8965759701632603,
+    "earlier_full16_same_family_minus_bilateral_pp": -0.1553171947012785,
+    "earlier_source": "runs/streaming_native_complement_v1/decision.json",
+    "interpretation": "The strong four-task direct-repair result does not overturn the earlier negative full16 evidence. This pilot subset cannot establish broad superiority of the hybrid baseline."
+  },
+  "mechanism_limit": "The source-context objective constrains only the current shared residual at each original expert. It neither preserves the full merged function nor imposes an exact source-function constraint. A negative fixed recipe does not prove all source-preserving constructions impossible.",
+  "scientific_hybrid_optimizer_calls": 648,
+  "CE_examples": 10368,
+  "extra_source_context_student_forward_examples": 3456,
+  "actual_new_teacher_forward_examples": 0,
+  "required_teacher_cache_examples_per_run": 2048,
+  "new_source_pretraining_steps": 0,
+  "overall_goal_achieved": false,
+  "novelty_established": false,
+  "next_action": "Select a distinct concrete merging operator using the accumulated failures and existing primary methods. Do not recycle the closed full-history,gradient-table,refresh or source-context-KL branches under new names; retain strong direct fitting controls and check whether an effect survives beyond the selected four-task subset."
+}

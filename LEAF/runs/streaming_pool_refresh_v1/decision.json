@@ -1,0 +1,77 @@
+{
+  "created_unix": 1794925496.3519864,
+  "all_eight_runs_audited": true,
+  "contrasts": {
+    "stage_fresh_pool_minus_original512": {
+      "bank_means_pp": {
+        "seed0": 0.6980016615320772,
+        "seed2": -0.22264610323245448
+      },
+      "four_case_mean_pp": 0.23767777914981136,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -0.2906960102245476,
+        "EMO_FACED": 0.10030864197530243,
+        "ADHD_AliMotie": -0.6818181818181834,
+        "Workload": 1.82291666666666
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.4138023756079264,
+        "EMO_FACED": 0.2834674915413097,
+        "ADHD_AliMotie": 0.544176432805805,
+        "Workload": -0.29073518335580956
+      }
+    },
+    "fixed_fresh_pool_minus_original512": {
+      "bank_means_pp": {
+        "seed0": 0.12830385278729817,
+        "seed2": 0.30432463915250896
+      },
+      "four_case_mean_pp": 0.21631424596990356,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 1.3587609898799369,
+        "EMO_FACED": 0.33179012345678494,
+        "ADHD_AliMotie": -0.6628787878787901,
+        "Workload": -0.1624153415783286
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.16450133533344458,
+        "EMO_FACED": 0.17782228680760606,
+        "ADHD_AliMotie": 0.5093785905861311,
+        "Workload": 0.3425574418193105
+      }
+    },
+    "stage_fresh_pool_minus_fixed_fresh_pool": {
+      "bank_means_pp": {
+        "seed0": 0.569697808744779,
+        "seed2": -0.5269707423849634
+      },
+      "four_case_mean_pp": 0.0213635331799078,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -1.6494570001044844,
+        "EMO_FACED": -0.2314814814814825,
+        "ADHD_AliMotie": -0.018939393939393367,
+        "Workload": 1.9853320082449886
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.5783037109413709,
+        "EMO_FACED": 0.1056452047337036,
+        "ADHD_AliMotie": 0.03479784221967389,
+        "Workload": -0.6332926251751201
+      }
+    }
+  },
+  "decision": "Close the fixed-recipe refresh follow-up. First-bank refreshed-pool improvement does not repeat on the second bank; refreshing is worse than the alternative fixed pool in both second-bank orders. Do not expand to full16 or search pool RNG seeds.",
+  "limits": [
+    "Fixed and refreshed pools differ on first use as well as later stages; the experiment does not uniquely isolate coverage.",
+    "Larger measured unique-row counts do not establish better generalization.",
+    "Alternative fixed samples yield a positive four-case mean,but selecting a particular random pool is not a new merge method.",
+    "Both source banks and all development tasks are previously exposed."
+  ],
+  "next_action": "Inspect same-input cross-task expert predictions to test whether function-space teacher aggregation offers useful information beyond own-expert supervision before implementing a new correction operator. Generic multi-teacher distillation is prior art.",
+  "scientific_runs": 8,
+  "scientific_optimizer_updates": 864,
+  "training_CE_examples": 13824,
+  "new_source_steps": 0,
+  "novelty_established": false,
+  "overall_goal_achieved": false
+}

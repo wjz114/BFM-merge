@@ -1,0 +1,1015 @@
+{
+  "sources": {
+    "runs/streaming_replica_filter_v1/innovation_filter_forward/run.json": "f2b583685b25c718e3716c208b60b79ae034444673f5ebe2a87429eade725454",
+    "runs/streaming_replica_filter_v1/shifted_filter_forward/run.json": "c68a91c81c0cf514a8aaafc5224a98df0b5da337145ba9498cc13bf9e2bff77b",
+    "runs/streaming_replica_filter_v1/source_soup_forward/run.json": "0777789d27d870eed9fd519e286adc01b492531c19ded5c08d9909a916665053",
+    "runs/streaming_strict_history_v1/old_rows_forward/run.json": "a5a60808433a112515febc2fd7625797237822673a43f6990be0df223bfbe408",
+    "runs/streaming_replica_filter_v1/innovation_filter_reverse/run.json": "6df1e428f924a29990eb59a286513e53ceff21ae40bc29fa6e2b418f12cfd104",
+    "runs/streaming_replica_filter_v1/shifted_filter_reverse/run.json": "92f8bd318ad11fd04867f1b382737f34bb959295208e4a0c017adc517bdc6abd",
+    "runs/streaming_replica_filter_v1/source_soup_reverse/run.json": "a646c2207ef41e13274aedf5547eb7c90be7f72a12a0641baa3dbb367df570ef",
+    "runs/streaming_strict_history_v1/old_rows_reverse/run.json": "c9b1a70e2cbe0e640749b80cf23157c10b7bbed36e597f4bc7b618b5d54b0efd"
+  },
+  "plan_sha256": "d4c46ff189976c4749c58dddfaaf2c7d39094567451e636873208642c884f097",
+  "orders": {
+    "forward": {
+      "macro_BAcc": {
+        "innovation_filter": 0.6420122909209112,
+        "shifted_filter": 0.638634375580172,
+        "source_soup": 0.6408006733274166,
+        "old_rows": 0.6370832815325755
+      },
+      "contrasts": {
+        "innovation_filter_minus_source_soup": {
+          "gain_pp": 0.12116175934945123,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.11642868081366275,
+            "MI_BCIC_IV2a": 0.3431530364473301,
+            "MI_ShanghaiU": -0.35730416827977063,
+            "MI_BCIC_Upperlimb": 0.25552351857572875,
+            "MI_HighGamma": -0.5324147278066294,
+            "MI_Cho2017": 0.8663366336633671,
+            "MI_Shin2017A": -1.0422049956933854,
+            "MI_PhysioNet": 0.2633337110127254,
+            "EMO_FACED": 0.6635802469135865,
+            "EMO_SEED_3_seg4": 0.29484893745560514,
+            "EMO_SEED_4_seg4": 0.3068470519769162,
+            "EMO_SEED_5_seg4": 0.6189837953028854,
+            "EMO_SEED_7_seg4": 0.20413157851435493,
+            "SSVEP_OpenBMI": -0.8806664567002076,
+            "Workload": 1.0508686690223756,
+            "ADHD_AliMotie": 0.0
+          },
+          "improved": 10,
+          "declined": 5,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            0.059181298704589595,
+            0.19871954301897368
+          ]
+        },
+        "innovation_filter_minus_shifted_filter": {
+          "gain_pp": 0.3377915340739151,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.6369944082746604,
+            "MI_BCIC_IV2a": -0.5865192070360847,
+            "MI_ShanghaiU": -0.22680345851077144,
+            "MI_BCIC_Upperlimb": 0.19579743475326428,
+            "MI_HighGamma": -0.392590919358482,
+            "MI_Cho2017": 0.30940594059405413,
+            "MI_Shin2017A": -0.05167958656331351,
+            "MI_PhysioNet": 0.05079136859296174,
+            "EMO_FACED": 1.0030864197530853,
+            "EMO_SEED_3_seg4": -0.04729990337821732,
+            "EMO_SEED_4_seg4": 0.5051499045005514,
+            "EMO_SEED_5_seg4": 0.15031149889891404,
+            "EMO_SEED_7_seg4": 0.5264106376864031,
+            "SSVEP_OpenBMI": -0.7668949186052765,
+            "Workload": 3.1894140164899776,
+            "ADHD_AliMotie": 0.909090909090915
+          },
+          "improved": 10,
+          "declined": 6,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.14768336857951095,
+            0.41143729758586123
+          ]
+        },
+        "shifted_filter_minus_source_soup": {
+          "gain_pp": -0.21662977472446387,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.7534230890883231,
+            "MI_BCIC_IV2a": 0.9296722434834148,
+            "MI_ShanghaiU": -0.1305007097689992,
+            "MI_BCIC_Upperlimb": 0.05972608382246447,
+            "MI_HighGamma": -0.13982380844814735,
+            "MI_Cho2017": 0.556930693069313,
+            "MI_Shin2017A": -0.9905254091300719,
+            "MI_PhysioNet": 0.21254234241976366,
+            "EMO_FACED": -0.3395061728394988,
+            "EMO_SEED_3_seg4": 0.34214884083382247,
+            "EMO_SEED_4_seg4": -0.19830285252363522,
+            "EMO_SEED_5_seg4": 0.46867229640397134,
+            "EMO_SEED_7_seg4": -0.32227905917204813,
+            "SSVEP_OpenBMI": -0.11377153809493112,
+            "Workload": -2.138545347467602,
+            "ADHD_AliMotie": -0.909090909090915
+          },
+          "improved": 6,
+          "declined": 10,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.2930499092716558,
+            -0.08850206987492133
+          ]
+        },
+        "innovation_filter_minus_old_rows": {
+          "gain_pp": 0.49290093883355357,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.20480570650812657,
+            "MI_BCIC_IV2a": 2.4026132472625528,
+            "MI_ShanghaiU": -0.7526777648728888,
+            "MI_BCIC_Upperlimb": -0.18664401194521396,
+            "MI_HighGamma": -0.933137564942399,
+            "MI_Cho2017": 1.299504950495045,
+            "MI_Shin2017A": 0.08613264427217437,
+            "MI_PhysioNet": 1.0000039070283462,
+            "EMO_FACED": 0.29320987654321007,
+            "EMO_SEED_3_seg4": 0.5408827216249801,
+            "EMO_SEED_4_seg4": 0.8013966699031594,
+            "EMO_SEED_5_seg4": 0.5324697565402825,
+            "EMO_SEED_7_seg4": 0.6708482166396301,
+            "SSVEP_OpenBMI": -1.7191226317007868,
+            "Workload": 1.404225559481742,
+            "ADHD_AliMotie": 2.651515151515149
+          },
+          "improved": 11,
+          "declined": 5,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.34899332465478056,
+            0.6403691768691763
+          ]
+        },
+        "shifted_filter_minus_old_rows": {
+          "gain_pp": 0.15510940475963847,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.8418001147827869,
+            "MI_BCIC_IV2a": 2.9891324542986375,
+            "MI_ShanghaiU": -0.5258743063621174,
+            "MI_BCIC_Upperlimb": -0.38244144669847824,
+            "MI_HighGamma": -0.540546645583917,
+            "MI_Cho2017": 0.990099009900991,
+            "MI_Shin2017A": 0.13781223083548788,
+            "MI_PhysioNet": 0.9492125384353844,
+            "EMO_FACED": -0.7098765432098753,
+            "EMO_SEED_3_seg4": 0.5881826250031974,
+            "EMO_SEED_4_seg4": 0.29624676540260797,
+            "EMO_SEED_5_seg4": 0.38215825764136846,
+            "EMO_SEED_7_seg4": 0.14443757895322706,
+            "SSVEP_OpenBMI": -0.9522277130955104,
+            "Workload": -1.7851884570082355,
+            "ADHD_AliMotie": 1.7424242424242342
+          },
+          "improved": 9,
+          "declined": 7,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.03382546520962813,
+            0.2844625955441634
+          ]
+        },
+        "source_soup_minus_old_rows": {
+          "gain_pp": 0.37173917948410234,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.08837702569446382,
+            "MI_BCIC_IV2a": 2.0594602108152227,
+            "MI_ShanghaiU": -0.3953735965931182,
+            "MI_BCIC_Upperlimb": -0.4421675305209427,
+            "MI_HighGamma": -0.4007228371357696,
+            "MI_Cho2017": 0.433168316831678,
+            "MI_Shin2017A": 1.1283376399655598,
+            "MI_PhysioNet": 0.7366701960156208,
+            "EMO_FACED": -0.37037037037037646,
+            "EMO_SEED_3_seg4": 0.24603378416937494,
+            "EMO_SEED_4_seg4": 0.4945496179262432,
+            "EMO_SEED_5_seg4": -0.08651403876260289,
+            "EMO_SEED_7_seg4": 0.4667166381252752,
+            "SSVEP_OpenBMI": -0.8384561750005792,
+            "Workload": 0.35335689045936647,
+            "ADHD_AliMotie": 2.651515151515149
+          },
+          "improved": 9,
+          "declined": 7,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.21975411468203257,
+            0.4524188697830811
+          ]
+        }
+      },
+      "gain_over_stages_pp": {
+        "innovation_filter_minus_source_soup": {
+          "1": 0.0,
+          "4": -0.3455551265235557,
+          "8": -0.8424674639348928,
+          "12": -0.17114601777972194,
+          "16": 0.12116175934945295
+        },
+        "innovation_filter_minus_shifted_filter": {
+          "1": 0.0,
+          "4": -0.7849965570855155,
+          "8": -0.6891955286210449,
+          "12": -0.14071602304597253,
+          "16": 0.3377915340739168
+        },
+        "shifted_filter_minus_source_soup": {
+          "1": 0.0,
+          "4": 0.43944143056195983,
+          "8": -0.15327193531384786,
+          "12": -0.03042999473374941,
+          "16": -0.21662977472446387
+        },
+        "innovation_filter_minus_old_rows": {
+          "1": 0.4174472707600074,
+          "4": 0.6787935966783398,
+          "8": -0.8769436509056039,
+          "12": 0.1158975560307196,
+          "16": 0.49290093883356256
+        },
+        "shifted_filter_minus_old_rows": {
+          "1": 0.4174472707600074,
+          "4": 1.4637901537638554,
+          "8": -0.18774812228455895,
+          "12": 0.25661357907669213,
+          "16": 0.15510940475964574
+        },
+        "source_soup_minus_old_rows": {
+          "1": 0.4174472707600074,
+          "4": 1.0243487232018955,
+          "8": -0.03447618697071109,
+          "12": 0.28704357381044154,
+          "16": 0.3717391794841096
+        }
+      },
+      "last_block_retention": {
+        "innovation_filter": {
+          "old12_final_BAcc": 0.6268028987216568,
+          "old12_stage12_to16_change_pp": 0.3747890782749952,
+          "new4_final_BAcc": 0.687640467518674
+        },
+        "shifted_filter": {
+          "old12_final_BAcc": 0.6255140288045564,
+          "old12_stage12_to16_change_pp": 0.1051860635189597,
+          "new4_final_BAcc": 0.677995415907019
+        },
+        "source_soup": {
+          "old12_final_BAcc": 0.6254993534226948,
+          "old12_stage12_to16_change_pp": 0.07328853059905965,
+          "new4_final_BAcc": 0.6867046330415827
+        },
+        "old_rows": {
+          "old12_final_BAcc": 0.6227371081171559,
+          "old12_stage12_to16_change_pp": 0.08410757385561851,
+          "new4_final_BAcc": 0.6801218017788346
+        }
+      },
+      "audits_and_costs": {
+        "innovation_filter": {
+          "stage_audits": {
+            "1": {
+              "independent_incoming_max_abs_error": 0.0
+            },
+            "2": {
+              "independent_incoming_max_abs_error": 3.725290298461914e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_incoming_max_abs_error": 3.725290298461914e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_incoming_max_abs_error": 3.725290298461914e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "14": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "15": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_incoming_max_abs_error": 1.4901161193847656e-08,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            }
+          },
+          "elapsed_seconds": 617.9004217649926,
+          "construction_seconds": 14.681559516000561,
+          "peak_reserved_bytes": 5725224960,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0,
+          "source_training_cost": {
+            "banks": 3,
+            "experts": 48,
+            "optimizer_steps": 144000,
+            "example_exposures": 18432000,
+            "one_bank_reference_steps": 48000,
+            "one_bank_reference_exposures": 6144000
+          }
+        },
+        "shifted_filter": {
+          "stage_audits": {
+            "1": {
+              "independent_incoming_max_abs_error": 0.0
+            },
+            "2": {
+              "independent_incoming_max_abs_error": 3.725290298461914e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_incoming_max_abs_error": 3.725290298461914e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 4.76837158203125e-07
+            },
+            "14": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "15": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_incoming_max_abs_error": 1.4901161193847656e-08,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            }
+          },
+          "elapsed_seconds": 529.4291499610408,
+          "construction_seconds": 14.130910869978834,
+          "peak_reserved_bytes": 5725224960,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0,
+          "source_training_cost": {
+            "banks": 3,
+            "experts": 48,
+            "optimizer_steps": 144000,
+            "example_exposures": 18432000,
+            "one_bank_reference_steps": 48000,
+            "one_bank_reference_exposures": 6144000
+          }
+        },
+        "source_soup": {
+          "stage_audits": {
+            "1": {
+              "independent_incoming_max_abs_error": 0.0
+            },
+            "2": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "14": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "15": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 4.76837158203125e-07
+            }
+          },
+          "elapsed_seconds": 514.6698562550009,
+          "construction_seconds": 7.37388247193303,
+          "peak_reserved_bytes": 5725224960,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0,
+          "source_training_cost": {
+            "banks": 3,
+            "experts": 48,
+            "optimizer_steps": 144000,
+            "example_exposures": 18432000,
+            "one_bank_reference_steps": 48000,
+            "one_bank_reference_exposures": 6144000
+          }
+        }
+      }
+    },
+    "reverse": {
+      "macro_BAcc": {
+        "innovation_filter": 0.6380053446878745,
+        "shifted_filter": 0.6310108249465058,
+        "source_soup": 0.6359083947970811,
+        "old_rows": 0.6304747315597239
+      },
+      "contrasts": {
+        "innovation_filter_minus_source_soup": {
+          "gain_pp": 0.20969498907934536,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.5794956713147448,
+            "MI_BCIC_IV2a": 0.3491633937005023,
+            "MI_ShanghaiU": 0.1524390243902496,
+            "MI_BCIC_Upperlimb": -1.245723635281859,
+            "MI_HighGamma": -2.194262480234932,
+            "MI_Cho2017": 1.0519801980197974,
+            "MI_Shin2017A": 0.017226528854430434,
+            "MI_PhysioNet": 0.04380755541142367,
+            "EMO_FACED": -1.1102230246251565e-14,
+            "EMO_SEED_3_seg4": 0.1438331296601203,
+            "EMO_SEED_4_seg4": 0.5334445594185833,
+            "EMO_SEED_5_seg4": 0.3187645261386651,
+            "EMO_SEED_7_seg4": 0.3838426273751694,
+            "SSVEP_OpenBMI": 0.2819891740880376,
+            "Workload": 2.939119552414604,
+            "ADHD_AliMotie": 0.0
+          },
+          "improved": 12,
+          "declined": 2,
+          "tied": 2,
+          "task_deletion_range_pp": [
+            0.027733351523661447,
+            0.36995882036696387
+          ]
+        },
+        "innovation_filter_minus_shifted_filter": {
+          "gain_pp": 0.6994519741368724,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.37350921911920576,
+            "MI_BCIC_IV2a": 0.37515304852335785,
+            "MI_ShanghaiU": 1.5535875596851323,
+            "MI_BCIC_Upperlimb": -0.48398723097516916,
+            "MI_HighGamma": 0.08696634289585559,
+            "MI_Cho2017": 2.5990099009901013,
+            "MI_Shin2017A": -0.3875968992248069,
+            "MI_PhysioNet": 0.39260751165270946,
+            "EMO_FACED": 1.2499999999999956,
+            "EMO_SEED_3_seg4": -0.14149629944487652,
+            "EMO_SEED_4_seg4": 0.6171946107010995,
+            "EMO_SEED_5_seg4": 1.2246946762509092,
+            "EMO_SEED_7_seg4": 0.13130350259000778,
+            "SSVEP_OpenBMI": 1.3678798719305552,
+            "Workload": 2.2324057714958823,
+            "ADHD_AliMotie": 0.0
+          },
+          "improved": 12,
+          "declined": 3,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            0.5728147790133239,
+            0.7783479211443418
+          ]
+        },
+        "shifted_filter_minus_source_soup": {
+          "gain_pp": -0.48975698505752707,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.20598645219553902,
+            "MI_BCIC_IV2a": -0.025989654822855535,
+            "MI_ShanghaiU": -1.4011485352948827,
+            "MI_BCIC_Upperlimb": -0.7617364043066899,
+            "MI_HighGamma": -2.2812288231307876,
+            "MI_Cho2017": -1.547029702970304,
+            "MI_Shin2017A": 0.4048234280792373,
+            "MI_PhysioNet": -0.3487999562412858,
+            "EMO_FACED": -1.2500000000000067,
+            "EMO_SEED_3_seg4": 0.2853294291049968,
+            "EMO_SEED_4_seg4": -0.08375005128251622,
+            "EMO_SEED_5_seg4": -0.9059301501122441,
+            "EMO_SEED_7_seg4": 0.2525391247851616,
+            "SSVEP_OpenBMI": -1.0858906978425176,
+            "Workload": 0.7067137809187218,
+            "ADHD_AliMotie": 0.0
+          },
+          "improved": 5,
+          "declined": 10,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            -0.569521702789277,
+            -0.3703255291859764
+          ]
+        },
+        "innovation_filter_minus_old_rows": {
+          "gain_pp": 0.753061312815059,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.6398210418899986,
+            "MI_BCIC_IV2a": 0.2400199236054723,
+            "MI_ShanghaiU": 0.8657568718544395,
+            "MI_BCIC_Upperlimb": 0.3137621711919003,
+            "MI_HighGamma": 1.2367291619606924,
+            "MI_Cho2017": 0.0,
+            "MI_Shin2017A": 1.9552110249784649,
+            "MI_PhysioNet": 0.9583940550656589,
+            "EMO_FACED": 0.07716049382714418,
+            "EMO_SEED_3_seg4": -0.1980746486883178,
+            "EMO_SEED_4_seg4": 0.5261800107579317,
+            "EMO_SEED_5_seg4": 0.5721375466339551,
+            "EMO_SEED_7_seg4": 0.6946351567785225,
+            "SSVEP_OpenBMI": 1.467313780365509,
+            "Workload": 3.6090253239104864,
+            "ADHD_AliMotie": -0.909090909090915
+          },
+          "improved": 13,
+          "declined": 2,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            0.5626637120753638,
+            0.8638714609421239
+          ]
+        },
+        "shifted_filter_minus_old_rows": {
+          "gain_pp": 0.053609338678186486,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.2663118227707928,
+            "MI_BCIC_IV2a": -0.13513312491788554,
+            "MI_ShanghaiU": -0.6878306878306928,
+            "MI_BCIC_Upperlimb": 0.7977494021670695,
+            "MI_HighGamma": 1.1497628190648368,
+            "MI_Cho2017": -2.5990099009901013,
+            "MI_Shin2017A": 2.3428079242032718,
+            "MI_PhysioNet": 0.5657865434129494,
+            "EMO_FACED": -1.1728395061728514,
+            "EMO_SEED_3_seg4": -0.056578349243441295,
+            "EMO_SEED_4_seg4": -0.09101459994316774,
+            "EMO_SEED_5_seg4": -0.6525571296169541,
+            "EMO_SEED_7_seg4": 0.5633316541885147,
+            "SSVEP_OpenBMI": 0.09943390843495381,
+            "Workload": 1.376619552414604,
+            "ADHD_AliMotie": -0.909090909090915
+          },
+          "improved": 8,
+          "declined": 8,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.0990039003568192,
+            0.230450621322739
+          ]
+        },
+        "source_soup_minus_old_rows": {
+          "gain_pp": 0.5433663237357136,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.06032537057525378,
+            "MI_BCIC_IV2a": -0.10914347009503,
+            "MI_ShanghaiU": 0.7133178474641899,
+            "MI_BCIC_Upperlimb": 1.5594858064737593,
+            "MI_HighGamma": 3.4309916421956244,
+            "MI_Cho2017": -1.0519801980197974,
+            "MI_Shin2017A": 1.9379844961240345,
+            "MI_PhysioNet": 0.9145864996542352,
+            "EMO_FACED": 0.07716049382715529,
+            "EMO_SEED_3_seg4": -0.3419077783484381,
+            "EMO_SEED_4_seg4": -0.007264548660651515,
+            "EMO_SEED_5_seg4": 0.25337302049529,
+            "EMO_SEED_7_seg4": 0.3107925294033531,
+            "SSVEP_OpenBMI": 1.1853246062774714,
+            "Workload": 0.6699057714958823,
+            "ADHD_AliMotie": -0.909090909090915
+          },
+          "improved": 11,
+          "declined": 5,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.3508579691717195,
+            0.6497227585194144
+          ]
+        }
+      },
+      "gain_over_stages_pp": {
+        "innovation_filter_minus_source_soup": {
+          "1": 0.0,
+          "4": -0.6342806697544723,
+          "8": -0.0384512257944003,
+          "12": 0.12567743392831732,
+          "16": 0.20969498907934536
+        },
+        "innovation_filter_minus_shifted_filter": {
+          "1": 0.0,
+          "4": -0.7955081576038969,
+          "8": 0.5389304610899148,
+          "12": 0.30050425749907905,
+          "16": 0.6994519741368665
+        },
+        "shifted_filter_minus_source_soup": {
+          "1": 0.0,
+          "4": 0.16122748784942464,
+          "8": -0.5773816868843151,
+          "12": -0.17482682357076174,
+          "16": -0.4897569850575212
+        },
+        "innovation_filter_minus_old_rows": {
+          "1": -3.6363636363636376,
+          "4": 0.021445232967576278,
+          "8": 0.31144915942369344,
+          "12": 0.009707619114518451,
+          "16": 0.7530613128150621
+        },
+        "shifted_filter_minus_old_rows": {
+          "1": -3.6363636363636376,
+          "4": 0.8169533905714732,
+          "8": -0.22748130166622138,
+          "12": -0.2907966383845606,
+          "16": 0.053609338678195506
+        },
+        "source_soup_minus_old_rows": {
+          "1": -3.6363636363636376,
+          "4": 0.6557259027220486,
+          "8": 0.34990038521809375,
+          "12": -0.11596981481379887,
+          "16": 0.5433663237357167
+        }
+      },
+      "last_block_retention": {
+        "innovation_filter": {
+          "old12_final_BAcc": 0.645081783124418,
+          "old12_stage12_to16_change_pp": 0.6040160778791802,
+          "new4_final_BAcc": 0.6167760293782439
+        },
+        "shifted_filter": {
+          "old12_final_BAcc": 0.6372709756328868,
+          "old12_stage12_to16_change_pp": 0.12343958622511537,
+          "new4_final_BAcc": 0.6122303728873626
+        },
+        "source_soup": {
+          "old12_final_BAcc": 0.6421486619817965,
+          "old12_stage12_to16_change_pp": 0.4363813975453379,
+          "new4_final_BAcc": 0.6171875932429349
+        },
+        "old_rows": {
+          "old12_final_BAcc": 0.6367570989606688,
+          "old12_stage12_to16_change_pp": -0.21874471938123918,
+          "new4_final_BAcc": 0.6116276293568894
+        }
+      },
+      "audits_and_costs": {
+        "innovation_filter": {
+          "stage_audits": {
+            "1": {
+              "independent_incoming_max_abs_error": 0.0
+            },
+            "2": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_incoming_max_abs_error": 7.450580596923828e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_incoming_max_abs_error": 3.725290298461914e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_incoming_max_abs_error": 3.725290298461914e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_incoming_max_abs_error": 2.9802322387695312e-08,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "14": {
+              "independent_incoming_max_abs_error": 3.725290298461914e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "15": {
+              "independent_incoming_max_abs_error": 2.9802322387695312e-08,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_incoming_max_abs_error": 2.9802322387695312e-08,
+              "independent_export_max_abs_error": 4.76837158203125e-07
+            }
+          },
+          "elapsed_seconds": 692.3687763100024,
+          "construction_seconds": 14.977351915906183,
+          "peak_reserved_bytes": 5913968640,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0,
+          "source_training_cost": {
+            "banks": 3,
+            "experts": 48,
+            "optimizer_steps": 144000,
+            "example_exposures": 18432000,
+            "one_bank_reference_steps": 48000,
+            "one_bank_reference_exposures": 6144000
+          }
+        },
+        "shifted_filter": {
+          "stage_audits": {
+            "1": {
+              "independent_incoming_max_abs_error": 0.0
+            },
+            "2": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "14": {
+              "independent_incoming_max_abs_error": 1.862645149230957e-09,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "15": {
+              "independent_incoming_max_abs_error": 2.9802322387695312e-08,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_incoming_max_abs_error": 9.313225746154785e-10,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            }
+          },
+          "elapsed_seconds": 584.0269365400309,
+          "construction_seconds": 14.24372206890257,
+          "peak_reserved_bytes": 5913968640,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0,
+          "source_training_cost": {
+            "banks": 3,
+            "experts": 48,
+            "optimizer_steps": 144000,
+            "example_exposures": 18432000,
+            "one_bank_reference_steps": 48000,
+            "one_bank_reference_exposures": 6144000
+          }
+        },
+        "source_soup": {
+          "stage_audits": {
+            "1": {
+              "independent_incoming_max_abs_error": 0.0
+            },
+            "2": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "14": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "15": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_incoming_max_abs_error": 0.0,
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            }
+          },
+          "elapsed_seconds": 574.039610621985,
+          "construction_seconds": 7.445434827182908,
+          "peak_reserved_bytes": 5913968640,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0,
+          "source_training_cost": {
+            "banks": 3,
+            "experts": 48,
+            "optimizer_steps": 144000,
+            "example_exposures": 18432000,
+            "one_bank_reference_steps": 48000,
+            "one_bank_reference_exposures": 6144000
+          }
+        }
+      }
+    }
+  },
+  "mean_gain_over_orders_pp": {
+    "innovation_filter_minus_source_soup": 0.1654283742143983,
+    "innovation_filter_minus_shifted_filter": 0.5186217541053938,
+    "shifted_filter_minus_source_soup": -0.3531933798909955,
+    "innovation_filter_minus_old_rows": 0.6229811258243063,
+    "shifted_filter_minus_old_rows": 0.10435937171891248,
+    "source_soup_minus_old_rows": 0.45755275160990794
+  },
+  "checks": {
+    "six_complete_runs": true,
+    "frozen_sources_and_inputs_match": true,
+    "original_data_labels_weights_schedules_match": true,
+    "incoming_independently_reconstructed_all_stages": true,
+    "export_independently_reconstructed_all_stages": true,
+    "fixed_coefficient_means_exact": true,
+    "checkpoint_and_payload_hashes_pass": true,
+    "first_source_soup_identical_across_new_arms": true,
+    "native_exports_pass": true,
+    "strict_settings_match": true,
+    "filter_norm_bounds_pass": true,
+    "source_budget_accounted": true,
+    "storage_links_resolve": true
+  },
+  "new_scientific_updates": 9720,
+  "new_training_CE_examples": 155520,
+  "extra_direction_construction_forward_examples": 0,
+  "extra_direction_construction_backward_probes": 0,
+  "scope": "Three same-task replicas arrive together; no future expert payload enters the operator. All new arms use48experts and the same first source soup, versus16experts for the original bilateral reference. This comparison changes source training cost; superiority of the new operator requires comparison to same-source soup and shifted orientation controls. One exposed calibration bank and two correlated orders. Trace normalization discards absolute scatter magnitude; seed variation is not calibrated uncertainty. No new inference state, routing or model architecture. Task-deletion ranges are sensitivity, not confidence intervals."
+}

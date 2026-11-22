@@ -1,0 +1,109 @@
+[
+  {
+    "arrival": "MI_BCIC_IV2a",
+    "eval": {
+      "MI_BCIC_IV2a": {
+        "bacc": 0.671875,
+        "teacher_bacc": 0.6875
+      }
+    },
+    "seconds": 3.4546765870181844,
+    "updates": 0,
+    "memory_bytes": 6656000,
+    "old_score_rmse_before_after": {},
+    "penalty_active_fraction": null
+  },
+  {
+    "arrival": "EMO_FACED",
+    "eval": {
+      "MI_BCIC_IV2a": {
+        "bacc": 0.609375,
+        "teacher_bacc": 0.6875
+      },
+      "EMO_FACED": {
+        "bacc": 0.11904761904761904,
+        "teacher_bacc": 0.6111111111111112
+      }
+    },
+    "seconds": 28.637285455944948,
+    "updates": 12,
+    "memory_bytes": 23296000,
+    "old_score_rmse_before_after": {
+      "MI_BCIC_IV2a": [
+        0.21512001752853394,
+        0.2125532478094101
+      ]
+    },
+    "penalty_active_fraction": 1.0
+  },
+  {
+    "arrival": "MI_OpenBMI",
+    "eval": {
+      "MI_BCIC_IV2a": {
+        "bacc": 0.5,
+        "teacher_bacc": 0.6875
+      },
+      "EMO_FACED": {
+        "bacc": 0.10317460317460317,
+        "teacher_bacc": 0.6111111111111112
+      },
+      "MI_OpenBMI": {
+        "bacc": 0.625,
+        "teacher_bacc": 0.78125
+      }
+    },
+    "seconds": 45.45790752407629,
+    "updates": 24,
+    "memory_bytes": 29952000,
+    "old_score_rmse_before_after": {
+      "MI_BCIC_IV2a": [
+        0.15069381892681122,
+        0.14536742866039276
+      ],
+      "EMO_FACED": [
+        0.009585674852132797,
+        0.009338583797216415
+      ]
+    },
+    "penalty_active_fraction": 0.8333333333333334
+  },
+  {
+    "arrival": "EMO_SEED_3_seg4",
+    "eval": {
+      "MI_BCIC_IV2a": {
+        "bacc": 0.484375,
+        "teacher_bacc": 0.6875
+      },
+      "EMO_FACED": {
+        "bacc": 0.1349206349206349,
+        "teacher_bacc": 0.6111111111111112
+      },
+      "MI_OpenBMI": {
+        "bacc": 0.625,
+        "teacher_bacc": 0.78125
+      },
+      "EMO_SEED_3_seg4": {
+        "bacc": 0.5173160173160173,
+        "teacher_bacc": 0.7049062049062048
+      }
+    },
+    "seconds": 61.006007879041135,
+    "updates": 36,
+    "memory_bytes": 36608000,
+    "old_score_rmse_before_after": {
+      "MI_BCIC_IV2a": [
+        0.053107935935258865,
+        0.05222870409488678
+      ],
+      "EMO_FACED": [
+        0.007519994862377644,
+        0.007839740253984928
+      ],
+      "MI_OpenBMI": [
+        0.011511033400893211,
+        0.011494365520775318
+      ]
+    },
+    "penalty_active_fraction": 0.75
+  }
+]

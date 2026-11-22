@@ -1,0 +1,241 @@
+{
+  "created_unix": 1794932127.1534564,
+  "status": "closed fixed historical-context candidate; research remains active",
+  "comparison": "runs/streaming_history_context_v1/comparison.json",
+  "results": {
+    "unadapted_reference": {
+      "forward": 0.758290326767421,
+      "reverse": 0.7635343957074366
+    },
+    "source_ce": {
+      "forward": 0.7637861072458183,
+      "reverse": 0.7543525762412
+    },
+    "fixed_context": {
+      "forward": 0.7644718077707424,
+      "reverse": 0.7686740803451615
+    },
+    "history_context": {
+      "forward": 0.7626971960655607,
+      "reverse": 0.7685746746710634
+    },
+    "isotropic_context": {
+      "forward": 0.7649496216172531,
+      "reverse": 0.7631046945260409
+    },
+    "native_after": {
+      "forward": 0.765881390182266,
+      "reverse": 0.7781712552979276
+    }
+  },
+  "primary_contrasts": {
+    "history_context_minus_source_ce": {
+      "paired_effects_pp": {
+        "forward": -0.10889111802575568,
+        "reverse": 1.422209842986344
+      },
+      "mean_pp": 0.6566593624802941,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.13873761827135622,
+        "EMO_FACED": -0.5092592592592704,
+        "ADHD_AliMotie": -0.909090909090915,
+        "Workload": 3.90625
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.8292999438832714,
+        "EMO_FACED": 1.0452989030601472,
+        "ADHD_AliMotie": 1.1785761196706952,
+        "Workload": -0.42653751669294304
+      }
+    },
+    "history_context_minus_fixed_context": {
+      "paired_effects_pp": {
+        "forward": -0.17746117051816723,
+        "reverse": -0.009940567409805201
+      },
+      "mean_pp": -0.09370086896398622,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -1.3329903207477733,
+        "EMO_FACED": 0.18518518518518268,
+        "ADHD_AliMotie": -0.4545454545454575,
+        "Workload": 1.2275471142520644
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.3193956149639299,
+        "EMO_FACED": -0.18666288701372213,
+        "ADHD_AliMotie": 0.026580659563157916,
+        "Workload": -0.5341168633693494
+      }
+    },
+    "history_context_minus_isotropic_context": {
+      "paired_effects_pp": {
+        "forward": -0.22524255516923608,
+        "reverse": 0.5469980145022535
+      },
+      "mean_pp": 0.1608777296665087,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -0.13685915922319603,
+        "EMO_FACED": 0.10030864197529965,
+        "ADHD_AliMotie": -0.4545454545454575,
+        "Workload": 1.1346068904593665
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.2601233592964029,
+        "EMO_FACED": 0.181067425563571,
+        "ADHD_AliMotie": 0.36601879107049,
+        "Workload": -0.1636986572644513
+      }
+    },
+    "history_context_minus_native_after": {
+      "paired_effects_pp": {
+        "forward": -0.318419411670523,
+        "reverse": -0.9596580626864193
+      },
+      "mean_pp": -0.6390387371784712,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -1.3571061569089382,
+        "EMO_FACED": 0.1388888888888884,
+        "ADHD_AliMotie": -0.4545454545454575,
+        "Workload": -0.8833922261484051
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.39968293060165805,
+        "EMO_FACED": -0.8983479458676001,
+        "ADHD_AliMotie": -0.7005364980561516,
+        "Workload": -0.5575875741885025
+      }
+    },
+    "history_context_minus_unadapted_reference": {
+      "paired_effects_pp": {
+        "forward": 0.4406869298139715,
+        "reverse": 0.5040278963626799
+      },
+      "mean_pp": 0.4723574130883257,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -0.8208866040465945,
+        "EMO_FACED": -0.8950617283950746,
+        "ADHD_AliMotie": -0.4545454545454575,
+        "Workload": 4.059923439340402
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.90343875213329,
+        "EMO_FACED": 0.9281637935827832,
+        "ADHD_AliMotie": 0.781325035632911,
+        "Workload": -0.7234979289957089
+      }
+    },
+    "source_ce_minus_unadapted_reference": {
+      "paired_effects_pp": {
+        "forward": 0.5495780478397272,
+        "reverse": -0.918181946623664
+      },
+      "mean_pp": -0.18430194939196842,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -0.9596242223179507,
+        "EMO_FACED": -0.3858024691358042,
+        "ADHD_AliMotie": 0.4545454545454575,
+        "Workload": 0.15367343934040156
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.07413880825001828,
+        "EMO_FACED": -0.1171351094773639,
+        "ADHD_AliMotie": -0.3972510840377845,
+        "Workload": -0.2969604123027658
+      }
+    },
+    "fixed_context_minus_unadapted_reference": {
+      "paired_effects_pp": {
+        "forward": 0.6181481003321387,
+        "reverse": 0.5139684637724851
+      },
+      "mean_pp": 0.5660582820523119,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.5121037167011788,
+        "EMO_FACED": -1.0802469135802573,
+        "ADHD_AliMotie": 0.0,
+        "Workload": 2.832376325088337
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.58404313716936,
+        "EMO_FACED": 1.1148266805965052,
+        "ADHD_AliMotie": 0.7547443760697529,
+        "Workload": -0.18938106562635948
+      }
+    },
+    "isotropic_context_minus_unadapted_reference": {
+      "paired_effects_pp": {
+        "forward": 0.6659294849832076,
+        "reverse": -0.04297011813957363
+      },
+      "mean_pp": 0.311479683421817,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -0.6840274448233985,
+        "EMO_FACED": -0.9953703703703742,
+        "ADHD_AliMotie": 0.0,
+        "Workload": 2.9253165488810353
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.643315392836887,
+        "EMO_FACED": 0.7470963680192123,
+        "ADHD_AliMotie": 0.4153062445624209,
+        "Workload": -0.5597992717312575
+      }
+    },
+    "native_after_minus_unadapted_reference": {
+      "paired_effects_pp": {
+        "forward": 0.7591063414844945,
+        "reverse": 1.4636859590490992
+      },
+      "mean_pp": 1.1113961502667968,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.5362195528623437,
+        "EMO_FACED": -1.033950617283963,
+        "ADHD_AliMotie": 0.0,
+        "Workload": 4.943315665488806
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 1.3031216827349479,
+        "EMO_FACED": 1.8265117394503834,
+        "ADHD_AliMotie": 1.4818615336890624,
+        "Workload": -0.16591035480720642
+      }
+    }
+  },
+  "additional_contrast_fixed_context_minus_native_after": {
+    "paired_effects_pp": {
+      "forward": -0.14095824115235578,
+      "reverse": -0.9497174952766141
+    },
+    "mean_pp": -0.5453378682144823,
+    "task_mean_effects_pp": {
+      "MI_OpenBMI": -0.02411583616116486,
+      "EMO_FACED": -0.04629629629629428,
+      "ADHD_AliMotie": 0.0,
+      "Workload": -2.1109393404004697
+    },
+    "leave_one_task_out_pp": {
+      "MI_OpenBMI": -0.7190785455655879,
+      "EMO_FACED": -0.7116850588538782,
+      "ADHD_AliMotie": -0.7271171576193097,
+      "Workload": -0.023470710819153046
+    }
+  },
+  "assessment": "Historical perturbations are +0.472357 percentage points over the less-expensive unadapted reference, but below fixed context in both orders (-0.093701 mean) and below the equal-update direct-native control in both orders (-0.639039 mean). All leave-one-task-out effects against direct native remain negative. The +0.160878 mean over isotropic context changes sign between orders and becomes negative when Workload is omitted. No added value of the historical directions is established.",
+  "control_assessment": "Fixed context is +0.566058 points over unadapted merging, but -0.545338 points below direct native. Direct native gives +1.111396 points over unadapted merging; excluding Workload gives -0.165910 points. These are four exposed tasks from one source bank, not stable full16 results or evidence of a new method.",
+  "decision": "Do not expand this fixed historical-perturbation candidate to another bank or full16, or search its amplitude, schedule or context subsets. Do not promote the positive unadapted-baseline contrasts as method superiority. Retain direct native adaptation as an essential cost-matched control for future source-adaptation proposals.",
+  "costs": {
+    "scientific_four_task_runs": 10,
+    "coefficient_updates": 1080,
+    "native_updates": 2880,
+    "source_refinement_native_updates": 2304,
+    "deployed_native_updates": 576,
+    "training_examples": 63360,
+    "original_source_pretraining_updates": 0
+  },
+  "audit_status": "Ten workers and independent reporter exited0; source and deployment averages reconstructed; bilateral exports verified within2.3842e-7; context arms have exactly equal stage2 checkpoint hashes; no official test read.",
+  "next_action": "Select a genuinely different operator-level candidate and examine existing activation-based or functional merging approaches before implementation. Reuse these exact-cost controls; do not reopen local source-perturbation or checkpoint-window grids.",
+  "novelty_established": false,
+  "superiority_established": false,
+  "overall_goal_achieved": false,
+  "scope": "Four exposed dev tasks, one expert/calibration bank, two arrival orders. Five conditions share native and coefficient update counts, batch sizes and fixed late checkpoint averaging. Source arms use the same incoming-task batches; direct native control allocates the same number of examples over arrived tasks. No future source payload or official test. More training than the unadapted reference. No novelty or superiority established."
+}

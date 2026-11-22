@@ -1,0 +1,88 @@
+{
+  "unix": 1794844342.1777444,
+  "bounded_deliverable_complete": true,
+  "all_eight_runs_completed": true,
+  "scientific_updates": 12960,
+  "scientific_training_examples": 207360,
+  "candidates": {
+    "incoming_rows": {
+      "implementation": "streaming_residual_merge_v2.py",
+      "runner": "run_streaming_residual_merge_v2.py",
+      "plan": "runs/streaming_merge_v2/plan.json",
+      "plan_sha256": "09a203d0dedbe1e9c9df221449b0bb91631423143dd8bdb9442d05816243c5e0",
+      "checkpoints": {
+        "forward": {
+          "path": "/home/jingzhou/BFM-merge/LEAF/runs/streaming_merge_v2/incoming_rows_forward/stage_16/merged.ckpt",
+          "sha256": "6dd56c12713a3fbba27b00d5137e262fbc18d2cacdd3ebe8e38cfcda0e9cb733"
+        },
+        "reverse": {
+          "path": "/home/jingzhou/BFM-merge/LEAF/runs/streaming_merge_v2/incoming_rows_reverse/stage_16/merged.ckpt",
+          "sha256": "31d2600301fdfe9f385d383c3079fbaa5b0e7b3da0fb6ae1b65e816b253ab366"
+        }
+      },
+      "reproduction_argv": [
+        "/home/jingzhou/miniconda3/bin/python",
+        "run_streaming_residual_merge_v2.py",
+        "--plan",
+        "runs/streaming_merge_v2/plan.json",
+        "--condition",
+        "incoming_rows",
+        "--order",
+        "forward",
+        "--outdir",
+        "runs/reproduction_incoming_rows_forward",
+        "--gpu",
+        "0"
+      ],
+      "environment": {
+        "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True"
+      }
+    },
+    "combined": {
+      "implementation": "streaming_residual_merge_v3.py",
+      "runner": "run_streaming_residual_merge_v3.py",
+      "plan": "runs/streaming_merge_v3/plan.json",
+      "plan_sha256": "606bc91c779627e6e846a31734b3b8020db5a1806fffd10a3f25a1cba1421101",
+      "checkpoints": {
+        "forward": {
+          "path": "/home/jingzhou/BFM-merge/LEAF/runs/streaming_merge_v3/combined_forward/stage_16/merged.ckpt",
+          "sha256": "b46a489be4861261447fac8576a12a6a4fe7ad2e7a35b75ac8c9f68c1ce685c3"
+        },
+        "reverse": {
+          "path": "/home/jingzhou/BFM-merge/LEAF/runs/streaming_merge_v3/combined_reverse/stage_16/merged.ckpt",
+          "sha256": "b0298a51e1573d1f659c309e5a5dc6c74f10a956164ad26261d46bee75469f23"
+        }
+      },
+      "reproduction_argv": [
+        "/home/jingzhou/miniconda3/bin/python",
+        "run_streaming_residual_merge_v3.py",
+        "--plan",
+        "runs/streaming_merge_v3/plan.json",
+        "--condition",
+        "history_incoming_rows",
+        "--order",
+        "forward",
+        "--outdir",
+        "runs/reproduction_combined_forward",
+        "--gpu",
+        "0"
+      ],
+      "environment": {
+        "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True"
+      }
+    }
+  },
+  "stronger_baseline": "incoming_rows",
+  "combined_candidate_status": "Higher aggregate score in both observed orders, but only +0.045629/+0.156076pp over incoming rows; reverse Workload regresses2.250810pp versus incoming rows. Retain as an experimental option, not evidence of a generally beneficial historical-memory mechanism.",
+  "method_iteration_conclusion": "The most useful tested change is finer incoming-expert coefficients. Replace the recursive tensor baseline with this stronger baseline in further method development. Historical-mean compensation is not the primary contribution claim.",
+  "research_goal_new_and_better_method_established": false,
+  "novelty_boundary": "runs/streaming_merge_v3/prior_boundary.json",
+  "validation_scope": "One original expert bank; forward and reversed arrival orders; previously exposed development validation;512 retained training calibration rows per seen task, so replay storage grows with task count. Task-deletion ranges are not confidence intervals. Novelty and broad superiority remain unestablished.",
+  "artifacts": {
+    "runs/streaming_merge_v3/delivery.json": "f9c0825dc38b3d304c68b8a1c99b80fe8ada0e3b1907c9cb6e0b876f87db9b0e",
+    "runs/streaming_merge_v3/delivery.png": "2fb778bdd303473e3abb1d6e7cf9f6a03945986514c9334ca308543760c23d20",
+    "runs/streaming_merge_v3/delivery.pdf": "0f7e7d71e3324ae97e703f374bd40310d785885575c52cf928972263f54bc51a",
+    "runs/streaming_merge_v3/comparison_forward.json": "00b49965bf7b22f2a2c3abe07026d0ec57c14af0e2962786eba4a525a04df158",
+    "runs/streaming_merge_v3/comparison_reverse.json": "13365c30a5a090887fb56f25a74445cf038503e9481bcb22debf2fa13bd37052"
+  }
+}

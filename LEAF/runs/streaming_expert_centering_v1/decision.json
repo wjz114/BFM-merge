@@ -1,0 +1,97 @@
+{
+  "created_unix": 1794930744.959723,
+  "status": "closed fixed expert-gradient-centering candidate; research goal active",
+  "comparison": "runs/streaming_expert_centering_v1/comparison.json",
+  "scientific_four_task_runs": 6,
+  "results": {
+    "balanced_ce": {
+      "forward": 0.758290326767421,
+      "reverse": 0.7635343957074366
+    },
+    "expert_centered": {
+      "forward": 0.7585011869805547,
+      "reverse": 0.7607058442230488
+    },
+    "output_kl": {
+      "forward": 0.7594010396125057,
+      "reverse": 0.7636918851459406
+    }
+  },
+  "contrasts": {
+    "expert_centered_minus_balanced_ce": {
+      "paired_effects_pp": {
+        "forward": 0.021086021313365677,
+        "reverse": -0.28285514843878756
+      },
+      "mean_pp": -0.13088456356271094,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -1.3912046611546103,
+        "EMO_FACED": -0.6635802469135865,
+        "ADHD_AliMotie": -0.4545454545454575,
+        "Workload": 1.9857921083627772
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.2892221356345777,
+        "EMO_FACED": 0.04668066422090315,
+        "ADHD_AliMotie": -0.022997599901806536,
+        "Workload": -0.8364434542045514
+      }
+    },
+    "expert_centered_minus_output_kl": {
+      "paired_effects_pp": {
+        "forward": -0.08998526319510258,
+        "reverse": -0.2986040922891786
+      },
+      "mean_pp": -0.1942946777421406,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -1.7722813867249887,
+        "EMO_FACED": 1.8287037037037017,
+        "ADHD_AliMotie": -1.3636363636363669,
+        "Workload": 0.5300353356890442
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.331700891918793,
+        "EMO_FACED": -0.868627471557437,
+        "ADHD_AliMotie": 0.19548588422258573,
+        "Workload": -0.43573801555255126
+      }
+    },
+    "output_kl_minus_balanced_ce": {
+      "paired_effects_pp": {
+        "forward": 0.11107128450846826,
+        "reverse": 0.01574894385039105
+      },
+      "mean_pp": 0.06341011417942966,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.3810767255703784,
+        "EMO_FACED": -2.4922839506172885,
+        "ADHD_AliMotie": 0.9090909090909094,
+        "Workload": 1.455756772673733
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.042478756284215345,
+        "EMO_FACED": 0.9153081357783402,
+        "ADHD_AliMotie": -0.21848348412439242,
+        "Workload": -0.4007054386520003
+      }
+    }
+  },
+  "assessment": "Exact original-expert CE gradient subtraction did not improve the four-task pilot. Mean effect versus CE is -0.130885 percentage points, with forward +0.021086 and reverse -0.282855. It is below pure output KL in both orders, mean -0.194295 points. The sole positive task versus CE is Workload; deleting it gives -0.836443 points. No second bank or full16 expansion of this fixed candidate is justified by these results.",
+  "KL_control_assessment": "Pure output KL is +0.063410 percentage points versus CE across two orders, but loses on FACED and turns negative when MI, ADHD or Workload is omitted. This is a small, task-sensitive existing-method control, not a new-method success.",
+  "diagnostic_scope": "Median source-to-student gradient norm ratios in the centered runs are approximately 0.00909 forward and 0.00176 reverse. These are observed projected minibatch gradients under this affine merge parameterization, not proof of a general cause or universal small source gradients.",
+  "costs": {
+    "coefficient_updates": 648,
+    "student_training_examples": 10368,
+    "student_CE_examples": 6912,
+    "student_KL_examples": 3456,
+    "expert_CE_gradient_examples": 10368,
+    "backward_calls": 1296,
+    "source_training_updates": 0
+  },
+  "audit_status": "Six workers and reporter exited successfully. Unchanged CE controls match the frozen reference native checkpoint hashes. All native exports independently reconstructed with maximum error at most 4.77e-7. No official test read.",
+  "next_action": "Review source-training choices and exact algorithmic equivalences before selecting another runnable method. Do not launch source-aware training if it merely reparameterizes already-tested native fine-tuning, and do not treat generic merge-aware training as novel. Any selected method must have matched source and merge costs and causal arrival inputs.",
+  "scope": "Four exposed development tasks,one original expert/calibration bank,two actual arrival orders. All arms compute identical per-batch frozen-original-expert CE gradients at the same arrived task. CE and KL controls discard those gradients. Source-centered fitting subtracts their exact pullback through the current affine bilateral merge family. Same student examples,optimizer updates,teacher forward/backward examples,and fixed checkpoint means. Training retains arrived expert active weights;inference uses one native checkpoint. No future expert payload,new source training,official test,novelty or superiority claim.",
+  "novelty_established": false,
+  "superiority_established": false,
+  "overall_goal_achieved": false
+}

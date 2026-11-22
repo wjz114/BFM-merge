@@ -1,0 +1,151 @@
+{
+  "created_unix": 1794915838.8365946,
+  "decision": "Close the tested cross-task-meta component; retain the original single-batch bilateral merger as the pilot baseline. Continue the distinct source-training-fold hypothesis.",
+  "overall_research_goal_achieved": false,
+  "superiority_established": false,
+  "novelty_established": false,
+  "comparison_sha256": "8740bafe1d427816dc18472266671721b9ec83bebecd53708fd9ea65a74a4c1a",
+  "all_fourteen_checks_passed": true,
+  "comparison_figure_visually_inspected": true,
+  "mean_gain_over_orders_pp": {
+    "cross_task_meta_minus_paired_ce": -1.3136495340340977,
+    "cross_task_meta_minus_detached_lookahead": -1.4938635723539517,
+    "detached_lookahead_minus_paired_ce": 0.180214038319854,
+    "cross_task_meta_minus_old_rows": -1.5007578651171778,
+    "detached_lookahead_minus_old_rows": -0.006894292763226173,
+    "paired_ce_minus_old_rows": -0.18710833108308011
+  },
+  "full_meta_primary_contrasts": {
+    "forward": {
+      "cross_task_meta_minus_paired_ce": {
+        "gain_pp": -1.0771053101900536,
+        "per_task_pp": {
+          "MI_OpenBMI": -0.8664526535291484,
+          "MI_BCIC_IV2a": -3.047186025797033,
+          "MI_ShanghaiU": 0.93705639437347,
+          "MI_BCIC_Upperlimb": -2.358493804276929,
+          "MI_HighGamma": -0.9250056471651225,
+          "MI_Cho2017": -0.3712871287128605,
+          "MI_Shin2017A": -6.761412575366066,
+          "MI_PhysioNet": -4.3956999245943535,
+          "EMO_FACED": -0.6944444444444364,
+          "EMO_SEED_3_seg4": 0.020952757656444998,
+          "EMO_SEED_4_seg4": 1.3711340578223763,
+          "EMO_SEED_5_seg4": -0.5312079804846936,
+          "EMO_SEED_7_seg4": -0.7317186820622212,
+          "SSVEP_OpenBMI": -2.4207828892850003,
+          "Workload": 2.631772673733812,
+          "ADHD_AliMotie": 0.9090909090909038
+        },
+        "improved": 5,
+        "declined": 11,
+        "tied": 0,
+        "task_deletion_range_pp": [
+          -1.3243638424516448,
+          -0.6981514925116528
+        ]
+      },
+      "cross_task_meta_minus_detached_lookahead": {
+        "gain_pp": -1.2270577386353119,
+        "per_task_pp": {
+          "MI_OpenBMI": -1.2009972649636325,
+          "MI_BCIC_IV2a": -4.363768932884682,
+          "MI_ShanghaiU": 0.7615498774035334,
+          "MI_BCIC_Upperlimb": -1.2241844872366903,
+          "MI_HighGamma": -2.2654167607860876,
+          "MI_Cho2017": -0.3712871287128605,
+          "MI_Shin2017A": -4.875107665805334,
+          "MI_PhysioNet": -4.229553543870068,
+          "EMO_FACED": -1.3425925925925897,
+          "EMO_SEED_3_seg4": -1.0191039559829695,
+          "EMO_SEED_4_seg4": 0.8785934800545236,
+          "EMO_SEED_5_seg4": -0.6834817652399128,
+          "EMO_SEED_7_seg4": -0.7875456333955255,
+          "SSVEP_OpenBMI": -1.9557563765865704,
+          "Workload": 1.22754711425207,
+          "ADHD_AliMotie": 1.8181818181818077
+        },
+        "improved": 4,
+        "declined": 12,
+        "tied": 0,
+        "task_deletion_range_pp": [
+          -1.4300737090897864,
+          -0.9838544101573103
+        ]
+      }
+    },
+    "reverse": {
+      "cross_task_meta_minus_paired_ce": {
+        "gain_pp": -1.5501937578781417,
+        "per_task_pp": {
+          "MI_OpenBMI": -1.7189152596710167,
+          "MI_BCIC_IV2a": -4.303591614046109,
+          "MI_ShanghaiU": -2.834075364563171,
+          "MI_BCIC_Upperlimb": 0.35189189807662835,
+          "MI_HighGamma": -2.026428732776142,
+          "MI_Cho2017": -0.9282178217821735,
+          "MI_Shin2017A": 2.179155900086127,
+          "MI_PhysioNet": -2.8459771282560054,
+          "EMO_FACED": 0.030864197530877657,
+          "EMO_SEED_3_seg4": -0.4909114523375169,
+          "EMO_SEED_4_seg4": -0.21093497148691465,
+          "EMO_SEED_5_seg4": -0.014746460865944222,
+          "EMO_SEED_7_seg4": -1.6841095874532142,
+          "SSVEP_OpenBMI": -8.902811245370446,
+          "Workload": -2.3133833922261537,
+          "ADHD_AliMotie": 0.9090909090909038
+        },
+        "improved": 4,
+        "declined": 12,
+        "tied": 0,
+        "task_deletion_range_pp": [
+          -1.798817068409093,
+          -1.060019258711988
+        ]
+      },
+      "cross_task_meta_minus_detached_lookahead": {
+        "gain_pp": -1.7606694060725916,
+        "per_task_pp": {
+          "MI_OpenBMI": -1.5530741608476117,
+          "MI_BCIC_IV2a": -2.028447295383118,
+          "MI_ShanghaiU": -1.3271067234481793,
+          "MI_BCIC_Upperlimb": 1.7358036133136467,
+          "MI_HighGamma": 0.3661621865823417,
+          "MI_Cho2017": -3.3415841584158446,
+          "MI_Shin2017A": -0.3962101636520332,
+          "MI_PhysioNet": -1.3888509038910035,
+          "EMO_FACED": -2.901234567901234,
+          "EMO_SEED_3_seg4": -1.1867629145536962,
+          "EMO_SEED_4_seg4": 0.265429770299902,
+          "EMO_SEED_5_seg4": 0.22532152152874296,
+          "EMO_SEED_7_seg4": -1.2076860976989623,
+          "SSVEP_OpenBMI": -7.603406998854123,
+          "Workload": -7.829063604240294,
+          "ADHD_AliMotie": 0.0
+        },
+        "improved": 4,
+        "declined": 11,
+        "tied": 1,
+        "task_deletion_range_pp": [
+          -1.9937676073650075,
+          -1.3561097928614114
+        ]
+      }
+    }
+  },
+  "reasoning": [
+    "Full meta is lower than both exposure-matched controls in both orders. Its one-task-deletion ranges also remain negative; those ranges are sensitivity checks, not confidence intervals.",
+    "Detached lookahead is above pairedCE by0.1802pp averaged across orders, but is0.0069pp below the historical single-batch bilateral reference. Its order-specific gains over that reference change sign. It uses twice the CE exposures and offers no useful established advantage here.",
+    "PairedCE is below the historical reference in both orders (mean0.1871pp lower). The current evidence does not justify replacing the existing baseline.",
+    "All new arms share math attention and strict settings. The historical reference uses its original attention backend and half the CE exposures, so the primary causal comparison is full meta versus the matched new controls.",
+    "This was a concrete adaptation of established MLDG-style meta-learning; neither generic meta learning nor this negative experiment establishes a new method contribution."
+  ],
+  "next_selected_work": "Four prespecified tasks with eight complementary-half source experts, followed by out-of-fold/in-fold coefficient-transfer and source-soup/single-full controls. Source training activation is gated by the current audit and engineering checks. No full16 source expansion selected.",
+  "not_selected": [
+    "Second calibration bank for this meta component",
+    "Virtual-step, normalization, learning-rate or averaging-window sweeps"
+  ],
+  "source_pretraining_accounting_correction": "runs/source_budget_accounting_v1/comparison.json",
+  "source_cost_note": "The frozen source-exposure figure in the old plan was a nominal maximum. The correction reconstructs6024579 training examples for the shared16-expert bank, with48000 source optimizer steps unchanged. The six new merge runs have exact311040 CE exposures and9720 coefficient updates.",
+  "scope": "One source/calibration seed and two correlated orders on exposed development data. This closes this tested configuration, not every possible meta-learning formulation."
+}

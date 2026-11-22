@@ -1,0 +1,2 @@
+seed,attempt,last_completed_validation_step,last_validation_optimization_elapsed_seconds,last_logged_optimizer_update,observed_duration_upper_bound_seconds,interpretation
+2,block_ce_attempt1,800,257.28717613220215,800,450.1183738708496,"Interrupted attempt excluded from method performance; trace retained and elapsed bound included as extra experiment cost, not device-utilization time."

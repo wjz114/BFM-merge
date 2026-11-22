@@ -1,0 +1,15 @@
+{
+  "created_unix": 1794890704.576454,
+  "comparison_sha256": "f6b02b19d3463e9abc72e732e171d61e7bc94de3e645dc00c199dd4d73d9f15d",
+  "decision": "Do not expand or replicate the moment-coordinate transport candidate under this recipe.",
+  "mean_gains_pp": {
+    "moment_transport_minus_old_rows": -0.39831918158937824,
+    "moment_transport_minus_moment_restart": 1.1618026005811601,
+    "moment_restart_minus_old_rows": -1.5601217821705382,
+    "moment_transport_minus_raw_columns": -0.479996359694518
+  },
+  "reason": "Coefficient transport beats restart in both orders, but both complete runs lose to bilateral and raw-column references. Positive within-family component evidence does not establish a competitive method. Additional Fisher payload and persistent moment costs remain.",
+  "limits": "One exposed expert bank and two correlated orders; no hard performance threshold was used. This rejects expansion of this implementation, not all Fisher-based merging.",
+  "next_candidate": "Bilateral merging with an additional row-complement direction from the original-expert Fisher consensus, paired with row-shifted Fisher assignment control.",
+  "overall_research_goal_achieved": false
+}

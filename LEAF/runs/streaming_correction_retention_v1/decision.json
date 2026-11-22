@@ -1,0 +1,32 @@
+{
+  "unix": 1794860908.6001139,
+  "status": "do not expand correction-retention branch; continue method development",
+  "overall_research_goal_achieved": false,
+  "report": "runs/streaming_correction_retention_v1/comparison.json",
+  "report_sha256": "dfe8235198886b569389308aa47212e73b9e467382d7bf7d8cf84e985a171891",
+  "checks_pass": {
+    "checkpoint_hashes": true,
+    "all_fixed_parameter_means_exact": true,
+    "native_reload_probes_pass": true,
+    "original_sum_exact_from_original_experts": true,
+    "paired_data_and_training_schedules": true
+  },
+  "figure_inspected": true,
+  "primary_gain_pp": {
+    "forward": 0.2721295241352645,
+    "reverse": 0.21605186091368384
+  },
+  "gain_over_incoming_rows_pp": {
+    "forward": -0.641299023372199,
+    "reverse": -0.6446061112950322
+  },
+  "gain_over_history_sketch_pp": {
+    "forward": -1.0608741668901502,
+    "reverse": -0.8433776741926042
+  },
+  "finding": "Preserving the native-CE correction improves its matched recursive control in both orders,including positive single-task-deletion ranges,but remains below incoming-row and historical-sketch coefficient merging in both orders. It is not selected for bank expansion or a learning-rate sweep. This does not rule out correction retention in a different calibrated family.",
+  "next_operator": "Retain the row-wise expert subspace and project native Adam proposals into it. Compare bilateral span,rank2history augmentation and matched random augmentation; use the already tested full native Adam and coefficient runs as references. Reuse existing ProjectedAdam; do not claim generic projection or history sketching is new.",
+  "new_scientific_updates": 6480,
+  "new_scientific_training_examples": 103680,
+  "official_test_read": false
+}

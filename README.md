@@ -5,6 +5,13 @@ Experiments on fine-grained model merging for EEG foundation models, based on
 models, joint fine-tuning, uniform merging, global and block-wise task-vector
 merging, and softmax-constrained weighted averaging.
 
+## Continual expert consolidation
+
+- [Research recap](EEG_Expert_Consolidation_Research_Recap.md) and [method design](EEG_Continual_Expert_Consolidation_Design_v1.md)
+- [Static merging on MI and emotion tasks](LEAF/runs/aligned_merge_v1/analysis/mi_emo_official_l2_groups.csv)
+- [Four-expert, three-seed replication](LEAF/runs/continual_v12/stage_b_replication/order43/README.md) and [paired backbone/readout results](LEAF/runs/continual_v12/paired_arrival_order43/README.md)
+- Experiment entry points: [single-expert readout](LEAF/continual_stage_a.py), [continual merging](LEAF/pilot_continual_stream.py), and [paired arrival experiment](LEAF/paired_continual_arrival.py)
+
 ## Code and experiment plans
 
 - [LEAF implementation and setup](LEAF/README.md)

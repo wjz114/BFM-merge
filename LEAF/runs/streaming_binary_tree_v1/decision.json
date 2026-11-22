@@ -1,0 +1,117 @@
+{
+  "created_unix": 1794929346.50707,
+  "status": "closed fixed binary-counter merging candidate;research goal active",
+  "overall_goal_achieved": false,
+  "novelty_established": false,
+  "superiority_established": false,
+  "scientific_full16_runs": 4,
+  "comparison": "runs/streaming_binary_tree_v1/comparison.json",
+  "reporter": "report_streaming_binary_tree_v2.py",
+  "results": {
+    "ordinary_chain": {
+      "forward": 0.6370832815325755,
+      "reverse": 0.6304747315597239
+    },
+    "binary_tree": {
+      "forward": 0.6278961463111516,
+      "reverse": 0.6262066357665277
+    },
+    "matched_chain": {
+      "forward": 0.6341218574682254,
+      "reverse": 0.6269853983867669
+    }
+  },
+  "primary_contrasts": {
+    "binary_tree_minus_matched_chain": {
+      "mean_pp": -0.35022368886564736,
+      "paired_effects_pp": {
+        "forward": -0.622571115707371,
+        "reverse": -0.07787626202392373
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.3371560680487447,
+        "MI_BCIC_IV2a": -0.3738950907960966,
+        "MI_ShanghaiU": -0.40980241614245777,
+        "MI_BCIC_Upperlimb": -0.34004847723711673,
+        "MI_HighGamma": -0.2837518911186147,
+        "MI_Cho2017": -0.4045125288494311,
+        "MI_Shin2017A": -0.39280822534414483,
+        "MI_PhysioNet": -0.32991414879880515,
+        "EMO_FACED": -0.2835513586583381,
+        "EMO_SEED_3_seg4": -0.3211749537450796,
+        "EMO_SEED_4_seg4": -0.44379340436214343,
+        "EMO_SEED_5_seg4": -0.304150389404303,
+        "EMO_SEED_7_seg4": -0.26812241452377095,
+        "SSVEP_OpenBMI": -0.23751904383427486,
+        "Workload": -0.4114228378131897,
+        "ADHD_AliMotie": -0.46195577317386327
+      }
+    },
+    "binary_tree_minus_ordinary_chain": {
+      "mean_pp": -0.6727615507310047,
+      "paired_effects_pp": {
+        "forward": -0.9187135221423892,
+        "reverse": -0.42680957931962027
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.6862963212701723,
+        "MI_BCIC_IV2a": -0.6978644230282753,
+        "MI_ShanghaiU": -0.7208439205560605,
+        "MI_BCIC_Upperlimb": -0.6624238556180544,
+        "MI_HighGamma": -0.5800247897203371,
+        "MI_Cho2017": -0.6825463141790855,
+        "MI_Shin2017A": -0.6943565068262569,
+        "MI_PhysioNet": -0.6950378365400468,
+        "EMO_FACED": -0.5818098516439432,
+        "EMO_SEED_3_seg4": -0.6589295944319116,
+        "EMO_SEED_4_seg4": -0.7894910071064836,
+        "EMO_SEED_5_seg4": -0.6708822222917118,
+        "EMO_SEED_7_seg4": -0.658770112823248,
+        "SSVEP_OpenBMI": -0.5344248211039951,
+        "Workload": -0.6444870753930161,
+        "ADHD_AliMotie": -0.8059961591635837
+      }
+    },
+    "matched_chain_minus_ordinary_chain": {
+      "mean_pp": -0.3225378618653574,
+      "paired_effects_pp": {
+        "forward": -0.2961424064350182,
+        "reverse": -0.34893331729569654
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.3491402532214275,
+        "MI_BCIC_IV2a": -0.32396933223217866,
+        "MI_ShanghaiU": -0.3110415044136028,
+        "MI_BCIC_Upperlimb": -0.3223753783809376,
+        "MI_HighGamma": -0.2962728986017223,
+        "MI_Cho2017": -0.2780337853296544,
+        "MI_Shin2017A": -0.30154828148211205,
+        "MI_PhysioNet": -0.36512368774124154,
+        "EMO_FACED": -0.29825849298560503,
+        "EMO_SEED_3_seg4": -0.33775464068683186,
+        "EMO_SEED_4_seg4": -0.34569760274434,
+        "EMO_SEED_5_seg4": -0.3667318328874088,
+        "EMO_SEED_7_seg4": -0.39064769829947704,
+        "SSVEP_OpenBMI": -0.29690577726972034,
+        "Workload": -0.23306423757982644,
+        "ADHD_AliMotie": -0.3440403859897205
+      }
+    }
+  },
+  "assessment": "Tree is worse than both equal-event chain and ordinary chain in each order. Mean gaps are-.350224pp and-.672762pp;all leave-one-task-out means remain negative. Equal-event extra replay itself is-.322538pp below ordinary chain. Current evidence does not justify second-bank replication or a topology/LR/window rescue grid.",
+  "dependency_finding": "At finalstage16,15 of26 fitted nodes and768 of2028 update calls lie on the tree final-checkpoint ancestry. The other1260 calls served intervening deployments and are not ancestors. This is an exact graph-accounting finding,not proof that this caused the performance loss.",
+  "costs": {
+    "coefficient_updates": 8112,
+    "CE_examples": 129792,
+    "additional_source_training": 0,
+    "engineering_updates_separate": 60,
+    "engineering_CE_examples_separate": 240,
+    "tree_maximum_persistent_native_bytes": 739892664,
+    "chain_maximum_persistent_native_bytes": 105698952,
+    "memory_scope": "persistent native states including deployment;excludes shared base,working GPU model,transient operands,calibration/readouts,dev data and archive files"
+  },
+  "audit_status": "All four runs independently audited. Initial report failed only on missing historical prefix checkpoint payloads;v2 verifies exact native-file SHA256 against the frozen historical run. Training never retried or altered.",
+  "prior_boundary": "SuperMerge explicitly includes supervised coefficient learning and recursive intermediate-model hierarchical merging;current candidate is a causal structured reference,not a new hierarchical-merging contribution. See prior_addendum.json.",
+  "next_action": "Select a mathematically distinct merging operator with a concrete expected advantage and a matched baseline. Do not continue local tree or standard-optimizer tuning. Existing geometric,full-history,native-correction,teacher and source-context negatives remain relevant.",
+  "scope": "One original expert/calibration bank,16 exposed development tasks,two arrival orders. Reversal produces the same unordered balanced blocks at power-of-two stages; orders are correlated probes,not independent replication. The tree and matched chain have identical event task/example sequences and fresh Adam per event,but different checkpoint bases and initializations. Standard chain has fewer updates and historical read-only response probes. Training retains calibrated native blocks and prefixes; inference is one ordinary native model. No future expert payload,official test,new source training,novelty or superiority claim."
+}

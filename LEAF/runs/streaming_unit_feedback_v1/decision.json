@@ -1,0 +1,25 @@
+{
+  "created_unix": 1794877088.939522,
+  "full_report_inspected": true,
+  "figure_inspected": true,
+  "all_audits_pass": true,
+  "bank_means_pp": {
+    "0": {
+      "unit_feedback_minus_old_rows": 0.24407150466396346,
+      "unit_feedback_minus_joint_memory": 0.018059645565376287
+    },
+    "2": {
+      "unit_feedback_minus_old_rows": -0.20703814336925067,
+      "unit_feedback_minus_joint_memory": 0.27509993492540374
+    }
+  },
+  "overall_means_pp": {
+    "unit_feedback_minus_old_rows": 0.0185166806473564,
+    "unit_feedback_minus_joint_memory": 0.14657979024539003
+  },
+  "decision": "Do not expand unchanged unit-feedback to bank1 and do not sweep feedback weights. It reduces the selected bank2 reverse failure but does not provide a stable strong-baseline gain. Next inspect actual calibration corrections as a candidate memory target, rather than append whole calibrated-model states.",
+  "evidence": "Versus bilateral: bank0+0.2100/+0.2781pp, bank2-0.0265/-0.3876pp. Four-case mean+0.0185pp. Bank2 reverse single-task deletion remains negative. Versus the prior count-weighted candidate the four-case mean is+0.1466pp, mostly a rescue of its worst case.",
+  "mechanism_limits": "Retained memory energy falls from roughly23k to roughly4k, but stable baseline gains do not follow. Removing feedback mass growth is insufficient. This does not prove a unique cause of failure or that supervised correction memory will work.",
+  "next_action": "Read-only parameter-geometry diagnostic using frozen native stage checkpoints; no new training or held-out evaluation. Quantify calibration correction relative to initial convex merge and its component outside the old/new row span before specifying the next concrete operator.",
+  "overall_goal_complete": false
+}

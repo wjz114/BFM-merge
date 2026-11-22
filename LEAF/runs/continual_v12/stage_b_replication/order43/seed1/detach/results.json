@@ -1,0 +1,117 @@
+[
+  {
+    "arrival": "MI_OpenBMI",
+    "eval": {
+      "MI_OpenBMI": {
+        "bacc": 0.765625,
+        "teacher_bacc": 0.8125
+      }
+    },
+    "expert_seed": 1,
+    "expert_sha256": "0432a71b20a14891ce5bbdfcebf38f5c3253ddded1e1dedba0393bce23c3f5bf",
+    "seconds": 8.491523779004638,
+    "updates": 0,
+    "memory_bytes": 6656000,
+    "old_score_rmse_before_after": {},
+    "penalty_active_fraction": null
+  },
+  {
+    "arrival": "EMO_FACED",
+    "eval": {
+      "MI_OpenBMI": {
+        "bacc": 0.765625,
+        "teacher_bacc": 0.8125
+      },
+      "EMO_FACED": {
+        "bacc": 0.12698412698412698,
+        "teacher_bacc": 0.5952380952380953
+      }
+    },
+    "expert_seed": 1,
+    "expert_sha256": "2f311af4becc1cdc350d982481302ad5e304c9855db6775a0ea6b457e1654d92",
+    "seconds": 54.7134324610015,
+    "updates": 12,
+    "memory_bytes": 23296000,
+    "old_score_rmse_before_after": {
+      "MI_OpenBMI": [
+        0.13904015719890594,
+        0.13896146416664124
+      ]
+    },
+    "penalty_active_fraction": 0.8333333333333334
+  },
+  {
+    "arrival": "MI_BCIC_IV2a",
+    "eval": {
+      "MI_OpenBMI": {
+        "bacc": 0.734375,
+        "teacher_bacc": 0.8125
+      },
+      "EMO_FACED": {
+        "bacc": 0.12698412698412698,
+        "teacher_bacc": 0.5952380952380953
+      },
+      "MI_BCIC_IV2a": {
+        "bacc": 0.34375,
+        "teacher_bacc": 0.75
+      }
+    },
+    "expert_seed": 1,
+    "expert_sha256": "3a9b673946adb916bb56b99011c097e4f6441c8c31222927551630e5f3dae273",
+    "seconds": 76.14753669099446,
+    "updates": 24,
+    "memory_bytes": 29952000,
+    "old_score_rmse_before_after": {
+      "MI_OpenBMI": [
+        0.08803889900445938,
+        0.08798632770776749
+      ],
+      "EMO_FACED": [
+        0.04449678584933281,
+        0.04368441924452782
+      ]
+    },
+    "penalty_active_fraction": 0.875
+  },
+  {
+    "arrival": "EMO_SEED_3_seg4",
+    "eval": {
+      "MI_OpenBMI": {
+        "bacc": 0.734375,
+        "teacher_bacc": 0.8125
+      },
+      "EMO_FACED": {
+        "bacc": 0.14087301587301587,
+        "teacher_bacc": 0.5952380952380953
+      },
+      "MI_BCIC_IV2a": {
+        "bacc": 0.359375,
+        "teacher_bacc": 0.75
+      },
+      "EMO_SEED_3_seg4": {
+        "bacc": 0.5122655122655123,
+        "teacher_bacc": 0.6753246753246752
+      }
+    },
+    "expert_seed": 1,
+    "expert_sha256": "3ab32dcdbeecd3c82021069cd195bd3ba80104e938185e27d44d34347ace3626",
+    "seconds": 100.37694428699615,
+    "updates": 36,
+    "memory_bytes": 36608000,
+    "old_score_rmse_before_after": {
+      "MI_OpenBMI": [
+        0.028579019010066986,
+        0.02857474610209465
+      ],
+      "EMO_FACED": [
+        0.007159072440117598,
+        0.007172587793320417
+      ],
+      "MI_BCIC_IV2a": [
+        0.017333924770355225,
+        0.017256444320082664
+      ]
+    },
+    "penalty_active_fraction": 0.8333333333333334
+  }
+]

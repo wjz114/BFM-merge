@@ -1,0 +1,134 @@
+{
+  "unix": 1794870003.134315,
+  "decision": "Do not promote or expand the unchanged raw-energy historical dictionary as a stable improvement. The controlled comparison does not retain its earlier favorable signal.",
+  "results": {
+    "forward": {
+      "macro_BAcc": {
+        "incoming_rows": 0.6327780140854278,
+        "old_rows": 0.6370832815325755,
+        "history_sketch": 0.6364641654114589,
+        "random_sketch": 0.6361887374670103
+      },
+      "contrasts": {
+        "history_sketch_minus_incoming_rows": {
+          "gain_pp": 0.36861513260312107,
+          "improved": 7,
+          "declined": 8,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            0.07679556148352358,
+            0.47361920764542037
+          ]
+        },
+        "history_sketch_minus_old_rows": {
+          "gain_pp": -0.06191161211167098,
+          "improved": 8,
+          "declined": 8,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.14240999750711505,
+            0.06112544612241274
+          ]
+        },
+        "history_sketch_minus_random_sketch": {
+          "gain_pp": 0.02754279444486185,
+          "improved": 9,
+          "declined": 7,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.0747876859254807,
+            0.10861462284103676
+          ]
+        },
+        "old_rows_minus_incoming_rows": {
+          "gain_pp": 0.4305267447147921,
+          "improved": 9,
+          "declined": 7,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.21920555899063868,
+            0.5305941077643672
+          ]
+        }
+      }
+    },
+    "reverse": {
+      "macro_BAcc": {
+        "incoming_rows": 0.6323415340165857,
+        "old_rows": 0.6304747315597239,
+        "history_sketch": 0.6293262534181949,
+        "random_sketch": 0.6325174277975525
+      },
+      "contrasts": {
+        "history_sketch_minus_incoming_rows": {
+          "gain_pp": -0.3015280598390797,
+          "improved": 5,
+          "declined": 10,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            -0.4111361033345247,
+            -0.14176145778202287
+          ]
+        },
+        "history_sketch_minus_old_rows": {
+          "gain_pp": -0.11484781415290156,
+          "improved": 7,
+          "declined": 9,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.2144100650866406,
+            -0.030729698268788058
+          ]
+        },
+        "history_sketch_minus_random_sketch": {
+          "gain_pp": -0.31911743793575575,
+          "improved": 7,
+          "declined": 9,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.41144288734032386,
+            -0.08314243623856431
+          ]
+        },
+        "old_rows_minus_incoming_rows": {
+          "gain_pp": -0.1866802456861782,
+          "improved": 7,
+          "declined": 9,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.2651321960586561,
+            -0.08772737547323774
+          ]
+        }
+      }
+    }
+  },
+  "mean_gain_over_two_orders_pp": {
+    "history_sketch_minus_incoming_rows": 0.03354353638202068,
+    "history_sketch_minus_old_rows": -0.08837971313228626,
+    "history_sketch_minus_random_sketch": -0.14578732174544695,
+    "old_rows_minus_incoming_rows": 0.12192324951430694
+  },
+  "checks": {
+    "all_eight_complete": true,
+    "strict_settings_recorded": true,
+    "actual_data_schedules_auxiliary_ids_match": true,
+    "first_expert_unchanged": true,
+    "checkpoint_and_coefficient_hashes": true,
+    "fixed_coefficient_means_exact": true,
+    "native_exports_pass": true,
+    "raw_history_lineages_replay_exactly": true,
+    "raw_history_matches_across_all_four_conditions": true
+  },
+  "figure_inspected": true,
+  "interpretation": "History is slightly better than incoming rows on the two-order mean but worse than bilateral and random history. Reverse history loses all three primary contrasts and their task-deletion ranges stay negative. Strict computation is a different frozen numerical protocol; this does not prove all earlier favorable results were caused by one backend kernel. Existing three-bank default results remain recorded, but do not establish robust superiority.",
+  "next_candidate_hypothesis": "Jointly represent the current merged model and a complementary historical dictionary. Current raw-energy truncation can spend memory on directions already represented by the merged row. Compress only after projecting a dictionary containing the previous model, retained memory and arriving expert off the newly calibrated model row. This is an unvalidated operator hypothesis, not an observed failure mechanism or novelty claim.",
+  "next_action": "Focused prior-method audit, then implement a fixed-rank complement-memory operator and training-only native engineering under strict settings. No rank or learning-rate sweep. New direct runs only after engineering passes.",
+  "new_scientific_updates": 12960,
+  "new_scientific_CE_example_passes": 207360,
+  "sha256": {
+    "runs/streaming_strict_history_v1/plan.json": "d120e265b95c3cd1c503a5a0d45936cf34b5508f0af2fb05ad9f1fbd3a00ec76",
+    "runs/streaming_strict_history_v1/comparison.json": "2115f557576af6b1f43e4be960da17ab9fae3b98694a308ca858ad1ebe939a21"
+  },
+  "overall_research_goal_achieved": false
+}

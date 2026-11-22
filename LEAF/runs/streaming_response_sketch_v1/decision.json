@@ -1,0 +1,148 @@
+{
+  "unix": 1794865759.0941067,
+  "status": "comparison_complete_audited",
+  "overall_research_goal_achieved": false,
+  "comparison": "runs/streaming_response_sketch_v1/comparison.json",
+  "comparison_sha256": "cce28832758bfe64ff4b941ab023e56d812865a2b374ff8bc3a23011c0aa1161",
+  "figure_inspected": "runs/streaming_response_sketch_v1/comparison.png",
+  "macro_BAcc": {
+    "forward": {
+      "energy_history": 0.6370220001735691,
+      "response_history": 0.6372372093784291,
+      "incoming_rows": 0.633777416886041,
+      "bilateral": 0.639291070668039,
+      "coefficient_history": 0.6379731683212204
+    },
+    "reverse": {
+      "energy_history": 0.6292040050662773,
+      "response_history": 0.6280838565899081,
+      "incoming_rows": 0.6341325383476892,
+      "bilateral": 0.6311860541815895,
+      "coefficient_history": 0.636120253976665
+    }
+  },
+  "contrasts": {
+    "forward": {
+      "response_history_minus_energy_history": {
+        "gain_pp": 0.02152092048599251,
+        "improved": 8,
+        "declined": 8,
+        "tied": 0,
+        "task_deletion_range_pp": [
+          -0.11813002027203552,
+          0.1011449489299147
+        ]
+      },
+      "response_history_minus_incoming_rows": {
+        "gain_pp": 0.3459792492388078,
+        "improved": 9,
+        "declined": 7,
+        "tied": 0,
+        "task_deletion_range_pp": [
+          0.24353012922921433,
+          0.46204610299646437
+        ]
+      },
+      "response_history_minus_coefficient_history": {
+        "gain_pp": -0.07359589427914334,
+        "improved": 7,
+        "declined": 9,
+        "tied": 0,
+        "task_deletion_range_pp": [
+          -0.13797658683340855,
+          0.026277846259295353
+        ]
+      },
+      "energy_history_minus_coefficient_history": {
+        "gain_pp": -0.09511681476513588,
+        "improved": 7,
+        "declined": 8,
+        "tied": 1,
+        "task_deletion_range_pp": [
+          -0.21565546661367563,
+          0.012646893461358078
+        ]
+      },
+      "response_history_minus_bilateral": {
+        "gain_pp": -0.20538612896100308,
+        "improved": 5,
+        "declined": 11,
+        "tied": 0,
+        "task_deletion_range_pp": [
+          -0.3034406774760993,
+          -0.15719734943959246
+        ]
+      }
+    },
+    "reverse": {
+      "response_history_minus_energy_history": {
+        "gain_pp": -0.11201484763692961,
+        "improved": 9,
+        "declined": 6,
+        "tied": 1,
+        "task_deletion_range_pp": [
+          -0.29921262186067127,
+          0.13351121395366647
+        ]
+      },
+      "response_history_minus_incoming_rows": {
+        "gain_pp": -0.6048681757781227,
+        "improved": 5,
+        "declined": 10,
+        "tied": 1,
+        "task_deletion_range_pp": [
+          -0.7318203328926831,
+          -0.348765551611309
+        ]
+      },
+      "response_history_minus_coefficient_history": {
+        "gain_pp": -0.8036397386756946,
+        "improved": 7,
+        "declined": 8,
+        "tied": 1,
+        "task_deletion_range_pp": [
+          -0.9081926584425236,
+          -0.3654607153647929
+        ]
+      },
+      "energy_history_minus_coefficient_history": {
+        "gain_pp": -0.6916248910387651,
+        "improved": 5,
+        "declined": 10,
+        "tied": 1,
+        "task_deletion_range_pp": [
+          -0.8060112082231428,
+          -0.3053473428616775
+        ]
+      },
+      "response_history_minus_bilateral": {
+        "gain_pp": -0.3102197591681424,
+        "improved": 6,
+        "declined": 10,
+        "tied": 0,
+        "task_deletion_range_pp": [
+          -0.4345528472630844,
+          -0.057417566434239474
+        ]
+      }
+    }
+  },
+  "fresh_control_variation": "runs/streaming_response_sketch_v1/fresh_control_variation.json",
+  "checks": {
+    "actual_data_schedules_auxiliary_ids_match": true,
+    "first_expert_unchanged": true,
+    "checkpoint_and_statistic_hashes": true,
+    "fixed_coefficient_means_exact": true,
+    "native_exports_pass": true,
+    "saved_response_covariances_finite_symmetric": true,
+    "raw_history_lineages_replay_exactly": true,
+    "energy_history_matches_original_history_exactly": true
+  },
+  "decision": "Do not expand the minibatch-CE-response selection variant across banks or sweep its rate/rank. Its primary gains are+0.0215/-0.1120pp, with task-deletion ranges crossing zero, and it trails the earlier coefficient-history reference in both orders.",
+  "next_operator": "Predictive-distribution response history: estimate a class-balanced projected model-Fisher in the three-slot per-row dictionary using independent Rademacher score VJPs on the same calibration minibatches. Compare energy versus predictive-response truncation with identical extra VJP cost.",
+  "reason": "A squared minibatch loss gradient contains cross-example terms and depends on observed-label error. A zero-mean randomized score VJP targets the average per-example predictive Fisher instead. This is a distinct memory-selection statistic, not an inference that the failed variant proves its effectiveness.",
+  "extra_cost_required": "One additional score VJP per existing CE minibatch in both arms; no new input examples, but extra backward example passes and computation must be counted.",
+  "prior_boundary": "Fisher-weighted compression and projected-Fisher task spaces are established (GFWSVD, FACTS, RGBM); no novelty claim from substituting Fisher alone.",
+  "new_scientific_updates": 6480,
+  "new_scientific_training_examples": 103680
+}

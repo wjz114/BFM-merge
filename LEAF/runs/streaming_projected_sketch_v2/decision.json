@@ -1,0 +1,108 @@
+{
+  "status": "comparison_complete_audited",
+  "overall_research_goal_achieved": false,
+  "report": "runs/streaming_projected_sketch_v2/comparison.json",
+  "report_sha256": "76b25335b4e3aea5745b9fd9066374212aee335286c471e7f57b8610f7c00b1c",
+  "figure_inspected": "runs/streaming_projected_sketch_v2/comparison.png",
+  "final_macro_BAcc": {
+    "forward": {
+      "bilateral": 0.6224016386812784,
+      "history_sketch": 0.6229093178774814,
+      "random_sketch": 0.6222981953844503,
+      "native_full_ce": 0.6246431314109663,
+      "coefficient_bilateral": 0.639291070668039,
+      "coefficient_history": 0.6379731683212204,
+      "incoming_rows": 0.633777416886041
+    },
+    "reverse": {
+      "bilateral": 0.6237473744229065,
+      "history_sketch": 0.6244359801046179,
+      "random_sketch": 0.6239832120453898,
+      "native_full_ce": 0.6255259586256021,
+      "coefficient_bilateral": 0.6311860541815895,
+      "coefficient_history": 0.636120253976665,
+      "incoming_rows": 0.6341325383476892
+    }
+  },
+  "primary_contrasts": {
+    "forward": {
+      "history_sketch_minus_bilateral": {
+        "gain_pp": 0.05076791962029051,
+        "improved": 8,
+        "declined": 7,
+        "tied": 1,
+        "task_deletion_range_pp": [
+          0.001604172824479407,
+          0.11243179584782419
+        ]
+      },
+      "history_sketch_minus_random_sketch": {
+        "gain_pp": 0.061112249303101746,
+        "improved": 9,
+        "declined": 6,
+        "tied": 1,
+        "task_deletion_range_pp": [
+          0.02281007217283711,
+          0.09406428704542114
+        ]
+      },
+      "history_sketch_minus_coefficient_history": {
+        "gain_pp": -1.506385044373911,
+        "improved": 3,
+        "declined": 13,
+        "tied": 0,
+        "task_deletion_range_pp": [
+          -1.6707645349807723,
+          -1.328873207971347
+        ]
+      }
+    },
+    "reverse": {
+      "history_sketch_minus_bilateral": {
+        "gain_pp": 0.0688605681711349,
+        "improved": 6,
+        "declined": 9,
+        "tied": 1,
+        "task_deletion_range_pp": [
+          -0.0026804145269202864,
+          0.12295622321092677
+        ]
+      },
+      "history_sketch_minus_random_sketch": {
+        "gain_pp": 0.045276805922814245,
+        "improved": 7,
+        "declined": 8,
+        "tied": 1,
+        "task_deletion_range_pp": [
+          -0.03596962514935834,
+          0.10192562268730516
+        ]
+      },
+      "history_sketch_minus_coefficient_history": {
+        "gain_pp": -1.1684273872047113,
+        "improved": 6,
+        "declined": 10,
+        "tied": 0,
+        "task_deletion_range_pp": [
+          -1.4660237633755326,
+          -0.826222793569455
+        ]
+      }
+    }
+  },
+  "decision": "Do not expand native projected-Adam history or run a rate sweep. Under this recipe it trails the stronger coefficient-history merger in both orders. Continue with a direct change to historical compression under the coefficient optimizer.",
+  "next_candidate": "runs/paper_merge_v2/analysis/response_sketch_candidate_v1.json",
+  "next_step": "Implement and validate training-trajectory response compression, then compare energy and response selection on bank0 forward/reverse with matched data and update schedules.",
+  "new_scientific_updates": 9720,
+  "new_scientific_training_examples": 155520,
+  "scope": "Bank0 and two correlated fixed orders on exposed development validation. Primary comparisons share native optimizer, replay, rounds and fixedmean. Random historical support/rank matches the meaningful real support for its own current model; models evolve differently across arms. Coefficient references differ in optimizer coordinates, learning rate and auxiliary-probe costs. No equal-compute claim. Norm restoration matches each step to its own native proposal, not to proposals from other arms. Task-deletion ranges are sensitivity, not confidence intervals. Stage means cover only seen tasks. Stored bases/snapshots are audit artifacts; physical memory and shared-hardware wall times are not a controlled speed benchmark. No official-test data or novelty claim from generic projection or historical sketching.",
+  "checks": {
+    "all_native_fixedmeans_exact": true,
+    "all_checkpoint_and_basis_hashes": true,
+    "saved_basis_orthogonality_and_early_ranks": true,
+    "coordinate_mean_consistency": true,
+    "paired_actual_data_and_CE_batches": true,
+    "native_export_probes": true,
+    "real_random_final_history_identical": true
+  }
+}

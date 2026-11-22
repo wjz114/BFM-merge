@@ -1,0 +1,17 @@
+{
+  "created_unix": 1794892947.3710828,
+  "comparison_sha256": "ebcd408c4ce2a30c401fb0b058a246ef067ef63d525a48161cdfb2a8f9cf5197",
+  "decision": "Do not promote true-Fisher residual. Perform one unchanged bank2 follow-up of both arms because the shifted-assignment control has positive mean gains in both orders.",
+  "selection_role": "Shifted arm was a control and is selected post hoc; its bank0 outcomes are exploration, not independent confirmation.",
+  "mean_gains_pp": {
+    "fisher_residual_minus_old_rows": -0.30325192467777295,
+    "fisher_residual_minus_shifted_fisher_residual": -0.5277190644686863,
+    "shifted_fisher_residual_minus_old_rows": 0.22446713979091348,
+    "fisher_residual_minus_raw_columns": -0.3849291027829128
+  },
+  "stability": "Shifted-versus-bilateral forward task-deletion range crosses0; reverse range stays positive but only7/16 tasks improve. Both orders are correlated. Effects and extra costs require follow-up; no hard threshold used.",
+  "cost": "521116 coefficients versus347666 bilateral,618037248byte original moments, plus2048example128VJP Fisher payload.",
+  "followup": "Bank2, both orders, both unchanged conditions. Same strict calibration recipe and bank2 frozen bilateral/raw-column references. Estimate the bank2 Fisher payload once with the unchanged estimator. No Fisher shift, LR, normalization, rank or projection sweep.",
+  "figure_visually_inspected": true,
+  "overall_research_goal_achieved": false
+}

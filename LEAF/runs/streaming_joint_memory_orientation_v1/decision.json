@@ -1,0 +1,68 @@
+{
+  "created_unix": 1794872686.4268565,
+  "full_report_inspected": true,
+  "figure_inspected": true,
+  "all_audits_pass": true,
+  "primary": {
+    "forward": {
+      "gain_pp": 0.13515515303416242,
+      "per_task_pp": {
+        "MI_OpenBMI": -0.010233129290926346,
+        "MI_BCIC_IV2a": 0.22461572322332035,
+        "MI_ShanghaiU": -1.867982965543935,
+        "MI_BCIC_Upperlimb": 0.33804734607946196,
+        "MI_HighGamma": -1.4350576010842442,
+        "MI_Cho2017": 0.061881188118806385,
+        "MI_Shin2017A": 2.4117140396210157,
+        "MI_PhysioNet": 0.9885270112405142,
+        "EMO_FACED": 1.774691358024677,
+        "EMO_SEED_3_seg4": -0.17075095391869688,
+        "EMO_SEED_4_seg4": -0.4213870325883273,
+        "EMO_SEED_5_seg4": -0.26685417729476746,
+        "EMO_SEED_7_seg4": 0.06918004331312178,
+        "SSVEP_OpenBMI": 0.8010444843945197,
+        "Workload": -0.33495288574794113,
+        "ADHD_AliMotie": 0.0
+      },
+      "improved": 8,
+      "declined": 7,
+      "tied": 1,
+      "task_deletion_range_pp": [
+        -0.01661543940496113,
+        0.26869769427270224
+      ]
+    },
+    "reverse": {
+      "gain_pp": 0.5573181089481428,
+      "per_task_pp": {
+        "MI_OpenBMI": -0.4224564948884346,
+        "MI_BCIC_IV2a": -0.395385936301329,
+        "MI_ShanghaiU": -0.23470770421989418,
+        "MI_BCIC_Upperlimb": -0.9454627627318413,
+        "MI_HighGamma": 4.372261124915289,
+        "MI_Cho2017": 0.06188118811881749,
+        "MI_Shin2017A": 2.6959517657192067,
+        "MI_PhysioNet": -0.2398427030384953,
+        "EMO_FACED": 1.0802469135802517,
+        "EMO_SEED_3_seg4": -0.23377649473498296,
+        "EMO_SEED_4_seg4": 0.1969676076818916,
+        "EMO_SEED_5_seg4": 0.17779777534482344,
+        "EMO_SEED_7_seg4": 0.11128074173721858,
+        "SSVEP_OpenBMI": 0.680710083375502,
+        "Workload": 2.9207155477031677,
+        "ADHD_AliMotie": -0.9090909090909038
+      },
+      "improved": 9,
+      "declined": 7,
+      "tied": 0,
+      "task_deletion_range_pp": [
+        0.30298857455033307,
+        0.657503500393475
+      ]
+    }
+  },
+  "decision": "Proceed to a second expert bank with joint memory and the strict bilateral-row baseline in both orders. Do not change rank, anchor weight, calibration, optimizer or averaging.",
+  "evidence": "Real-minus-matched-random is positive in both orders,0.1352/0.5573pp. Forward task-deletion range crosses zero and reverse gains are heterogeneous. Joint-minus-bilateral is -0.0068/+0.4588pp in bank0. These support a replication step, not established stability or novelty.",
+  "next_design": "Bank1: two methods x two orders, four complete16task runs, same frozen runners and source. Reuse bank0 comparison explicitly as selection evidence.",
+  "overall_goal_complete": false
+}

@@ -1,0 +1,312 @@
+{
+  "status": "passed",
+  "plan_sha256": "1da5c803f30fc0688ad5e09d57541c89559add5447238372672a667ddb6ef27d",
+  "checks": {
+    "sources_and_data_frozen": true,
+    "independent_schedules": true,
+    "paired_index_and_label_schedules": true,
+    "independent_native_exports": true,
+    "same_development_evaluation_rows": true,
+    "original512_references_replayed": true,
+    "first_arrival_metrics_identical_within_source": true,
+    "budgets_match": true
+  },
+  "scores": {
+    "single_full_training_calibration_forward": 0.7646561464517214,
+    "single_full_development_calibration_forward": 0.7689208171812463,
+    "single_full_original512_reference_forward": 0.7608274989468002,
+    "source_soup_training_calibration_forward": 0.7600642260793062,
+    "source_soup_development_calibration_forward": 0.7603191041256012,
+    "source_soup_original512_reference_forward": 0.7755815400540254,
+    "single_full_training_calibration_reverse": 0.7697370355244015,
+    "single_full_development_calibration_reverse": 0.7657568380245283,
+    "single_full_original512_reference_reverse": 0.7678199364571783,
+    "source_soup_training_calibration_reverse": 0.782854809728989,
+    "source_soup_development_calibration_reverse": 0.7666251638688956,
+    "source_soup_original512_reference_reverse": 0.7700598377002397
+  },
+  "contrasts": {
+    "single_full_development_calibration_minus_training_calibration_forward": {
+      "macro_BAcc_pp": 0.42646707295248554,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": 0.5355556613051538,
+        "EMO_FACED": 1.041133299197805,
+        "ADHD_AliMotie": -1.7857142857142794,
+        "Workload": 1.9148936170212738
+      }
+    },
+    "single_full_development_calibration_minus_original512_reference_forward": {
+      "macro_BAcc_pp": 0.8093318234446034,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": 0.26073887249769,
+        "EMO_FACED": 0.6855549866302546,
+        "ADHD_AliMotie": 1.7857142857142905,
+        "Workload": 0.5053191489361675
+      }
+    },
+    "single_full_training_calibration_minus_original512_reference_forward": {
+      "macro_BAcc_pp": 0.3828647504921179,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": -0.27481678880746374,
+        "EMO_FACED": -0.35557831256755046,
+        "ADHD_AliMotie": 3.57142857142857,
+        "Workload": -1.4095744680851063
+      }
+    },
+    "source_soup_development_calibration_minus_training_calibration_forward": {
+      "macro_BAcc_pp": 0.02548780462949818,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": -2.438751150026963,
+        "EMO_FACED": -1.2004323832280783,
+        "ADHD_AliMotie": 0.0,
+        "Workload": 3.7411347517730453
+      }
+    },
+    "source_soup_development_calibration_minus_original512_reference_forward": {
+      "macro_BAcc_pp": -1.5262435928424134,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": -2.4123798420100817,
+        "EMO_FACED": -1.5218751777891448,
+        "ADHD_AliMotie": -3.57142857142857,
+        "Workload": 1.4007092198581539
+      }
+    },
+    "source_soup_training_calibration_minus_original512_reference_forward": {
+      "macro_BAcc_pp": -1.5517313974719116,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": 0.02637130801688148,
+        "EMO_FACED": -0.3214427945610665,
+        "ADHD_AliMotie": -3.57142857142857,
+        "Workload": -2.3404255319148914
+      }
+    },
+    "single_full_development_calibration_minus_training_calibration_reverse": {
+      "macro_BAcc_pp": -0.3980197499873217,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": -0.5132491037720954,
+        "EMO_FACED": -1.9457245263696743,
+        "ADHD_AliMotie": 5.35714285714286,
+        "Workload": -4.490248226950355
+      }
+    },
+    "single_full_development_calibration_minus_original512_reference_reverse": {
+      "macro_BAcc_pp": -0.20630984326499568,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": 2.0682640144665476,
+        "EMO_FACED": -2.7763554645274913,
+        "ADHD_AliMotie": 5.35714285714286,
+        "Workload": -5.474290780141844
+      }
+    },
+    "single_full_training_calibration_minus_original512_reference_reverse": {
+      "macro_BAcc_pp": 0.19170990672232602,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": 2.581513118238643,
+        "EMO_FACED": -0.830630938157817,
+        "ADHD_AliMotie": 0.0,
+        "Workload": -0.9840425531914887
+      }
+    },
+    "source_soup_development_calibration_minus_training_calibration_reverse": {
+      "macro_BAcc_pp": -1.6229645860093456,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": -0.24190222391422544,
+        "EMO_FACED": -1.490584286283203,
+        "ADHD_AliMotie": -3.57142857142857,
+        "Workload": -1.1879432624113506
+      }
+    },
+    "source_soup_development_calibration_minus_original512_reference_reverse": {
+      "macro_BAcc_pp": -0.3434673831344104,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": 0.8613305415437367,
+        "EMO_FACED": 0.4864311315924241,
+        "ADHD_AliMotie": 0.0,
+        "Workload": -2.721631205673769
+      }
+    },
+    "source_soup_training_calibration_minus_original512_reference_reverse": {
+      "macro_BAcc_pp": 1.2794972028749352,
+      "task_BAcc_pp": {
+        "MI_OpenBMI": 1.1032327654579621,
+        "EMO_FACED": 1.9770154178756272,
+        "ADHD_AliMotie": 3.57142857142857,
+        "Workload": -1.5336879432624184
+      }
+    }
+  },
+  "audits": {
+    "single_full_training_calibration_forward": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        [
+          "b7e86ae1148b6ab9f30dc8f4b6a319c0fe8c2a69e2f87f6167b6c24d78433b22",
+          "491afc840b1a27bf6ef0c1b307224ee618bc8587b438f3a509bc01a6c69fbcfc"
+        ],
+        [
+          "18844441c2f62b59fcaff1c60c38e1653f2a2e529193c918892ac5adfd5272cf",
+          "1b7825d5cea0115873bd3d4ba1ae3dd985591a6f25972bd28ccb7b8595cfd9b7"
+        ],
+        [
+          "0352c3ab2b9239fdc20fdcb857779c99571a48a42789fb0da82da7bfba8ed469",
+          "b5f87a88507455a2a54abb088c8acfea6a5e6de5fea1c51efbfcf33cd88ca198"
+        ]
+      ],
+      "run_sha256": "69872291a77444d750e0bb044b30bdb751cc3b685b64eb3c05886a90cfac4e6b"
+    },
+    "single_full_development_calibration_forward": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        [
+          "b7e86ae1148b6ab9f30dc8f4b6a319c0fe8c2a69e2f87f6167b6c24d78433b22",
+          "491afc840b1a27bf6ef0c1b307224ee618bc8587b438f3a509bc01a6c69fbcfc"
+        ],
+        [
+          "18844441c2f62b59fcaff1c60c38e1653f2a2e529193c918892ac5adfd5272cf",
+          "1b7825d5cea0115873bd3d4ba1ae3dd985591a6f25972bd28ccb7b8595cfd9b7"
+        ],
+        [
+          "0352c3ab2b9239fdc20fdcb857779c99571a48a42789fb0da82da7bfba8ed469",
+          "b5f87a88507455a2a54abb088c8acfea6a5e6de5fea1c51efbfcf33cd88ca198"
+        ]
+      ],
+      "run_sha256": "b709fc28c69290fdf099e381aae58b1ff31c6e81c876762ac3de6d5ea03e84cd"
+    },
+    "single_full_original512_reference_forward": {
+      "independent_export_max_abs_error": 0.0,
+      "schedules": [],
+      "run_sha256": "68c8e52ef4fea00e5cff2c81925671a5955039520da9eb00fb28d9da39ae629d"
+    },
+    "source_soup_training_calibration_forward": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        [
+          "b7e86ae1148b6ab9f30dc8f4b6a319c0fe8c2a69e2f87f6167b6c24d78433b22",
+          "491afc840b1a27bf6ef0c1b307224ee618bc8587b438f3a509bc01a6c69fbcfc"
+        ],
+        [
+          "18844441c2f62b59fcaff1c60c38e1653f2a2e529193c918892ac5adfd5272cf",
+          "1b7825d5cea0115873bd3d4ba1ae3dd985591a6f25972bd28ccb7b8595cfd9b7"
+        ],
+        [
+          "0352c3ab2b9239fdc20fdcb857779c99571a48a42789fb0da82da7bfba8ed469",
+          "b5f87a88507455a2a54abb088c8acfea6a5e6de5fea1c51efbfcf33cd88ca198"
+        ]
+      ],
+      "run_sha256": "622c86d80e9bbd4285faea3e8951d562c8b39e640e01cfbc664c83fda85e7875"
+    },
+    "source_soup_development_calibration_forward": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        [
+          "b7e86ae1148b6ab9f30dc8f4b6a319c0fe8c2a69e2f87f6167b6c24d78433b22",
+          "491afc840b1a27bf6ef0c1b307224ee618bc8587b438f3a509bc01a6c69fbcfc"
+        ],
+        [
+          "18844441c2f62b59fcaff1c60c38e1653f2a2e529193c918892ac5adfd5272cf",
+          "1b7825d5cea0115873bd3d4ba1ae3dd985591a6f25972bd28ccb7b8595cfd9b7"
+        ],
+        [
+          "0352c3ab2b9239fdc20fdcb857779c99571a48a42789fb0da82da7bfba8ed469",
+          "b5f87a88507455a2a54abb088c8acfea6a5e6de5fea1c51efbfcf33cd88ca198"
+        ]
+      ],
+      "run_sha256": "8fab572d660cd578b66107848ae4d3fbbe47a7186237113ad1ee8623c987d4a6"
+    },
+    "source_soup_original512_reference_forward": {
+      "independent_export_max_abs_error": 0.0,
+      "schedules": [],
+      "run_sha256": "fc6587b8bdeb76aa053d276fa0b755f824184f7a0e37d88a330e81a93ed22039"
+    },
+    "single_full_training_calibration_reverse": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        [
+          "fdce956bcf07b81b78c3c89b0a256427a78ee01e12825dde60e824fa79b15b01",
+          "cb258d9f8109e6c903a5c03d5039e5b6ee51493f8eff0e0f22ceb2ab0221990d"
+        ],
+        [
+          "e3c662eeec307e2d1b846b3a05bb9c523fbf81cb7759b6f54795691915b0dccf",
+          "f5cc88df4ffabb320b2dfef1829a6e33080ce2b5806e431160d19b3676c91534"
+        ],
+        [
+          "640e991a8a2ec32be367b7555d2535763235f9bac409b80a80eebe6f8f94435c",
+          "5bbc95449b390d7c2089498e198700c575d8e57547fddc1b5d39a0836c950a77"
+        ]
+      ],
+      "run_sha256": "5b9f3b7a615829b6036f2e453defc542b145b495363ce43bc540868027174d9e"
+    },
+    "single_full_development_calibration_reverse": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        [
+          "fdce956bcf07b81b78c3c89b0a256427a78ee01e12825dde60e824fa79b15b01",
+          "cb258d9f8109e6c903a5c03d5039e5b6ee51493f8eff0e0f22ceb2ab0221990d"
+        ],
+        [
+          "e3c662eeec307e2d1b846b3a05bb9c523fbf81cb7759b6f54795691915b0dccf",
+          "f5cc88df4ffabb320b2dfef1829a6e33080ce2b5806e431160d19b3676c91534"
+        ],
+        [
+          "640e991a8a2ec32be367b7555d2535763235f9bac409b80a80eebe6f8f94435c",
+          "5bbc95449b390d7c2089498e198700c575d8e57547fddc1b5d39a0836c950a77"
+        ]
+      ],
+      "run_sha256": "de8db3c2dd572cb014a1b9399f7bca3478499014be3ef8694c96e00ce1824e20"
+    },
+    "single_full_original512_reference_reverse": {
+      "independent_export_max_abs_error": 0.0,
+      "schedules": [],
+      "run_sha256": "3641f9a74fb51f740892ab0aeb37e99a3612cd84af65ea90aeec273c9b8d3706"
+    },
+    "source_soup_training_calibration_reverse": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        [
+          "fdce956bcf07b81b78c3c89b0a256427a78ee01e12825dde60e824fa79b15b01",
+          "cb258d9f8109e6c903a5c03d5039e5b6ee51493f8eff0e0f22ceb2ab0221990d"
+        ],
+        [
+          "e3c662eeec307e2d1b846b3a05bb9c523fbf81cb7759b6f54795691915b0dccf",
+          "f5cc88df4ffabb320b2dfef1829a6e33080ce2b5806e431160d19b3676c91534"
+        ],
+        [
+          "640e991a8a2ec32be367b7555d2535763235f9bac409b80a80eebe6f8f94435c",
+          "5bbc95449b390d7c2089498e198700c575d8e57547fddc1b5d39a0836c950a77"
+        ]
+      ],
+      "run_sha256": "419143b9c1d5dca4b839b4adfc075d089f131e65f8786f8fbf1c7cdd35b6cbe4"
+    },
+    "source_soup_development_calibration_reverse": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        [
+          "fdce956bcf07b81b78c3c89b0a256427a78ee01e12825dde60e824fa79b15b01",
+          "cb258d9f8109e6c903a5c03d5039e5b6ee51493f8eff0e0f22ceb2ab0221990d"
+        ],
+        [
+          "e3c662eeec307e2d1b846b3a05bb9c523fbf81cb7759b6f54795691915b0dccf",
+          "f5cc88df4ffabb320b2dfef1829a6e33080ce2b5806e431160d19b3676c91534"
+        ],
+        [
+          "640e991a8a2ec32be367b7555d2535763235f9bac409b80a80eebe6f8f94435c",
+          "5bbc95449b390d7c2089498e198700c575d8e57547fddc1b5d39a0836c950a77"
+        ]
+      ],
+      "run_sha256": "9a3441d5f30c5da24979a9d5a3ee4680623a50715d0f8f8db6aca24999b36c7f"
+    },
+    "source_soup_original512_reference_reverse": {
+      "independent_export_max_abs_error": 0.0,
+      "schedules": [],
+      "run_sha256": "cb77604b8994639030461c3af9ac81479795eaf2657a7e8e5f8ce73ded4606e6"
+    }
+  },
+  "completed_fit_runs": 8,
+  "completed_reference_replays": 4,
+  "new_scientific_updates": 864,
+  "new_training_CE_examples": 13824,
+  "official_test_read": false,
+  "new_source_training_steps": 0,
+  "interpretation_scope": "Four selected development tasks, one frozen source bank, one calibration split, two orders. All source checkpoints were selected on the entire original development pool, so the development remainder is not a blind holdout. No official-test access or exact foundation-training exclusion claim. Calibration provenance is a baseline diagnostic, not a novel merging method.",
+  "new_method_contribution_established": false
+}

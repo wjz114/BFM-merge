@@ -1,0 +1,79 @@
+[
+  {
+    "task": "MI_BCIC_IV2a",
+    "seed": 0,
+    "device": "cpu",
+    "calibration": 512,
+    "validation": 788,
+    "teacher_ckpt_sha256": "5ef45da7616d507aad9b9de1f4778fe1841683d89a24fea3c658f7da0ea23867",
+    "teacher_bacc": 0.7505693334581368,
+    "calibration_encoder_seconds": 5.11461918707937,
+    "validation_encoder_seconds": 7.333797911996953,
+    "class_counts": {
+      "32": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "128": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "512": [
+        128,
+        128,
+        128,
+        128
+      ]
+    }
+  },
+  {
+    "task": "EMO_FACED",
+    "seed": 0,
+    "device": "cpu",
+    "calibration": 512,
+    "validation": 1680,
+    "teacher_ckpt_sha256": "2a68b74837b5a716b639c4d0f542568a833c90d0738842f4be64e084bb5b35df",
+    "teacher_bacc": 0.5807098765432098,
+    "calibration_encoder_seconds": 13.157406719983555,
+    "validation_encoder_seconds": 39.691410660976544,
+    "class_counts": {
+      "32": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3,
+        3
+      ],
+      "128": [
+        15,
+        15,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14
+      ],
+      "512": [
+        57,
+        57,
+        57,
+        57,
+        57,
+        57,
+        57,
+        57,
+        56
+      ]
+    }
+  }
+]

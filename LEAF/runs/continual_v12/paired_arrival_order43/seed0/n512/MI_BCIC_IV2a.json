@@ -1,0 +1,16 @@
+{
+  "seed": 0,
+  "budget": 512,
+  "task": "MI_BCIC_IV2a",
+  "validation": 788,
+  "teacher": 0.7505693334581368,
+  "expert_independent": 0.7303910289193781,
+  "merged_independent": 0.5599344517688913,
+  "merged_shared": 0.3917336517870426,
+  "probe64": {
+    "teacher": 0.6875,
+    "expert_independent": 0.75,
+    "merged_independent": 0.71875,
+    "merged_shared": 0.390625
+  }
+}

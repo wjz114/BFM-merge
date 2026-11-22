@@ -1,0 +1,163 @@
+{
+  "created_unix": 1794922743.5347004,
+  "comparison_sha256": "bfe4da400bbdaddf304e997737e912137e49ee3ea471d076cc082843df15aa9f",
+  "decision": "Close the fixed hard task-halfspace projection candidate; retain the simultaneous mean-gradient control as a stronger pilot baseline and investigate economical task-gradient reuse.",
+  "results": {
+    "simultaneous_mean_adam": {
+      "forward": 0.7685218738548318,
+      "reverse": 0.7768359999106038,
+      "mean": 0.7726789368827178
+    },
+    "euclidean_step_projection": {
+      "forward": 0.765620460622465,
+      "reverse": 0.7735512008853296,
+      "mean": 0.7695858307538973
+    },
+    "native_metric_step_projection": {
+      "forward": 0.7695541184315038,
+      "reverse": 0.7721435633970462,
+      "mean": 0.770848840914275
+    },
+    "original_sequential_ce": {
+      "forward": 0.758290326767421,
+      "reverse": 0.7635343957074366,
+      "mean": 0.7609123612374289
+    }
+  },
+  "contrasts": {
+    "native_metric_step_projection_minus_euclidean_step_projection": {
+      "forward": 0.393365780903876,
+      "reverse": -0.14076374882834308,
+      "mean_pp": 0.12630101603776644,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 0.5794956713147448,
+          "EMO_FACED": 1.1265432098765404,
+          "ADHD_AliMotie": 0.909090909090915,
+          "Workload": -1.041666666666663
+        },
+        "reverse": {
+          "MI_OpenBMI": -0.2613383788147017,
+          "EMO_FACED": -0.4783950617283983,
+          "ADHD_AliMotie": 0.0,
+          "Workload": 0.17667844522968323
+        }
+      }
+    },
+    "native_metric_step_projection_minus_simultaneous_mean_adam": {
+      "forward": 0.10322445766719479,
+      "reverse": -0.4692436513557663,
+      "mean_pp": -0.18300959684428575,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 0.818507222585585,
+          "EMO_FACED": 0.7870370370370416,
+          "ADHD_AliMotie": 0.909090909090915,
+          "Workload": -2.1017373380447624
+        },
+        "reverse": {
+          "MI_OpenBMI": -0.48897183527953914,
+          "EMO_FACED": -0.8487654320987748,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -0.5392373380447513
+        }
+      }
+    },
+    "euclidean_step_projection_minus_simultaneous_mean_adam": {
+      "forward": -0.2901413232366812,
+      "reverse": -0.3284799025274232,
+      "mean_pp": -0.3093106128820522,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 0.23901155127084017,
+          "EMO_FACED": -0.3395061728394988,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -1.0600706713780994
+        },
+        "reverse": {
+          "MI_OpenBMI": -0.22763345646483746,
+          "EMO_FACED": -0.37037037037037646,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -0.7159157832744345
+        }
+      }
+    },
+    "simultaneous_mean_adam_minus_original_sequential_ce": {
+      "forward": 1.0231547087410808,
+      "reverse": 1.3301604203167172,
+      "mean_pp": 1.176657564528899,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -1.1796365020731003,
+          "EMO_FACED": -1.9753086419753152,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 8.156654888103654
+        },
+        "reverse": {
+          "MI_OpenBMI": 1.6307886951829942,
+          "EMO_FACED": -2.206790123456792,
+          "ADHD_AliMotie": 0.0,
+          "Workload": 5.8966431095406335
+        }
+      }
+    },
+    "euclidean_step_projection_minus_original_sequential_ce": {
+      "forward": 0.7330133855043997,
+      "reverse": 1.001680517789294,
+      "mean_pp": 0.8673469516468468,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -0.9406249508022602,
+          "EMO_FACED": -2.314814814814814,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 7.096584216725555
+        },
+        "reverse": {
+          "MI_OpenBMI": 1.4031552387181567,
+          "EMO_FACED": -2.5771604938271686,
+          "ADHD_AliMotie": 0.0,
+          "Workload": 5.180727326266199
+        }
+      }
+    },
+    "native_metric_step_projection_minus_original_sequential_ce": {
+      "forward": 1.1263791664082756,
+      "reverse": 0.8609167689609509,
+      "mean_pp": 0.9936479676846133,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -0.3611292794875154,
+          "EMO_FACED": -1.1882716049382736,
+          "ADHD_AliMotie": 0.0,
+          "Workload": 6.054917550058891
+        },
+        "reverse": {
+          "MI_OpenBMI": 1.141816859903455,
+          "EMO_FACED": -3.055555555555567,
+          "ADHD_AliMotie": 0.0,
+          "Workload": 5.357405771495882
+        }
+      }
+    }
+  },
+  "evidence": [
+    "Native-metric projection is0.1830pp below matched simultaneous mean-Adam; its forward effect is+0.1032pp and reverse effect-0.4692pp.",
+    "Euclidean projection is0.3093pp below the matched control, negative in both orders.",
+    "Native-metric versus Euclidean projection is+0.1263pp on average but signs disagree; this does not establish a useful geometry contribution.",
+    "Simultaneous mean-Adam improves over original sequential CE by1.1767pp, positive in both orders, but uses5568 rather than1728 CE example exposures per run and the same108 optimizer calls. Unique original round batches are reused; task synchronization and repeated computation both change.",
+    "Local task-gradient conflicts are real: controls had16/25 violating updates. Correcting them did not translate into a better matched final model."
+  ],
+  "no_followup_sweeps": [
+    "No projection-margin,metric-damping,learning-rate or averaging-window sweep.",
+    "No full16 expansion of this projected-step configuration."
+  ],
+  "limits": [
+    "Four selected tasks,one source/calibration seed,two orders; development data already exposed.",
+    "The positive mean-gradient control is a standard optimization baseline,not a new method contribution.",
+    "The hard constraints only target sampled first-order loss; they do not guarantee finite-step or development improvement."
+  ],
+  "overall_goal_achieved": false,
+  "novelty_established": false,
+  "superiority_of_new_operator_established": false,
+  "next_action": "Specify a task-gradient cache candidate which approximates synchronized multi-task updates with less repeated computation; compare explicit SAG/SAGA-style baselines and original sequential CE before attributing novelty. First validate within-stage reuse; changing merge coordinates across arrivals require a separately justified treatment, not a renamed optimizer."
+}

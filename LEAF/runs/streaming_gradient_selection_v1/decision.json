@@ -1,0 +1,17 @@
+{
+  "created_unix": 1794901688.5914757,
+  "comparison_sha256": "5a343205105fe73c92ad0a8c89504e47e76d4242bebecf7cd065e7f6965e1358",
+  "all_checks_pass": true,
+  "figure_inspected": true,
+  "mean_gain_over_orders_pp": {
+    "gradient_match_minus_random_blocks": 0.03862016777784469,
+    "gradient_match_minus_old_rows": -0.04439103360515892,
+    "random_blocks_minus_old_rows": -0.08301120138300369
+  },
+  "decision": "Stop this paired-block gradient-selection branch and its random control; no second bank or block-size/RMS/selection variants.",
+  "reason": "Candidate does not improve the strong original512 bilateral reference on average and has opposing effects across orders. Its small average gain over the same-pool random control also reverses sign between orders. Both new arms incur extra candidate data access and960 backward probes per run.",
+  "mechanism_observation": "The matching objective decreases at every optimized arrival but does not yield a consistent final development gain. This limits the usefulness of the chosen single-initialization gradient objective; it is not a proof that all calibration selection is ineffective.",
+  "scope": "One exposed bank, two correlated orders. Task-deletion ranges are sensitivity, not confidence intervals; no new performance threshold.",
+  "next": "Audit and concretize adaptive optimization in the changing row-wise old/new expert span, including closest transport/preconditioning prior art.",
+  "overall_goal_achieved": false
+}

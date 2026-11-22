@@ -1,0 +1,818 @@
+{
+  "sources": {
+    "runs/streaming_fisher_residual_v1/fisher_residual_forward/run.json": "22141927ea84a717f1221e4f433f5eb6107d4f94efb9a0dc5d010da68fff79c3",
+    "runs/streaming_fisher_residual_v1/shifted_fisher_residual_forward/run.json": "af73a1e04c711564612c0a599bb9cbf486dfe15d379acd22295d9f364b42032f",
+    "runs/streaming_strict_history_v1/old_rows_forward/run.json": "a5a60808433a112515febc2fd7625797237822673a43f6990be0df223bfbe408",
+    "runs/streaming_column_residual_v1/raw_columns_forward/run.json": "fd64aad78dc2268535b8d0f55db20b6223840b2d95f81d381d5ba2a621068c3f",
+    "runs/streaming_fisher_residual_v1/fisher_residual_reverse/run.json": "bfc59858a40fa0caa13b20a30868f5818fa418241cca502f5ce12a108ebefbd1",
+    "runs/streaming_fisher_residual_v1/shifted_fisher_residual_reverse/run.json": "5e809274d2419074e670ab8936fdaf289c39dc2d2a3d424f8bc6cbc6cbe4c6b3",
+    "runs/streaming_strict_history_v1/old_rows_reverse/run.json": "c9b1a70e2cbe0e640749b80cf23157c10b7bbed36e597f4bc7b618b5d54b0efd",
+    "runs/streaming_column_residual_v1/raw_columns_reverse/run.json": "969aa19c6fa9f14a5480036ba0261c02fefcc0c6d86e109fe0c50f66ffda6f35"
+  },
+  "plan_sha256": "f80a15f8c5282da246131387a3b5e7972a32e8e5c8250ac63b49c2a4a3f71f90",
+  "orders": {
+    "forward": {
+      "macro_BAcc": {
+        "fisher_residual": 0.6355376095717755,
+        "shifted_fisher_residual": 0.6379261205020539,
+        "old_rows": 0.6370832815325755,
+        "raw_columns": 0.6379238259855814
+      },
+      "contrasts": {
+        "fisher_residual_minus_old_rows": {
+          "gain_pp": -0.15456719608000247,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.9413405542491815,
+            "MI_BCIC_IV2a": -1.558026719596961,
+            "MI_ShanghaiU": 0.37520970447798563,
+            "MI_BCIC_Upperlimb": 0.6808430302406299,
+            "MI_HighGamma": -0.1820646035690099,
+            "MI_Cho2017": -1.2995049504950562,
+            "MI_Shin2017A": -2.4375538329026725,
+            "MI_PhysioNet": 0.8367389597146335,
+            "EMO_FACED": 0.5864197530864201,
+            "EMO_SEED_3_seg4": 0.2680516444397152,
+            "EMO_SEED_4_seg4": -0.36475546215806176,
+            "EMO_SEED_5_seg4": 0.30846029213241755,
+            "EMO_SEED_7_seg4": 0.10561869889234576,
+            "SSVEP_OpenBMI": -0.5843933373617771,
+            "Workload": -0.009202002355701566,
+            "ADHD_AliMotie": 1.7424242424242342
+          },
+          "improved": 8,
+          "declined": 8,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.2810332919802849,
+            -0.0023680869584911334
+          ]
+        },
+        "fisher_residual_minus_shifted_fisher_residual": {
+          "gain_pp": -0.2388510930278368,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.9910034334653317,
+            "MI_BCIC_IV2a": -1.577543789413205,
+            "MI_ShanghaiU": 0.9309265711704762,
+            "MI_BCIC_Upperlimb": 1.5141763635739602,
+            "MI_HighGamma": 0.981929071606058,
+            "MI_Cho2017": -0.6188118811881305,
+            "MI_Shin2017A": -2.454780361757114,
+            "MI_PhysioNet": -0.341523115933251,
+            "EMO_FACED": 1.0185185185185242,
+            "EMO_SEED_3_seg4": 0.2988633657832751,
+            "EMO_SEED_4_seg4": -0.8629276202328173,
+            "EMO_SEED_5_seg4": 0.04169198033966426,
+            "EMO_SEED_7_seg4": -0.30438786295300946,
+            "SSVEP_OpenBMI": -0.05251973501274598,
+            "Workload": -1.404225559481742,
+            "ADHD_AliMotie": 0.0
+          },
+          "improved": 6,
+          "declined": 9,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            -0.3557195901346233,
+            -0.09112247511255166
+          ]
+        },
+        "shifted_fisher_residual_minus_old_rows": {
+          "gain_pp": 0.08428389694783436,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.0496628792161502,
+            "MI_BCIC_IV2a": 0.019517069816243904,
+            "MI_ShanghaiU": -0.5557168666924905,
+            "MI_BCIC_Upperlimb": -0.8333333333333304,
+            "MI_HighGamma": -1.163993675175068,
+            "MI_Cho2017": -0.6806930693069257,
+            "MI_Shin2017A": 0.017226528854441536,
+            "MI_PhysioNet": 1.1782620756478845,
+            "EMO_FACED": -0.432098765432104,
+            "EMO_SEED_3_seg4": -0.030811721343559917,
+            "EMO_SEED_4_seg4": 0.49817215807475557,
+            "EMO_SEED_5_seg4": 0.2667683117927533,
+            "EMO_SEED_7_seg4": 0.4100065618453552,
+            "SSVEP_OpenBMI": -0.5318736023490311,
+            "Workload": 1.3950235571260405,
+            "ADHD_AliMotie": 1.7424242424242342
+          },
+          "improved": 9,
+          "declined": 7,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.026258792750592293,
+            0.16750240175602785
+          ]
+        },
+        "fisher_residual_minus_raw_columns": {
+          "gain_pp": -0.2386216413805785,
+          "per_task_pp": {
+            "MI_OpenBMI": -1.2967807863336955,
+            "MI_BCIC_IV2a": -3.6457501193705943,
+            "MI_ShanghaiU": 0.6804103755323143,
+            "MI_BCIC_Upperlimb": 1.2473540887195655,
+            "MI_HighGamma": 1.163993675175068,
+            "MI_Cho2017": -0.3712871287128827,
+            "MI_Shin2017A": -3.2988802756244606,
+            "MI_PhysioNet": -0.6108638830391921,
+            "EMO_FACED": 0.462962962962965,
+            "EMO_SEED_3_seg4": 0.1718726324220099,
+            "EMO_SEED_4_seg4": -0.24194570054960063,
+            "EMO_SEED_5_seg4": -0.11439062853949578,
+            "EMO_SEED_7_seg4": -0.39899097229035285,
+            "SSVEP_OpenBMI": 1.1811037003645275,
+            "Workload": 0.3441548881036649,
+            "ADHD_AliMotie": 0.9090909090909038
+          },
+          "improved": 8,
+          "declined": 8,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.33768669005392143,
+            -0.011479742847910786
+          ]
+        }
+      },
+      "gain_over_stages_pp": {
+        "fisher_residual_minus_old_rows": {
+          "1": 0.0,
+          "4": -0.4700879412122827,
+          "8": -0.694385754041027,
+          "12": 0.05074853708735283,
+          "16": -0.15456719608000213
+        },
+        "fisher_residual_minus_shifted_fisher_residual": {
+          "1": 0.0,
+          "4": -0.37111175013716524,
+          "8": -0.024833751558117623,
+          "12": 0.16566476969918087,
+          "16": -0.23885109302783647
+        },
+        "shifted_fisher_residual_minus_old_rows": {
+          "1": 0.0,
+          "4": -0.09897619107511746,
+          "8": -0.6695520024829094,
+          "12": -0.11491623261182804,
+          "16": 0.08428389694783434
+        },
+        "fisher_residual_minus_raw_columns": {
+          "1": 0.0,
+          "4": -0.2815611219765146,
+          "8": -0.24289922807742004,
+          "12": -0.19675114097050805,
+          "16": -0.2386216413805875
+        }
+      },
+      "audits_and_costs": {
+        "fisher_residual": {
+          "coefficient_count": 521116,
+          "extra_row_coefficients": 173450,
+          "moment_bytes": 618037248,
+          "algorithmic_retained_coefficient_bytes": 0,
+          "residual_geometry_by_stage": {
+            "2": {
+              "nonzero_rows": 70531,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.489858628208454e-08,
+              "max_relative_target_norm_error": 5.337610227058604e-08
+            },
+            "3": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.8002527634184404e-08,
+              "max_relative_target_norm_error": 3.4390474304150636e-08
+            },
+            "4": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 9.830392367226446e-09,
+              "max_relative_target_norm_error": 2.369645731421432e-08
+            },
+            "5": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.3107962731593353e-08,
+              "max_relative_target_norm_error": 2.1023956350752713e-08
+            },
+            "6": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 7.996920371109724e-09,
+              "max_relative_target_norm_error": 1.746398968840177e-08
+            },
+            "7": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.2067163721538373e-08,
+              "max_relative_target_norm_error": 1.8161169104268446e-08
+            },
+            "8": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.2699645615645078e-08,
+              "max_relative_target_norm_error": 1.8543514006326722e-08
+            },
+            "9": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.2163791231119647e-08,
+              "max_relative_target_norm_error": 2.977123867082773e-08
+            },
+            "10": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1871892958519734e-08,
+              "max_relative_target_norm_error": 2.158423793201824e-08
+            },
+            "11": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1401918898677369e-08,
+              "max_relative_target_norm_error": 1.5688764323398142e-08
+            },
+            "12": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.2291996158342364e-08,
+              "max_relative_target_norm_error": 1.6475333792534487e-08
+            },
+            "13": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1193223888352647e-08,
+              "max_relative_target_norm_error": 1.7464473066589282e-08
+            },
+            "14": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.3155748213209654e-08,
+              "max_relative_target_norm_error": 2.5053956341152995e-08
+            },
+            "15": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1870994962960211e-08,
+              "max_relative_target_norm_error": 1.7521411996536086e-08
+            },
+            "16": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.0239964448564369e-08,
+              "max_relative_target_norm_error": 2.841504148302535e-08
+            }
+          },
+          "moment_update_seconds": 0.8970177859882824,
+          "training_and_export_seconds": 431.7878076919005,
+          "calibration_including_setup_seconds": 463.2000788890291,
+          "elapsed_seconds": 804.3838627040386,
+          "peak_reserved_bytes": 5819596800,
+          "required_Fisher_payload_examples": 2048,
+          "required_Fisher_payload_VJPs": 128,
+          "actual_new_Fisher_estimation_examples": 0,
+          "actual_new_Fisher_estimation_VJPs": 0
+        },
+        "shifted_fisher_residual": {
+          "coefficient_count": 521116,
+          "extra_row_coefficients": 173450,
+          "moment_bytes": 618037248,
+          "algorithmic_retained_coefficient_bytes": 0,
+          "residual_geometry_by_stage": {
+            "2": {
+              "nonzero_rows": 70532,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.2369036905398108e-08,
+              "max_relative_target_norm_error": 5.2283302842890946e-08
+            },
+            "3": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.0442382037474335e-08,
+              "max_relative_target_norm_error": 3.253850615953126e-08
+            },
+            "4": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.223495897686908e-08,
+              "max_relative_target_norm_error": 4.193047965295241e-08
+            },
+            "5": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.4248224023789317e-08,
+              "max_relative_target_norm_error": 2.2034125292637473e-08
+            },
+            "6": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.119105380271253e-08,
+              "max_relative_target_norm_error": 2.346155194209355e-08
+            },
+            "7": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1862167676173426e-08,
+              "max_relative_target_norm_error": 2.8457426205712908e-08
+            },
+            "8": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.3907018243007864e-08,
+              "max_relative_target_norm_error": 1.4620276086237094e-08
+            },
+            "9": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.3334470843550629e-08,
+              "max_relative_target_norm_error": 1.8322840644199423e-08
+            },
+            "10": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1016413963644584e-08,
+              "max_relative_target_norm_error": 1.8265661906510523e-08
+            },
+            "11": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.23442627439443e-08,
+              "max_relative_target_norm_error": 1.738153607764417e-08
+            },
+            "12": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1931180345455203e-08,
+              "max_relative_target_norm_error": 1.8868055019652218e-08
+            },
+            "13": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 2.056436103926866e-08,
+              "max_relative_target_norm_error": 1.6647850642917237e-08
+            },
+            "14": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.2827116889536583e-08,
+              "max_relative_target_norm_error": 2.329769226332484e-08
+            },
+            "15": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.231779141997072e-08,
+              "max_relative_target_norm_error": 1.7707867054504803e-08
+            },
+            "16": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.3144872686046532e-08,
+              "max_relative_target_norm_error": 2.6025456440421927e-08
+            }
+          },
+          "moment_update_seconds": 1.866539385926444,
+          "training_and_export_seconds": 428.62702425400494,
+          "calibration_including_setup_seconds": 474.10327329294523,
+          "elapsed_seconds": 822.1194015079527,
+          "peak_reserved_bytes": 5819596800,
+          "required_Fisher_payload_examples": 2048,
+          "required_Fisher_payload_VJPs": 128,
+          "actual_new_Fisher_estimation_examples": 0,
+          "actual_new_Fisher_estimation_VJPs": 0
+        },
+        "old_rows": {
+          "coefficient_count": 347666,
+          "history_used_by_merger": false,
+          "logical_history_bytes": 0,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.378810449910816,
+          "training_and_export_seconds": 345.64870772510767,
+          "elapsed_seconds": 621.8291295459494,
+          "peak_reserved_bytes": 5725224960
+        },
+        "raw_columns": {
+          "coefficient_count": 460306,
+          "additional_column_coefficients": 112640,
+          "persistent_auxiliary_history_bytes": 0,
+          "training_and_export_seconds": 434.8295127309975,
+          "calibration_including_setup_seconds": 452.6813470060006,
+          "elapsed_seconds": 791.6266320549767,
+          "peak_reserved_bytes": 5725224960
+        }
+      }
+    },
+    "reverse": {
+      "macro_BAcc": {
+        "fisher_residual": 0.6259553650269685,
+        "shifted_fisher_residual": 0.6341212353860639,
+        "old_rows": 0.6304747315597239,
+        "raw_columns": 0.631267730668821
+      },
+      "contrasts": {
+        "fisher_residual_minus_old_rows": {
+          "gain_pp": -0.4519366532755434,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.09431653430387321,
+            "MI_BCIC_IV2a": 1.2363286050845468,
+            "MI_ShanghaiU": 0.9752871338237212,
+            "MI_BCIC_Upperlimb": 1.412830810421184,
+            "MI_HighGamma": 1.358256155409987,
+            "MI_Cho2017": -2.3514851485148536,
+            "MI_Shin2017A": -2.6442721791559043,
+            "MI_PhysioNet": -0.4167334117343602,
+            "EMO_FACED": -1.0802469135802517,
+            "EMO_SEED_3_seg4": -0.30833613752957456,
+            "EMO_SEED_4_seg4": -0.2165480331064784,
+            "EMO_SEED_5_seg4": -0.27963643296068375,
+            "EMO_SEED_7_seg4": 0.39055605792481796,
+            "SSVEP_OpenBMI": -0.7516066057909887,
+            "Workload": -3.551972909305068,
+            "ADHD_AliMotie": -0.909090909090915
+          },
+          "improved": 5,
+          "declined": 11,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.5762544841886584,
+            -0.24526756954024176
+          ]
+        },
+        "fisher_residual_minus_shifted_fisher_residual": {
+          "gain_pp": -0.8165870359095359,
+          "per_task_pp": {
+            "MI_OpenBMI": 1.9974996815564694,
+            "MI_BCIC_IV2a": 1.4747182299247763,
+            "MI_ShanghaiU": 0.5542650664601911,
+            "MI_BCIC_Upperlimb": 0.17860616254190553,
+            "MI_HighGamma": -1.407047662073646,
+            "MI_Cho2017": -0.24752475247524774,
+            "MI_Shin2017A": -7.028423772609827,
+            "MI_PhysioNet": 0.4018378661374111,
+            "EMO_FACED": 0.23148148148147696,
+            "EMO_SEED_3_seg4": -0.511512455551022,
+            "EMO_SEED_4_seg4": 0.5124348712011007,
+            "EMO_SEED_5_seg4": 0.02746718273209936,
+            "EMO_SEED_7_seg4": 0.27996380199019066,
+            "SSVEP_OpenBMI": -0.6381835997789298,
+            "Workload": -8.890974676089524,
+            "ADHD_AliMotie": 0.0
+          },
+          "improved": 9,
+          "declined": 6,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            -1.0041928170739363,
+            -0.27829452656420334
+          ]
+        },
+        "shifted_fisher_residual_minus_old_rows": {
+          "gain_pp": 0.3646503826339926,
+          "per_task_pp": {
+            "MI_OpenBMI": -2.0918162158603426,
+            "MI_BCIC_IV2a": -0.23838962484022952,
+            "MI_ShanghaiU": 0.4210220673635301,
+            "MI_BCIC_Upperlimb": 1.2342246478792784,
+            "MI_HighGamma": 2.765303817483633,
+            "MI_Cho2017": -2.103960396039606,
+            "MI_Shin2017A": 4.384151593453922,
+            "MI_PhysioNet": -0.8185712778717713,
+            "EMO_FACED": -1.3117283950617287,
+            "EMO_SEED_3_seg4": 0.20317631802144742,
+            "EMO_SEED_4_seg4": -0.7289829043075791,
+            "EMO_SEED_5_seg4": -0.3071036156927831,
+            "EMO_SEED_7_seg4": 0.11059225593462729,
+            "SSVEP_OpenBMI": -0.1134230060120589,
+            "Workload": 5.339001766784457,
+            "ADHD_AliMotie": -0.909090909090915
+          },
+          "improved": 7,
+          "declined": 9,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.03302695702396162,
+            0.5292244345455658
+          ]
+        },
+        "fisher_residual_minus_raw_columns": {
+          "gain_pp": -0.5312365641852471,
+          "per_task_pp": {
+            "MI_OpenBMI": 1.253093195899313,
+            "MI_BCIC_IV2a": 0.16527016164843422,
+            "MI_ShanghaiU": 1.1696670538133946,
+            "MI_BCIC_Upperlimb": 1.2336525589537795,
+            "MI_HighGamma": 1.9695053083352176,
+            "MI_Cho2017": -1.980198019801982,
+            "MI_Shin2017A": -4.565030146425498,
+            "MI_PhysioNet": 0.25381032940157144,
+            "EMO_FACED": -0.30864197530864335,
+            "EMO_SEED_3_seg4": -0.7793943723224728,
+            "EMO_SEED_4_seg4": -0.6048944035957071,
+            "EMO_SEED_5_seg4": -0.2128303405798171,
+            "EMO_SEED_7_seg4": 0.2697936854096028,
+            "SSVEP_OpenBMI": -0.14848874768935705,
+            "Workload": -7.124190223792692,
+            "ADHD_AliMotie": 0.9090909090909038
+          },
+          "improved": 8,
+          "declined": 8,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.6979526890199447,
+            -0.09170632021141743
+          ]
+        }
+      },
+      "gain_over_stages_pp": {
+        "fisher_residual_minus_old_rows": {
+          "1": 0.0,
+          "4": 0.09834995438995353,
+          "8": -0.0003388716948604653,
+          "12": 0.35060791017225146,
+          "16": -0.451936653275542
+        },
+        "fisher_residual_minus_shifted_fisher_residual": {
+          "1": 0.0,
+          "4": -0.6908916147427946,
+          "8": -0.15623160169222494,
+          "12": 0.015346841038821335,
+          "16": -0.816587035909544
+        },
+        "shifted_fisher_residual_minus_old_rows": {
+          "1": 0.0,
+          "4": 0.7892415691327481,
+          "8": 0.15589272999736448,
+          "12": 0.3352610691334301,
+          "16": 0.36465038263400196
+        },
+        "fisher_residual_minus_raw_columns": {
+          "1": 0.0,
+          "4": 0.04466733721429916,
+          "8": -0.5880103534444459,
+          "12": 0.5067250451658345,
+          "16": -0.5312365641852557
+        }
+      },
+      "audits_and_costs": {
+        "fisher_residual": {
+          "coefficient_count": 521116,
+          "extra_row_coefficients": 173450,
+          "moment_bytes": 618037248,
+          "algorithmic_retained_coefficient_bytes": 0,
+          "residual_geometry_by_stage": {
+            "2": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.673135774959039e-08,
+              "max_relative_target_norm_error": 5.395477882413987e-08
+            },
+            "3": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.3396742222265897e-08,
+              "max_relative_target_norm_error": 3.527351634493497e-08
+            },
+            "4": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1719110836121845e-08,
+              "max_relative_target_norm_error": 3.657552944869495e-08
+            },
+            "5": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.3519643079664463e-08,
+              "max_relative_target_norm_error": 2.5883337084527253e-08
+            },
+            "6": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.176590255232143e-08,
+              "max_relative_target_norm_error": 1.8005922071890155e-08
+            },
+            "7": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.2599402699177417e-08,
+              "max_relative_target_norm_error": 2.3439827526630544e-08
+            },
+            "8": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.2321577008057894e-08,
+              "max_relative_target_norm_error": 1.8446806503763357e-08
+            },
+            "9": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 9.907651793041141e-09,
+              "max_relative_target_norm_error": 1.797757882097425e-08
+            },
+            "10": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1974437166470615e-08,
+              "max_relative_target_norm_error": 1.7856177195374914e-08
+            },
+            "11": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1490328559667144e-08,
+              "max_relative_target_norm_error": 2.1045971879585296e-08
+            },
+            "12": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.6600752909128494e-08,
+              "max_relative_target_norm_error": 1.8875995344892786e-08
+            },
+            "13": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.0295370935003782e-08,
+              "max_relative_target_norm_error": 2.0479140795567198e-08
+            },
+            "14": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.0402471465852683e-08,
+              "max_relative_target_norm_error": 1.59458560488071e-08
+            },
+            "15": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1261380119659178e-08,
+              "max_relative_target_norm_error": 1.9239004931364715e-08
+            },
+            "16": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.3243610724748069e-08,
+              "max_relative_target_norm_error": 2.4181466276718388e-08
+            }
+          },
+          "moment_update_seconds": 0.8758563479641452,
+          "training_and_export_seconds": 432.07002524094423,
+          "calibration_including_setup_seconds": 467.1333009151276,
+          "elapsed_seconds": 912.7640229320386,
+          "peak_reserved_bytes": 6029312000,
+          "required_Fisher_payload_examples": 2048,
+          "required_Fisher_payload_VJPs": 128,
+          "actual_new_Fisher_estimation_examples": 0,
+          "actual_new_Fisher_estimation_VJPs": 0
+        },
+        "shifted_fisher_residual": {
+          "coefficient_count": 521116,
+          "extra_row_coefficients": 173450,
+          "moment_bytes": 618037248,
+          "algorithmic_retained_coefficient_bytes": 0,
+          "residual_geometry_by_stage": {
+            "2": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.628279463610086e-08,
+              "max_relative_target_norm_error": 5.07440339918601e-08
+            },
+            "3": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.4710996600127352e-08,
+              "max_relative_target_norm_error": 3.160045604427724e-08
+            },
+            "4": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.4664289476183132e-08,
+              "max_relative_target_norm_error": 3.929518754008063e-08
+            },
+            "5": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.3887347512546104e-08,
+              "max_relative_target_norm_error": 2.935450788651204e-08
+            },
+            "6": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.550736718234097e-08,
+              "max_relative_target_norm_error": 1.8122331448905884e-08
+            },
+            "7": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.5167164712979917e-08,
+              "max_relative_target_norm_error": 1.9759161567904082e-08
+            },
+            "8": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1457188132316286e-08,
+              "max_relative_target_norm_error": 1.9361786679083337e-08
+            },
+            "9": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1915867259675598e-08,
+              "max_relative_target_norm_error": 1.8457297852156514e-08
+            },
+            "10": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.2272298391177806e-08,
+              "max_relative_target_norm_error": 1.8669830916082947e-08
+            },
+            "11": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.287862809991728e-08,
+              "max_relative_target_norm_error": 2.0511687676284447e-08
+            },
+            "12": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.3445681154428146e-08,
+              "max_relative_target_norm_error": 2.001963980151711e-08
+            },
+            "13": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.346420000107297e-08,
+              "max_relative_target_norm_error": 2.081060226503891e-08
+            },
+            "14": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.285816013271901e-08,
+              "max_relative_target_norm_error": 1.873235377787197e-08
+            },
+            "15": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.122738754782219e-08,
+              "max_relative_target_norm_error": 2.3932191061913182e-08
+            },
+            "16": {
+              "nonzero_rows": 70538,
+              "total_rows": 173450,
+              "max_abs_cosine_to_old_or_new": 1.1245794319713776e-08,
+              "max_relative_target_norm_error": 1.7217915673828634e-08
+            }
+          },
+          "moment_update_seconds": 1.7580546309472993,
+          "training_and_export_seconds": 435.29942817700794,
+          "calibration_including_setup_seconds": 465.52165427897125,
+          "elapsed_seconds": 903.7095873099752,
+          "peak_reserved_bytes": 6029312000,
+          "required_Fisher_payload_examples": 2048,
+          "required_Fisher_payload_VJPs": 128,
+          "actual_new_Fisher_estimation_examples": 0,
+          "actual_new_Fisher_estimation_VJPs": 0
+        },
+        "old_rows": {
+          "coefficient_count": 347666,
+          "history_used_by_merger": false,
+          "logical_history_bytes": 0,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.405768615950365,
+          "training_and_export_seconds": 355.5574528538855,
+          "elapsed_seconds": 722.6228054689709,
+          "peak_reserved_bytes": 5913968640
+        },
+        "raw_columns": {
+          "coefficient_count": 460306,
+          "additional_column_coefficients": 112640,
+          "persistent_auxiliary_history_bytes": 0,
+          "training_and_export_seconds": 445.23183158191387,
+          "calibration_including_setup_seconds": 464.88064033183036,
+          "elapsed_seconds": 904.7451914209523,
+          "peak_reserved_bytes": 5913968640
+        }
+      }
+    }
+  },
+  "mean_gain_over_orders_pp": {
+    "fisher_residual_minus_old_rows": -0.30325192467777295,
+    "fisher_residual_minus_shifted_fisher_residual": -0.5277190644686863,
+    "shifted_fisher_residual_minus_old_rows": 0.22446713979091348,
+    "fisher_residual_minus_raw_columns": -0.3849291027829128
+  },
+  "checks": {
+    "four_new_complete_runs": true,
+    "actual_data_schedules_auxiliary_ids_match": true,
+    "strict_settings_match": true,
+    "first_expert_unchanged": true,
+    "checkpoint_and_coefficient_hashes_pass": true,
+    "fixed_coefficient_means_exact": true,
+    "bilateral_default_and_zero_residual_initial_coefficients_exact": true,
+    "residual_projection_and_scale_records_pass": true,
+    "original_expert_Fisher_moments_replay_exact": true,
+    "Fisher_payload_provenance_matches": true,
+    "native_exports_pass": true,
+    "coefficient_and_state_counts_match": true,
+    "storage_links_resolve": true,
+    "frozen_reference_audits_match": true
+  },
+  "new_scientific_updates": 6480,
+  "new_scientific_CE_example_passes": 103680,
+  "new_Fisher_estimation_examples": 0,
+  "new_Fisher_estimation_VJPs": 0,
+  "reused_Fisher_cache_examples_once": 2048,
+  "reused_Fisher_cache_VJPs_once": 128,
+  "scope": "One exposed expert bank and two correlated orders. Both arms preserve the bilateral model family and add173450 row coefficients from a Fisher consensus complement; total521116. Shifted Fisher preserves per-row importance multisets but changes coordinate assignment. Each arm follows its own calibrated trajectory; residual row norms match incoming rows where nonzero, but support can differ. No optimizer or coefficient-state transport. Original618037248byte moments and cached2048example128VJP Fisher payload are extra costs versus bilateral. Actual new Fisher estimation0. Existing cache was estimated with a non-strict backend; current training is strict. Task-deletion ranges are sensitivity, not confidence intervals. No new superior method is established by engineering."
+}

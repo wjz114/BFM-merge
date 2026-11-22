@@ -1,0 +1,135 @@
+{
+  "created_unix": 1794934172.8353136,
+  "status": "closed fixed projected covariance-operator residual candidate; research active",
+  "comparison": "runs/streaming_operator_residual_v1/comparison.json",
+  "results": {
+    "native_after_more_updates": {
+      "forward": 0.765881390182266,
+      "reverse": 0.7781712552979276
+    },
+    "operator_zero": {
+      "forward": 0.758290326767421,
+      "reverse": 0.7635343957074366
+    },
+    "operator_covariance": {
+      "forward": 0.7582719975458921,
+      "reverse": 0.7637035654666144
+    },
+    "operator_random": {
+      "forward": 0.7584109059482269,
+      "reverse": 0.7635343957074366
+    }
+  },
+  "contrasts": {
+    "operator_covariance_minus_operator_zero": {
+      "paired_effects_pp": {
+        "forward": -0.0018329221528889938,
+        "reverse": 0.016916975917780075
+      },
+      "mean_pp": 0.0075420268824455405,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.022452058147071075,
+        "EMO_FACED": 0.007716049382716639,
+        "ADHD_AliMotie": 0.0,
+        "Workload": 0.0
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.0025720164609055463,
+        "EMO_FACED": 0.007484019382357025,
+        "ADHD_AliMotie": 0.01005603584326257,
+        "Workload": 0.01005603584326257
+      }
+    },
+    "operator_covariance_minus_operator_random": {
+      "paired_effects_pp": {
+        "forward": -0.013890840233476975,
+        "reverse": 0.016916975917780075
+      },
+      "mean_pp": 0.0015130678421515498,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -0.0016637780140882352,
+        "EMO_FACED": 0.007716049382716639,
+        "ADHD_AliMotie": 0.0,
+        "Workload": 0.0
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.0025720164609055463,
+        "EMO_FACED": -0.000554592671362745,
+        "ADHD_AliMotie": 0.0020174237895428013,
+        "Workload": 0.0020174237895428013
+      }
+    },
+    "operator_covariance_minus_native_after_more_updates": {
+      "paired_effects_pp": {
+        "forward": -0.7609392636373835,
+        "reverse": -1.446768983131319
+      },
+      "mean_pp": -1.1038541233843513,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": -0.5137674947152726,
+        "EMO_FACED": 1.0416666666666796,
+        "ADHD_AliMotie": 0.0,
+        "Workload": -4.943315665488806
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -1.3005496662740423,
+        "EMO_FACED": -1.8190277200680265,
+        "ADHD_AliMotie": -1.4718054978458,
+        "Workload": 0.175966390650469
+      }
+    },
+    "operator_random_minus_operator_zero": {
+      "paired_effects_pp": {
+        "forward": 0.012057918080587982,
+        "reverse": 0.0
+      },
+      "mean_pp": 0.006028959040293991,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.02411583616115931,
+        "EMO_FACED": 0.0,
+        "ADHD_AliMotie": 0.0,
+        "Workload": 0.0
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.0,
+        "EMO_FACED": 0.00803861205371977,
+        "ADHD_AliMotie": 0.00803861205371977,
+        "Workload": 0.00803861205371977
+      }
+    }
+  },
+  "assessment": "Learned covariance corrections give +0.007542 percentage points over the exact ordinary baseline and +0.001513 points over equal-spectrum random corrections. Both contrasts change sign between arrival orders. The positive average over zero is not dominated by Workload, but its magnitude is extremely small and is almost matched by the random control. The result does not support useful information-specific superiority.",
+  "control_assessment": "The zero arm matches all eight historical prefix checkpoint hashes exactly. Nonzero gate norms are about1.36, and independent dense operator reconstruction is accurate to at most1.32e-8 absolute. Thus the candidate was active and implemented as specified; these checks do not establish a mechanism for the near-null accuracy result.",
+  "cost_assessment": {
+    "covariance_seconds": {
+      "forward": 162.08430536300875,
+      "reverse": 140.13202898896998
+    },
+    "native_after_reference_seconds": {
+      "forward": 100.47933202597778,
+      "reverse": 92.38969730300596
+    },
+    "covariance_over_native_wall_ratio": {
+      "forward": 1.61311089648868,
+      "reverse": 1.5167495194771106
+    },
+    "mean_gap_to_native_after_pp": -1.1038541233843513,
+    "scope": "Observed wall times on the same environment, not a controlled FLOPs benchmark. The native comparator uses288additional native updates and4608additional training-example exposures per run. Projected operator fitting uses fewer updates/examples but is slower in these runs."
+  },
+  "decision": "Do not expand this fixed covariance-operator candidate to a second bank or full16; do not search ranks, gate scales, layer subsets or averaging windows to rescue it. Keep the projection implementation and independent derivative checks available, but do not treat engineering correctness or positive tiny means as a new-method contribution.",
+  "costs": {
+    "scientific_four_task_runs": 6,
+    "coefficient_updates": 648,
+    "training_examples": 10368,
+    "native_updates": 0,
+    "source_training_updates": 0,
+    "engineering_coefficient_updates_separate": 16,
+    "engineering_training_examples_separate": 64,
+    "engineering_gradient_probe_examples_separate": 8
+  },
+  "next_action": "Select a different substantive merging operator from the accumulated evidence. Before another pilot, identify what expert information it adds beyond existing first-order coefficient fitting, output/feature distillation and tested operator covariance corrections; use a concrete matched comparator and preserve the original broader research objective.",
+  "novelty_established": false,
+  "superiority_established": false,
+  "overall_goal_achieved": false,
+  "scope": "One original expert bank,four exposed dev tasks,two actual arrival orders. Ordinary single LEAF checkpoint. Only the previous aggregate and incoming expert form correction directions; no future expert payload. Fixed original512 calibration and coefficient schedule. Projection costs extra runtime; no extra training examples/source training/test access. No superiority or novelty established."
+}

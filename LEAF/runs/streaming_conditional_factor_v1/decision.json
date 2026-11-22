@@ -1,0 +1,17 @@
+{
+  "created_unix": 1794896515.1526709,
+  "comparison_sha256": "84619d521c04feb7f8a985d435d35380832fb17f87fe70ffdc38a35ebef66dac",
+  "all_checks_pass": true,
+  "figure_inspected": true,
+  "mean_gain_over_orders_pp": {
+    "coupled_factors_minus_old_rows": -0.021235274946485194,
+    "coupled_factors_minus_factorized_control": -0.024729706893003522,
+    "factorized_control_minus_old_rows": 0.003494431946518377,
+    "coupled_factors_minus_raw_columns": -0.10291245305162498
+  },
+  "decision": "Stop both conditional-factor operators; no additional bank, gate-scale or conditional-factor variants.",
+  "reason": "Coupled operator loses to bilateral on forward and gains on reverse, averaging slightly negative. It also averages slightly below the factorized control. Control gain averages nearzero. Neither supports a stable improved method with added history and calibration structure.",
+  "scope": "One exposed expert bank and two correlated orders. No universal impossibility claim; no hard performance threshold invented.",
+  "next": "Implement the shared native-complement hybrid in next_operator_draft.json with unprojected-hybrid and matched native-only controls.",
+  "overall_goal_achieved": false
+}

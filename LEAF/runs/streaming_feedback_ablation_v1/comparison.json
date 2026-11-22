@@ -1,0 +1,475 @@
+{
+  "sources": {
+    "runs/streaming_feedback_ablation_v1/original_memory_forward/run.json": "487b1c42ade3ca2cebf8cb6086b1541fe13e57ad08293c61ce2035e22cf577ed",
+    "runs/streaming_complement_memory_v1/joint_memory_forward/run.json": "d296c9216fef7fce521cd7eee584a2d5babe8e64ed437c2c592f451f4dba09ea",
+    "runs/streaming_strict_history_v1/incoming_rows_forward/run.json": "ffec33a366f64a349178b2de7f885eb6587a1ba091e8457ea193a0b2d265b36d",
+    "runs/streaming_strict_history_v1/old_rows_forward/run.json": "a5a60808433a112515febc2fd7625797237822673a43f6990be0df223bfbe408",
+    "runs/streaming_strict_history_v1/history_sketch_forward/run.json": "63e8d019282bc30d96057e24f854a7e27b1a4c715260b41cf8a9666120e45c1d",
+    "runs/streaming_strict_history_v1/random_sketch_forward/run.json": "9365c874fe22613013865b096ccf811ef0ff8dd5bec1a47edc73db0f47a7a57b",
+    "runs/streaming_feedback_ablation_v1/original_memory_reverse/run.json": "1a35584bbc3a68a11ff30046765531f2165f84fa611d88160d5ae71e40db25ce",
+    "runs/streaming_complement_memory_v1/joint_memory_reverse/run.json": "39bf26ecdf060a716482509669aeafc3b71cee776e798147f1b7ec71eb3d6ad4",
+    "runs/streaming_strict_history_v1/incoming_rows_reverse/run.json": "66a38d5fd0bb59faf69a92885d71eae9f5406d9d715939100f184527b0f2eba3",
+    "runs/streaming_strict_history_v1/old_rows_reverse/run.json": "c9b1a70e2cbe0e640749b80cf23157c10b7bbed36e597f4bc7b618b5d54b0efd",
+    "runs/streaming_strict_history_v1/history_sketch_reverse/run.json": "3a368b3d5cbb6c3c8bed926ca83cc972e39baf43a9b63efb5490226c3447b383",
+    "runs/streaming_strict_history_v1/random_sketch_reverse/run.json": "c46eddf855fdab9ce096a95bacea34740fc8ffc0fc641b6e6f088fae597bab17"
+  },
+  "orders": {
+    "forward": {
+      "macro_BAcc": {
+        "joint_memory": 0.6370156340001378,
+        "original_memory": 0.6341489738797311,
+        "incoming_rows": 0.6327780140854278,
+        "old_rows": 0.6370832815325755,
+        "history_sketch": 0.6364641654114589,
+        "random_sketch": 0.6361887374670103
+      },
+      "contrasts": {
+        "joint_memory_minus_original_memory": {
+          "gain_pp": 0.28666601204065456,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.11310112478549739,
+            "MI_BCIC_IV2a": 2.933704324470132,
+            "MI_ShanghaiU": -1.9360562653245594,
+            "MI_BCIC_Upperlimb": -0.07194018238194655,
+            "MI_HighGamma": -1.4452224983058426,
+            "MI_Cho2017": 0.4331683168316891,
+            "MI_Shin2017A": 2.1533161068044815,
+            "MI_PhysioNet": 0.7188443791536603,
+            "EMO_FACED": 0.23148148148147696,
+            "EMO_SEED_3_seg4": 0.14157255390452317,
+            "EMO_SEED_4_seg4": 0.03139914665888921,
+            "EMO_SEED_5_seg4": 0.12146066363694641,
+            "EMO_SEED_7_seg4": 0.36287575945318506,
+            "SSVEP_OpenBMI": 0.5762628244740831,
+            "Workload": 0.22268845700825768,
+            "ADHD_AliMotie": 0.0
+          },
+          "improved": 12,
+          "declined": 3,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            0.11019679121202272,
+            0.4348474971983355
+          ]
+        },
+        "joint_memory_minus_incoming_rows": {
+          "gain_pp": 0.4237619914710024,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.06605019815059121,
+            "MI_BCIC_IV2a": 0.03777676177666445,
+            "MI_ShanghaiU": -2.1472125435540113,
+            "MI_BCIC_Upperlimb": 0.61948649298047,
+            "MI_HighGamma": 0.5527445222498373,
+            "MI_Cho2017": -0.3712871287128716,
+            "MI_Shin2017A": 4.547803617571066,
+            "MI_PhysioNet": 0.03428417380024751,
+            "EMO_FACED": 1.6049382716049276,
+            "EMO_SEED_3_seg4": -0.018350266743027976,
+            "EMO_SEED_4_seg4": -0.868799468637127,
+            "EMO_SEED_5_seg4": -0.6230888406089985,
+            "EMO_SEED_7_seg4": 0.5833807811086056,
+            "SSVEP_OpenBMI": 1.2957330407025736,
+            "Workload": 0.5576413427561877,
+            "ADHD_AliMotie": 0.9090909090909038
+          },
+          "improved": 11,
+          "declined": 5,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.14882588306433148,
+            0.5951602938060033
+          ]
+        },
+        "joint_memory_minus_old_rows": {
+          "gain_pp": -0.00676475324378964,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.18176327551734373,
+            "MI_BCIC_IV2a": 1.1082604628054993,
+            "MI_ShanghaiU": -2.2843270099367707,
+            "MI_BCIC_Upperlimb": -0.2783212622570086,
+            "MI_HighGamma": -2.88231307883442,
+            "MI_Cho2017": -0.12376237623762387,
+            "MI_Shin2017A": 0.9474590869939736,
+            "MI_PhysioNet": 1.025741456305751,
+            "EMO_FACED": 1.111111111111096,
+            "EMO_SEED_3_seg4": -0.4618585032085898,
+            "EMO_SEED_4_seg4": -0.16441080564457144,
+            "EMO_SEED_5_seg4": 0.09237670350129012,
+            "EMO_SEED_7_seg4": 0.6077176966370668,
+            "SSVEP_OpenBMI": -0.23590206659210855,
+            "Workload": -0.1306684334511088,
+            "ADHD_AliMotie": 1.7424242424242342
+          },
+          "improved": 7,
+          "declined": 9,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.12337735295499123,
+            0.18493846846225237
+          ]
+        },
+        "joint_memory_minus_history_sketch": {
+          "gain_pp": 0.05514685886788134,
+          "per_task_pp": {
+            "MI_OpenBMI": 1.10192196773774,
+            "MI_BCIC_IV2a": 0.11528715588304816,
+            "MI_ShanghaiU": -0.9407665505226426,
+            "MI_BCIC_Upperlimb": 0.30260643714458135,
+            "MI_HighGamma": -2.3316015360289044,
+            "MI_Cho2017": 0.18564356435644136,
+            "MI_Shin2017A": -0.1981050818260166,
+            "MI_PhysioNet": 0.3494348483486953,
+            "EMO_FACED": 0.586419753086409,
+            "EMO_SEED_3_seg4": 0.06566000940634309,
+            "EMO_SEED_4_seg4": 0.1765044581603037,
+            "EMO_SEED_5_seg4": -0.9057051435651775,
+            "EMO_SEED_7_seg4": 0.4642993030794407,
+            "SSVEP_OpenBMI": 1.6715654190308182,
+            "Workload": -0.6699057714958823,
+            "ADHD_AliMotie": 0.9090909090909038
+          },
+          "improved": 11,
+          "declined": 5,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.05261437847631445,
+            0.21426341852766706
+          ]
+        },
+        "joint_memory_minus_random_sketch": {
+          "gain_pp": 0.08268965331274311,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.0406104956126363,
+            "MI_BCIC_IV2a": 0.12500308218335032,
+            "MI_ShanghaiU": -2.0675248419150805,
+            "MI_BCIC_Upperlimb": 0.34408288424353506,
+            "MI_HighGamma": -2.2934266997966857,
+            "MI_Cho2017": -0.6806930693069368,
+            "MI_Shin2017A": 1.3350559862187805,
+            "MI_PhysioNet": 0.9501404576693018,
+            "EMO_FACED": 1.5895061728394944,
+            "EMO_SEED_3_seg4": -0.6450881304767897,
+            "EMO_SEED_4_seg4": -0.5473696626293989,
+            "EMO_SEED_5_seg4": -0.22960226428859198,
+            "EMO_SEED_7_seg4": 0.28429078418886755,
+            "SSVEP_OpenBMI": 0.4830307875330564,
+            "Workload": 0.8925942285041177,
+            "ADHD_AliMotie": 1.7424242424242342
+          },
+          "improved": 10,
+          "declined": 6,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.02795931929468963,
+            0.24109741018670502
+          ]
+        }
+      },
+      "primary_gain_over_stages_pp": {
+        "1": 0.0,
+        "4": -0.0061944303200500705,
+        "8": 0.22202172346674764,
+        "12": 0.13434986894929057,
+        "16": 0.28666601204067055
+      },
+      "audits_and_costs": {
+        "joint_memory": {
+          "coefficient_count": 694566,
+          "logical_history_bytes": 206012416,
+          "memory_update_seconds": 11.681531993148383,
+          "training_and_export_seconds": 428.61960828100564,
+          "elapsed_seconds": 726.7654710710049,
+          "peak_reserved_bytes": 5932843008
+        },
+        "original_memory": {
+          "coefficient_count": 694566,
+          "logical_history_bytes": 206012416,
+          "memory_update_seconds": 10.685084894008469,
+          "training_and_export_seconds": 416.63364970800467,
+          "elapsed_seconds": 660.5966634909855,
+          "peak_reserved_bytes": 5932843008
+        },
+        "incoming_rows": {
+          "coefficient_count": 174216,
+          "history_used_by_merger": false,
+          "logical_history_bytes": 0,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.413359596917871,
+          "training_and_export_seconds": 286.58464527787874,
+          "elapsed_seconds": 569.0074537740438,
+          "peak_reserved_bytes": 5706350592
+        },
+        "old_rows": {
+          "coefficient_count": 347666,
+          "history_used_by_merger": false,
+          "logical_history_bytes": 0,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.378810449910816,
+          "training_and_export_seconds": 345.64870772510767,
+          "elapsed_seconds": 621.8291295459494,
+          "peak_reserved_bytes": 5725224960
+        },
+        "history_sketch": {
+          "coefficient_count": 694566,
+          "history_used_by_merger": true,
+          "logical_history_bytes": 206012416,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.269969691929873,
+          "training_and_export_seconds": 432.68979414814385,
+          "elapsed_seconds": 716.84096899,
+          "peak_reserved_bytes": 5932843008
+        },
+        "random_sketch": {
+          "coefficient_count": 694566,
+          "history_used_by_merger": true,
+          "logical_history_bytes": 206012416,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.387658698193263,
+          "training_and_export_seconds": 429.80141483800253,
+          "elapsed_seconds": 707.6420129070175,
+          "peak_reserved_bytes": 5932843008
+        }
+      }
+    },
+    "reverse": {
+      "macro_BAcc": {
+        "joint_memory": 0.6350626162741336,
+        "original_memory": 0.6320238095041422,
+        "incoming_rows": 0.6323415340165857,
+        "old_rows": 0.6304747315597239,
+        "history_sketch": 0.6293262534181949,
+        "random_sketch": 0.6325174277975525
+      },
+      "contrasts": {
+        "joint_memory_minus_original_memory": {
+          "gain_pp": 0.30388067699914123,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.07460165934127794,
+            "MI_BCIC_IV2a": 0.7353745646075271,
+            "MI_ShanghaiU": 0.5945928506904119,
+            "MI_BCIC_Upperlimb": -0.7038696094920915,
+            "MI_HighGamma": 1.8037045403207608,
+            "MI_Cho2017": 1.423267326732669,
+            "MI_Shin2017A": -0.6546080964685674,
+            "MI_PhysioNet": 1.261725968845362,
+            "EMO_FACED": 0.5555555555555647,
+            "EMO_SEED_3_seg4": -0.11945876060428517,
+            "EMO_SEED_4_seg4": 0.9530590212408374,
+            "EMO_SEED_5_seg4": -0.20271648452024893,
+            "EMO_SEED_7_seg4": 0.28107575059930223,
+            "SSVEP_OpenBMI": 0.6119481791456605,
+            "Workload": 1.0508686690223756,
+            "ADHD_AliMotie": -2.803030303030296
+          },
+          "improved": 11,
+          "declined": 5,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.2038924194443666,
+            0.5110080756677704
+          ]
+        },
+        "joint_memory_minus_incoming_rows": {
+          "gain_pp": 0.27210822575478577,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.273467857239984,
+            "MI_BCIC_IV2a": -1.6260775040302322,
+            "MI_ShanghaiU": 0.3577881016905371,
+            "MI_BCIC_Upperlimb": -0.7531550704241496,
+            "MI_HighGamma": 1.4635193133047175,
+            "MI_Cho2017": 0.12376237623762387,
+            "MI_Shin2017A": -0.45650301464256193,
+            "MI_PhysioNet": 0.12292487956585552,
+            "EMO_FACED": 0.8796296296296413,
+            "EMO_SEED_3_seg4": -0.23567547676255352,
+            "EMO_SEED_4_seg4": -0.4654971213412795,
+            "EMO_SEED_5_seg4": 0.42014767278286125,
+            "EMO_SEED_7_seg4": 0.8296359566939526,
+            "SSVEP_OpenBMI": 1.6878802451335662,
+            "Workload": 2.6409746760895136,
+            "ADHD_AliMotie": -0.9090909090909038
+          },
+          "improved": 10,
+          "declined": 6,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.11418379573247057,
+            0.398653941073787
+          ]
+        },
+        "joint_memory_minus_old_rows": {
+          "gain_pp": 0.45878847144096396,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.22952980559916014,
+            "MI_BCIC_IV2a": -0.0038561538187487088,
+            "MI_ShanghaiU": 1.0193250742031257,
+            "MI_BCIC_Upperlimb": -0.19814299934781676,
+            "MI_HighGamma": 2.2832618025751095,
+            "MI_Cho2017": -0.8663366336633671,
+            "MI_Shin2017A": 1.214470284237723,
+            "MI_PhysioNet": 0.8097316262224208,
+            "EMO_FACED": 0.06172839506173311,
+            "EMO_SEED_3_seg4": -0.13306403209966122,
+            "EMO_SEED_4_seg4": 0.19645858119884396,
+            "EMO_SEED_5_seg4": -0.10689707356025813,
+            "EMO_SEED_7_seg4": 0.2927639519450076,
+            "SSVEP_OpenBMI": 0.8565021295124486,
+            "Workload": 3.9623822143698417,
+            "ADHD_AliMotie": -1.8181818181818188
+          },
+          "improved": 9,
+          "declined": 7,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.22521555524570544,
+            0.6105864907491495
+          ]
+        },
+        "joint_memory_minus_history_sketch": {
+          "gain_pp": 0.5736362855938655,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.030663607700454065,
+            "MI_BCIC_IV2a": -0.44124559919411777,
+            "MI_ShanghaiU": 1.5852045425216232,
+            "MI_BCIC_Upperlimb": -0.7297852378173708,
+            "MI_HighGamma": 0.9046758527219256,
+            "MI_Cho2017": 0.30940594059406523,
+            "MI_Shin2017A": 1.60206718346253,
+            "MI_PhysioNet": 0.4094565714263476,
+            "EMO_FACED": -0.4629629629629539,
+            "EMO_SEED_3_seg4": 0.1362617997626825,
+            "EMO_SEED_4_seg4": 0.4154947661441144,
+            "EMO_SEED_5_seg4": 0.5075415002434303,
+            "EMO_SEED_7_seg4": -0.15928385265963074,
+            "SSVEP_OpenBMI": 0.7021028152661146,
+            "Workload": 5.339001766784445,
+            "ADHD_AliMotie": -0.9090909090909038
+          },
+          "improved": 10,
+          "declined": 6,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.2559452535144935,
+            0.6724847652395167
+          ]
+        },
+        "joint_memory_minus_random_sketch": {
+          "gain_pp": 0.2545188476581098,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.3364409605688179,
+            "MI_BCIC_IV2a": 0.624518703938648,
+            "MI_ShanghaiU": 0.45473609498000167,
+            "MI_BCIC_Upperlimb": -0.6406537832240655,
+            "MI_HighGamma": 1.3460582787440667,
+            "MI_Cho2017": -0.24752475247524774,
+            "MI_Shin2017A": -2.2566752799310974,
+            "MI_PhysioNet": 0.23857291882367626,
+            "EMO_FACED": 0.4783950617284094,
+            "EMO_SEED_3_seg4": -0.2963740266487047,
+            "EMO_SEED_4_seg4": -0.08280844725649383,
+            "EMO_SEED_5_seg4": 0.47777401197567904,
+            "EMO_SEED_7_seg4": 0.32255391705123815,
+            "SSVEP_OpenBMI": 0.4907339370206487,
+            "Workload": 2.9023115429917534,
+            "ADHD_AliMotie": -0.07575757575757347
+          },
+          "improved": 10,
+          "declined": 6,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.07799933463586688,
+            0.42193178949739024
+          ]
+        }
+      },
+      "primary_gain_over_stages_pp": {
+        "1": 0.0,
+        "4": -0.06026002316685819,
+        "8": -0.0709333420973679,
+        "12": -0.11977822548203676,
+        "16": 0.30388067699914645
+      },
+      "audits_and_costs": {
+        "joint_memory": {
+          "coefficient_count": 694566,
+          "logical_history_bytes": 206012416,
+          "memory_update_seconds": 12.367902570811566,
+          "training_and_export_seconds": 431.85734090791084,
+          "elapsed_seconds": 842.5368558279588,
+          "peak_reserved_bytes": 6142558208
+        },
+        "original_memory": {
+          "coefficient_count": 694566,
+          "logical_history_bytes": 206012416,
+          "memory_update_seconds": 10.757848766050301,
+          "training_and_export_seconds": 423.0758568670135,
+          "elapsed_seconds": 738.8025144250132,
+          "peak_reserved_bytes": 6142558208
+        },
+        "incoming_rows": {
+          "coefficient_count": 174216,
+          "history_used_by_merger": false,
+          "logical_history_bytes": 0,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.517463427851908,
+          "training_and_export_seconds": 292.5033209781395,
+          "elapsed_seconds": 663.6162477460457,
+          "peak_reserved_bytes": 5916065792
+        },
+        "old_rows": {
+          "coefficient_count": 347666,
+          "history_used_by_merger": false,
+          "logical_history_bytes": 0,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.405768615950365,
+          "training_and_export_seconds": 355.5574528538855,
+          "elapsed_seconds": 722.6228054689709,
+          "peak_reserved_bytes": 5913968640
+        },
+        "history_sketch": {
+          "coefficient_count": 694566,
+          "history_used_by_merger": true,
+          "logical_history_bytes": 206012416,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.357216517964844,
+          "training_and_export_seconds": 436.15467675507534,
+          "elapsed_seconds": 807.5113681390067,
+          "peak_reserved_bytes": 6142558208
+        },
+        "random_sketch": {
+          "coefficient_count": 694566,
+          "history_used_by_merger": true,
+          "logical_history_bytes": 206012416,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.479380495031364,
+          "training_and_export_seconds": 436.37212254997576,
+          "elapsed_seconds": 800.1387658109888,
+          "peak_reserved_bytes": 6142558208
+        }
+      }
+    }
+  },
+  "mean_gain_over_two_orders_pp": {
+    "joint_memory_minus_original_memory": 0.2952733445198979,
+    "joint_memory_minus_incoming_rows": 0.3479351086128941,
+    "joint_memory_minus_old_rows": 0.22601185909858718,
+    "joint_memory_minus_history_sketch": 0.31439157223087344,
+    "joint_memory_minus_random_sketch": 0.16860425048542643
+  },
+  "checks": {
+    "both_new_runs_complete": true,
+    "strict_settings_recorded": true,
+    "actual_data_schedules_auxiliary_ids_match": true,
+    "first_expert_unchanged": true,
+    "stages2_and3_before_feedback_intervention_exact_coefficients_and_native_weights": true,
+    "new_checkpoint_and_coefficient_hashes": true,
+    "new_fixed_coefficient_means_exact": true,
+    "new_native_exports_pass": true,
+    "new_original_memory_lineages_replay_exactly": true,
+    "frozen_real_and_strict_reference_audits_match": true
+  },
+  "new_scientific_updates": 3240,
+  "new_scientific_CE_example_passes": 51840,
+  "extra_score_VJPs": 0,
+  "scope": "Two new original-only memory controls, selected after bank0 orientation and bank1 replication. Reused joint memory has the identical FP64 four-slot compression, floor, zero first memory and stage2 update. Only count>1 calibrated-model feedback is removed. Stages2 and3 coefficients and native weights match exactly before feedback changes subsequent calibration. Reused real runs and strict references retain frozen full audits. This isolates the feedback policy within this implementation, not novelty or universal benefit. Exposed development validation and growing original512 replay; no official test read. Task deletion is sensitivity, not confidence intervals. One worker per GPU now versus two in the reused joint runs; elapsed times are descriptive."
+}

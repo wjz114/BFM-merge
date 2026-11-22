@@ -1,0 +1,146 @@
+{
+  "created_unix": 1794923644.1614113,
+  "comparison_sha256": "fa827aa9ef16c08a1f4c547ba2218d4a16f9d6621bfa0f1e6349a0fe6511fca8",
+  "decision": "Close uncorrected table mean. Replicate the unchanged table-difference component against matched direct CE on existing source/calibration seed2 before designing cross-arrival memory.",
+  "results": {
+    "direct_ce": {
+      "forward": 0.758290326767421,
+      "reverse": 0.7635343957074366,
+      "mean": 0.7609123612374289
+    },
+    "table_mean": {
+      "forward": 0.7569557146768036,
+      "reverse": 0.7514087516995792,
+      "mean": 0.7541822331881913
+    },
+    "table_difference": {
+      "forward": 0.7603110292962816,
+      "reverse": 0.7656177699705865,
+      "mean": 0.7629643996334341
+    },
+    "simultaneous_mean_adam": {
+      "forward": 0.7685218738548318,
+      "reverse": 0.7768359999106038,
+      "mean": 0.7726789368827178
+    }
+  },
+  "contrasts": {
+    "table_mean_minus_direct_ce": {
+      "forward": -0.13346120906174708,
+      "reverse": -1.2125644007857428,
+      "mean_pp": -0.6730128049237449,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -4.977415555215248,
+          "EMO_FACED": -1.0648148148148184,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 6.417476442873971
+        },
+        "reverse": {
+          "MI_OpenBMI": -1.6186234365853647,
+          "EMO_FACED": -2.5617283950617353,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -0.6699057714958823
+        }
+      }
+    },
+    "table_difference_minus_direct_ce": {
+      "forward": 0.20207025288605518,
+      "reverse": 0.2083374263149862,
+      "mean_pp": 0.2052038396005207,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -0.8175411579322556,
+          "EMO_FACED": -0.38580246913579863,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 2.9207155477031788
+        },
+        "reverse": {
+          "MI_OpenBMI": 2.7099186931363595,
+          "EMO_FACED": -1.9907407407407596,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 1.0232626619552487
+        }
+      }
+    },
+    "table_difference_minus_table_mean": {
+      "forward": 0.33553146194780226,
+      "reverse": 1.420901827100729,
+      "mean_pp": 0.8782166445242656,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 4.159874397282993,
+          "EMO_FACED": 0.6790123456790198,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -3.496760895170792
+        },
+        "reverse": {
+          "MI_OpenBMI": 4.328542129721724,
+          "EMO_FACED": 0.5709876543209758,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 1.693168433451131
+        }
+      }
+    },
+    "table_mean_minus_simultaneous_mean_adam": {
+      "forward": -1.156615917802828,
+      "reverse": -2.54272482110246,
+      "mean_pp": -1.849670369452644,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -3.7977790531421474,
+          "EMO_FACED": 0.9104938271604968,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -1.7391784452296832
+        },
+        "reverse": {
+          "MI_OpenBMI": -3.249412131768359,
+          "EMO_FACED": -0.3549382716049432,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -6.566548881036516
+        }
+      }
+    },
+    "table_difference_minus_simultaneous_mean_adam": {
+      "forward": -0.8210844558550257,
+      "reverse": -1.121822994001731,
+      "mean_pp": -0.9714537249283783,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 0.36209534414084477,
+          "EMO_FACED": 1.5895061728395166,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -5.235939340400475
+        },
+        "reverse": {
+          "MI_OpenBMI": 1.0791299979533653,
+          "EMO_FACED": 0.21604938271603258,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": -4.873380447585385
+        }
+      }
+    }
+  },
+  "task_mean_effects_pp": {
+    "MI_OpenBMI": 0.946188767602052,
+    "EMO_FACED": -1.188271604938279,
+    "ADHD_AliMotie": -0.909090909090915,
+    "Workload": 1.9719891048292137
+  },
+  "leave_one_task_out_mean_pp": {
+    "MI_OpenBMI": -0.04179113639999336,
+    "EMO_FACED": 0.6696956544467835,
+    "ADHD_AliMotie": 0.5766354224976622,
+    "Workload": -0.3837245821423807
+  },
+  "evidence": [
+    "Table mean loses0.6730pp against matched direct CE,negative in both orders,and fails to preserve the simultaneous-gradient gain.",
+    "Table difference gains0.2052pp,positive in both orders,but loses0.9715pp against the more expensive simultaneous reference.",
+    "The small table-difference gain is task-sensitive: FACED and ADHD decline in both orders. Removing Workload or MI from the two-order mean makes the mean contrast negative. Replication is warranted before extension,not a robust-superiority claim.",
+    "Each new run uses1872 CE exposures including144 startup probes,versus5568 for simultaneous and1728 for historical sequential CE. Direct trajectories reproduce historical sequential CE exactly."
+  ],
+  "replication": "Existing full-source bank2 and its calibration seed2; same four tasks,two orders,operator,LR,rounds,averaging. Four fits/direct vs difference. No new source training,table-mean rescue or hyperparameter sweep.",
+  "overall_goal_achieved": false,
+  "novelty_established": false,
+  "component_superiority_established": false
+}

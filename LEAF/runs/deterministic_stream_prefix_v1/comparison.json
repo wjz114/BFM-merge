@@ -1,0 +1,41 @@
+{
+  "unix": 1794867423.745108,
+  "passed": true,
+  "checks": {
+    "history.pt": true,
+    "stage_02/merged.ckpt": true,
+    "stage_02/coefficients.pt": true,
+    "stage_02/responses.pt": true,
+    "stage_03/merged.ckpt": true,
+    "stage_03/coefficients.pt": true,
+    "stage_03/responses.pt": true,
+    "stage_02/schedule_hash": true,
+    "stage_02/probe_signs_hash": true,
+    "stage_02/round_balanced_ce": true,
+    "stage_02/auxiliary_ids": true,
+    "stage_03/schedule_hash": true,
+    "stage_03/probe_signs_hash": true,
+    "stage_03/round_balanced_ce": true,
+    "stage_03/auxiliary_ids": true
+  },
+  "source_sha256": {
+    "runs/deterministic_stream_prefix_v1/trial0/run.json": "9aa06d5d389ac6a97419a6c5e1d7a473906a4d259a741751e5c05853bc34debf",
+    "runs/deterministic_stream_prefix_v1/trial1/run.json": "e09bedd45b96bc8da9a02337be066c15671d521f9a0d8da7ff4f79f286bf467b"
+  },
+  "optimizer_updates": 120,
+  "CE_example_passes": 1920,
+  "score_VJPs": 120,
+  "score_VJP_example_passes": 1920,
+  "auxiliary_forward_examples": 96,
+  "elapsed_seconds": [
+    34.83649293601047,
+    31.11511962400982
+  ],
+  "peak_reserved_bytes": [
+    3638558720,
+    3638558720
+  ],
+  "development_validation_read": false,
+  "official_test_read": false,
+  "scope": "Independent processes, same GPU and same seed, three-expert full-round prefix. Exact tensor equality supports using strict settings in the next version; it is not full16task, cross-device or cross-version reproducibility evidence."
+}

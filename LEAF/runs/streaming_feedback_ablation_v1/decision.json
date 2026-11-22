@@ -1,0 +1,75 @@
+{
+  "created_unix": 1794874697.5690928,
+  "full_report_inspected": true,
+  "figure_inspected": true,
+  "all_audits_pass": true,
+  "primary": {
+    "forward": {
+      "gain_pp": 0.28666601204065456,
+      "per_task_pp": {
+        "MI_OpenBMI": 0.11310112478549739,
+        "MI_BCIC_IV2a": 2.933704324470132,
+        "MI_ShanghaiU": -1.9360562653245594,
+        "MI_BCIC_Upperlimb": -0.07194018238194655,
+        "MI_HighGamma": -1.4452224983058426,
+        "MI_Cho2017": 0.4331683168316891,
+        "MI_Shin2017A": 2.1533161068044815,
+        "MI_PhysioNet": 0.7188443791536603,
+        "EMO_FACED": 0.23148148148147696,
+        "EMO_SEED_3_seg4": 0.14157255390452317,
+        "EMO_SEED_4_seg4": 0.03139914665888921,
+        "EMO_SEED_5_seg4": 0.12146066363694641,
+        "EMO_SEED_7_seg4": 0.36287575945318506,
+        "SSVEP_OpenBMI": 0.5762628244740831,
+        "Workload": 0.22268845700825768,
+        "ADHD_AliMotie": 0.0
+      },
+      "improved": 12,
+      "declined": 3,
+      "tied": 1,
+      "task_deletion_range_pp": [
+        0.11019679121202272,
+        0.4348474971983355
+      ]
+    },
+    "reverse": {
+      "gain_pp": 0.30388067699914123,
+      "per_task_pp": {
+        "MI_OpenBMI": 0.07460165934127794,
+        "MI_BCIC_IV2a": 0.7353745646075271,
+        "MI_ShanghaiU": 0.5945928506904119,
+        "MI_BCIC_Upperlimb": -0.7038696094920915,
+        "MI_HighGamma": 1.8037045403207608,
+        "MI_Cho2017": 1.423267326732669,
+        "MI_Shin2017A": -0.6546080964685674,
+        "MI_PhysioNet": 1.261725968845362,
+        "EMO_FACED": 0.5555555555555647,
+        "EMO_SEED_3_seg4": -0.11945876060428517,
+        "EMO_SEED_4_seg4": 0.9530590212408374,
+        "EMO_SEED_5_seg4": -0.20271648452024893,
+        "EMO_SEED_7_seg4": 0.28107575059930223,
+        "SSVEP_OpenBMI": 0.6119481791456605,
+        "Workload": 1.0508686690223756,
+        "ADHD_AliMotie": -2.803030303030296
+      },
+      "improved": 11,
+      "declined": 5,
+      "tied": 0,
+      "task_deletion_range_pp": [
+        0.2038924194443666,
+        0.5110080756677704
+      ]
+    }
+  },
+  "decision": "Continue unchanged joint-memory versus bilateral rows on bank2, in both orders. The matched feedback ablation supports the component while third-bank stability remains untested.",
+  "evidence": "Feedback gains0.2867/0.3039pp; all single-task deletion averages stay positive in both orders. First two calibrated stages have exact matching coefficients and native weights.",
+  "limits": "One selected bank, two correlated orders, exposed development validation. Feedback changes both memory directions and their spectrum; this ablation does not separate orientation selection from amplitude effects. No novelty or broad stability claim follows automatically.",
+  "next_scientific_runs": 4,
+  "next_conditions": [
+    "old_rows",
+    "joint_memory"
+  ],
+  "next_seed": 2,
+  "further_conditional_question": "If bank2 supports development, test whether the benefit persists against an original-direction control scaled to the feedback-induced slot norms. This distinguishes directional retention from amplitude/conditioning; do not launch that experiment during bank2 just to occupy hardware.",
+  "overall_goal_complete": false
+}

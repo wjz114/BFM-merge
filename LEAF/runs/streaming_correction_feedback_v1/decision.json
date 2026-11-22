@@ -1,0 +1,27 @@
+{
+  "created_unix": 1794878817.3075778,
+  "all_audits_pass": true,
+  "full_report_inspected": true,
+  "figure_inspected": true,
+  "bank_means_pp": {
+    "0": {
+      "correction_feedback_minus_old_rows": -0.12389512990693181,
+      "correction_feedback_minus_joint_memory": -0.349906989005519,
+      "correction_feedback_minus_unit_feedback": -0.3679666345708953
+    },
+    "2": {
+      "correction_feedback_minus_old_rows": -0.06604681005922386,
+      "correction_feedback_minus_joint_memory": 0.41609126823543063,
+      "correction_feedback_minus_unit_feedback": 0.1409913333100269
+    }
+  },
+  "overall_means_pp": {
+    "correction_feedback_minus_old_rows": -0.09497096998307783,
+    "correction_feedback_minus_joint_memory": 0.03309213961495583,
+    "correction_feedback_minus_unit_feedback": -0.1134876506304342
+  },
+  "decision": "Do not expand unchanged correction feedback. Stop further feedback-target/weight variants in this branch. Investigate an anchored covariance representation that preserves the current-model component and its cross-covariance instead of dropping them during complementary-memory projection.",
+  "evidence": "Versus bilateral: bank0-0.3924/+0.1446pp and bank2-0.0975/-0.0346pp; mean-0.0950pp. The previous worst case is largely rescued, but three of four cases remain negative.",
+  "next_step": "Specify and check a concrete model-plus-two-vector covariance representation with small3x3 row metadata. No claim that the earlier failures were caused uniquely by covariance loss. Engineering and algebra precede any new full experiment.",
+  "overall_goal_complete": false
+}

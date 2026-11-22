@@ -1,0 +1,16 @@
+{
+  "seed": 0,
+  "budget": 32,
+  "task": "EMO_FACED",
+  "validation": 1680,
+  "teacher": 0.5807098765432098,
+  "expert_independent": 0.1398148148148148,
+  "merged_independent": 0.12916666666666668,
+  "merged_shared": 0.11604938271604937,
+  "probe64": {
+    "teacher": 0.6111111111111112,
+    "expert_independent": 0.20436507936507933,
+    "merged_independent": 0.18849206349206346,
+    "merged_shared": 0.12698412698412698
+  }
+}

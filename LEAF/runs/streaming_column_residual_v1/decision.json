@@ -1,0 +1,98 @@
+{
+  "created_unix": 1794885953.8300066,
+  "comparison": "runs/streaming_column_residual_v1/comparison.json",
+  "comparison_sha256": "3abe0069152a4bec54e47effe3446294ba154e03679d593c7245cc0961dd26c3",
+  "all_audits_passed": true,
+  "figure_inspected": true,
+  "mean_gain_over_orders_pp": {
+    "projected_columns_minus_old_rows": 0.11327047619203047,
+    "projected_columns_minus_raw_columns": 0.031593298086890646,
+    "raw_columns_minus_old_rows": 0.0816771781051398,
+    "projected_columns_minus_full_history": 0.2262608063954958
+  },
+  "order_contrasts": {
+    "forward": {
+      "projected_columns_minus_old_rows": {
+        "gain_pp": -0.026825017954125813,
+        "improved": 8,
+        "declined": 8,
+        "task_deletion_range_pp": [
+          -0.10652600956321961,
+          0.09594052147087379
+        ]
+      },
+      "projected_columns_minus_raw_columns": {
+        "gain_pp": -0.11087946325470178,
+        "improved": 7,
+        "declined": 8,
+        "task_deletion_range_pp": [
+          -0.18710126735366722,
+          -0.033339233421480284
+        ]
+      },
+      "raw_columns_minus_old_rows": {
+        "gain_pp": 0.08405444530057599,
+        "improved": 9,
+        "declined": 7,
+        "task_deletion_range_pp": [
+          -0.049523484997627834,
+          0.20735787750236803
+        ]
+      },
+      "projected_columns_minus_full_history": {
+        "gain_pp": 0.40990238115633193,
+        "improved": 8,
+        "declined": 8,
+        "task_deletion_range_pp": [
+          0.25871036086592974,
+          0.5584413277788752
+        ]
+      }
+    },
+    "reverse": {
+      "projected_columns_minus_old_rows": {
+        "gain_pp": 0.25336597033818675,
+        "improved": 9,
+        "declined": 6,
+        "task_deletion_range_pp": [
+          0.1410937279516526,
+          0.3478564616916987
+        ]
+      },
+      "projected_columns_minus_raw_columns": {
+        "gain_pp": 0.17406605942848308,
+        "improved": 9,
+        "declined": 7,
+        "task_deletion_range_pp": [
+          0.0594078371277558,
+          0.32701321957412705
+        ]
+      },
+      "raw_columns_minus_old_rows": {
+        "gain_pp": 0.07929991090970363,
+        "improved": 7,
+        "declined": 9,
+        "task_deletion_range_pp": [
+          -0.15356124932882445,
+          0.2057986928491385
+        ]
+      },
+      "projected_columns_minus_full_history": {
+        "gain_pp": 0.04261923163465971,
+        "improved": 8,
+        "declined": 8,
+        "task_deletion_range_pp": [
+          -0.03704773708144556,
+          0.14814856434223683
+        ]
+      }
+    }
+  },
+  "interpretation": "Small positive family-level means on one exposed expert bank. Projected versus raw changes sign by order and averages only+0.0316pp. Raw gains are small and both task-deletion ranges cross zero. No stable projection advantage or novel superior method established.",
+  "parameterization_note": "runs/streaming_column_residual_v1/parameterization_note.json",
+  "next": "One unchanged four-run bank2 follow-up, raw/projected by forward/reverse, reusing frozen audited bilateral and full-history references. Bank2 is deliberately selected because earlier candidates failed there; it is already development-exposed, not an independent held-out test. Both arms are retained to test general column utility and projection separately. No coefficient, layer, rank, learning-rate or feedback sweep.",
+  "selection_rationale": "Projected reverse gain survives deletion of each single task, forward is near neutral, and raw means are slightly positive in both orders. This modest signal earns one additional bank check before any more operator variants; it does not justify promoting the method.",
+  "new_scientific_updates": 6480,
+  "new_scientific_CE_example_passes": 103680,
+  "overall_goal_achieved": false
+}

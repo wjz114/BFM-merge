@@ -1,0 +1,27 @@
+{
+  "unix": 1794867488.3841288,
+  "decision": "Use strict deterministic settings in the next frozen coefficient-merging experiment version; leave already-running and completed scientific versions immutable.",
+  "evidence": [
+    "runs/streaming_predictive_sketch_v1/paired_start_forward.json",
+    "runs/merge_backward_repeatability_v1/comparison.json",
+    "runs/deterministic_stream_prefix_v1/comparison.json"
+  ],
+  "established": "Default fixed-graph backward computations are non-repeatable in this environment. Strict settings remove the observed fixed-graph differences, and two separate processes produce bitwise-identical native checkpoints, coefficient trajectories, predictive-response statistics and raw history through the three-expert full-round prefix.",
+  "not_established": [
+    "Which backend kernel caused the default variation.",
+    "That backend nondeterminism explains all earlier full-stream performance differences.",
+    "Full16task or cross-device repeatability.",
+    "Any new merging-method performance improvement."
+  ],
+  "next": "Finish and audit the current predictive-history comparison. Judge it against both paired fresh controls and earlier strong references; do not promote small gains solely against the weaker fresh controls. Any follow-up comparison uses a new strict protocol with its own fresh baseline and documented cost.",
+  "engineering_cost": {
+    "optimizer_updates": 120,
+    "fixed_graph_CE_backwards": 8,
+    "total_score_VJPs": 128,
+    "CE_example_passes": 2048,
+    "score_VJP_example_passes": 2048,
+    "auxiliary_forward_examples": 96
+  },
+  "reporter_sha256": "5a02311aa1cf48c83ae809925ff98508eb15cf9b524d4293b17564b525bf046d",
+  "overall_research_goal_achieved": false
+}

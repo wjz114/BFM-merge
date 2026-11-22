@@ -1,0 +1,12 @@
+{
+  "encoder_tensors": 303,
+  "coefficients": 606,
+  "probe_seed": 17,
+  "nonzero_gradients_per_side": [
+    303,
+    303
+  ],
+  "encoder_buffers_match": true,
+  "reload_max_abs_error": 1.7881393432617188e-07,
+  "probe": "synthetic linear readout, real two-expert weights and one real calibration EEG; no fitted student"
+}

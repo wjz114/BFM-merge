@@ -1,0 +1,47 @@
+{
+  "unix": 1794855550.4077995,
+  "macro_BAcc": {
+    "forward": {
+      "incoming_rows": 0.633777416886041,
+      "bilateral": 0.639291070668039,
+      "history_sketch": 0.6379731683212204,
+      "random_sketch": 0.638466190350542
+    },
+    "reverse": {
+      "incoming_rows": 0.6341325383476892,
+      "bilateral": 0.6311860541815895,
+      "history_sketch": 0.636120253976665,
+      "random_sketch": 0.6321013230550016
+    }
+  },
+  "contrasts": {
+    "forward": {
+      "over_incoming_rows_pp": 0.41957514351794734,
+      "over_bilateral_pp": -0.13179023468186113,
+      "over_random_pp": -0.04930220293215548
+    },
+    "reverse": {
+      "over_incoming_rows_pp": 0.1987715628975817,
+      "over_bilateral_pp": 0.4934199795075589,
+      "over_random_pp": 0.40189309216634994
+    }
+  },
+  "task_deletion_range_over_incoming_pp": {
+    "forward": [
+      0.26572863793429974,
+      0.4936818049118567
+    ],
+    "reverse": [
+      0.01669516375348401,
+      0.308288465725058
+    ]
+  },
+  "decision": "Retain as a provisional candidate and replicate unchanged on expert banks1/2, both orders, always including incoming-row and random-complement controls. Do not claim a stable new method from bank0 alone.",
+  "evidence_limit": "Real history loses to random by0.0493pp forward but wins by0.4019pp reverse. Reverse average improvement is sensitive to Workload; omitting it leaves+0.0167pp. Historical state is bitwise identical between paired arms, but residual directions use each evolving model.",
+  "scientific_updates_new": 6480,
+  "paired_checks_pass": true,
+  "native_exports_and_means_pass": true,
+  "novelty_established": false,
+  "overall_research_goal_achieved": false,
+  "replication_design": "runs/streaming_history_replication_v1/design.json"
+}

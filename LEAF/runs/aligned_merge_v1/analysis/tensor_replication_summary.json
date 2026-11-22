@@ -1,0 +1,110 @@
+{
+  "status": "complete",
+  "pending": [],
+  "family": "unweighted",
+  "methods": [
+    "block_ce",
+    "tensor_ce"
+  ],
+  "aggregates": {
+    "validation": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "n": 3,
+      "block_macro_bacc": {
+        "mean": 0.6267202522197246,
+        "sample_sd": 0.0013638344187466996
+      },
+      "tensor_macro_bacc": {
+        "mean": 0.6346126096769807,
+        "sample_sd": 0.002066120713365045
+      },
+      "delta_macro_pp": {
+        "mean": 0.7892357457256143,
+        "sample_sd": 0.20446386680516246
+      }
+    },
+    "official_l2": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "n": 3,
+      "block_macro_bacc": {
+        "mean": 0.5707125,
+        "sample_sd": 0.002624493998850053
+      },
+      "tensor_macro_bacc": {
+        "mean": 0.5720416666666667,
+        "sample_sd": 0.002714086037846514
+      },
+      "delta_macro_pp": {
+        "mean": 0.1329166666666666,
+        "sample_sd": 0.1390682349004742
+      }
+    }
+  },
+  "paired_audits": {
+    "0": {
+      "matching_settings_and_experts": true,
+      "matching_calibration_ids": true,
+      "matching_dataset_update_order": true,
+      "run_sha256": {
+        "block_ce": "c3253b08a48ebccb9d3f69dd67437861e9a6c5e1f8fe5a1826c63d2f87dba82f",
+        "tensor_ce": "c27040b20b7f77e5c190e5eba567b26a99627e60a725f80ecdefc903a8ea48c2"
+      }
+    },
+    "1": {
+      "matching_settings_and_experts": true,
+      "matching_calibration_ids": true,
+      "matching_dataset_update_order": true,
+      "run_sha256": {
+        "block_ce": "ffff0dc07b1272647181511e94e9ac1a6d1d0de852a8ce69cb382b66eda063c4",
+        "tensor_ce": "8a59030966ed1d06f34d7930d2d65a182b8f64f21a61a88de321fd168fb3b998"
+      }
+    },
+    "2": {
+      "matching_settings_and_experts": true,
+      "matching_calibration_ids": true,
+      "matching_dataset_update_order": true,
+      "run_sha256": {
+        "block_ce": "133c0e83e547ed7a41a8436bbfbedacf34d29122fe39523aa267b5216d546858",
+        "tensor_ce": "1eddb0215e1a88bf400801ae16cab298047f823595b09a6926f6397d35de1b35"
+      }
+    }
+  },
+  "dynamics": [
+    {
+      "seed": 0,
+      "post_init_checkpoints": 10,
+      "checkpoints_tensor_above_same_step_block": 10,
+      "median_same_step_gain_pp": 0.9138431038021921,
+      "minimum_same_step_gain_pp": 0.03394019655675873,
+      "final_step_gain_pp": 0.9153023384094183,
+      "tensor_final_minus_selected_pp": -0.06353866466494162
+    },
+    {
+      "seed": 1,
+      "post_init_checkpoints": 10,
+      "checkpoints_tensor_above_same_step_block": 9,
+      "median_same_step_gain_pp": 0.6787247666703689,
+      "minimum_same_step_gain_pp": -0.3914528554920471,
+      "final_step_gain_pp": 1.2885042052660722,
+      "tensor_final_minus_selected_pp": -0.3459762634458796
+    },
+    {
+      "seed": 2,
+      "post_init_checkpoints": 10,
+      "checkpoints_tensor_above_same_step_block": 9,
+      "median_same_step_gain_pp": 0.8496907146594124,
+      "minimum_same_step_gain_pp": -0.4603089357834267,
+      "final_step_gain_pp": 1.110461721380851,
+      "tensor_final_minus_selected_pp": 0.0
+    }
+  ],
+  "interpretation": "Training seeds are repetitions; heterogeneous tasks are not independent seeds. Seed0 was exploratory; seeds1/2 use the predeclared paired configuration."
+}

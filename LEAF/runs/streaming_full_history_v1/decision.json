@@ -1,0 +1,40 @@
+{
+  "created_unix": 1794883527.8066566,
+  "full_report_inspected": true,
+  "figure_inspected": true,
+  "all_audits_pass": true,
+  "bank_means_pp": {
+    "0": {
+      "full_history_minus_old_rows": -0.11299033020346537,
+      "full_history_minus_joint_memory": -0.33900218930205256,
+      "full_history_minus_unit_feedback": -0.3570618348674288,
+      "full_history_minus_correction_feedback": 0.01090479970346643,
+      "full_history_minus_original_memory": -0.043728844782154636,
+      "full_history_minus_anchored_covariance": -0.18255284155963736
+    },
+    "2": {
+      "full_history_minus_old_rows": -0.0729492629915127,
+      "full_history_minus_joint_memory": 0.4091888153031418,
+      "full_history_minus_unit_feedback": 0.134088880377738,
+      "full_history_minus_correction_feedback": -0.006902452932288805,
+      "full_history_minus_anchored_covariance": 0.15603908188631405
+    }
+  },
+  "overall_means_pp": {
+    "full_history_minus_old_rows": -0.09296979659748904,
+    "full_history_minus_joint_memory": 0.03509331300054461,
+    "full_history_minus_unit_feedback": -0.11148647724484541,
+    "full_history_minus_correction_feedback": 0.002001173385588813,
+    "full_history_minus_anchored_covariance": -0.013256879836661656
+  },
+  "decision": "Do not expand the complete-history reference or pursue further compression of this representation under the current recipe. It has no stable strong-baseline gain despite greater capacity and state.",
+  "evidence": "Bilateral gains: bank0-0.4367/+0.2107pp and bank2+0.1091/-0.2550pp. Both bank means negative; four-case mean-0.0930pp. Two negative-case task-deletion ranges remain negative.",
+  "fit_diagnostic": "Final averaged models lower full original512 calibration CE in all four cases by0.00449to0.02001, and improve calibration BAcc by0.226to1.713pp. This shows greater fitting at the evaluated final points without stable development gain; it does not establish a causal overfitting mechanism. Online losses alone were insufficient.",
+  "fit_diagnostic_source": "runs/streaming_full_history_v1/final_calibration_fit/comparison.json",
+  "fit_diagnostic_forward_examples": 65536,
+  "fit_diagnostic_optimizer_updates": 0,
+  "cost": "1648099328historybytes and2949416 final coefficients; native inference one ordinary model.",
+  "next_operator_hypothesis": "Shared input-column modulation of old/new matrix deltas, projected off their per-row plane. This has no growing expert history and shares correction coefficients across output rows. Compare against the identical unprojected column parameterization and frozen bilateral rows. This is a prototype to test, not established novelty.",
+  "novelty_boundary": "OptIMerge already includes row/column biases and low-rank masks. Projection and finer coefficient granularity are also established ideas. The proposed combination requires a concrete comparison; neither its novelty nor superiority is established.",
+  "overall_goal_complete": false
+}

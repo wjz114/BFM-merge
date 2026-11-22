@@ -1,0 +1,232 @@
+{
+  "status": "passed",
+  "plan_sha256": "3f5d71b53e9afe8c82e52d0d690ff2c5071196b12fa34426fb7abbe9117c0fd7",
+  "results": {
+    "simultaneous_mean_adam": {
+      "forward": 0.7685218738548318,
+      "reverse": 0.7768359999106038,
+      "mean": 0.7726789368827178
+    },
+    "euclidean_step_projection": {
+      "forward": 0.765620460622465,
+      "reverse": 0.7735512008853296,
+      "mean": 0.7695858307538973
+    },
+    "native_metric_step_projection": {
+      "forward": 0.7695541184315038,
+      "reverse": 0.7721435633970462,
+      "mean": 0.770848840914275
+    },
+    "original_sequential_ce": {
+      "forward": 0.758290326767421,
+      "reverse": 0.7635343957074366,
+      "mean": 0.7609123612374289
+    }
+  },
+  "contrasts": {
+    "native_metric_step_projection_minus_euclidean_step_projection": {
+      "forward": 0.393365780903876,
+      "reverse": -0.14076374882834308,
+      "mean_pp": 0.12630101603776644,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 0.5794956713147448,
+          "EMO_FACED": 1.1265432098765404,
+          "ADHD_AliMotie": 0.909090909090915,
+          "Workload": -1.041666666666663
+        },
+        "reverse": {
+          "MI_OpenBMI": -0.2613383788147017,
+          "EMO_FACED": -0.4783950617283983,
+          "ADHD_AliMotie": 0.0,
+          "Workload": 0.17667844522968323
+        }
+      }
+    },
+    "native_metric_step_projection_minus_simultaneous_mean_adam": {
+      "forward": 0.10322445766719479,
+      "reverse": -0.4692436513557663,
+      "mean_pp": -0.18300959684428575,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 0.818507222585585,
+          "EMO_FACED": 0.7870370370370416,
+          "ADHD_AliMotie": 0.909090909090915,
+          "Workload": -2.1017373380447624
+        },
+        "reverse": {
+          "MI_OpenBMI": -0.48897183527953914,
+          "EMO_FACED": -0.8487654320987748,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -0.5392373380447513
+        }
+      }
+    },
+    "euclidean_step_projection_minus_simultaneous_mean_adam": {
+      "forward": -0.2901413232366812,
+      "reverse": -0.3284799025274232,
+      "mean_pp": -0.3093106128820522,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": 0.23901155127084017,
+          "EMO_FACED": -0.3395061728394988,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -1.0600706713780994
+        },
+        "reverse": {
+          "MI_OpenBMI": -0.22763345646483746,
+          "EMO_FACED": -0.37037037037037646,
+          "ADHD_AliMotie": 0.0,
+          "Workload": -0.7159157832744345
+        }
+      }
+    },
+    "simultaneous_mean_adam_minus_original_sequential_ce": {
+      "forward": 1.0231547087410808,
+      "reverse": 1.3301604203167172,
+      "mean_pp": 1.176657564528899,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -1.1796365020731003,
+          "EMO_FACED": -1.9753086419753152,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 8.156654888103654
+        },
+        "reverse": {
+          "MI_OpenBMI": 1.6307886951829942,
+          "EMO_FACED": -2.206790123456792,
+          "ADHD_AliMotie": 0.0,
+          "Workload": 5.8966431095406335
+        }
+      }
+    },
+    "euclidean_step_projection_minus_original_sequential_ce": {
+      "forward": 0.7330133855043997,
+      "reverse": 1.001680517789294,
+      "mean_pp": 0.8673469516468468,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -0.9406249508022602,
+          "EMO_FACED": -2.314814814814814,
+          "ADHD_AliMotie": -0.909090909090915,
+          "Workload": 7.096584216725555
+        },
+        "reverse": {
+          "MI_OpenBMI": 1.4031552387181567,
+          "EMO_FACED": -2.5771604938271686,
+          "ADHD_AliMotie": 0.0,
+          "Workload": 5.180727326266199
+        }
+      }
+    },
+    "native_metric_step_projection_minus_original_sequential_ce": {
+      "forward": 1.1263791664082756,
+      "reverse": 0.8609167689609509,
+      "mean_pp": 0.9936479676846133,
+      "task_deltas_pp": {
+        "forward": {
+          "MI_OpenBMI": -0.3611292794875154,
+          "EMO_FACED": -1.1882716049382736,
+          "ADHD_AliMotie": 0.0,
+          "Workload": 6.054917550058891
+        },
+        "reverse": {
+          "MI_OpenBMI": 1.141816859903455,
+          "EMO_FACED": -3.055555555555567,
+          "ADHD_AliMotie": 0.0,
+          "Workload": 5.357405771495882
+        }
+      }
+    }
+  },
+  "audits": {
+    "simultaneous_mean_adam_forward": {
+      "run_sha256": "3ebc91c0b0e27b2c46d72ca2c66fc7c080a00e1cb087b7262a0e021849546ecd",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "85784fab05bcb1319f0d80b48a894c3732590fe2c8bcf828733e5e71d96028e7",
+        "7ca59cf2da4b4a95773d2bd7133213eb860ee8488a8122da6ccf96cc45baa347",
+        "7e2ca998bb6be1fbe07d964a5981bb2a246bc4ef12a01a186a24da14912fbbd6"
+      ],
+      "projected_updates": 0,
+      "minimum_normalized_solver_slack": 0.0,
+      "max_chain_rule_relative_error": 4.768722808871055e-08
+    },
+    "simultaneous_mean_adam_reverse": {
+      "run_sha256": "0c7c16d672d271f3a832c043c01f3086a787a72ba91db5b5b276900fb756bd50",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "e5c1d4aacfdbc8a60f45db37620976ec5eef436f9f4311ab46310dc0a38eecaf",
+        "ad5ae663592ca246149acc99bc15754846d55c056ca798f8478c6069fb282b50",
+        "7e2dd4be31640fef26c3303f41bed8c46599b4a919d11010ef00832e4ad76ee2"
+      ],
+      "projected_updates": 0,
+      "minimum_normalized_solver_slack": 0.0,
+      "max_chain_rule_relative_error": 7.802023267954961e-08
+    },
+    "euclidean_step_projection_forward": {
+      "run_sha256": "f93b1a7ada988bbc08fd3538e826a7b4457dbafd62b9a88a6b6172e639a8b287",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "85784fab05bcb1319f0d80b48a894c3732590fe2c8bcf828733e5e71d96028e7",
+        "7ca59cf2da4b4a95773d2bd7133213eb860ee8488a8122da6ccf96cc45baa347",
+        "7e2ca998bb6be1fbe07d964a5981bb2a246bc4ef12a01a186a24da14912fbbd6"
+      ],
+      "projected_updates": 22,
+      "minimum_normalized_solver_slack": -1.1767984180221028e-08,
+      "max_chain_rule_relative_error": 5.9023664420291043e-08
+    },
+    "euclidean_step_projection_reverse": {
+      "run_sha256": "5f9b2275b2b3ab89801bbcb80545447666462be9e362c4aaca5f2bb506120f0a",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "e5c1d4aacfdbc8a60f45db37620976ec5eef436f9f4311ab46310dc0a38eecaf",
+        "ad5ae663592ca246149acc99bc15754846d55c056ca798f8478c6069fb282b50",
+        "7e2dd4be31640fef26c3303f41bed8c46599b4a919d11010ef00832e4ad76ee2"
+      ],
+      "projected_updates": 29,
+      "minimum_normalized_solver_slack": -8.673617379884035e-16,
+      "max_chain_rule_relative_error": 3.528224087231218e-08
+    },
+    "native_metric_step_projection_forward": {
+      "run_sha256": "c9ca75f34c48a11b9376d46676c6dbc67a0109e7f5a8bccbb6885757df2e4832",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "85784fab05bcb1319f0d80b48a894c3732590fe2c8bcf828733e5e71d96028e7",
+        "7ca59cf2da4b4a95773d2bd7133213eb860ee8488a8122da6ccf96cc45baa347",
+        "7e2ca998bb6be1fbe07d964a5981bb2a246bc4ef12a01a186a24da14912fbbd6"
+      ],
+      "projected_updates": 16,
+      "minimum_normalized_solver_slack": -1.3982594197076148e-08,
+      "max_chain_rule_relative_error": 4.768722808871055e-08
+    },
+    "native_metric_step_projection_reverse": {
+      "run_sha256": "7fd86b21aba92ee401bc502b5b42fd0d204d7af7144b2520fcd67d4de957ae33",
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "schedules": [
+        "e5c1d4aacfdbc8a60f45db37620976ec5eef436f9f4311ab46310dc0a38eecaf",
+        "ad5ae663592ca246149acc99bc15754846d55c056ca798f8478c6069fb282b50",
+        "7e2dd4be31640fef26c3303f41bed8c46599b4a919d11010ef00832e4ad76ee2"
+      ],
+      "projected_updates": 28,
+      "minimum_normalized_solver_slack": -1.1743262751107153e-07,
+      "max_chain_rule_relative_error": 6.710177677135456e-08
+    }
+  },
+  "checks": {
+    "frozen_sources": true,
+    "matched_schedules": true,
+    "matched_CE_and_update_budgets": true,
+    "independent_native_exports": true,
+    "same_full_development_data": true,
+    "recorded_QP_tolerances": true
+  },
+  "scientific_updates": 648,
+  "training_CE_examples": 33408,
+  "new_source_steps": 0,
+  "official_test_read": false,
+  "superiority_established": false,
+  "novelty_established": false,
+  "overall_goal_achieved": false,
+  "limitation": "Projection is first-order on calibration batches; tolerances are numerical, not a finite-step or generalization guarantee. Original sequential CE has fewer CE exposures; matched new mean-Adam is the primary control."
+}

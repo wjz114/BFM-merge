@@ -1,0 +1,78 @@
+{
+  "unix": 1794868044.3097086,
+  "decision": "Do not expand predictive-response history selection to more banks or tune its probe count/rank. It does not establish a better merger than the earlier stronger references.",
+  "results": {
+    "forward": {
+      "macro_BAcc": {
+        "energy_history": 0.6351316086868948,
+        "predictive_history": 0.6370507765756623,
+        "incoming_rows": 0.633777416886041,
+        "bilateral": 0.639291070668039,
+        "coefficient_history": 0.6379731683212204,
+        "ce_response_history": 0.6372372093784291,
+        "previous_energy_history": 0.6370220001735691
+      },
+      "primary_gain_pp": 0.19191678887676353,
+      "gain_over_original_history_pp": -0.09223917455580474,
+      "primary_task_deletion_range_pp": [
+        0.11147332242601819,
+        0.28566900067342677
+      ]
+    },
+    "reverse": {
+      "macro_BAcc": {
+        "energy_history": 0.630105178648694,
+        "predictive_history": 0.6311843889440938,
+        "incoming_rows": 0.6341325383476892,
+        "bilateral": 0.6311860541815895,
+        "coefficient_history": 0.636120253976665,
+        "ce_response_history": 0.6280838565899081,
+        "previous_energy_history": 0.6292040050662773
+      },
+      "primary_gain_pp": 0.10792102953999029,
+      "gain_over_original_history_pp": -0.4935865032571142,
+      "primary_task_deletion_range_pp": [
+        0.013343051958832512,
+        0.4233214970766578
+      ]
+    }
+  },
+  "mean_gain_over_two_orders_pp": {
+    "predictive_history_minus_energy_history": 0.14991890920837692,
+    "predictive_history_minus_incoming_rows": 0.016260514301302126,
+    "predictive_history_minus_coefficient_history": -0.29291283890645947,
+    "energy_history_minus_coefficient_history": -0.4428317481148364,
+    "predictive_history_minus_bilateral": -0.11209796649361317,
+    "predictive_history_minus_ce_response_history": 0.14570497757095957,
+    "energy_history_minus_previous_energy_history": -0.04946089521288591
+  },
+  "checks": {
+    "actual_data_schedules_auxiliary_ids_match": true,
+    "first_expert_unchanged": true,
+    "checkpoint_and_statistic_hashes": true,
+    "fixed_coefficient_means_exact": true,
+    "paired_actual_probe_sign_hashes": true,
+    "score_vjp_costs_accounted": true,
+    "native_exports_pass": true,
+    "saved_response_covariances_finite_symmetric": true,
+    "raw_history_lineages_replay_exactly": true,
+    "energy_history_matches_original_history_exactly": true
+  },
+  "figure_inspected": true,
+  "notable_failure": "Reverse Workload is4.6231pp below the fresh energy control and7.7205pp below original history; improvements on MI tasks do not establish overall superiority.",
+  "interpretation": "Both primary gains are positive but small relative to observed same-criterion variation. The comparison is confounded by measurable pre-intervention numerical differences; no causal claim that all small gains are from the selection criterion. Generic predictive-Fisher compression is known and these results do not justify a new method claim.",
+  "next_action": "Reassess the earlier bounded historical-dictionary candidate and strong incoming-row, bilateral-row, and random-history controls in a common strict deterministic protocol. This is needed to decide whether its apparent benefit survives controlled numerical computation before designing further variants.",
+  "next_design": "Bank0 x2fixedorders x4conditions, same original512replay12roundsAdam0.01fixedmean. Existing operators unchanged; strict backend settings and a common runner. No extra predictive probes. No learning-rate or rank sweep. Native engineering before launch.",
+  "repeatability_evidence": "runs/deterministic_stream_prefix_v1/decision.json",
+  "scientific_cost": {
+    "optimizer_updates": 6480,
+    "CE_example_passes": 103680,
+    "extra_score_VJPs": 6480,
+    "extra_score_VJP_example_passes": 103680
+  },
+  "sha256": {
+    "runs/streaming_predictive_sketch_v1/comparison.json": "f201919b3a9cf4544e035c06ef98a88c2097237fddaed566f762e39c0cd0728a",
+    "runs/streaming_predictive_sketch_v1/plan.json": "478fc97e229c52a3cf07eb6164a64888e53a30c7c43c658e3454464099558065"
+  },
+  "overall_research_goal_achieved": false
+}

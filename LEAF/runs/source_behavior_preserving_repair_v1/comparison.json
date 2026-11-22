@@ -1,0 +1,166 @@
+{
+  "status": "passed",
+  "results": {
+    "bilateral": {
+      "forward": 0.758290326767421,
+      "reverse": 0.7635343957074366
+    },
+    "plain_ce": {
+      "forward": 0.7687104961973156,
+      "reverse": 0.7710457456808073
+    },
+    "source_context_kl": {
+      "forward": 0.7642164877618828,
+      "reverse": 0.7631268755842107
+    },
+    "merged_context_kl": {
+      "forward": 0.7679294818834174,
+      "reverse": 0.7680895433037835
+    }
+  },
+  "contrasts": {
+    "source_context_kl_minus_plain_ce": {
+      "paired_effects_pp": {
+        "forward": -0.44940084354327947,
+        "reverse": -0.7918870096596642
+      },
+      "mean_pp": -0.6206439266014718,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.46734272109641983,
+        "EMO_FACED": 0.023148148148149916,
+        "ADHD_AliMotie": -1.3636363636363613,
+        "Workload": -1.6094302120141402
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.9833061425007839,
+        "EMO_FACED": -0.8352412848513605,
+        "ADHD_AliMotie": -0.3729797809231901,
+        "Workload": -0.2910484981305972
+      }
+    },
+    "source_context_kl_minus_merged_context_kl": {
+      "paired_effects_pp": {
+        "forward": -0.3712994121534585,
+        "reverse": -0.49626677195728774
+      },
+      "mean_pp": -0.43378309205537313,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.18153070439709817,
+        "EMO_FACED": 0.2006172839506104,
+        "ADHD_AliMotie": -1.3636363636363669,
+        "Workload": -0.7536439929328564
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.638887690872871,
+        "EMO_FACED": -0.645249884057375,
+        "ADHD_AliMotie": -0.12383200152838263,
+        "Workload": -0.3271627917628861
+      }
+    },
+    "source_context_kl_minus_bilateral": {
+      "paired_effects_pp": {
+        "forward": 0.5926160994461749,
+        "reverse": -0.04075201232259795
+      },
+      "mean_pp": 0.27593204356178846,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 1.2044321615088394,
+        "EMO_FACED": -0.7098765432098864,
+        "ADHD_AliMotie": 0.0,
+        "Workload": 0.6091725559481731
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.03356799575390442,
+        "EMO_FACED": 0.6045349058190042,
+        "ADHD_AliMotie": 0.3679093914157087,
+        "Workload": 0.16485187276631766
+      }
+    },
+    "merged_context_kl_minus_plain_ce": {
+      "paired_effects_pp": {
+        "forward": -0.07810143138982095,
+        "reverse": -0.29562023770237644
+      },
+      "mean_pp": -0.1868608345460987,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.28581201669932166,
+        "EMO_FACED": -0.1774691358024605,
+        "ADHD_AliMotie": 5.551115123125783e-15,
+        "Workload": -0.8557862190812837
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": -0.3444184516279129,
+        "EMO_FACED": -0.1899914007939855,
+        "ADHD_AliMotie": -0.2491477793948075,
+        "Workload": 0.03611429363228891
+      }
+    },
+    "plain_ce_minus_bilateral": {
+      "paired_effects_pp": {
+        "forward": 1.0420169429894544,
+        "reverse": 0.7511349973370662
+      },
+      "mean_pp": 0.8965759701632603,
+      "task_mean_effects_pp": {
+        "MI_OpenBMI": 0.7370894404124195,
+        "EMO_FACED": -0.7330246913580363,
+        "ADHD_AliMotie": 1.3636363636363613,
+        "Workload": 2.218602767962313
+      },
+      "leave_one_task_out_pp": {
+        "MI_OpenBMI": 0.9497381467468794,
+        "EMO_FACED": 1.4397761906703648,
+        "ADHD_AliMotie": 0.7408891723388988,
+        "Workload": 0.4559003708969149
+      }
+    }
+  },
+  "audits": {
+    "plain_ce_forward": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "source_context_extra_student_forwards": 0,
+      "elapsed_seconds": 62.838887305988465,
+      "peak_reserved_bytes": 6073352192
+    },
+    "source_context_kl_forward": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "source_context_extra_student_forwards": 1728,
+      "elapsed_seconds": 71.62078640202526,
+      "peak_reserved_bytes": 7218397184
+    },
+    "merged_context_kl_forward": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "source_context_extra_student_forwards": 0,
+      "elapsed_seconds": 64.26835899497382,
+      "peak_reserved_bytes": 6073352192
+    },
+    "plain_ce_reverse": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "source_context_extra_student_forwards": 0,
+      "elapsed_seconds": 61.491002318041865,
+      "peak_reserved_bytes": 6073352192
+    },
+    "source_context_kl_reverse": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "source_context_extra_student_forwards": 1728,
+      "elapsed_seconds": 65.52840751199983,
+      "peak_reserved_bytes": 7218397184
+    },
+    "merged_context_kl_reverse": {
+      "independent_export_max_abs_error": 2.384185791015625e-07,
+      "source_context_extra_student_forwards": 0,
+      "elapsed_seconds": 57.87212236202322,
+      "peak_reserved_bytes": 6073352192
+    }
+  },
+  "scientific_runs": 6,
+  "hybrid_optimizer_calls": 648,
+  "CE_examples": 10368,
+  "auxiliary_source_context_student_forward_examples": 3456,
+  "actual_new_teacher_forward_examples": 0,
+  "required_teacher_cache_examples_per_run": 2048,
+  "official_test_read": false,
+  "novelty_established": false,
+  "overall_goal_achieved": false,
+  "scope": "One original expert/calibration bank,four exposed development tasks,two actual arrival orders. All conditions use the identical bilateral-plus-native family,optimizer and CE schedule. Source-context KL adds an extra student forward each update and retains arrived experts during training. Merged-context KL also changes coefficient gradients,so differences do not isolate only context location. Teacher cache construction is2048 original-expert examples perrun in principle;the present run reuses previously verified targets with zero new teacher forwards. Final inference is one native checkpoint. No exact source-function preservation,novelty,independent test or general performance claim."
+}

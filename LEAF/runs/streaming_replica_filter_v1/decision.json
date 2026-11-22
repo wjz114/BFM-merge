@@ -1,0 +1,16 @@
+{
+  "created_unix": 1794908199.4804502,
+  "comparison_sha256": "6558e68b8cabab40bb32ac124d9e8732bdd24f3939cee40e3a5cf1ebb0a7423e",
+  "decision": "replicate_unchanged_operator_on_calibration_seed2",
+  "overall_goal_achieved": false,
+  "superiority_established": false,
+  "novelty_established": false,
+  "mean_primary_gains_pp": {
+    "innovation_filter_minus_source_soup": 0.1654283742143983,
+    "innovation_filter_minus_shifted_filter": 0.5186217541053938
+  },
+  "evidence": "Both primary contrasts positive in both orders. Against soup10tasks improve5decline1tie forward;12improve2decline2tie reverse. Leave-one-task-out mean differences remain positive in each order. Same-source gain is modest; two correlated orders of one exposed calibration bank do not establish stability.",
+  "source_budget": "All new arms use the same48experts from three full-training banks. The+0.62298pp mean versus one-bank bilateral includes a+0.45755pp source-soup gain; the filter-specific comparison is+0.16543pp.",
+  "next": "Unchanged three-arm/two-order calibration-seed2 replication. Same source banks; no rank, scale, learning-rate or checkpoint-selection search.",
+  "plot_inspected": true
+}

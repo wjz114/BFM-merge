@@ -1,0 +1,34 @@
+{
+  "frozen_unix": 1794867336.991055,
+  "scientific_plan": "runs/streaming_predictive_sketch_v1/plan.json",
+  "sha256": {
+    "check_deterministic_stream_prefix.py": "11443d6417bc106fee06cc1b4907199a2c789e129e957e7cf756a77acf726004",
+    "runs/streaming_predictive_sketch_v1/plan.json": "478fc97e229c52a3cf07eb6164a64888e53a30c7c43c658e3454464099558065",
+    "runs/merge_backward_repeatability_v1/comparison.json": "6db537aaf84e421fb1032188d42aec9ac83b305017c6723c47c279e04d9ab5a4"
+  },
+  "purpose": "Check two independent strict processes produce identical updated coefficients, native checkpoints, score covariances and history on the first three experts.",
+  "trials": 2,
+  "seed_in_both_trials": 0,
+  "gpu": 0,
+  "full_rounds": 12,
+  "batch_size": 16,
+  "average_rounds": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "planned_optimizer_updates": 120,
+  "planned_CE_example_passes": 1920,
+  "planned_score_VJPs": 120,
+  "planned_score_VJP_example_passes": 1920,
+  "planned_auxiliary_forward_examples": 96,
+  "strict_settings": [
+    "torch.use_deterministic_algorithms(True,warn_only=False)",
+    "torch.backends.cudnn.deterministic=True",
+    "CUBLAS_WORKSPACE_CONFIG=:4096:8"
+  ],
+  "scope": "Training-only engineering; no development validation or official test. Does not alter ongoing frozen scientific runs. Full16task repeatability remains beyond this prefix."
+}

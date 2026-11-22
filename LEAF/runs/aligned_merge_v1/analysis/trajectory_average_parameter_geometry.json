@@ -1,0 +1,95 @@
+{
+  "meaning": "Actual active parameter differences; coefficient sums are not displacement estimates. Geometry alone does not establish a generalization mechanism.",
+  "runs": {
+    "seed0/block_balanced_avg": {
+      "checkpoint_sha256": "e662fb04813e345b30729a7d2243353d61043783971304022820a27accf43d44",
+      "actual_weight_displacements": {
+        "backbone": {
+          "averaged_delta_from_base_l2": 16.066842837097187,
+          "selected_delta_from_base_l2": 13.01448901877281,
+          "averaged_minus_selected_l2": 5.244210825448149
+        },
+        "interface": {
+          "averaged_delta_from_base_l2": 13.508537447998751,
+          "selected_delta_from_base_l2": 13.421210494268148,
+          "averaged_minus_selected_l2": 1.9033602088533308
+        }
+      }
+    },
+    "seed0/tensor_balanced_avg": {
+      "checkpoint_sha256": "18760b8d10257c7a9ecf174711cf17feb2cc7b4f2e259e39639cf4f93a26cb31",
+      "actual_weight_displacements": {
+        "backbone": {
+          "averaged_delta_from_base_l2": 19.319500531184797,
+          "selected_delta_from_base_l2": 21.530605451490274,
+          "averaged_minus_selected_l2": 3.3691359689280462
+        },
+        "interface": {
+          "averaged_delta_from_base_l2": 13.73177488361027,
+          "selected_delta_from_base_l2": 14.243541771218595,
+          "averaged_minus_selected_l2": 1.2899498873482667
+        }
+      }
+    },
+    "seed1/block_balanced_avg": {
+      "checkpoint_sha256": "847cdbbbfca02ee2111f2bf742cb11636f8b88053e03182ba636a585ceac27cf",
+      "actual_weight_displacements": {
+        "backbone": {
+          "averaged_delta_from_base_l2": 16.77990433150675,
+          "selected_delta_from_base_l2": 9.879406622377148,
+          "averaged_minus_selected_l2": 9.353681843221697
+        },
+        "interface": {
+          "averaged_delta_from_base_l2": 13.555640014687647,
+          "selected_delta_from_base_l2": 11.517368559697609,
+          "averaged_minus_selected_l2": 3.977022943003995
+        }
+      }
+    },
+    "seed1/tensor_balanced_avg": {
+      "checkpoint_sha256": "1e254a1d2e06730c026de7beb051a8c301ccf320aacb731207da138fa93ba01f",
+      "actual_weight_displacements": {
+        "backbone": {
+          "averaged_delta_from_base_l2": 19.53889226769836,
+          "selected_delta_from_base_l2": 22.612342317063728,
+          "averaged_minus_selected_l2": 4.655333920310818
+        },
+        "interface": {
+          "averaged_delta_from_base_l2": 13.672991794938653,
+          "selected_delta_from_base_l2": 14.226233440742014,
+          "averaged_minus_selected_l2": 1.723787527030425
+        }
+      }
+    },
+    "seed2/block_balanced_avg": {
+      "checkpoint_sha256": "90f67a889385caf503697909840361fadff22742310bcfd8ef7e5c6acff81999",
+      "actual_weight_displacements": {
+        "backbone": {
+          "averaged_delta_from_base_l2": 16.3639108864611,
+          "selected_delta_from_base_l2": 18.581366821534306,
+          "averaged_minus_selected_l2": 3.3771918350104806
+        },
+        "interface": {
+          "averaged_delta_from_base_l2": 13.038119005244473,
+          "selected_delta_from_base_l2": 13.283012696209484,
+          "averaged_minus_selected_l2": 1.0498072491236126
+        }
+      }
+    },
+    "seed2/tensor_balanced_avg": {
+      "checkpoint_sha256": "37761113245045e8dfc74b1493bc83c6ebe5e5a053b9f9b3a146ebce43f02c62",
+      "actual_weight_displacements": {
+        "backbone": {
+          "averaged_delta_from_base_l2": 19.195513969399276,
+          "selected_delta_from_base_l2": 20.234051732294446,
+          "averaged_minus_selected_l2": 2.1931393847457725
+        },
+        "interface": {
+          "averaged_delta_from_base_l2": 13.656428557137154,
+          "selected_delta_from_base_l2": 13.758563568940835,
+          "averaged_minus_selected_l2": 1.0776847146893453
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "tensor_coefficients_checked": 4,
+  "max_abs_error": 4.481309767712105e-11,
+  "max_relative_error": 5.58941961932151e-10,
+  "full_vs_detached_max_grad_delta": 0.11531820480164406,
+  "inactive_hinge_max_grad_delta": 0.0,
+  "active_hinge_max_grad_delta": 0.21281511836003536
+}

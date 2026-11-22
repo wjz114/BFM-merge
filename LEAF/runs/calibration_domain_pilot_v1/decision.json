@@ -1,0 +1,143 @@
+{
+  "created_unix": 1794921381.5658033,
+  "comparison_sha256": "83263066bd8783670752eca82127cd19cd3873f4b16490f42769481bb7048d19",
+  "decision": "Close this fixed calibration-provenance diagnostic without expanding to full16 or sweeping pool size, seeds, step count or source mixtures.",
+  "means": {
+    "single_full_original512_reference": 0.7643237177019893,
+    "single_full_training_calibration": 0.7671965909880615,
+    "single_full_development_calibration": 0.7673388276028873,
+    "source_soup_original512_reference": 0.7728206888771325,
+    "source_soup_training_calibration": 0.7714595179041477,
+    "source_soup_development_calibration": 0.7634721339972483
+  },
+  "contrasts": {
+    "single_full_development_calibration_minus_training_calibration": {
+      "mean_pp": 0.014223661482581917,
+      "order_deltas_pp": [
+        0.42646707295248554,
+        -0.3980197499873217
+      ],
+      "task_mean_deltas_pp": {
+        "MI_OpenBMI": 0.011153278766529162,
+        "EMO_FACED": -0.4522956135859346,
+        "ADHD_AliMotie": 1.7857142857142905,
+        "Workload": -1.2876773049645405
+      },
+      "leave_one_task_out_mean_pp": {
+        "MI_OpenBMI": 0.015247122387938461,
+        "EMO_FACED": 0.1697300865054264,
+        "ADHD_AliMotie": -0.5762732132613153,
+        "Workload": 0.448190650298295
+      }
+    },
+    "single_full_development_calibration_minus_original512_reference": {
+      "mean_pp": 0.30151099008980387,
+      "order_deltas_pp": [
+        0.8093318234446034,
+        -0.20630984326499568
+      ],
+      "task_mean_deltas_pp": {
+        "MI_OpenBMI": 1.1645014434821188,
+        "EMO_FACED": -1.0454002389486183,
+        "ADHD_AliMotie": 3.5714285714285756,
+        "Workload": -2.4844858156028384
+      },
+      "leave_one_task_out_mean_pp": {
+        "MI_OpenBMI": 0.013847505625706358,
+        "EMO_FACED": 0.7504813997692854,
+        "ADHD_AliMotie": -0.7884615370231126,
+        "Workload": 1.2301765919873586
+      }
+    },
+    "single_full_training_calibration_minus_original512_reference": {
+      "mean_pp": 0.28728732860722195,
+      "order_deltas_pp": [
+        0.3828647504921179,
+        0.19170990672232602
+      ],
+      "task_mean_deltas_pp": {
+        "MI_OpenBMI": 1.1533481647155897,
+        "EMO_FACED": -0.5931046253626837,
+        "ADHD_AliMotie": 1.785714285714285,
+        "Workload": -1.1968085106382975
+      },
+      "leave_one_task_out_mean_pp": {
+        "MI_OpenBMI": -0.0013996167622321032,
+        "EMO_FACED": 0.580751313263859,
+        "ADHD_AliMotie": -0.2121883237617972,
+        "Workload": 0.7819859416890637
+      }
+    },
+    "source_soup_development_calibration_minus_training_calibration": {
+      "mean_pp": -0.7987383906899237,
+      "order_deltas_pp": [
+        0.02548780462949818,
+        -1.6229645860093456
+      ],
+      "task_mean_deltas_pp": {
+        "MI_OpenBMI": -1.3403266869705943,
+        "EMO_FACED": -1.3455083347556407,
+        "ADHD_AliMotie": -1.785714285714285,
+        "Workload": 1.2765957446808474
+      },
+      "leave_one_task_out_mean_pp": {
+        "MI_OpenBMI": -0.6182089585963594,
+        "EMO_FACED": -0.6164817426680106,
+        "ADHD_AliMotie": -0.46974642568179586,
+        "Workload": -1.4905164358135066
+      }
+    },
+    "source_soup_development_calibration_minus_original512_reference": {
+      "mean_pp": -0.9348554879884119,
+      "order_deltas_pp": [
+        -1.5262435928424134,
+        -0.3434673831344104
+      ],
+      "task_mean_deltas_pp": {
+        "MI_OpenBMI": -0.7755246502331725,
+        "EMO_FACED": -0.5177220230983604,
+        "ADHD_AliMotie": -1.785714285714285,
+        "Workload": -0.6604609929078076
+      },
+      "leave_one_task_out_mean_pp": {
+        "MI_OpenBMI": -0.987965767240151,
+        "EMO_FACED": -1.0738999762850885,
+        "ADHD_AliMotie": -0.6512358887464468,
+        "Workload": -1.0263203196819393
+      }
+    },
+    "source_soup_training_calibration_minus_original512_reference": {
+      "mean_pp": -0.1361170972984882,
+      "order_deltas_pp": [
+        -1.5517313974719116,
+        1.2794972028749352
+      ],
+      "task_mean_deltas_pp": {
+        "MI_OpenBMI": 0.5648020367374218,
+        "EMO_FACED": 0.8277863116572803,
+        "ADHD_AliMotie": 0.0,
+        "Workload": -1.937056737588655
+      },
+      "leave_one_task_out_mean_pp": {
+        "MI_OpenBMI": -0.3697568086437915,
+        "EMO_FACED": -0.45741823361707773,
+        "ADHD_AliMotie": -0.18148946306465094,
+        "Workload": 0.46419611613156736
+      }
+    }
+  },
+  "evidence": [
+    "Matched provenance effect is +0.0142pp with single full sources, with opposite signs across orders; source soup gives -0.7987pp.",
+    "Against original512 on the exact same evaluation remainder, development calibration gives +0.3015pp for single sources with opposite signs, and -0.9349pp for source soup with both signs negative.",
+    "The single-source average versus original512 is largely driven by the small ADHD evaluation subset; leave-one-task-out effects are reported. This does not establish robust improvement.",
+    "Sampling replacement, equal-class pool construction and smaller pools distinguish both paired arms from original512; only the paired training-vs-development contrast isolates provenance."
+  ],
+  "limits": [
+    "One source bank and one pool split; four selected tasks and two orders, not independent replicates.",
+    "Source checkpoints were selected on the entire original development pool; the evaluation remainder is exploratory, not blind.",
+    "Failure under this fixed protocol does not establish that calibration provenance can never matter."
+  ],
+  "new_method_contribution_established": false,
+  "overall_goal_achieved": false,
+  "next_action": "Develop a concrete task-update coordination candidate with a matched simultaneous-gradient baseline and explicit comparison to existing multi-objective optimization. Do not relabel CAGrad, Pareto Merging, or a data-provenance change as a novel method."
+}

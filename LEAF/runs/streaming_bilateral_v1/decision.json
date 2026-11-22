@@ -1,0 +1,30 @@
+{
+  "unix": 1794853889.0279632,
+  "comparison_sha256": "c9928715d7eff6753639abb8c84714ca717089e9d01dcdeb94591826450ea3c2",
+  "macro_BAcc": {
+    "forward": {
+      "incoming_rows": 0.633777416886041,
+      "old_rows": 0.639291070668039,
+      "random_old_rows": 0.6368352638822871
+    },
+    "reverse": {
+      "incoming_rows": 0.6341325383476892,
+      "old_rows": 0.6311860541815895,
+      "random_old_rows": 0.6315901833359066
+    }
+  },
+  "gain_over_incoming_rows_pp": {
+    "forward": 0.5513653781998109,
+    "reverse": -0.2946484166099803
+  },
+  "gain_over_random_pp": {
+    "forward": 0.24558067857519716,
+    "reverse": -0.040412915431716975
+  },
+  "decision": "Do not promote bilateral rows or launch seed expansion for this version: forward benefit reverses in the preplanned reverse order. Incoming rows remain the stronger stable reference in this comparison.",
+  "interpretation": "Independent old-row adjustment can improve one sequence, but extra degrees of freedom alone do not reliably improve merging. In reverse, both old12 and new4 final means are lower than baseline; do not attribute the aggregate failure exclusively to forgetting.",
+  "next": "Frozen rank2 historical task-axis sketch/complement operator and matched random complement, both orders. Must compare against both incoming-row and bilateral baselines.",
+  "next_plan": "runs/streaming_history_sketch_v1/plan.json",
+  "overall_goal_achieved": false,
+  "official_test_read": false
+}

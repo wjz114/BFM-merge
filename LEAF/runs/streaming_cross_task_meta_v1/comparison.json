@@ -1,0 +1,889 @@
+{
+  "sources": {
+    "runs/streaming_cross_task_meta_v1/cross_task_meta_forward/run.json": "e0595fea5d23b7b003e6efd3d1dbc731c237c1108d708107b60287ed59545d59",
+    "runs/streaming_cross_task_meta_v1/detached_lookahead_forward/run.json": "e1d1d6599766de490a3a60a2ff458331298c30828f9d00455cb74df4693ea4a7",
+    "runs/streaming_cross_task_meta_v1/paired_ce_forward/run.json": "8615e95fd24d7ff0b46488cb4dda8ce98c410d15fda29884a1cf1162546dc78d",
+    "runs/streaming_strict_history_v1/old_rows_forward/run.json": "a5a60808433a112515febc2fd7625797237822673a43f6990be0df223bfbe408",
+    "runs/streaming_cross_task_meta_v1/cross_task_meta_reverse/run.json": "c7c673d8efb5c73be7533d333de1a552b1ac046bdbe819b40315cccb7e190e5c",
+    "runs/streaming_cross_task_meta_v1/detached_lookahead_reverse/run.json": "aec43415605f89d16b25b837608f013e7419243abaa8d5f8e4f8245f2bc659da",
+    "runs/streaming_cross_task_meta_v1/paired_ce_reverse/run.json": "07757d89ec409a2d7b6f89ef3339bbbc0eaff3188fb608aaac0b96a6588c5f84",
+    "runs/streaming_strict_history_v1/old_rows_reverse/run.json": "c9b1a70e2cbe0e640749b80cf23157c10b7bbed36e597f4bc7b618b5d54b0efd"
+  },
+  "plan_sha256": "07810e77e8d258fc1045d28e34747166be1158c105cc658391a9aaeb05c8c07c",
+  "orders": {
+    "forward": {
+      "macro_BAcc": {
+        "cross_task_meta": 0.6232974691520303,
+        "detached_lookahead": 0.6355680465383834,
+        "paired_ce": 0.6340685222539308,
+        "old_rows": 0.6370832815325755
+      },
+      "contrasts": {
+        "cross_task_meta_minus_paired_ce": {
+          "gain_pp": -1.0771053101900536,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.8664526535291484,
+            "MI_BCIC_IV2a": -3.047186025797033,
+            "MI_ShanghaiU": 0.93705639437347,
+            "MI_BCIC_Upperlimb": -2.358493804276929,
+            "MI_HighGamma": -0.9250056471651225,
+            "MI_Cho2017": -0.3712871287128605,
+            "MI_Shin2017A": -6.761412575366066,
+            "MI_PhysioNet": -4.3956999245943535,
+            "EMO_FACED": -0.6944444444444364,
+            "EMO_SEED_3_seg4": 0.020952757656444998,
+            "EMO_SEED_4_seg4": 1.3711340578223763,
+            "EMO_SEED_5_seg4": -0.5312079804846936,
+            "EMO_SEED_7_seg4": -0.7317186820622212,
+            "SSVEP_OpenBMI": -2.4207828892850003,
+            "Workload": 2.631772673733812,
+            "ADHD_AliMotie": 0.9090909090909038
+          },
+          "improved": 5,
+          "declined": 11,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -1.3243638424516448,
+            -0.6981514925116528
+          ]
+        },
+        "cross_task_meta_minus_detached_lookahead": {
+          "gain_pp": -1.2270577386353119,
+          "per_task_pp": {
+            "MI_OpenBMI": -1.2009972649636325,
+            "MI_BCIC_IV2a": -4.363768932884682,
+            "MI_ShanghaiU": 0.7615498774035334,
+            "MI_BCIC_Upperlimb": -1.2241844872366903,
+            "MI_HighGamma": -2.2654167607860876,
+            "MI_Cho2017": -0.3712871287128605,
+            "MI_Shin2017A": -4.875107665805334,
+            "MI_PhysioNet": -4.229553543870068,
+            "EMO_FACED": -1.3425925925925897,
+            "EMO_SEED_3_seg4": -1.0191039559829695,
+            "EMO_SEED_4_seg4": 0.8785934800545236,
+            "EMO_SEED_5_seg4": -0.6834817652399128,
+            "EMO_SEED_7_seg4": -0.7875456333955255,
+            "SSVEP_OpenBMI": -1.9557563765865704,
+            "Workload": 1.22754711425207,
+            "ADHD_AliMotie": 1.8181818181818077
+          },
+          "improved": 4,
+          "declined": 12,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -1.4300737090897864,
+            -0.9838544101573103
+          ]
+        },
+        "detached_lookahead_minus_paired_ce": {
+          "gain_pp": 0.14995242844525816,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.3345446114344841,
+            "MI_BCIC_IV2a": 1.316582907087649,
+            "MI_ShanghaiU": 0.17550651696993658,
+            "MI_BCIC_Upperlimb": -1.1343093170402385,
+            "MI_HighGamma": 1.340411113620965,
+            "MI_Cho2017": 0.0,
+            "MI_Shin2017A": -1.886304909560732,
+            "MI_PhysioNet": -0.16614638072428578,
+            "EMO_FACED": 0.6481481481481532,
+            "EMO_SEED_3_seg4": 1.0400567136394145,
+            "EMO_SEED_4_seg4": 0.49254057776785265,
+            "EMO_SEED_5_seg4": 0.15227378475521913,
+            "EMO_SEED_7_seg4": 0.05582695133330429,
+            "SSVEP_OpenBMI": -0.4650265126984299,
+            "Workload": 1.404225559481742,
+            "ADHD_AliMotie": -0.9090909090909038
+          },
+          "improved": 10,
+          "declined": 5,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            0.06633421970949256,
+            0.28570291764565753
+          ]
+        },
+        "cross_task_meta_minus_old_rows": {
+          "gain_pp": -1.3785812380545344,
+          "per_task_pp": {
+            "MI_OpenBMI": -2.1860611898195437,
+            "MI_BCIC_IV2a": -2.899912855671649,
+            "MI_ShanghaiU": -0.3552071234998122,
+            "MI_BCIC_Upperlimb": -3.3691461000697975,
+            "MI_HighGamma": -2.467811158798283,
+            "MI_Cho2017": -1.1757425742574212,
+            "MI_Shin2017A": -4.651162790697672,
+            "MI_PhysioNet": -3.897895674528906,
+            "EMO_FACED": -0.9722222222222243,
+            "EMO_SEED_3_seg4": -0.6865361190317332,
+            "EMO_SEED_4_seg4": 0.909048648496702,
+            "EMO_SEED_5_seg4": 0.2991930670236176,
+            "EMO_SEED_7_seg4": -0.38725305132464305,
+            "SSVEP_OpenBMI": -2.321573799710508,
+            "Workload": 0.36255889281509024,
+            "ADHD_AliMotie": 1.7424242424242342
+          },
+          "improved": 4,
+          "declined": 12,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -1.5866482700864524,
+            -1.1604091345449918
+          ]
+        },
+        "detached_lookahead_minus_old_rows": {
+          "gain_pp": -0.15152349941922258,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.9850639248559112,
+            "MI_BCIC_IV2a": 1.4638560772130327,
+            "MI_ShanghaiU": -1.1167570009033456,
+            "MI_BCIC_Upperlimb": -2.1449616128331073,
+            "MI_HighGamma": -0.2023943980121956,
+            "MI_Cho2017": -0.8044554455445607,
+            "MI_Shin2017A": 0.22394487510766226,
+            "MI_PhysioNet": 0.33165786934116204,
+            "EMO_FACED": 0.37037037037036535,
+            "EMO_SEED_3_seg4": 0.3325678369512364,
+            "EMO_SEED_4_seg4": 0.030455168442178326,
+            "EMO_SEED_5_seg4": 0.9826748322635304,
+            "EMO_SEED_7_seg4": 0.4002925820708825,
+            "SSVEP_OpenBMI": -0.3658174231239375,
+            "Workload": -0.8649882214369797,
+            "ADHD_AliMotie": -0.07575757575757347
+          },
+          "improved": 8,
+          "declined": 8,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.2592154711947063,
+            -0.018627625191630266
+          ]
+        },
+        "paired_ce_minus_old_rows": {
+          "gain_pp": -0.30147592786448074,
+          "per_task_pp": {
+            "MI_OpenBMI": -1.3196085362903953,
+            "MI_BCIC_IV2a": 0.14727317012538377,
+            "MI_ShanghaiU": -1.2922635178732822,
+            "MI_BCIC_Upperlimb": -1.0106522957928687,
+            "MI_HighGamma": -1.5428055116331607,
+            "MI_Cho2017": -0.8044554455445607,
+            "MI_Shin2017A": 2.1102497846683943,
+            "MI_PhysioNet": 0.4978042500654478,
+            "EMO_FACED": -0.2777777777777879,
+            "EMO_SEED_3_seg4": -0.7074888766881782,
+            "EMO_SEED_4_seg4": -0.4620854093256743,
+            "EMO_SEED_5_seg4": 0.8304010475083112,
+            "EMO_SEED_7_seg4": 0.3444656307375782,
+            "SSVEP_OpenBMI": 0.09920908957449237,
+            "Workload": -2.269213780918722,
+            "ADHD_AliMotie": 0.8333333333333304
+          },
+          "improved": 7,
+          "declined": 9,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.462257642033339,
+            -0.17029340432753134
+          ]
+        }
+      },
+      "gain_over_stages_pp": {
+        "cross_task_meta_minus_paired_ce": {
+          "1": 0.0,
+          "4": -3.272070563710694,
+          "8": -4.617839821711245,
+          "12": -2.092462381684923,
+          "16": -1.0771053101900518
+        },
+        "cross_task_meta_minus_detached_lookahead": {
+          "1": 0.0,
+          "4": -3.135562854655305,
+          "8": -3.6286638668156623,
+          "12": -1.6241053749273204,
+          "16": -1.2270577386353065
+        },
+        "detached_lookahead_minus_paired_ce": {
+          "1": 0.0,
+          "4": -0.136507709055389,
+          "8": -0.9891759548955825,
+          "12": -0.4683570067576026,
+          "16": 0.1499524284452547
+        },
+        "cross_task_meta_minus_old_rows": {
+          "1": 0.0,
+          "4": -2.640400168898982,
+          "8": -5.021295892340638,
+          "12": -2.117859111228193,
+          "16": -1.3785812380545215
+        },
+        "detached_lookahead_minus_old_rows": {
+          "1": 0.0,
+          "4": 0.49516268575632294,
+          "8": -1.3926320255249758,
+          "12": -0.4937537363008726,
+          "16": -0.15152349941921495
+        },
+        "paired_ce_minus_old_rows": {
+          "1": 0.0,
+          "4": 0.6316703948117119,
+          "8": -0.40345607062939326,
+          "12": -0.02539672954326999,
+          "16": -0.30147592786446964
+        }
+      },
+      "last_block_retention": {
+        "cross_task_meta": {
+          "old12_final_BAcc": 0.6048592280395919,
+          "old12_stage12_to16_change_pp": 0.41417867732742125,
+          "new4_final_BAcc": 0.6786121924893451
+        },
+        "detached_lookahead": {
+          "old12_final_BAcc": 0.6214720203234394,
+          "old12_stage12_to16_change_pp": 0.451352530784839,
+          "new4_final_BAcc": 0.6778561251832156
+        },
+        "paired_ce": {
+          "old12_final_BAcc": 0.6195442671850239,
+          "old12_stage12_to16_change_pp": -0.2097797898143031,
+          "new4_final_BAcc": 0.6776412874606513
+        },
+        "old_rows": {
+          "old12_final_BAcc": 0.6227371081171559,
+          "old12_stage12_to16_change_pp": 0.08410757385561851,
+          "new4_final_BAcc": 0.6801218017788346
+        }
+      },
+      "audits_and_costs": {
+        "cross_task_meta": {
+          "stage_audits": {
+            "2": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "14": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "15": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            }
+          },
+          "elapsed_seconds": 1483.7862573619932,
+          "training_seconds": 1209.0790464340243,
+          "peak_reserved_bytes": 7266631680,
+          "training_CE_examples": 51840,
+          "training_forward_batches": 3240,
+          "support_gradient_calls": 1620,
+          "outer_gradient_calls": 1620,
+          "outer_calls_with_second_order": 1620,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0
+        },
+        "detached_lookahead": {
+          "stage_audits": {
+            "2": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "14": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "15": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            }
+          },
+          "elapsed_seconds": 1157.8688393299817,
+          "training_seconds": 896.5121588019538,
+          "peak_reserved_bytes": 6549405696,
+          "training_CE_examples": 51840,
+          "training_forward_batches": 3240,
+          "support_gradient_calls": 1620,
+          "outer_gradient_calls": 1620,
+          "outer_calls_with_second_order": 0,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0
+        },
+        "paired_ce": {
+          "stage_audits": {
+            "2": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "14": {
+              "independent_export_max_abs_error": 4.76837158203125e-07
+            },
+            "15": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            }
+          },
+          "elapsed_seconds": 1161.2134079629905,
+          "training_seconds": 898.215734705911,
+          "peak_reserved_bytes": 6528434176,
+          "training_CE_examples": 51840,
+          "training_forward_batches": 3240,
+          "support_gradient_calls": 1620,
+          "outer_gradient_calls": 1620,
+          "outer_calls_with_second_order": 0,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0
+        }
+      }
+    },
+    "reverse": {
+      "macro_BAcc": {
+        "cross_task_meta": 0.6142453866379257,
+        "detached_lookahead": 0.6318520806986516,
+        "paired_ce": 0.6297473242167071,
+        "old_rows": 0.6304747315597239
+      },
+      "contrasts": {
+        "cross_task_meta_minus_paired_ce": {
+          "gain_pp": -1.5501937578781417,
+          "per_task_pp": {
+            "MI_OpenBMI": -1.7189152596710167,
+            "MI_BCIC_IV2a": -4.303591614046109,
+            "MI_ShanghaiU": -2.834075364563171,
+            "MI_BCIC_Upperlimb": 0.35189189807662835,
+            "MI_HighGamma": -2.026428732776142,
+            "MI_Cho2017": -0.9282178217821735,
+            "MI_Shin2017A": 2.179155900086127,
+            "MI_PhysioNet": -2.8459771282560054,
+            "EMO_FACED": 0.030864197530877657,
+            "EMO_SEED_3_seg4": -0.4909114523375169,
+            "EMO_SEED_4_seg4": -0.21093497148691465,
+            "EMO_SEED_5_seg4": -0.014746460865944222,
+            "EMO_SEED_7_seg4": -1.6841095874532142,
+            "SSVEP_OpenBMI": -8.902811245370446,
+            "Workload": -2.3133833922261537,
+            "ADHD_AliMotie": 0.9090909090909038
+          },
+          "improved": 4,
+          "declined": 12,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -1.798817068409093,
+            -1.060019258711988
+          ]
+        },
+        "cross_task_meta_minus_detached_lookahead": {
+          "gain_pp": -1.7606694060725916,
+          "per_task_pp": {
+            "MI_OpenBMI": -1.5530741608476117,
+            "MI_BCIC_IV2a": -2.028447295383118,
+            "MI_ShanghaiU": -1.3271067234481793,
+            "MI_BCIC_Upperlimb": 1.7358036133136467,
+            "MI_HighGamma": 0.3661621865823417,
+            "MI_Cho2017": -3.3415841584158446,
+            "MI_Shin2017A": -0.3962101636520332,
+            "MI_PhysioNet": -1.3888509038910035,
+            "EMO_FACED": -2.901234567901234,
+            "EMO_SEED_3_seg4": -1.1867629145536962,
+            "EMO_SEED_4_seg4": 0.265429770299902,
+            "EMO_SEED_5_seg4": 0.22532152152874296,
+            "EMO_SEED_7_seg4": -1.2076860976989623,
+            "SSVEP_OpenBMI": -7.603406998854123,
+            "Workload": -7.829063604240294,
+            "ADHD_AliMotie": 0.0
+          },
+          "improved": 4,
+          "declined": 11,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            -1.9937676073650075,
+            -1.3561097928614114
+          ]
+        },
+        "detached_lookahead_minus_paired_ce": {
+          "gain_pp": 0.21047564819444983,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.16584109882340492,
+            "MI_BCIC_IV2a": -2.2751443186629916,
+            "MI_ShanghaiU": -1.5069686411149918,
+            "MI_BCIC_Upperlimb": -1.3839117152370184,
+            "MI_HighGamma": -2.392590919358484,
+            "MI_Cho2017": 2.413366336633671,
+            "MI_Shin2017A": 2.5753660637381603,
+            "MI_PhysioNet": -1.4571262243650018,
+            "EMO_FACED": 2.932098765432112,
+            "EMO_SEED_3_seg4": 0.6958514622161793,
+            "EMO_SEED_4_seg4": -0.47636474178681665,
+            "EMO_SEED_5_seg4": -0.24006798239468718,
+            "EMO_SEED_7_seg4": -0.47642348975425186,
+            "SSVEP_OpenBMI": -1.2994042465163225,
+            "Workload": 5.51568021201414,
+            "ADHD_AliMotie": 0.9090909090909038
+          },
+          "improved": 6,
+          "declined": 10,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.1432046560601962,
+            0.3840134193646454
+          ]
+        },
+        "cross_task_meta_minus_old_rows": {
+          "gain_pp": -1.6229344921798212,
+          "per_task_pp": {
+            "MI_OpenBMI": -2.103122750321662,
+            "MI_BCIC_IV2a": -4.190790686223145,
+            "MI_ShanghaiU": -1.3779197315782588,
+            "MI_BCIC_Upperlimb": 1.3768178125607822,
+            "MI_HighGamma": -0.4617122204653157,
+            "MI_Cho2017": -4.084158415841587,
+            "MI_Shin2017A": 0.8871662360034449,
+            "MI_PhysioNet": -1.8472430054424782,
+            "EMO_FACED": -1.388888888888884,
+            "EMO_SEED_3_seg4": -0.42614189823423354,
+            "EMO_SEED_4_seg4": -0.06899350649350322,
+            "EMO_SEED_5_seg4": 0.31129410618156994,
+            "EMO_SEED_7_seg4": -1.4729432447441237,
+            "SSVEP_OpenBMI": -7.897841380072679,
+            "Workload": -2.3133833922261537,
+            "ADHD_AliMotie": -0.909090909090915
+          },
+          "improved": 3,
+          "declined": 13,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -1.822917979162528,
+            -1.2046073663202974
+          ]
+        },
+        "detached_lookahead_minus_old_rows": {
+          "gain_pp": 0.13773491389277023,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.5500485894740503,
+            "MI_BCIC_IV2a": -2.162343390840027,
+            "MI_ShanghaiU": -0.050813008130079496,
+            "MI_BCIC_Upperlimb": -0.35898580075286457,
+            "MI_HighGamma": -0.8278744070476574,
+            "MI_Cho2017": -0.7425742574257432,
+            "MI_Shin2017A": 1.2833763996554781,
+            "MI_PhysioNet": -0.4583921015514747,
+            "EMO_FACED": 1.5123456790123502,
+            "EMO_SEED_3_seg4": 0.7606210163194627,
+            "EMO_SEED_4_seg4": -0.3344232767934052,
+            "EMO_SEED_5_seg4": 0.08597258465282698,
+            "EMO_SEED_7_seg4": -0.26525714704516146,
+            "SSVEP_OpenBMI": -0.2944343812185557,
+            "Workload": 5.51568021201414,
+            "ADHD_AliMotie": -0.909090909090915
+          },
+          "improved": 5,
+          "declined": 11,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.22079477264865444,
+            0.2910734675416234
+          ]
+        },
+        "paired_ce_minus_old_rows": {
+          "gain_pp": -0.07274073430167949,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.3842074906506454,
+            "MI_BCIC_IV2a": 0.11280092782296469,
+            "MI_ShanghaiU": 1.4561556329849124,
+            "MI_BCIC_Upperlimb": 1.0249259144841538,
+            "MI_HighGamma": 1.5647165123108264,
+            "MI_Cho2017": -3.1559405940594143,
+            "MI_Shin2017A": -1.2919896640826822,
+            "MI_PhysioNet": 0.9987341228135271,
+            "EMO_FACED": -1.4197530864197616,
+            "EMO_SEED_3_seg4": 0.06476955410328333,
+            "EMO_SEED_4_seg4": 0.14194146499341143,
+            "EMO_SEED_5_seg4": 0.32604056704751416,
+            "EMO_SEED_7_seg4": 0.2111663427090904,
+            "SSVEP_OpenBMI": 1.0049698652977668,
+            "Workload": 0.0,
+            "ADHD_AliMotie": -1.8181818181818188
+          },
+          "improved": 10,
+          "declined": 5,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            -0.18190455074251322,
+            0.13280592301550284
+          ]
+        }
+      },
+      "gain_over_stages_pp": {
+        "cross_task_meta_minus_paired_ce": {
+          "1": 0.0,
+          "4": -5.910064306112273,
+          "8": -3.6501340418499506,
+          "12": -2.209931813343269,
+          "16": -1.5501937578781377
+        },
+        "cross_task_meta_minus_detached_lookahead": {
+          "1": 0.0,
+          "4": -4.802921282126671,
+          "8": -3.1877206686800386,
+          "12": -1.0778256530607488,
+          "16": -1.7606694060725903
+        },
+        "detached_lookahead_minus_paired_ce": {
+          "1": 0.0,
+          "4": -1.1071430239856017,
+          "8": -0.46241337316991205,
+          "12": -1.13210616028252,
+          "16": 0.21047564819445252
+        },
+        "cross_task_meta_minus_old_rows": {
+          "1": 0.0,
+          "4": -5.686709048869498,
+          "8": -3.209884440787536,
+          "12": -1.82974732495087,
+          "16": -1.6229344921798172
+        },
+        "detached_lookahead_minus_old_rows": {
+          "1": 0.0,
+          "4": -0.8837877667428273,
+          "8": -0.022163772107497426,
+          "12": -0.7519216718901212,
+          "16": 0.13773491389277304
+        },
+        "paired_ce_minus_old_rows": {
+          "1": 0.0,
+          "4": 0.22335525724277439,
+          "8": 0.4402496010624146,
+          "12": 0.3801844883923988,
+          "16": -0.07274073430167949
+        }
+      },
+      "last_block_retention": {
+        "cross_task_meta": {
+          "old12_final_BAcc": 0.6203638185279065,
+          "old12_stage12_to16_change_pp": -0.028325437706606487,
+          "new4_final_BAcc": 0.5958900909679837
+        },
+        "detached_lookahead": {
+          "old12_final_BAcc": 0.6411953901369031,
+          "old12_stage12_to16_change_pp": 0.9770060701323272,
+          "new4_final_BAcc": 0.6038221523838969
+        },
+        "paired_ce": {
+          "old12_final_BAcc": 0.6339458266827785,
+          "old12_stage12_to16_change_pp": -0.8800564355626572,
+          "new4_final_BAcc": 0.6171518168184928
+        },
+        "old_rows": {
+          "old12_final_BAcc": 0.6367570989606688,
+          "old12_stage12_to16_change_pp": -0.21874471938123918,
+          "new4_final_BAcc": 0.6116276293568894
+        }
+      },
+      "audits_and_costs": {
+        "cross_task_meta": {
+          "stage_audits": {
+            "2": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "14": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "15": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            }
+          },
+          "elapsed_seconds": 1637.9399883989827,
+          "training_seconds": 1259.4287684850278,
+          "peak_reserved_bytes": 7740588032,
+          "training_CE_examples": 51840,
+          "training_forward_batches": 3240,
+          "support_gradient_calls": 1620,
+          "outer_gradient_calls": 1620,
+          "outer_calls_with_second_order": 1620,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0
+        },
+        "detached_lookahead": {
+          "stage_audits": {
+            "2": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "14": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "15": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            }
+          },
+          "elapsed_seconds": 1268.1571595859714,
+          "training_seconds": 920.9452056791051,
+          "peak_reserved_bytes": 10150215680,
+          "training_CE_examples": 51840,
+          "training_forward_batches": 3240,
+          "support_gradient_calls": 1620,
+          "outer_gradient_calls": 1620,
+          "outer_calls_with_second_order": 0,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0
+        },
+        "paired_ce": {
+          "stage_audits": {
+            "2": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "3": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "4": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "5": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "6": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "7": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "8": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "9": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "10": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "11": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "12": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "13": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "14": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "15": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            },
+            "16": {
+              "independent_export_max_abs_error": 2.384185791015625e-07
+            }
+          },
+          "elapsed_seconds": 1245.2645399680478,
+          "training_seconds": 902.5985238181311,
+          "peak_reserved_bytes": 6570377216,
+          "training_CE_examples": 51840,
+          "training_forward_batches": 3240,
+          "support_gradient_calls": 1620,
+          "outer_gradient_calls": 1620,
+          "outer_calls_with_second_order": 0,
+          "coefficient_count": 347666,
+          "persistent_auxiliary_history_bytes": 0
+        }
+      }
+    }
+  },
+  "mean_gain_over_orders_pp": {
+    "cross_task_meta_minus_paired_ce": -1.3136495340340977,
+    "cross_task_meta_minus_detached_lookahead": -1.4938635723539517,
+    "detached_lookahead_minus_paired_ce": 0.180214038319854,
+    "cross_task_meta_minus_old_rows": -1.5007578651171778,
+    "detached_lookahead_minus_old_rows": -0.006894292763226173,
+    "paired_ce_minus_old_rows": -0.18710833108308011
+  },
+  "checks": {
+    "six_complete_runs": true,
+    "frozen_sources_and_inputs_match": true,
+    "original_data_labels_weights_primary_schedules_match": true,
+    "pair_schedules_independently_reconstructed": true,
+    "export_independently_reconstructed_all_stages": true,
+    "fixed_coefficient_means_exact": true,
+    "checkpoint_and_payload_hashes_pass": true,
+    "first_checkpoint_equals_original_expert": true,
+    "native_exports_pass": true,
+    "strict_settings_match": true,
+    "same_attention_backend_all_new_arms": true,
+    "step_rms_bounds_pass": true,
+    "source_and_training_cost_accounted": true,
+    "storage_links_resolve": true
+  },
+  "new_scientific_updates": 9720,
+  "new_training_CE_examples": 311040,
+  "outer_gradient_calls_with_second_order": 3240,
+  "scope": "Exploratory adaptation of established MLDG-style meta-learning to sequential bilateral merging. No new-method novelty claim. Primary controls match source experts, calibration, examples, outer updates and attention backend. Full meta has extra second-order derivative cost; equal FLOPs are not claimed. Historical single-batch bilateral has half the training exposures and its original attention backend. One exposed calibration bank and two correlated orders; no official test read. Deletion ranges are sensitivity, not confidence intervals."
+}

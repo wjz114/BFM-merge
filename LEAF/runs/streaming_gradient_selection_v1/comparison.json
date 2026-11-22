@@ -1,0 +1,616 @@
+{
+  "sources": {
+    "runs/streaming_gradient_selection_v1/gradient_match_forward/run.json": "97bbdebd527cb3b008a104dd3010b655da29d4f80557b82f7633dd4c0b9d9acd",
+    "runs/streaming_gradient_selection_v1/random_blocks_forward/run.json": "f0720a7b6d222ff1ea232315d3f05d87797f3990c618bebf513003ccf78978d3",
+    "runs/streaming_strict_history_v1/old_rows_forward/run.json": "a5a60808433a112515febc2fd7625797237822673a43f6990be0df223bfbe408",
+    "runs/streaming_gradient_selection_v1/gradient_match_reverse/run.json": "2112af66e1675d1166d00d8cd318844146d94e45672fc482bb6a1336399d97c7",
+    "runs/streaming_gradient_selection_v1/random_blocks_reverse/run.json": "3d8a04819ac4aa524451fc72fb2206e1f3bac9b0049198ec3dc34bd9a94c4ba0",
+    "runs/streaming_strict_history_v1/old_rows_reverse/run.json": "c9b1a70e2cbe0e640749b80cf23157c10b7bbed36e597f4bc7b618b5d54b0efd"
+  },
+  "plan_sha256": "c2dbb4e0b82f6c9df5a23335d9801b744dd4f4df4af85b9d694def125e7e8af5",
+  "orders": {
+    "forward": {
+      "macro_BAcc": {
+        "gradient_match": 0.6326448134165508,
+        "random_blocks": 0.6304251725245672,
+        "old_rows": 0.6370832815325755
+      },
+      "contrasts": {
+        "gradient_match_minus_random_blocks": {
+          "gain_pp": 0.2219640891983572,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.24187396505850334,
+            "MI_BCIC_IV2a": 1.765556274709501,
+            "MI_ShanghaiU": -1.0535230352303526,
+            "MI_BCIC_Upperlimb": -0.2905353608164907,
+            "MI_HighGamma": 0.8400722837135888,
+            "MI_Cho2017": -0.7425742574257432,
+            "MI_Shin2017A": 0.42204995693367886,
+            "MI_PhysioNet": 0.8888489503768415,
+            "EMO_FACED": 0.6018518518518479,
+            "EMO_SEED_3_seg4": 0.5981326020776723,
+            "EMO_SEED_4_seg4": 0.6107116456142425,
+            "EMO_SEED_5_seg4": -0.2470265746718714,
+            "EMO_SEED_7_seg4": -0.4545494478115142,
+            "SSVEP_OpenBMI": 0.27122187100562245,
+            "Workload": -0.8097762073027148,
+            "ADHD_AliMotie": 0.9090909090909038
+          },
+          "improved": 10,
+          "declined": 6,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.11905794349761427,
+            0.30699656416027116
+          ]
+        },
+        "gradient_match_minus_old_rows": {
+          "gain_pp": -0.44384681160247874,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.6440788823991683,
+            "MI_BCIC_IV2a": 1.3235785655381749,
+            "MI_ShanghaiU": -1.0407794554136096,
+            "MI_BCIC_Upperlimb": -2.2096648703074484,
+            "MI_HighGamma": -1.866275129884798,
+            "MI_Cho2017": -1.1757425742574212,
+            "MI_Shin2017A": -1.533161068044786,
+            "MI_PhysioNet": 1.3062172542186223,
+            "EMO_FACED": -0.8487654320987748,
+            "EMO_SEED_3_seg4": 0.9325871219500792,
+            "EMO_SEED_4_seg4": 0.3314659848750734,
+            "EMO_SEED_5_seg4": 0.4586586472270948,
+            "EMO_SEED_7_seg4": 0.360548820076928,
+            "SSVEP_OpenBMI": -0.7345066361420072,
+            "Workload": -2.5949646643109503,
+            "ADHD_AliMotie": 0.8333333333333304
+          },
+          "improved": 7,
+          "declined": 9,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.5616751700785223,
+            -0.3004389547552473
+          ]
+        },
+        "random_blocks_minus_old_rows": {
+          "gain_pp": -0.665810900800836,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.8859528474576717,
+            "MI_BCIC_IV2a": -0.44197770917132617,
+            "MI_ShanghaiU": 0.012743579816743011,
+            "MI_BCIC_Upperlimb": -1.9191295094909577,
+            "MI_HighGamma": -2.7063474135983867,
+            "MI_Cho2017": -0.433168316831678,
+            "MI_Shin2017A": -1.9552110249784649,
+            "MI_PhysioNet": 0.4173683038417808,
+            "EMO_FACED": -1.4506172839506226,
+            "EMO_SEED_3_seg4": 0.33445451987240693,
+            "EMO_SEED_4_seg4": -0.2792456607391691,
+            "EMO_SEED_5_seg4": 0.7056852218989662,
+            "EMO_SEED_7_seg4": 0.8150982678884422,
+            "SSVEP_OpenBMI": -1.0057285071476296,
+            "Workload": -1.7851884570082355,
+            "ADHD_AliMotie": -0.07575757575757347
+          },
+          "improved": 5,
+          "declined": 11,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.7645381787134546,
+            -0.5297751332809993
+          ]
+        }
+      },
+      "gain_over_stages_pp": {
+        "gradient_match_minus_random_blocks": {
+          "1": 0.0,
+          "4": -0.2541255956628796,
+          "8": -0.23239595089553644,
+          "12": 0.09824748976500208,
+          "16": 0.22196408919835653
+        },
+        "gradient_match_minus_old_rows": {
+          "1": 0.0,
+          "4": -0.5420007718954123,
+          "8": -1.010898774242075,
+          "12": -0.26629649046510107,
+          "16": -0.4438468116024774
+        },
+        "random_blocks_minus_old_rows": {
+          "1": 0.0,
+          "4": -0.28787517623253267,
+          "8": -0.7785028233465385,
+          "12": -0.36454398023010315,
+          "16": -0.6658109008008339
+        }
+      },
+      "audits_and_costs": {
+        "gradient_match": {
+          "selection": {
+            "MI_BCIC_IV2a": {
+              "gradient_objective_ratio": 0.5264437752580533,
+              "fresh_blocks": 19,
+              "elapsed_seconds": 13.79393748397706
+            },
+            "MI_ShanghaiU": {
+              "gradient_objective_ratio": 0.5755647767580631,
+              "fresh_blocks": 14,
+              "elapsed_seconds": 13.63234705600189
+            },
+            "MI_BCIC_Upperlimb": {
+              "gradient_objective_ratio": 0.7597826305166638,
+              "fresh_blocks": 18,
+              "elapsed_seconds": 13.51892635395052
+            },
+            "MI_HighGamma": {
+              "gradient_objective_ratio": 0.5137999987332502,
+              "fresh_blocks": 17,
+              "elapsed_seconds": 13.665985469997395
+            },
+            "MI_Cho2017": {
+              "gradient_objective_ratio": 0.6303782737003499,
+              "fresh_blocks": 14,
+              "elapsed_seconds": 13.645374476967845
+            },
+            "MI_Shin2017A": {
+              "gradient_objective_ratio": 0.6241205587351019,
+              "fresh_blocks": 20,
+              "elapsed_seconds": 13.431135830003768
+            },
+            "MI_PhysioNet": {
+              "gradient_objective_ratio": 0.7637583619556957,
+              "fresh_blocks": 18,
+              "elapsed_seconds": 13.648840827983804
+            },
+            "EMO_FACED": {
+              "gradient_objective_ratio": 0.7605048624976674,
+              "fresh_blocks": 18,
+              "elapsed_seconds": 14.236781551968306
+            },
+            "EMO_SEED_3_seg4": {
+              "gradient_objective_ratio": 0.7357375641332901,
+              "fresh_blocks": 21,
+              "elapsed_seconds": 13.366017201973591
+            },
+            "EMO_SEED_4_seg4": {
+              "gradient_objective_ratio": 0.7029575103450839,
+              "fresh_blocks": 12,
+              "elapsed_seconds": 13.445718518982176
+            },
+            "EMO_SEED_5_seg4": {
+              "gradient_objective_ratio": 0.6834150245524397,
+              "fresh_blocks": 13,
+              "elapsed_seconds": 13.441557374957483
+            },
+            "EMO_SEED_7_seg4": {
+              "gradient_objective_ratio": 0.792633404080025,
+              "fresh_blocks": 16,
+              "elapsed_seconds": 13.510794686037116
+            },
+            "SSVEP_OpenBMI": {
+              "gradient_objective_ratio": 0.39984838744630957,
+              "fresh_blocks": 23,
+              "elapsed_seconds": 13.44339160103118
+            },
+            "Workload": {
+              "gradient_objective_ratio": 0.36863370779421034,
+              "fresh_blocks": 17,
+              "elapsed_seconds": 13.424168372002896
+            },
+            "ADHD_AliMotie": {
+              "gradient_objective_ratio": 0.48699896999004916,
+              "fresh_blocks": 15,
+              "elapsed_seconds": 14.21600265201414
+            }
+          },
+          "selection_seconds": 204.42097945784917,
+          "elapsed_seconds": 719.0164107469609,
+          "peak_reserved_bytes": 5725224960,
+          "coefficient_count": 347666,
+          "selection_examples": 15360,
+          "selection_backwards": 960
+        },
+        "random_blocks": {
+          "selection": {
+            "MI_BCIC_IV2a": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 15,
+              "elapsed_seconds": 13.482765303982887
+            },
+            "MI_ShanghaiU": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 17,
+              "elapsed_seconds": 13.39927825104678
+            },
+            "MI_BCIC_Upperlimb": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 14,
+              "elapsed_seconds": 13.448667482996825
+            },
+            "MI_HighGamma": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 16,
+              "elapsed_seconds": 13.460195349005517
+            },
+            "MI_Cho2017": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 16,
+              "elapsed_seconds": 13.483789650024846
+            },
+            "MI_Shin2017A": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 21,
+              "elapsed_seconds": 13.244492313999217
+            },
+            "MI_PhysioNet": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 15,
+              "elapsed_seconds": 13.39969856699463
+            },
+            "EMO_FACED": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 15,
+              "elapsed_seconds": 14.244862744992133
+            },
+            "EMO_SEED_3_seg4": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 20,
+              "elapsed_seconds": 13.38878121401649
+            },
+            "EMO_SEED_4_seg4": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 15,
+              "elapsed_seconds": 13.435532989969943
+            },
+            "EMO_SEED_5_seg4": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 9,
+              "elapsed_seconds": 13.373660938988905
+            },
+            "EMO_SEED_7_seg4": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 14,
+              "elapsed_seconds": 13.377473583968822
+            },
+            "SSVEP_OpenBMI": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 18,
+              "elapsed_seconds": 13.419674919976387
+            },
+            "Workload": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 17,
+              "elapsed_seconds": 13.324946784006897
+            },
+            "ADHD_AliMotie": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 14,
+              "elapsed_seconds": 14.26198819000274
+            }
+          },
+          "selection_seconds": 202.74580828397302,
+          "elapsed_seconds": 716.224420220009,
+          "peak_reserved_bytes": 5725224960,
+          "coefficient_count": 347666,
+          "selection_examples": 15360,
+          "selection_backwards": 960
+        }
+      }
+    },
+    "reverse": {
+      "macro_BAcc": {
+        "gradient_match": 0.6340253790036455,
+        "random_blocks": 0.6354726165400723,
+        "old_rows": 0.6304747315597239
+      },
+      "contrasts": {
+        "gradient_match_minus_random_blocks": {
+          "gain_pp": -0.14472375364266782,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.617494214346126,
+            "MI_BCIC_IV2a": -0.997664476408,
+            "MI_ShanghaiU": -1.8539488966318296,
+            "MI_BCIC_Upperlimb": -1.9505085870547778,
+            "MI_HighGamma": 0.5466455839168827,
+            "MI_Cho2017": -0.8663366336633671,
+            "MI_Shin2017A": 1.5848406546080995,
+            "MI_PhysioNet": -1.4291421337844556,
+            "EMO_FACED": 0.4783950617283983,
+            "EMO_SEED_3_seg4": -0.2178860492712098,
+            "EMO_SEED_4_seg4": 0.06181252934499559,
+            "EMO_SEED_5_seg4": -0.35836515666051727,
+            "EMO_SEED_7_seg4": 0.688887027773194,
+            "SSVEP_OpenBMI": 0.09964615565281054,
+            "Workload": 0.4472173144876357,
+            "ADHD_AliMotie": 0.8333333333333304
+          },
+          "improved": 9,
+          "declined": 7,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.2600280475260523,
+            -0.024338098081860486
+          ]
+        },
+        "gradient_match_minus_old_rows": {
+          "gain_pp": 0.3550647443921609,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.24734833142744383,
+            "MI_BCIC_IV2a": -1.3300886886784102,
+            "MI_ShanghaiU": -0.06355658794683361,
+            "MI_BCIC_Upperlimb": 1.2071648417030012,
+            "MI_HighGamma": 1.9756042466681834,
+            "MI_Cho2017": -2.2277227722772297,
+            "MI_Shin2017A": 3.419465977605518,
+            "MI_PhysioNet": 0.17537673520897634,
+            "EMO_FACED": -0.29320987654321007,
+            "EMO_SEED_3_seg4": 0.42596971074470025,
+            "EMO_SEED_4_seg4": -0.17932499669512936,
+            "EMO_SEED_5_seg4": -0.35861598136960326,
+            "EMO_SEED_7_seg4": 0.7396851419307626,
+            "SSVEP_OpenBMI": -0.19788390697829117,
+            "Workload": 3.5446113074204977,
+            "ADHD_AliMotie": -0.909090909090915
+          },
+          "improved": 7,
+          "declined": 9,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.14242830685693844,
+            0.5272505788367869
+          ]
+        },
+        "random_blocks_minus_old_rows": {
+          "gain_pp": 0.49978849803482867,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.8648425457735698,
+            "MI_BCIC_IV2a": -0.3324242122704102,
+            "MI_ShanghaiU": 1.790392308684996,
+            "MI_BCIC_Upperlimb": 3.157673428757779,
+            "MI_HighGamma": 1.4289586627513007,
+            "MI_Cho2017": -1.3613861386138626,
+            "MI_Shin2017A": 1.8346253229974185,
+            "MI_PhysioNet": 1.604518868993432,
+            "EMO_FACED": -0.7716049382716084,
+            "EMO_SEED_3_seg4": 0.64385576001591,
+            "EMO_SEED_4_seg4": -0.24113752604012495,
+            "EMO_SEED_5_seg4": -0.00025082470908599497,
+            "EMO_SEED_7_seg4": 0.05079811415756863,
+            "SSVEP_OpenBMI": -0.2975300626311017,
+            "Workload": 3.097393992932862,
+            "ADHD_AliMotie": -1.7424242424242453
+          },
+          "improved": 8,
+          "declined": 8,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.32259616931996526,
+            0.6492693473987668
+          ]
+        }
+      },
+      "gain_over_stages_pp": {
+        "gradient_match_minus_random_blocks": {
+          "1": 0.0,
+          "4": 0.5212327621055723,
+          "8": -0.41640941232359285,
+          "12": 0.10805449112840648,
+          "16": -0.14472375364267265
+        },
+        "gradient_match_minus_old_rows": {
+          "1": 0.0,
+          "4": -0.282965865714091,
+          "8": -0.40108365068508567,
+          "12": 0.16212958691506074,
+          "16": 0.35506474439216396
+        },
+        "random_blocks_minus_old_rows": {
+          "1": 0.0,
+          "4": -0.8041986278196633,
+          "8": 0.015325761638507185,
+          "12": 0.05407509578665426,
+          "16": 0.4997884980348366
+        }
+      },
+      "audits_and_costs": {
+        "gradient_match": {
+          "selection": {
+            "Workload": {
+              "gradient_objective_ratio": 0.32085262222445,
+              "fresh_blocks": 16,
+              "elapsed_seconds": 13.50551769300364
+            },
+            "SSVEP_OpenBMI": {
+              "gradient_objective_ratio": 0.5975813783026817,
+              "fresh_blocks": 16,
+              "elapsed_seconds": 13.570383082027547
+            },
+            "EMO_SEED_7_seg4": {
+              "gradient_objective_ratio": 0.847607580649488,
+              "fresh_blocks": 13,
+              "elapsed_seconds": 13.605849117971957
+            },
+            "EMO_SEED_5_seg4": {
+              "gradient_objective_ratio": 0.5968175149074926,
+              "fresh_blocks": 14,
+              "elapsed_seconds": 13.612243153038435
+            },
+            "EMO_SEED_4_seg4": {
+              "gradient_objective_ratio": 0.7106519874329261,
+              "fresh_blocks": 17,
+              "elapsed_seconds": 13.718506708974019
+            },
+            "EMO_SEED_3_seg4": {
+              "gradient_objective_ratio": 0.6025989612425043,
+              "fresh_blocks": 17,
+              "elapsed_seconds": 13.66019766201498
+            },
+            "EMO_FACED": {
+              "gradient_objective_ratio": 0.7578654368255534,
+              "fresh_blocks": 17,
+              "elapsed_seconds": 14.065519976022188
+            },
+            "MI_PhysioNet": {
+              "gradient_objective_ratio": 0.522347040422552,
+              "fresh_blocks": 17,
+              "elapsed_seconds": 13.394726148981135
+            },
+            "MI_Shin2017A": {
+              "gradient_objective_ratio": 0.5947449492448577,
+              "fresh_blocks": 19,
+              "elapsed_seconds": 13.42697293200763
+            },
+            "MI_Cho2017": {
+              "gradient_objective_ratio": 0.5744719003647117,
+              "fresh_blocks": 17,
+              "elapsed_seconds": 13.364085031033028
+            },
+            "MI_HighGamma": {
+              "gradient_objective_ratio": 0.2996568011806117,
+              "fresh_blocks": 20,
+              "elapsed_seconds": 13.502397305972409
+            },
+            "MI_BCIC_Upperlimb": {
+              "gradient_objective_ratio": 0.6525025517741052,
+              "fresh_blocks": 12,
+              "elapsed_seconds": 13.386256271973252
+            },
+            "MI_ShanghaiU": {
+              "gradient_objective_ratio": 0.6567293270338735,
+              "fresh_blocks": 20,
+              "elapsed_seconds": 13.396553302009124
+            },
+            "MI_BCIC_IV2a": {
+              "gradient_objective_ratio": 0.42925693259287895,
+              "fresh_blocks": 15,
+              "elapsed_seconds": 13.262841502029914
+            },
+            "MI_OpenBMI": {
+              "gradient_objective_ratio": 0.5046004495143663,
+              "fresh_blocks": 16,
+              "elapsed_seconds": 13.644337647012435
+            }
+          },
+          "selection_seconds": 203.1163875340717,
+          "elapsed_seconds": 767.055635213037,
+          "peak_reserved_bytes": 5913968640,
+          "coefficient_count": 347666,
+          "selection_examples": 15360,
+          "selection_backwards": 960
+        },
+        "random_blocks": {
+          "selection": {
+            "Workload": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 17,
+              "elapsed_seconds": 13.63112363498658
+            },
+            "SSVEP_OpenBMI": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 18,
+              "elapsed_seconds": 13.476338407024741
+            },
+            "EMO_SEED_7_seg4": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 14,
+              "elapsed_seconds": 13.405566937988624
+            },
+            "EMO_SEED_5_seg4": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 9,
+              "elapsed_seconds": 13.365925749996677
+            },
+            "EMO_SEED_4_seg4": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 15,
+              "elapsed_seconds": 13.399781321990304
+            },
+            "EMO_SEED_3_seg4": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 20,
+              "elapsed_seconds": 13.453052819997538
+            },
+            "EMO_FACED": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 15,
+              "elapsed_seconds": 14.304072715051007
+            },
+            "MI_PhysioNet": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 15,
+              "elapsed_seconds": 13.459495765971951
+            },
+            "MI_Shin2017A": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 21,
+              "elapsed_seconds": 13.331935450958554
+            },
+            "MI_Cho2017": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 16,
+              "elapsed_seconds": 13.460810261021834
+            },
+            "MI_HighGamma": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 16,
+              "elapsed_seconds": 13.4498761370196
+            },
+            "MI_BCIC_Upperlimb": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 14,
+              "elapsed_seconds": 13.358904741005972
+            },
+            "MI_ShanghaiU": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 17,
+              "elapsed_seconds": 13.412783476000186
+            },
+            "MI_BCIC_IV2a": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 15,
+              "elapsed_seconds": 13.364015839993954
+            },
+            "MI_OpenBMI": {
+              "gradient_objective_ratio": 1.0,
+              "fresh_blocks": 18,
+              "elapsed_seconds": 13.40509800100699
+            }
+          },
+          "selection_seconds": 202.2787812600145,
+          "elapsed_seconds": 771.2678998230258,
+          "peak_reserved_bytes": 5913968640,
+          "coefficient_count": 347666,
+          "selection_examples": 15360,
+          "selection_backwards": 960
+        }
+      }
+    }
+  },
+  "mean_gain_over_orders_pp": {
+    "gradient_match_minus_random_blocks": 0.03862016777784469,
+    "gradient_match_minus_old_rows": -0.04439103360515892,
+    "random_blocks_minus_old_rows": -0.08301120138300369
+  },
+  "checks": {
+    "four_complete_runs": true,
+    "frozen_sources_and_inputs_match": true,
+    "same_training_labels_weights_and_schedules": true,
+    "same_candidate_pools_and_scoring_budget": true,
+    "independent_gradient_objective_and_greedy_choices_pass": true,
+    "actual_selected_EEG_reloaded_and_hashed": true,
+    "selected_rows_unique": true,
+    "fixed_coefficient_means_exact": true,
+    "bilateral_initial_coefficients_exact": true,
+    "checkpoint_and_payload_hashes_pass": true,
+    "first_expert_unchanged": true,
+    "native_exports_pass": true,
+    "strict_settings_match": true,
+    "second_arrival_scoring_exact_across_arms": true,
+    "storage_links_resolve": true
+  },
+  "new_scientific_updates": 6480,
+  "new_training_CE_examples": 103680,
+  "new_selection_examples": 61440,
+  "new_selection_backwards": 3840,
+  "scope": "One exposed development bank, two correlated task orders. New arms have matched1024-slot candidate pools and scoring costs,512 retained unique rows/task, and unchanged347666-coefficient bilateral training. Original512 reference has lower data access and scoring cost; comparisons to it do not isolate selection intelligence. ADHD candidate multiset has108 repeated rows, aligned to prevent repeats in the retained512. Task-deletion ranges are sensitivity, not confidence intervals. Gradient objective reduction alone does not establish better generalization, novelty or research-goal completion."
+}

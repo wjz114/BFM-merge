@@ -1,0 +1,454 @@
+{
+  "sources": {
+    "runs/streaming_moment_transport_v1/moment_restart_forward/run.json": "09fec0cbbfc24b1e3ce20a1d78bc7aed7ad2ac799e65fc352f65213107e6a03d",
+    "runs/streaming_moment_transport_v1/moment_transport_forward/run.json": "c8ed009394902131ebeb41683cd40ae3fe12411e43740e9264c7c3819e4fc08a",
+    "runs/streaming_strict_history_v1/old_rows_forward/run.json": "a5a60808433a112515febc2fd7625797237822673a43f6990be0df223bfbe408",
+    "runs/streaming_column_residual_v1/raw_columns_forward/run.json": "fd64aad78dc2268535b8d0f55db20b6223840b2d95f81d381d5ba2a621068c3f",
+    "runs/streaming_moment_transport_v1/moment_restart_reverse/run.json": "4e0d803230e42738a5ddaff73dca66237c483943633913ac5b5180ce3681d8e5",
+    "runs/streaming_moment_transport_v1/moment_transport_reverse/run.json": "35768fefaf61e9283a44ec9621d5531e7cd2819acd86e763741f8e06c108888e",
+    "runs/streaming_strict_history_v1/old_rows_reverse/run.json": "c9b1a70e2cbe0e640749b80cf23157c10b7bbed36e597f4bc7b618b5d54b0efd",
+    "runs/streaming_column_residual_v1/raw_columns_reverse/run.json": "969aa19c6fa9f14a5480036ba0261c02fefcc0c6d86e109fe0c50f66ffda6f35"
+  },
+  "plan_sha256": "685753561a83e087d8c1c5f44c3eada880a767ef6f420dfd72ae2e7fb7a3d25f",
+  "orders": {
+    "forward": {
+      "macro_BAcc": {
+        "moment_restart": 0.6178125657402201,
+        "moment_transport": 0.6315579676764722,
+        "old_rows": 0.6370832815325755,
+        "raw_columns": 0.6379238259855814
+      },
+      "contrasts": {
+        "moment_transport_minus_old_rows": {
+          "gain_pp": -0.5525313856103456,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.04111141802547458,
+            "MI_BCIC_IV2a": 1.4637431303220483,
+            "MI_ShanghaiU": 0.34633501096914543,
+            "MI_BCIC_Upperlimb": -1.346926166203266,
+            "MI_HighGamma": -2.7429410435961143,
+            "MI_Cho2017": 0.0,
+            "MI_Shin2017A": -1.6795865633074891,
+            "MI_PhysioNet": 0.8170573043848606,
+            "EMO_FACED": -0.3240740740740822,
+            "EMO_SEED_3_seg4": -0.8390106008457909,
+            "EMO_SEED_4_seg4": 0.5901796445627605,
+            "EMO_SEED_5_seg4": -0.8320627008132131,
+            "EMO_SEED_7_seg4": -0.46023122623153334,
+            "SSVEP_OpenBMI": -0.4052354435644223,
+            "Workload": -3.310880447585385,
+            "ADHD_AliMotie": -0.07575757575757347
+          },
+          "improved": 4,
+          "declined": 11,
+          "tied": 1,
+          "task_deletion_range_pp": [
+            -0.6869496866725053,
+            -0.36864144814534305
+          ]
+        },
+        "moment_transport_minus_moment_restart": {
+          "gain_pp": 1.3745401936252,
+          "per_task_pp": {
+            "MI_OpenBMI": 1.23928204937378,
+            "MI_BCIC_IV2a": 7.3059630598697805,
+            "MI_ShanghaiU": 1.3274293457220199,
+            "MI_BCIC_Upperlimb": 0.7663703246032716,
+            "MI_HighGamma": -0.2791958436864639,
+            "MI_Cho2017": 1.0519801980198085,
+            "MI_Shin2017A": -0.03445305770886087,
+            "MI_PhysioNet": 0.4275754154147937,
+            "EMO_FACED": 2.0524691358024647,
+            "EMO_SEED_3_seg4": 2.8104811016850695,
+            "EMO_SEED_4_seg4": -0.1091595896790698,
+            "EMO_SEED_5_seg4": 0.26514490397718804,
+            "EMO_SEED_7_seg4": 1.2979762222051494,
+            "SSVEP_OpenBMI": 1.0182260257868392,
+            "Workload": 1.9434628975265156,
+            "ADHD_AliMotie": 0.909090909090915
+          },
+          "improved": 13,
+          "declined": 3,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.979112002542228,
+            1.484789262779311
+          ]
+        },
+        "moment_restart_minus_old_rows": {
+          "gain_pp": -1.9270715792355455,
+          "per_task_pp": {
+            "MI_OpenBMI": -1.2803934673992545,
+            "MI_BCIC_IV2a": -5.842219929547731,
+            "MI_ShanghaiU": -0.9810943347528744,
+            "MI_BCIC_Upperlimb": -2.1132964908065377,
+            "MI_HighGamma": -2.4637451999096505,
+            "MI_Cho2017": -1.0519801980198085,
+            "MI_Shin2017A": -1.6451335055986283,
+            "MI_PhysioNet": 0.38948188897006686,
+            "EMO_FACED": -2.376543209876547,
+            "EMO_SEED_3_seg4": -3.6494917025308604,
+            "EMO_SEED_4_seg4": 0.6993392342418303,
+            "EMO_SEED_5_seg4": -1.0972076047904011,
+            "EMO_SEED_7_seg4": -1.7582074484366828,
+            "SSVEP_OpenBMI": -1.4234614693512615,
+            "Workload": -5.2543433451119,
+            "ADHD_AliMotie": -0.9848484848484884
+          },
+          "improved": 2,
+          "declined": 14,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -2.1021656334673704,
+            -1.666061689214733
+          ]
+        },
+        "moment_transport_minus_raw_columns": {
+          "gain_pp": -0.6365858309109216,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.3965516501099886,
+            "MI_BCIC_IV2a": -0.623980269451585,
+            "MI_ShanghaiU": 0.6515356820234741,
+            "MI_BCIC_Upperlimb": -0.7804151077243304,
+            "MI_HighGamma": -1.3968827648520366,
+            "MI_Cho2017": 0.9282178217821735,
+            "MI_Shin2017A": -2.5409130060292773,
+            "MI_PhysioNet": -0.6305455383689651,
+            "EMO_FACED": -0.4475308641975373,
+            "EMO_SEED_3_seg4": -0.9351896128634962,
+            "EMO_SEED_4_seg4": 0.7129894061712216,
+            "EMO_SEED_5_seg4": -1.2549136214851264,
+            "EMO_SEED_7_seg4": -0.964840897414232,
+            "SSVEP_OpenBMI": 1.3602615941618823,
+            "Workload": -2.9575235571260183,
+            "ADHD_AliMotie": -0.9090909090909038
+          },
+          "improved": 4,
+          "declined": 12,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.7697089925824419,
+            -0.48185664916324844
+          ]
+        }
+      },
+      "gain_over_stages_pp": {
+        "moment_transport_minus_old_rows": {
+          "1": 0.0,
+          "4": -0.5703157025664818,
+          "8": -1.5255406244282232,
+          "12": -0.8813918317999714,
+          "16": -0.5525313856103331
+        },
+        "moment_transport_minus_moment_restart": {
+          "1": 0.0,
+          "4": 0.08029437545020723,
+          "8": 1.3081876320275798,
+          "12": 0.6793357992007087,
+          "16": 1.3745401936252066
+        },
+        "moment_restart_minus_old_rows": {
+          "1": 0.0,
+          "4": -0.650610078016689,
+          "8": -2.833728256455803,
+          "12": -1.5607276310006801,
+          "16": -1.9270715792355397
+        },
+        "moment_transport_minus_raw_columns": {
+          "1": 0.0,
+          "4": -0.3817888833307137,
+          "8": -1.0740540984646163,
+          "12": -1.1288915098578323,
+          "16": -0.6365858309109185
+        }
+      },
+      "audits_and_costs": {
+        "moment_restart": {
+          "coefficient_count": 347666,
+          "moment_bytes": 618037248,
+          "algorithmic_retained_coefficient_bytes": 0,
+          "implementation_previous_coefficient_buffer_bytes": 1390664,
+          "buffer_note": "Both runners retain the previous vector for the common interface/audit; only transport uses it to initialize calibration.",
+          "moment_update_seconds": 0.8928486768854782,
+          "training_and_export_seconds": 370.5283901189687,
+          "calibration_including_setup_seconds": 411.8664190520067,
+          "elapsed_seconds": 764.9019128110376,
+          "peak_reserved_bytes": 5725224960,
+          "required_Fisher_payload_examples": 2048,
+          "required_Fisher_payload_VJPs": 128,
+          "actual_new_Fisher_estimation_examples": 0,
+          "actual_new_Fisher_estimation_VJPs": 0
+        },
+        "moment_transport": {
+          "coefficient_count": 347666,
+          "moment_bytes": 618037248,
+          "algorithmic_retained_coefficient_bytes": 1390664,
+          "implementation_previous_coefficient_buffer_bytes": 1390664,
+          "buffer_note": "Both runners retain the previous vector for the common interface/audit; only transport uses it to initialize calibration.",
+          "moment_update_seconds": 0.9150886011193506,
+          "training_and_export_seconds": 374.06635259703035,
+          "calibration_including_setup_seconds": 413.5616227808641,
+          "elapsed_seconds": 767.4816617530305,
+          "peak_reserved_bytes": 5725224960,
+          "required_Fisher_payload_examples": 2048,
+          "required_Fisher_payload_VJPs": 128,
+          "actual_new_Fisher_estimation_examples": 0,
+          "actual_new_Fisher_estimation_VJPs": 0
+        },
+        "old_rows": {
+          "coefficient_count": 347666,
+          "history_used_by_merger": false,
+          "logical_history_bytes": 0,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.378810449910816,
+          "training_and_export_seconds": 345.64870772510767,
+          "elapsed_seconds": 621.8291295459494,
+          "peak_reserved_bytes": 5725224960
+        },
+        "raw_columns": {
+          "coefficient_count": 460306,
+          "additional_column_coefficients": 112640,
+          "persistent_auxiliary_history_bytes": 0,
+          "training_and_export_seconds": 434.8295127309975,
+          "calibration_including_setup_seconds": 452.6813470060006,
+          "elapsed_seconds": 791.6266320549767,
+          "peak_reserved_bytes": 5725224960
+        }
+      }
+    },
+    "reverse": {
+      "macro_BAcc": {
+        "moment_restart": 0.6185430117086687,
+        "moment_transport": 0.6280336617840399,
+        "old_rows": 0.6304747315597239,
+        "raw_columns": 0.631267730668821
+      },
+      "contrasts": {
+        "moment_transport_minus_old_rows": {
+          "gain_pp": -0.2441069775684108,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.13990047387260063,
+            "MI_BCIC_IV2a": 0.8896478817999265,
+            "MI_ShanghaiU": 1.3640469738030792,
+            "MI_BCIC_Upperlimb": 2.7931383654275277,
+            "MI_HighGamma": 0.9814772983962161,
+            "MI_Cho2017": -0.990099009900991,
+            "MI_Shin2017A": -4.1860465116279055,
+            "MI_PhysioNet": 0.42791728039570653,
+            "EMO_FACED": -1.157407407407407,
+            "EMO_SEED_3_seg4": -1.4247383242123046,
+            "EMO_SEED_4_seg4": 0.4843377489481382,
+            "EMO_SEED_5_seg4": -0.6758827041535687,
+            "EMO_SEED_7_seg4": -1.2469685186773716,
+            "SSVEP_OpenBMI": -2.7498164812585824,
+            "Workload": 2.3538722025912784,
+            "ADHD_AliMotie": -0.909090909090915
+          },
+          "improved": 8,
+          "declined": 8,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.4465900004348067,
+            0.018688991368888856
+          ]
+        },
+        "moment_transport_minus_moment_restart": {
+          "gain_pp": 0.9490650075371203,
+          "per_task_pp": {
+            "MI_OpenBMI": 0.27915690464297427,
+            "MI_BCIC_IV2a": 3.5499014991393962,
+            "MI_ShanghaiU": 0.38972770680087976,
+            "MI_BCIC_Upperlimb": 0.42995343196146063,
+            "MI_HighGamma": 0.5425796250282389,
+            "MI_Cho2017": 0.12376237623762387,
+            "MI_Shin2017A": -4.427217915589998,
+            "MI_PhysioNet": 0.1302505577283064,
+            "EMO_FACED": 2.3919753086419804,
+            "EMO_SEED_3_seg4": 2.5123335438940297,
+            "EMO_SEED_4_seg4": -0.17454765019700447,
+            "EMO_SEED_5_seg4": 0.9653403374318248,
+            "EMO_SEED_7_seg4": 1.8442169602333414,
+            "SSVEP_OpenBMI": -0.1448655282031086,
+            "Workload": 4.045200235571256,
+            "ADHD_AliMotie": 2.7272727272727226
+          },
+          "improved": 13,
+          "declined": 3,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            0.7426559923348446,
+            1.3074838690789283
+          ]
+        },
+        "moment_restart_minus_old_rows": {
+          "gain_pp": -1.193171985105531,
+          "per_task_pp": {
+            "MI_OpenBMI": -0.13925643077037364,
+            "MI_BCIC_IV2a": -2.6602536173394697,
+            "MI_ShanghaiU": 0.9743192670021994,
+            "MI_BCIC_Upperlimb": 2.363184933466067,
+            "MI_HighGamma": 0.43889767336797725,
+            "MI_Cho2017": -1.1138613861386149,
+            "MI_Shin2017A": 0.2411714039620927,
+            "MI_PhysioNet": 0.29766672266740013,
+            "EMO_FACED": -3.5493827160493874,
+            "EMO_SEED_3_seg4": -3.9370718681063344,
+            "EMO_SEED_4_seg4": 0.6588853991451427,
+            "EMO_SEED_5_seg4": -1.6412230415853934,
+            "EMO_SEED_7_seg4": -3.091185478910713,
+            "SSVEP_OpenBMI": -2.6049509530554738,
+            "Workload": -1.6913280329799774,
+            "ADHD_AliMotie": -3.6363636363636376
+          },
+          "improved": 6,
+          "declined": 10,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -1.4302624463436373,
+            -1.0102453262388107
+          ]
+        },
+        "moment_transport_minus_raw_columns": {
+          "gain_pp": -0.3234068884781144,
+          "per_task_pp": {
+            "MI_OpenBMI": 1.4873102040757868,
+            "MI_BCIC_IV2a": -0.18141056163618607,
+            "MI_ShanghaiU": 1.5584268937927526,
+            "MI_BCIC_Upperlimb": 2.613960113960123,
+            "MI_HighGamma": 1.5927264513214467,
+            "MI_Cho2017": -0.6188118811881194,
+            "MI_Shin2017A": -6.106804478897498,
+            "MI_PhysioNet": 1.0984610215316382,
+            "EMO_FACED": -0.38580246913579863,
+            "EMO_SEED_3_seg4": -1.8957965590052028,
+            "EMO_SEED_4_seg4": 0.09599137845890948,
+            "EMO_SEED_5_seg4": -0.609076611772702,
+            "EMO_SEED_7_seg4": -1.3677308911925867,
+            "SSVEP_OpenBMI": -2.1466986231569507,
+            "Workload": -1.2183451118963462,
+            "ADHD_AliMotie": 0.9090909090909038
+          },
+          "improved": 7,
+          "declined": 9,
+          "tied": 0,
+          "task_deletion_range_pp": [
+            -0.5192313553073302,
+            0.062152950883177856
+          ]
+        }
+      },
+      "gain_over_stages_pp": {
+        "moment_transport_minus_old_rows": {
+          "1": 0.0,
+          "4": -0.20062643091897092,
+          "8": 0.005149503180423842,
+          "12": -0.1263502406836925,
+          "16": -0.2441069775684035
+        },
+        "moment_transport_minus_moment_restart": {
+          "1": 0.0,
+          "4": 1.3872368303674332,
+          "8": 1.3011992760839641,
+          "12": 0.9778349196393865,
+          "16": 0.9490650075371199
+        },
+        "moment_restart_minus_old_rows": {
+          "1": 0.0,
+          "4": -1.587863261286404,
+          "8": -1.2960497729035403,
+          "12": -1.104185160323079,
+          "16": -1.1931719851055234
+        },
+        "moment_transport_minus_raw_columns": {
+          "1": 0.0,
+          "4": -0.2543090480946253,
+          "8": -0.5825219785691615,
+          "12": 0.029766894309890546,
+          "16": -0.32340688847811716
+        }
+      },
+      "audits_and_costs": {
+        "moment_restart": {
+          "coefficient_count": 347666,
+          "moment_bytes": 618037248,
+          "algorithmic_retained_coefficient_bytes": 0,
+          "implementation_previous_coefficient_buffer_bytes": 1390664,
+          "buffer_note": "Both runners retain the previous vector for the common interface/audit; only transport uses it to initialize calibration.",
+          "moment_update_seconds": 0.9221375198685564,
+          "training_and_export_seconds": 378.8452089448692,
+          "calibration_including_setup_seconds": 411.54650860716356,
+          "elapsed_seconds": 852.2158537959913,
+          "peak_reserved_bytes": 5913968640,
+          "required_Fisher_payload_examples": 2048,
+          "required_Fisher_payload_VJPs": 128,
+          "actual_new_Fisher_estimation_examples": 0,
+          "actual_new_Fisher_estimation_VJPs": 0
+        },
+        "moment_transport": {
+          "coefficient_count": 347666,
+          "moment_bytes": 618037248,
+          "algorithmic_retained_coefficient_bytes": 1390664,
+          "implementation_previous_coefficient_buffer_bytes": 1390664,
+          "buffer_note": "Both runners retain the previous vector for the common interface/audit; only transport uses it to initialize calibration.",
+          "moment_update_seconds": 0.9421569508849643,
+          "training_and_export_seconds": 376.1663584491471,
+          "calibration_including_setup_seconds": 407.9898662501364,
+          "elapsed_seconds": 848.0273949970142,
+          "peak_reserved_bytes": 5913968640,
+          "required_Fisher_payload_examples": 2048,
+          "required_Fisher_payload_VJPs": 128,
+          "actual_new_Fisher_estimation_examples": 0,
+          "actual_new_Fisher_estimation_VJPs": 0
+        },
+        "old_rows": {
+          "coefficient_count": 347666,
+          "history_used_by_merger": false,
+          "logical_history_bytes": 0,
+          "raw_history_audit_bytes": 206012416,
+          "history_update_seconds": 4.405768615950365,
+          "training_and_export_seconds": 355.5574528538855,
+          "elapsed_seconds": 722.6228054689709,
+          "peak_reserved_bytes": 5913968640
+        },
+        "raw_columns": {
+          "coefficient_count": 460306,
+          "additional_column_coefficients": 112640,
+          "persistent_auxiliary_history_bytes": 0,
+          "training_and_export_seconds": 445.23183158191387,
+          "calibration_including_setup_seconds": 464.88064033183036,
+          "elapsed_seconds": 904.7451914209523,
+          "peak_reserved_bytes": 5913968640
+        }
+      }
+    }
+  },
+  "mean_gain_over_orders_pp": {
+    "moment_transport_minus_old_rows": -0.39831918158937824,
+    "moment_transport_minus_moment_restart": 1.1618026005811601,
+    "moment_restart_minus_old_rows": -1.5601217821705382,
+    "moment_transport_minus_raw_columns": -0.479996359694518
+  },
+  "checks": {
+    "four_new_complete_runs": true,
+    "actual_data_schedules_auxiliary_ids_match": true,
+    "strict_settings_match": true,
+    "first_expert_unchanged": true,
+    "checkpoint_and_coefficient_hashes_pass": true,
+    "fixed_coefficient_means_exact": true,
+    "coefficient_transfer_and_restart_initialization_exact": true,
+    "stage2_models_and_all_coefficients_equal_between_arms": true,
+    "original_expert_Fisher_moments_replay_exact": true,
+    "Fisher_payload_provenance_matches": true,
+    "native_exports_pass": true,
+    "coefficient_and_state_counts_match": true,
+    "storage_links_resolve": true,
+    "frozen_reference_audits_match": true
+  },
+  "new_scientific_updates": 6480,
+  "new_scientific_CE_example_passes": 103680,
+  "new_Fisher_estimation_examples": 0,
+  "new_Fisher_estimation_VJPs": 0,
+  "reused_Fisher_cache_examples_once": 2048,
+  "reused_Fisher_cache_VJPs_once": 128,
+  "scope": "One exposed expert bank and two correlated orders. Both moment arms share the same347666 coefficient family and618037248byte additive moments. Transport additionally uses the previous1390664byte coefficient vector. This tests coefficient-state transfer, not additional capacity. Comparison to bilateral also changes expert basis and initialization; Fisher necessity is not isolated. Calibration CE updates/data match, but the moment algorithms additionally require cached2048examples/128VJP Fisher payloads. Those old estimates used a non-strict backend and are fixed inputs; current training is strict. Task-deletion ranges are sensitivity, not confidence intervals. Shared-hardware times are descriptive. No novel superior method is established by engineering."
+}

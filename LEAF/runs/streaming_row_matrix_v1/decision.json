@@ -1,0 +1,19 @@
+{
+  "created_unix": 1794904345.5364015,
+  "comparison_sha256": "6594dedd413188ea4f2498755ba99aaedeca378d203e179edc176ed86de36063",
+  "all_checks_pass": true,
+  "figure_inspected": true,
+  "mean_gain_over_orders_pp": {
+    "matrix_transport_minus_matrix_reset": -0.2358319759749042,
+    "matrix_reset_minus_diagonal_reset": -0.03345937200211045,
+    "matrix_transport_minus_old_rows": -0.2587531502548047,
+    "matrix_reset_minus_old_rows": -0.022921174279900453,
+    "diagonal_reset_minus_old_rows": 0.010538197722209985
+  },
+  "decision": "Stop this row-plane matrix optimization/state-transport branch, including both reset controls; no second bank, learning-rate sweep, moment compensation or counter variants.",
+  "reason": "Transport is below strong bilateral in both orders and loses on average to the matched matrix-reset control. Full-matrix reset does not improve over diagonal reset on average. Both reset arms reverse their effect versus bilateral across orders, with near-zero order-average differences. The extra215031824bytes of persistent transport history do not buy a stable performance benefit.",
+  "mechanism_observation": "The implemented old/new row basis, matrix second moments, exact represented-state transport and native export pass independent audits. This verifies the tested operator, not the sufficiency of its retained history or a general impossibility for optimization-state transport. Changing row coordinates plus FP64 Adam-type reset also fails to establish a stable advantage.",
+  "scope": "One exposed development bank, two correlated arrival orders. Task-deletion ranges are sensitivity, not confidence intervals; no new minimum performance threshold. Generic full-matrix preconditioning and basis-overlap transport have prior art.",
+  "next": "Reassess the method search using the accumulated direct evidence and existing algorithm boundaries; select a concrete next operator only after identifying what information or computation it adds beyond the closed coefficient/history/optimizer branches.",
+  "overall_goal_achieved": false
+}

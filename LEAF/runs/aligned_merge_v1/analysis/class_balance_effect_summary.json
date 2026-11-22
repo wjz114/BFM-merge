@@ -1,0 +1,30 @@
+[
+  {
+    "candidate": "block_balanced_ce",
+    "protocol": "validation",
+    "n": 3,
+    "paired_delta_mean_pp": 0.05154110476643173,
+    "paired_delta_sample_sd_pp": 0.10922299861838043
+  },
+  {
+    "candidate": "block_balanced_ce",
+    "protocol": "official_l2",
+    "n": 3,
+    "paired_delta_mean_pp": 0.04062499999999969,
+    "paired_delta_sample_sd_pp": 0.3807563402295493
+  },
+  {
+    "candidate": "tensor_balanced_ce",
+    "protocol": "validation",
+    "n": 3,
+    "paired_delta_mean_pp": 0.030177513286833043,
+    "paired_delta_sample_sd_pp": 0.1478776931635743
+  },
+  {
+    "candidate": "tensor_balanced_ce",
+    "protocol": "official_l2",
+    "n": 3,
+    "paired_delta_mean_pp": 0.11020833333333298,
+    "paired_delta_sample_sd_pp": 0.11025951867450433
+  }
+]
